@@ -594,12 +594,45 @@
             border-color: var(--green);
             box-shadow: 0 0 45px rgba(0, 255, 136, 0.35);
         }
+        /* Duque card */
+        .wwe-card.duque {
+            border: 1px solid rgba(255, 165, 0, 0.45);
+            box-shadow: 0 0 30px rgba(255, 165, 0, 0.12);
+        }
+        .wwe-card.duque:hover {
+            border-color: orange;
+            box-shadow: 0 0 45px rgba(255, 165, 0, 0.35);
+        }
+        /* Shadow (Principe Servo) card */
+        .wwe-card.shadow {
+            border: 1px solid rgba(128, 0, 128, 0.45);
+            box-shadow: 0 0 30px rgba(128, 0, 128, 0.12);
+        }
+        .wwe-card.shadow:hover {
+            border-color: purple;
+            box-shadow: 0 0 45px rgba(128, 0, 128, 0.35);
+        }
+        /* Villager card */
+        .wwe-card.villager {
+            border: 1px solid rgba(0, 255, 255, 0.45);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.12);
+        }
+        .wwe-card.villager:hover {
+            border-color: cyan;
+            box-shadow: 0 0 45px rgba(0, 255, 255, 0.35);
+        }
 
         .wwe-avatar-container {
             width: 100px; height: 100px; border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
             margin-bottom: 14px; position: relative;
             background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+        }
+        .wwe-avatar-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
         .wwe-avatar-icon {
             font-size: 3.2rem;
@@ -921,7 +954,7 @@
     <div class="wwe-grid">
         <div class="wwe-card rhodes">
             <div class="wwe-avatar-container">
-                <div class="wwe-avatar-icon">👑</div>
+                <img class="wwe-avatar-img" src="assets/ReiCody01.png" alt="KING RHODES">
             </div>
             <div class="wwe-char-name">KING RHODES</div>
             <div class="wwe-char-hero">Rei Bárbaro • Cody Rhodes WWE</div>
@@ -930,7 +963,7 @@
 
         <div class="wwe-card ripley">
             <div class="wwe-avatar-container">
-                <div class="wwe-avatar-icon">😈</div>
+                <img class="wwe-avatar-img" src="assets/Rainha01.png" alt="BRUTALITY QUEEN">
             </div>
             <div class="wwe-char-name">BRUTALITY QUEEN</div>
             <div class="wwe-char-hero">Rainha Arqueira • Rhea Ripley WWE</div>
@@ -939,7 +972,7 @@
 
         <div class="wwe-card undertaker">
             <div class="wwe-avatar-container">
-                <div class="wwe-avatar-icon">⚰️</div>
+                <img class="wwe-avatar-img" src="assets/Guardiao01.png" alt="DEADMAN WARDEN">
             </div>
             <div class="wwe-char-name">DEADMAN WARDEN</div>
             <div class="wwe-char-hero">Grande Guardião • The Undertaker WWE</div>
@@ -948,12 +981,36 @@
 
         <div class="wwe-card belair">
             <div class="wwe-avatar-container">
-                <div class="wwe-avatar-icon">⚡</div>
+                <img class="wwe-avatar-img" src="assets/Campea01.png" alt="THE ROYAL-EST">
             </div>
             <div class="wwe-char-name">THE ROYAL-EST</div>
             <div class="wwe-char-hero">Campeã Real • Bianca Belair WWE</div>
             <div class="wwe-char-tag">🌟 IMPACTO ESTELAR DE GUERRA</div>
         </div>
+            <div class="wwe-card duque">
+                <div class="wwe-avatar-container">
+                    <img class="wwe-avatar-img" src="assets/Duque01.png" alt="DUQUE">
+                </div>
+                <div class="wwe-char-name">DUQUE</div>
+                <div class="wwe-char-hero">Nobre do Clã</div>
+                <div class="wwe-char-tag">🏆 CINTURÃO DE CAMPEÃO</div>
+            </div>
+            <div class="wwe-card shadow">
+                <div class="wwe-avatar-container">
+                    <img class="wwe-avatar-img" src="assets/Shadow01.png" alt="SHADOW">
+                </div>
+                <div class="wwe-char-name">PRÍNCIPE SERVIDOR</div>
+                <div class="wwe-char-hero">Serviçal Sombrio</div>
+                <div class="wwe-char-tag">🏆 CINTURÃO DE CAMPEÃO</div>
+            </div>
+            <div class="wwe-card villager">
+                <div class="wwe-avatar-container">
+                    <img class="wwe-avatar-img" src="assets/Villager01.png" alt="VILLAGER">
+                </div>
+                <div class="wwe-char-name">VILLAGER</div>
+                <div class="wwe-char-hero">Apresentadora do Evento</div>
+                <div class="wwe-char-tag">🏆 CINTURÃO DE CAMPEÃO</div>
+            </div>
     </div>
 
     <!-- ─── STATUS ─────────────────────────────────────────── -->
@@ -1071,9 +1128,9 @@ const WAR_DATA = {
       "medium": "https://api-assets.clashofclans.com/badges/200/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png"
     },
     "clanLevel": 8,
-    "attacks": 10,
-    "stars": 26,
-    "destructionPercentage": 94.2,
+    "attacks": 11,
+    "stars": 27,
+    "destructionPercentage": 95.2,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -1133,6 +1190,16 @@ const WAR_DATA = {
         "name": "Jonas",
         "townhallLevel": 15,
         "mapPosition": 2,
+        "attacks": [
+          {
+            "attackerTag": "#QRL2CJG9",
+            "defenderTag": "#LUYYVLQ9C",
+            "stars": 2,
+            "destructionPercentage": 98,
+            "order": 14,
+            "duration": 180
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 608,
         "role": "coLeader"
@@ -1422,14 +1489,14 @@ const WAR_DATA = {
         "name": "Levo",
         "townhallLevel": 14,
         "mapPosition": 3,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#GCY8PR02J",
+          "attackerTag": "#QRL2CJG9",
           "defenderTag": "#LUYYVLQ9C",
-          "stars": 1,
-          "destructionPercentage": 88,
-          "order": 12,
-          "duration": 89
+          "stars": 2,
+          "destructionPercentage": 98,
+          "order": 14,
+          "duration": 180
         }
       },
       {
