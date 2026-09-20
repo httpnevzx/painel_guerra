@@ -1006,152 +1006,104 @@ function updateSeasonCountdown() {
 updateSeasonCountdown();
 setInterval(updateSeasonCountdown, 1000);
 
-// ── Cyberpunk Synthwave Music Engine (100% Nativo no Navegador) ─────────
-class CyberpunkSynthEngine {
-    constructor() {
-        this.ctx = null;
-        this.isPlaying = false;
-        this.masterGain = null;
-        this.timer = null;
-        this.step = 0;
-        this.bassNotes = [110, 110, 110, 110, 87.31, 87.31, 98, 98];
-        this.leadNotes = [220, 261.63, 329.63, 392, 440, 523.25, 440, 329.63];
-    }
+// ── Linkin Park — Heavy Is The Crown (YouTube Audio Player Integration) ──
+let ytPlayer = null;
+let isYtReady = false;
+let isMusicPlaying = false;
 
-    init() {
-        if (!this.ctx) {
-            const AudioCtx = window.AudioContext || window.webkitAudioContext;
-            this.ctx = new AudioCtx();
-            this.masterGain = this.ctx.createGain();
-            this.masterGain.gain.value = 0.35;
-            this.masterGain.connect(this.ctx.destination);
+// Load YouTube Iframe API Script
+const tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+const firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function onYouTubeIframeAPIReady() {
+    ytPlayer = new YT.Player('ytAudioPlayer', {
+        height: '1',
+        width: '1',
+        videoId: 'kYJ5o8J32gE', // Linkin Park - Heavy Is The Crown
+        playerVars: {
+            'autoplay': 0,
+            'controls': 0,
+            'loop': 1,
+            'playlist': 'kYJ5o8J32gE'
+        },
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
         }
-    }
-
-    setVolume(val) {
-        if (this.masterGain) {
-            this.masterGain.gain.value = val;
-        }
-    }
-
-    playStep() {
-        if (!this.isPlaying || !this.ctx) return;
-        const now = this.ctx.currentTime;
-
-        const bassFreq = this.bassNotes[this.step % this.bassNotes.length];
-        const bassOsc = this.ctx.createOscillator();
-        const bassGain = this.ctx.createGain();
-        const filter = this.ctx.createBiquadFilter();
-
-        bassOsc.type = 'sawtooth';
-        bassOsc.frequency.setValueAtTime(bassFreq, now);
-
-        filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(350, now);
-        filter.frequency.exponentialRampToValueAtTime(90, now + 0.16);
-
-        bassGain.gain.setValueAtTime(0.2, now);
-        bassGain.gain.exponentialRampToValueAtTime(0.01, now + 0.18);
-
-        bassOsc.connect(filter);
-        filter.connect(bassGain);
-        bassGain.connect(this.masterGain);
-
-        bassOsc.start(now);
-        bassOsc.stop(now + 0.2);
-
-        if (this.step % 2 === 0) {
-            const leadFreq = this.leadNotes[Math.floor(this.step / 2) % this.leadNotes.length];
-            const leadOsc = this.ctx.createOscillator();
-            const leadGain = this.ctx.createGain();
-
-            leadOsc.type = 'square';
-            leadOsc.frequency.setValueAtTime(leadFreq, now);
-
-            leadGain.gain.setValueAtTime(0.08, now);
-            leadGain.gain.exponentialRampToValueAtTime(0.005, now + 0.22);
-
-            leadOsc.connect(leadGain);
-            leadGain.connect(this.masterGain);
-
-            leadOsc.start(now);
-            leadOsc.stop(now + 0.25);
-        }
-
-        this.step++;
-    }
-
-    start() {
-        this.init();
-        if (this.ctx.state === 'suspended') {
-            this.ctx.resume();
-        }
-        this.isPlaying = true;
-        this.step = 0;
-        if (this.timer) clearInterval(this.timer);
-        this.timer = setInterval(() => this.playStep(), 140);
-    }
-
-    stop() {
-        this.isPlaying = false;
-        if (this.timer) {
-            clearInterval(this.timer);
-            this.timer = null;
-        }
-    }
+    });
 }
 
-const synthEngine  = new CyberpunkSynthEngine();
-const musicBtn     = document.getElementById('musicBtn');
-const musicIcon    = document.getElementById('musicIcon');
-const musicText    = document.getElementById('musicText');
-const soundWave    = document.getElementById('soundWave');
-const volumeSlider = document.getElementById('volumeSlider');
+function onPlayerReady(event) {
+    isYtReady = true;
+    ytPlayer.setVolume(50);
+}
 
-let isMusicActive = false;
+function onPlayerStateChange(event) {
+    const musicIcon = document.getElementById('musicIcon');
+    const musicText = document.getElementById('musicText');
+    const soundWave = document.getElementById('soundWave');
 
-function toggleMusic() {
-    if (!isMusicActive) {
-        synthEngine.start();
-        isMusicActive = true;
+    if (event.data === YT.PlayerState.PLAYING) {
+        isMusicPlaying = true;
         if (musicIcon) musicIcon.textContent = '🔊';
-        if (musicText) musicText.textContent = 'TOCANDO';
+        if (musicText) musicText.textContent = 'LINKIN PARK 🎵';
         if (soundWave) soundWave.classList.add('playing');
-    } else {
-        synthEngine.stop();
-        isMusicActive = false;
+    } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+        isMusicPlaying = false;
         if (musicIcon) musicIcon.textContent = '🔇';
         if (musicText) musicText.textContent = 'PAUSADO';
         if (soundWave) soundWave.classList.remove('playing');
     }
 }
 
-if (musicBtn) musicBtn.addEventListener('click', toggleMusic);
+function toggleLinkinParkMusic() {
+    if (!isYtReady || !ytPlayer) return;
 
+    if (isMusicPlaying) {
+        ytPlayer.pauseVideo();
+    } else {
+        ytPlayer.playVideo();
+    }
+}
+
+const musicBtn = document.getElementById('musicBtn');
+if (musicBtn) {
+    musicBtn.addEventListener('click', toggleLinkinParkMusic);
+}
+
+const volumeSlider = document.getElementById('volumeSlider');
 if (volumeSlider) {
     volumeSlider.addEventListener('input', (e) => {
-        synthEngine.setVolume(parseFloat(e.target.value));
+        if (ytPlayer && isYtReady) {
+            ytPlayer.setVolume(e.target.value);
+        }
     });
 }
 
+// Auto-play no primeiro clique do usuário na página
 document.addEventListener('click', function autoPlayOnce() {
-    if (!isMusicActive) {
-        toggleMusic();
+    if (isYtReady && ytPlayer && !isMusicPlaying) {
+        ytPlayer.playVideo();
     }
 }, { once: true });
 </script>
 
-<!-- Floating Theme Music Player Widget -->
+<!-- Floating Theme Music Player Widget (Linkin Park - Heavy is the Crown) -->
 <div class="music-player-widget" id="musicWidget">
-    <button class="music-btn" id="musicBtn" title="Tocar / Pausar Música Tema">
+    <button class="music-btn" id="musicBtn" title="Tocar / Pausar Heavy is the Crown (Linkin Park)">
         <span id="musicIcon">🎵</span>
-        <span id="musicText">MÚSICA TEMA</span>
+        <span id="musicText">LINKIN PARK</span>
         <div class="sound-wave" id="soundWave">
             <span></span><span></span><span></span><span></span>
         </div>
     </button>
-    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.05" value="0.35" title="Volume">
+    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" step="5" value="50" title="Volume">
 </div>
+
+<!-- Hidden YouTube Audio Player -->
+<div id="ytAudioPlayer" style="position:fixed; width:1px; height:1px; opacity:0.001; pointer-events:none; bottom:0; right:0;"></div>
 
 </body>
 </html>
