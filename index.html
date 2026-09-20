@@ -1056,118 +1056,47 @@ function updateSeasonCountdown() {
 updateSeasonCountdown();
 setInterval(updateSeasonCountdown, 1000);
 
-// ── Linkin Park — Heavy Is The Crown (YouTube Player Integration) ───────
-let ytPlayer = null;
-let isYtReady = false;
-let isMusicPlaying = false;
-
-// Load YouTube Iframe API Script
-const tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-const firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-function onYouTubeIframeAPIReady() {
-    ytPlayer = new YT.Player('ytAudioPlayer', {
-        height: '140',
-        width: '280',
-        videoId: 'kYJ5o8J32gE', // Linkin Park - Heavy Is The Crown
-        playerVars: {
-            'autoplay': 0,
-            'controls': 1,
-            'loop': 1,
-            'playlist': 'kYJ5o8J32gE',
-            'enablejsapi': 1
-        },
-        events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-        }
-    });
-}
-
-function onPlayerReady(event) {
-    isYtReady = true;
-    ytPlayer.setVolume(60);
-}
-
-function onPlayerStateChange(event) {
+// ── Linkin Park — Heavy Is The Crown (YouTube Integration) ──────────────
+function toggleYtBox() {
+    const box = document.getElementById('ytBox');
     const musicIcon = document.getElementById('musicIcon');
     const musicText = document.getElementById('musicText');
     const soundWave = document.getElementById('soundWave');
 
-    if (event.data === YT.PlayerState.PLAYING) {
-        isMusicPlaying = true;
-        if (musicIcon) musicIcon.textContent = '🔊';
-        if (musicText) musicText.textContent = 'LINKIN PARK 🎵';
-        if (soundWave) soundWave.classList.add('playing');
-    } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
-        isMusicPlaying = false;
-        if (musicIcon) musicIcon.textContent = '🔇';
-        if (musicText) musicText.textContent = 'PAUSADO';
-        if (soundWave) soundWave.classList.remove('playing');
-    }
-}
-
-function toggleYtBox() {
-    const box = document.getElementById('ytBox');
-    if (box) box.classList.toggle('show');
-}
-
-function toggleLinkinParkMusic() {
-    const box = document.getElementById('ytBox');
-    if (box) box.classList.add('show');
-
-    if (!isYtReady || !ytPlayer) return;
-
-    if (isMusicPlaying) {
-        ytPlayer.pauseVideo();
-    } else {
-        ytPlayer.playVideo();
-    }
-}
-
-const musicBtn = document.getElementById('musicBtn');
-if (musicBtn) {
-    musicBtn.addEventListener('click', toggleLinkinParkMusic);
-}
-
-const volumeSlider = document.getElementById('volumeSlider');
-if (volumeSlider) {
-    volumeSlider.addEventListener('input', (e) => {
-        if (ytPlayer && isYtReady) {
-            ytPlayer.setVolume(e.target.value);
+    if (box) {
+        box.classList.toggle('show');
+        const isShown = box.classList.contains('show');
+        if (isShown) {
+            if (musicIcon) musicIcon.textContent = '🔊';
+            if (musicText) musicText.textContent = 'LINKIN PARK 🎵';
+            if (soundWave) soundWave.classList.add('playing');
+        } else {
+            if (musicIcon) musicIcon.textContent = '🔇';
+            if (musicText) musicText.textContent = 'PAUSADO';
+            if (soundWave) soundWave.classList.remove('playing');
         }
-    });
-}
-
-// Auto-play no primeiro clique do usuário na página
-document.addEventListener('click', function autoPlayOnce() {
-    if (isYtReady && ytPlayer && !isMusicPlaying) {
-        ytPlayer.playVideo();
     }
-}, { once: true });
+}
 </script>
 
 <!-- Floating Theme Music Player Widget (Linkin Park - Heavy is the Crown) -->
 <div class="music-player-widget" id="musicWidget">
-    <button class="music-btn" id="musicBtn" title="Tocar / Pausar Heavy is the Crown (Linkin Park)">
+    <button class="music-btn" id="musicBtn" onclick="toggleYtBox()" title="Tocar / Pausar Heavy is the Crown (Linkin Park)">
         <span id="musicIcon">🎵</span>
         <span id="musicText">LINKIN PARK</span>
         <div class="sound-wave" id="soundWave">
             <span></span><span></span><span></span><span></span>
         </div>
     </button>
-    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" step="5" value="60" title="Volume">
 </div>
 
-<!-- Mini YouTube Player Box -->
+<!-- Mini Cyberpunk YouTube Player Box -->
 <div class="yt-player-box" id="ytBox">
     <div class="yt-box-header">
         <span>🎬 LINKIN PARK — HEAVY IS THE CROWN</span>
         <button onclick="toggleYtBox()" style="background:none; border:none; color:var(--cyan); cursor:pointer; font-weight:bold; font-size:1rem;">✕</button>
     </div>
-    <div id="ytAudioPlayer"></div>
+    <iframe id="ytIframe" width="290" height="155" src="https://www.youtube.com/embed/ZAt8oxY0GQo?enablejsapi=1&autoplay=1" title="Linkin Park - Heavy Is The Crown" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border:none;"></iframe>
 </div>
 
 </body>
