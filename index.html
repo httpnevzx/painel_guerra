@@ -445,6 +445,51 @@
         tbody td { padding: 12px; font-size: 0.95rem; vertical-align: middle; }
         .member-pos { font-family: 'Orbitron', sans-serif; font-weight: 700; color: rgba(255,255,255,.5); }
         .member-name { font-weight: 600; color: #fff; }
+        /* ── Holographic Table Row Animation & Clean Star Counter ─ */
+        tbody tr.holo-row {
+            opacity: 0;
+            transform: translateY(20px) scale(0.98);
+            animation: holo-project 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        @keyframes holo-project {
+            0% {
+                opacity: 0;
+                transform: translateY(25px) scale(0.96);
+                box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+                filter: brightness(1.8) hue-rotate(90deg);
+            }
+            50% {
+                opacity: 0.8;
+                filter: brightness(1.4) blur(1px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                box-shadow: none;
+                filter: none;
+            }
+        }
+
+        .stars-clean {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--gold);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+        }
+        .stars-clean.dim {
+            color: rgba(255, 255, 255, 0.3);
+            text-shadow: none;
+        }
+        .star-count {
+            font-size: 1.15rem;
+            font-weight: 800;
+        }
+
         .th-badge {
             display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px;
             border-radius: 8px; font-family: 'Orbitron', sans-serif; font-size: 0.75rem; font-weight: 700;
@@ -1231,14 +1276,19 @@ processedMembers.forEach((m, idx) => {
     const donClass = m.hasMinDonations ? 'ok' : 'pending';
     const roleText = roleMap[m.role] || m.role;
 
+    const starsHtml = m.usedAttacks > 0
+        ? `<span class="stars-clean">⭐ <strong class="star-count">${m.totalStars}</strong></span>`
+        : `<span class="stars-clean dim">☆ 0</span>`;
+
     const tr = document.createElement('tr');
-    tr.className = rowClass;
+    tr.className = `${rowClass} holo-row`;
+    tr.style.animationDelay = `${(idx * 0.08 + 0.1).toFixed(2)}s`;
     tr.innerHTML = `
         <td><span class="member-pos">${rankBadge}</span></td>
         <td><span class="member-name">${m.name}</span></td>
         <td><span style="font-size:0.85rem; color:rgba(255,255,255,.6);">${roleText}</span></td>
         <td><span class="th-badge">${m.townhallLevel}</span></td>
-        <td><span class="stars">${m.usedAttacks > 0 ? '⭐'.repeat(m.totalStars) : '☆'} (${m.totalStars}⭐)</span></td>
+        <td>${starsHtml}</td>
         <td><span style="font-family:'Share Tech Mono'">${m.usedAttacks}/2</span></td>
         <td><span class="donations-badge ${donClass}">${m.donations} / 100</span></td>
         <td>${statusHtml}</td>
