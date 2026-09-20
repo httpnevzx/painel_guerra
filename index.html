@@ -99,6 +99,38 @@
         .sound-wave.playing span:nth-child(4) { animation-delay: 0.4s; }
         @keyframes wave { 0% { height: 3px; } 100% { height: 12px; } }
 
+        /* ── Mini YouTube Player Box ────────────────────────────── */
+        .yt-player-box {
+            position: fixed;
+            bottom: 75px; right: 20px;
+            z-index: 9999;
+            width: 290px; height: 185px;
+            background: rgba(10, 15, 40, 0.95);
+            border: 1px solid var(--cyan);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(0,240,255,.35);
+            backdrop-filter: blur(10px);
+            display: none;
+            flex-direction: column;
+            transition: all .3s;
+        }
+        .yt-player-box.show {
+            display: flex;
+        }
+        .yt-box-header {
+            background: rgba(0,240,255,.12);
+            padding: 6px 12px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--cyan);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,240,255,.2);
+        }
+
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
 
         /* ── Hero ────────────────────────────────────────────────── */
@@ -1006,7 +1038,7 @@ function updateSeasonCountdown() {
 updateSeasonCountdown();
 setInterval(updateSeasonCountdown, 1000);
 
-// ── Linkin Park — Heavy Is The Crown (YouTube Audio Player Integration) ──
+// ── Linkin Park — Heavy Is The Crown (YouTube Player Integration) ───────
 let ytPlayer = null;
 let isYtReady = false;
 let isMusicPlaying = false;
@@ -1019,14 +1051,15 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function onYouTubeIframeAPIReady() {
     ytPlayer = new YT.Player('ytAudioPlayer', {
-        height: '1',
-        width: '1',
+        height: '140',
+        width: '280',
         videoId: 'kYJ5o8J32gE', // Linkin Park - Heavy Is The Crown
         playerVars: {
             'autoplay': 0,
-            'controls': 0,
+            'controls': 1,
             'loop': 1,
-            'playlist': 'kYJ5o8J32gE'
+            'playlist': 'kYJ5o8J32gE',
+            'enablejsapi': 1
         },
         events: {
             'onReady': onPlayerReady,
@@ -1037,7 +1070,7 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) {
     isYtReady = true;
-    ytPlayer.setVolume(50);
+    ytPlayer.setVolume(60);
 }
 
 function onPlayerStateChange(event) {
@@ -1058,7 +1091,15 @@ function onPlayerStateChange(event) {
     }
 }
 
+function toggleYtBox() {
+    const box = document.getElementById('ytBox');
+    if (box) box.classList.toggle('show');
+}
+
 function toggleLinkinParkMusic() {
+    const box = document.getElementById('ytBox');
+    if (box) box.classList.add('show');
+
     if (!isYtReady || !ytPlayer) return;
 
     if (isMusicPlaying) {
@@ -1099,11 +1140,17 @@ document.addEventListener('click', function autoPlayOnce() {
             <span></span><span></span><span></span><span></span>
         </div>
     </button>
-    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" step="5" value="50" title="Volume">
+    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" step="5" value="60" title="Volume">
 </div>
 
-<!-- Hidden YouTube Audio Player -->
-<div id="ytAudioPlayer" style="position:fixed; width:1px; height:1px; opacity:0.001; pointer-events:none; bottom:0; right:0;"></div>
+<!-- Mini YouTube Player Box -->
+<div class="yt-player-box" id="ytBox">
+    <div class="yt-box-header">
+        <span>🎬 LINKIN PARK — HEAVY IS THE CROWN</span>
+        <button onclick="toggleYtBox()" style="background:none; border:none; color:var(--cyan); cursor:pointer; font-weight:bold; font-size:1rem;">✕</button>
+    </div>
+    <div id="ytAudioPlayer"></div>
+</div>
 
 </body>
 </html>
