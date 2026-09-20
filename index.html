@@ -417,6 +417,70 @@
         .donations-badge.pending { color: var(--gold); }
 
         .footer { text-align: center; padding: 35px 20px; font-family: 'Share Tech Mono', monospace; font-size: 0.7rem; color: rgba(255,255,255,.25); letter-spacing: 2px; }
+
+        /* ── Mobile Responsive Overhaul (< 768px) ─────────────────── */
+        @media (max-width: 768px) {
+            .container { padding: 12px; }
+            .hero { padding: 25px 10px 15px; }
+            .hero-badge { width: 85px; height: 85px; margin-bottom: 10px; }
+            .hero h1 { font-size: 1.7rem; letter-spacing: 2px; }
+            .hero .subtitle { font-size: 0.8rem; letter-spacing: 2px; }
+
+            .season-banner { padding: 16px; margin: 15px 0 25px; }
+            .season-title { font-size: 1.05rem; }
+            .season-desc { font-size: 0.85rem; line-height: 1.5; }
+            .rules-chips { flex-direction: column; gap: 8px; }
+            .chip { font-size: 0.8rem; width: 100%; justify-content: flex-start; }
+
+            .season-countdown { gap: 6px; }
+            .season-cd-item { min-width: 52px; padding: 8px 8px; }
+            .season-cd-item .num { font-size: 1.2rem; }
+            .season-cd-item .lbl { font-size: 0.55rem; letter-spacing: 1px; }
+
+            .vs-section { grid-template-columns: 1fr; gap: 15px; padding: 18px; text-align: center; }
+            .vs-clan img { width: 60px; height: 60px; }
+            .vs-divider { font-size: 1.6rem; margin: 5px 0; }
+
+            .prizes-grid { grid-template-columns: 1fr; gap: 15px; }
+            .prize-card { padding: 18px; }
+            .prize-medal { font-size: 2.3rem; margin-bottom: 4px; }
+            .prize-rank { font-size: 1rem; }
+
+            .section-title { font-size: 0.95rem; margin: 25px 0 12px; letter-spacing: 1px; }
+
+            /* Touch-friendly Horizontal Table Scroll */
+            .members-table-wrap {
+                margin: 0 -4px;
+                border-radius: 12px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            table { min-width: 660px; }
+            thead th, tbody td { padding: 10px 8px; font-size: 0.82rem; }
+            .th-badge { width: 26px; height: 26px; font-size: 0.7rem; }
+            .status-badge { font-size: 0.7rem; padding: 3px 8px; white-space: nowrap; }
+
+            /* Music Widget & Mini Player Mobile Placement */
+            .music-player-widget {
+                bottom: 12px; right: 12px;
+                padding: 6px 12px;
+                transform: scale(0.9);
+                transform-origin: bottom right;
+            }
+            .yt-player-box {
+                bottom: 60px; right: 10px;
+                width: 270px; height: 170px;
+            }
+            .yt-player-box iframe {
+                width: 270px; height: 140px;
+            }
+
+            /* Intro Screen Mobile */
+            .intro-logo { width: 100px; height: 100px; margin-bottom: 18px; }
+            .intro-title { font-size: 1.8rem; letter-spacing: 3px; }
+            .intro-subtitle { font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 25px; }
+            .intro-start-btn { padding: 14px 26px; font-size: 0.9rem; letter-spacing: 2px; }
+        }
     </style>
 </head>
 <body>
