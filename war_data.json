@@ -104,7 +104,15 @@
             "duration": 124
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#9R22QUJ00",
+          "defenderTag": "#G9ULQQJP2",
+          "stars": 2,
+          "destructionPercentage": 82,
+          "order": 13,
+          "duration": 94
+        },
         "donations": 42,
         "role": "admin"
       },
@@ -226,9 +234,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/I8gAATsHLACQSQptqq-I99Og2gFNr1cD27hDy5wl_B8.png"
     },
     "clanLevel": 9,
-    "attacks": 2,
-    "stars": 4,
-    "destructionPercentage": 15.7,
+    "attacks": 3,
+    "stars": 6,
+    "destructionPercentage": 23.9,
     "members": [
       {
         "tag": "#GYGQCG29P",
@@ -373,6 +381,16 @@
         "name": "Dibakor",
         "townhallLevel": 12,
         "mapPosition": 9,
+        "attacks": [
+          {
+            "attackerTag": "#9R22QUJ00",
+            "defenderTag": "#G9ULQQJP2",
+            "stars": 2,
+            "destructionPercentage": 82,
+            "order": 13,
+            "duration": 94
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#G9ULQQJP2",
