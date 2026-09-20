@@ -131,7 +131,100 @@
             border-bottom: 1px solid rgba(0,240,255,.2);
         }
 
+        /* ── Cyberpunk Intro Splash Screen ──────────────────────── */
+        .intro-overlay {
+            position: fixed;
+            inset: 0;
+            background: #060814;
+            z-index: 99999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .intro-overlay.hidden {
+            opacity: 0;
+            transform: scale(1.1);
+            pointer-events: none;
+        }
+
+        .intro-logo {
+            width: 140px; height: 140px;
+            border-radius: 50%;
+            border: 3px solid var(--cyan);
+            box-shadow: 0 0 50px rgba(0,240,255,.5), inset 0 0 30px rgba(0,240,255,.2);
+            margin-bottom: 25px;
+            animation: intro-pulse 2s infinite alternate;
+        }
+        @keyframes intro-pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 30px rgba(0,240,255,.4); }
+            100% { transform: scale(1.05); box-shadow: 0 0 70px rgba(255,0,229,.6); }
+        }
+
+        .intro-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--cyan), var(--magenta), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px rgba(0,240,255,.3);
+        }
+
+        .intro-subtitle {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1rem;
+            color: var(--cyan);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+            opacity: 0.9;
+        }
+
+        .intro-start-btn {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: #060814;
+            background: linear-gradient(90deg, var(--cyan), var(--green));
+            border: none;
+            padding: 16px 40px;
+            border-radius: 40px;
+            cursor: pointer;
+            box-shadow: 0 0 30px rgba(0,255,136,.4);
+            transition: all .3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .intro-start-btn:hover {
+            transform: scale(1.06);
+            box-shadow: 0 0 50px rgba(0,240,255,.7);
+            background: linear-gradient(90deg, var(--green), var(--magenta));
+            color: #fff;
+        }
+
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    </style>
+</head>
+<body>
+
+<!-- Cyberpunk Opening Intro Overlay -->
+<div class="intro-overlay" id="introOverlay">
+    <img class="intro-logo" src="https://api-assets.clashofclans.com/badges/512/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png" alt="GÓD OF WAR Logo">
+    <div class="intro-title">GÓD OF WAR</div>
+    <div class="intro-subtitle">⚡ SYSTEM INITIALIZATION COMPLETE — TEMPORADA 30 DIAS ⚡</div>
+    <button class="intro-start-btn" onclick="startDashboardIntro()">
+        <span>⚔️ ENTRAR NO PAINEL DE GUERRA</span>
+    </button>
+</div>
 
         /* ── Hero ────────────────────────────────────────────────── */
         .hero { text-align: center; padding: 40px 20px 20px; }
@@ -999,6 +1092,13 @@ processedMembers.forEach((m, idx) => {
     `;
     ourTbody.appendChild(tr);
 });
+
+// ── Cyberpunk Intro Transition ──────────────────────────────────────────
+function startDashboardIntro() {
+    const overlay = document.getElementById('introOverlay');
+    if (overlay) overlay.classList.add('hidden');
+    toggleYtBox();
+}
 
 // Particles
 const particlesEl = document.getElementById('particles');
