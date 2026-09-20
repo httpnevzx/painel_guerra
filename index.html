@@ -740,6 +740,24 @@
         </table>
     </div>
 
+    <!-- ─── OPPONENT MEMBERS TABLE ──────────────────────────── -->
+    <div class="section-title" style="color: var(--red); margin-top: 45px;">⚔️ QG do Clã Adversário (<span id="themTitleName">Inimigo</span>) — Estatísticas ao Vivo</div>
+    <div class="members-table-wrap" style="border-color: rgba(255, 56, 96, 0.3);">
+        <table>
+            <thead>
+                <tr>
+                    <th style="color: rgba(255, 56, 96, 0.8);">Vila</th>
+                    <th style="color: rgba(255, 56, 96, 0.8);">Guerreiro Inimigo</th>
+                    <th style="color: rgba(255, 56, 96, 0.8);">TH</th>
+                    <th style="color: rgba(255, 56, 96, 0.8);">Ataques Usados</th>
+                    <th style="color: rgba(255, 56, 96, 0.8);">Estrelas Dadas</th>
+                    <th style="color: rgba(255, 56, 96, 0.8);">Defesa da Vila Inimiga</th>
+                </tr>
+            </thead>
+            <tbody id="theirMembers"></tbody>
+        </table>
+    </div>
+
     <div class="footer">
         GÓD OF WAR — SISTEMA DE EVENTOS & GUERRAS 30 DIAS — CLASH OF CLANS API
     </div>
@@ -1295,6 +1313,45 @@ processedMembers.forEach((m, idx) => {
     `;
     ourTbody.appendChild(tr);
 });
+
+// ── Populate Opponent Members Table ─────────────────────────────────────
+const theirTbody = document.getElementById('theirMembers');
+if (theirTbody && them.members) {
+    const sortedThem = [...them.members].sort((a, b) => a.mapPosition - b.mapPosition);
+
+    const themTitleEl = document.getElementById('themTitleName');
+    if (themTitleEl) themTitleEl.textContent = them.name;
+
+    sortedThem.forEach((m, idx) => {
+        const attacks = m.attacks || [];
+        const usedAttacks = m.opponentAttacks || attacks.length;
+        const totalStars = attacks.reduce((s, a) => s + a.stars, 0);
+
+        const bestDef = m.bestOpponentAttack;
+        let defStatusHtml = '<span style="color:rgba(255,255,255,.3)">Intacta</span>';
+
+        if (bestDef) {
+            if (bestDef.stars === 3) {
+                defStatusHtml = `<span style="color:var(--green); font-weight:bold;">💀 Destruída 100% (${bestDef.stars}⭐)</span>`;
+            } else {
+                defStatusHtml = `<span style="color:var(--gold);">💥 Danificada (${bestDef.stars}⭐ ${bestDef.destructionPercentage}%)</span>`;
+            }
+        }
+
+        const tr = document.createElement('tr');
+        tr.className = 'holo-row';
+        tr.style.animationDelay = `${(idx * 0.08 + 0.15).toFixed(2)}s`;
+        tr.innerHTML = `
+            <td><span class="member-pos">Vila #${m.mapPosition}</span></td>
+            <td><span class="member-name">${m.name}</span></td>
+            <td><span class="th-badge" style="background:rgba(255,56,96,.1); border-color:rgba(255,56,96,.3); color:var(--red);">${m.townhallLevel}</span></td>
+            <td><span style="font-family:'Share Tech Mono'">${usedAttacks}/2</span></td>
+            <td><span class="stars-clean ${totalStars > 0 ? '' : 'dim'}">⭐ ${totalStars}</span></td>
+            <td>${defStatusHtml}</td>
+        `;
+        theirTbody.appendChild(tr);
+    });
+}
 
 // ── Cyberpunk Intro Transition ──────────────────────────────────────────
 function startDashboardIntro() {
