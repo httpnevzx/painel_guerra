@@ -539,6 +539,97 @@
         .prize-card.silver .prize-reward { background: rgba(192,192,192,.15); color: var(--silver); border: 1px solid rgba(192,192,192,.4); box-shadow: 0 0 15px rgba(192,192,192,.2); }
         .prize-card.bronze .prize-reward { background: rgba(205,127,50,.15); color: var(--bronze); border: 1px solid rgba(205,127,50,.4); box-shadow: 0 0 15px rgba(205,127,50,.2); }
 
+        /* ── WWE Season Superstars Showcase ─────────────────────── */
+        .wwe-section { margin: 35px 0 45px; }
+        .wwe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .wwe-card {
+            background: rgba(10, 16, 42, 0.9);
+            border-radius: 16px;
+            padding: 24px 18px;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(12px);
+            transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .wwe-card:hover {
+            transform: translateY(-8px) scale(1.025);
+        }
+        .wwe-card.rhodes {
+            border: 1px solid rgba(255, 215, 0, 0.45);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.12);
+        }
+        .wwe-card.rhodes:hover {
+            border-color: var(--gold);
+            box-shadow: 0 0 45px rgba(255, 215, 0, 0.35);
+        }
+        .wwe-card.ripley {
+            border: 1px solid rgba(255, 0, 229, 0.45);
+            box-shadow: 0 0 30px rgba(255, 0, 229, 0.12);
+        }
+        .wwe-card.ripley:hover {
+            border-color: var(--magenta);
+            box-shadow: 0 0 45px rgba(255, 0, 229, 0.35);
+        }
+        .wwe-card.undertaker {
+            border: 1px solid rgba(0, 240, 255, 0.45);
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.12);
+        }
+        .wwe-card.undertaker:hover {
+            border-color: var(--cyan);
+            box-shadow: 0 0 45px rgba(0, 240, 255, 0.35);
+        }
+        .wwe-card.belair {
+            border: 1px solid rgba(0, 255, 136, 0.45);
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.12);
+        }
+        .wwe-card.belair:hover {
+            border-color: var(--green);
+            box-shadow: 0 0 45px rgba(0, 255, 136, 0.35);
+        }
+
+        .wwe-avatar-container {
+            width: 100px; height: 100px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 14px; position: relative;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+        }
+        .wwe-avatar-icon {
+            font-size: 3.2rem;
+            animation: wwe-hero-float 3.5s ease-in-out infinite alternate;
+            filter: drop-shadow(0 0 15px rgba(255,215,0,0.5));
+        }
+        @keyframes wwe-hero-float {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-7px) rotate(4deg); }
+        }
+        .wwe-char-name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.15rem; font-weight: 800;
+            color: #fff; letter-spacing: 1px; margin-bottom: 4px;
+        }
+        .wwe-char-hero {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.8rem; color: rgba(255,255,255,0.6);
+            letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;
+        }
+        .wwe-char-tag {
+            font-family: 'Orbitron', sans-serif; font-size: 0.75rem; font-weight: 700;
+            padding: 6px 14px; border-radius: 20px; display: inline-block;
+            margin-top: auto;
+        }
+        .wwe-card.rhodes .wwe-char-tag { background: rgba(255,215,0,0.15); color: var(--gold); border: 1px solid rgba(255,215,0,0.4); }
+        .wwe-card.ripley .wwe-char-tag { background: rgba(255,0,229,0.15); color: var(--magenta); border: 1px solid rgba(255,0,229,0.4); }
+        .wwe-card.undertaker .wwe-char-tag { background: rgba(0,240,255,0.15); color: var(--cyan); border: 1px solid rgba(0,240,255,0.4); }
+        .wwe-card.belair .wwe-char-tag { background: rgba(0,255,136,0.15); color: var(--green); border: 1px solid rgba(0,255,136,0.4); }
+
         /* ── Members Table & Holographic Visual Overhaul ─────────── */
         .members-table-wrap {
             position: relative;
@@ -822,6 +913,46 @@
                 <div class="season-cd-item"><div class="num" id="sCdMins">00</div><div class="lbl">Min</div></div>
                 <div class="season-cd-item"><div class="num" id="sCdSecs">00</div><div class="lbl">Seg</div></div>
             </div>
+        </div>
+    </div>
+
+    <!-- ─── WWE SUPERSTARS SEASON SHOWCASE ───────────────────── -->
+    <div class="section-title">🤼 Temporada WWE — Superstars & Heróis em Ação</div>
+    <div class="wwe-grid">
+        <div class="wwe-card rhodes">
+            <div class="wwe-avatar-container">
+                <div class="wwe-avatar-icon">👑</div>
+            </div>
+            <div class="wwe-char-name">KING RHODES</div>
+            <div class="wwe-char-hero">Rei Bárbaro • Cody Rhodes WWE</div>
+            <div class="wwe-char-tag">🏆 CINTURÃO DE CAMPEÃO</div>
+        </div>
+
+        <div class="wwe-card ripley">
+            <div class="wwe-avatar-container">
+                <div class="wwe-avatar-icon">😈</div>
+            </div>
+            <div class="wwe-char-name">BRUTALITY QUEEN</div>
+            <div class="wwe-char-hero">Rainha Arqueira • Rhea Ripley WWE</div>
+            <div class="wwe-char-tag">⚡ PODER MAMI & ESPINHOS</div>
+        </div>
+
+        <div class="wwe-card undertaker">
+            <div class="wwe-avatar-container">
+                <div class="wwe-avatar-icon">⚰️</div>
+            </div>
+            <div class="wwe-char-name">DEADMAN WARDEN</div>
+            <div class="wwe-char-hero">Grande Guardião • The Undertaker WWE</div>
+            <div class="wwe-char-tag">🔥 AURA DA IMORTALIDADE</div>
+        </div>
+
+        <div class="wwe-card belair">
+            <div class="wwe-avatar-container">
+                <div class="wwe-avatar-icon">⚡</div>
+            </div>
+            <div class="wwe-char-name">THE ROYAL-EST</div>
+            <div class="wwe-char-hero">Campeã Real • Bianca Belair WWE</div>
+            <div class="wwe-char-tag">🌟 IMPACTO ESTELAR DE GUERRA</div>
         </div>
     </div>
 
