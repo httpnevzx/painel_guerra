@@ -1699,51 +1699,65 @@ setInterval(updateSeasonCountdown, 1000);
         if (overlay) overlay.classList.add('hidden');
         active = false;
         if (animId) cancelAnimationFrame(animId);
-        toggleYtBox(); // Plays Linkin Park theme automatically on entry!
+        startMusicAuto();
     }, 4400);
 })();
 
-// ── Linkin Park — Heavy Is The Crown (YouTube Integration) ──────────────
-function toggleYtBox() {
-    const box = document.getElementById('ytBox');
+// ── Linkin Park — Heavy Is The Crown (Audio Controller) ──────────────
+let isAudioPlaying = true;
+
+function toggleMusic() {
+    const iframe = document.getElementById('ytIframe');
     const musicIcon = document.getElementById('musicIcon');
     const musicText = document.getElementById('musicText');
     const soundWave = document.getElementById('soundWave');
 
-    if (box) {
-        box.classList.toggle('show');
-        const isShown = box.classList.contains('show');
-        if (isShown) {
-            if (musicIcon) musicIcon.textContent = '🔊';
-            if (musicText) musicText.textContent = 'LINKIN PARK 🎵';
-            if (soundWave) soundWave.classList.add('playing');
-        } else {
-            if (musicIcon) musicIcon.textContent = '🔇';
-            if (musicText) musicText.textContent = 'PAUSADO';
-            if (soundWave) soundWave.classList.remove('playing');
-        }
+    if (!iframe) return;
+
+    isAudioPlaying = !isAudioPlaying;
+
+    if (isAudioPlaying) {
+        iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        if (musicIcon) musicIcon.textContent = '🔊';
+        if (musicText) musicText.textContent = 'LINKIN PARK 🎵';
+        if (soundWave) soundWave.classList.add('playing');
+    } else {
+        iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        if (musicIcon) musicIcon.textContent = '🔇';
+        if (musicText) musicText.textContent = 'MUTADO';
+        if (soundWave) soundWave.classList.remove('playing');
+    }
+}
+
+function startMusicAuto() {
+    const iframe = document.getElementById('ytIframe');
+    const musicIcon = document.getElementById('musicIcon');
+    const musicText = document.getElementById('musicText');
+    const soundWave = document.getElementById('soundWave');
+    if (iframe) {
+        iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        isAudioPlaying = true;
+        if (musicIcon) musicIcon.textContent = '🔊';
+        if (musicText) musicText.textContent = 'LINKIN PARK 🎵';
+        if (soundWave) soundWave.classList.add('playing');
     }
 }
 </script>
 
-<!-- Floating Theme Music Player Widget (Linkin Park - Heavy is the Crown) -->
+<!-- Floating Theme Music Control Button (Linkin Park - Heavy is the Crown) -->
 <div class="music-player-widget" id="musicWidget">
-    <button class="music-btn" id="musicBtn" onclick="toggleYtBox()" title="Tocar / Pausar Heavy is the Crown (Linkin Park)">
-        <span id="musicIcon">🎵</span>
-        <span id="musicText">LINKIN PARK</span>
-        <div class="sound-wave" id="soundWave">
+    <button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Clique para Mutar / Tocar o Som (Linkin Park - Heavy is the Crown)">
+        <span id="musicIcon">🔊</span>
+        <span id="musicText">LINKIN PARK 🎵</span>
+        <div class="sound-wave playing" id="soundWave">
             <span></span><span></span><span></span><span></span>
         </div>
     </button>
 </div>
 
-<!-- Mini Cyberpunk YouTube Player Box -->
-<div class="yt-player-box" id="ytBox">
-    <div class="yt-box-header">
-        <span>🎬 LINKIN PARK — HEAVY IS THE CROWN</span>
-        <button onclick="toggleYtBox()" style="background:none; border:none; color:var(--cyan); cursor:pointer; font-weight:bold; font-size:1rem;">✕</button>
-    </div>
-    <iframe id="ytIframe" width="290" height="155" src="https://www.youtube.com/embed/ZAt8oxY0GQo?enablejsapi=1&autoplay=1" title="Linkin Park - Heavy Is The Crown" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border:none;"></iframe>
+<!-- Invisible Audio Stream (No Visible Player Box) -->
+<div style="position: absolute; width: 0; height: 0; overflow: hidden; opacity: 0; pointer-events: none;">
+    <iframe id="ytIframe" width="1" height="1" src="https://www.youtube.com/embed/ZAt8oxY0GQo?enablejsapi=1&autoplay=1" title="Linkin Park Audio" allow="autoplay; encrypted-media"></iframe>
 </div>
 
 </body>
