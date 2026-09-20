@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png"
     },
     "clanLevel": 8,
-    "attacks": 8,
-    "stars": 22,
-    "destructionPercentage": 75.4,
+    "attacks": 10,
+    "stars": 26,
+    "destructionPercentage": 94.2,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -32,14 +32,18 @@
           "destructionPercentage": 64,
           "order": 2,
           "duration": 105
-        }
+        },
+        "donations": 411,
+        "role": "coLeader"
       },
       {
         "tag": "#GYP00G8PR",
         "name": "JP Chavoso",
         "townhallLevel": 14,
         "mapPosition": 3,
-        "opponentAttacks": 0
+        "opponentAttacks": 0,
+        "donations": 249,
+        "role": "coLeader"
       },
       {
         "tag": "#292YJJ02V",
@@ -64,14 +68,18 @@
             "duration": 114
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 0,
+        "donations": 1821,
+        "role": "leader"
       },
       {
         "tag": "#QRL2CJG9",
         "name": "Jonas",
         "townhallLevel": 15,
         "mapPosition": 2,
-        "opponentAttacks": 0
+        "opponentAttacks": 0,
+        "donations": 608,
+        "role": "coLeader"
       },
       {
         "tag": "#G9ULQQJP2",
@@ -96,7 +104,9 @@
             "duration": 124
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 0,
+        "donations": 42,
+        "role": "admin"
       },
       {
         "tag": "#9UYPCVPLL",
@@ -121,27 +131,51 @@
             "duration": 120
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 0,
+        "donations": 403,
+        "role": "admin"
       },
       {
         "tag": "#GVUPL0Y2L",
         "name": "marmela",
         "townhallLevel": 12,
         "mapPosition": 8,
-        "opponentAttacks": 0
+        "opponentAttacks": 0,
+        "donations": 53,
+        "role": "member"
       },
       {
         "tag": "#GU82Q92JP",
         "name": "After",
         "townhallLevel": 12,
         "mapPosition": 9,
-        "opponentAttacks": 0
+        "opponentAttacks": 0,
+        "donations": 190,
+        "role": "admin"
       },
       {
         "tag": "#GCY8PR02J",
         "name": "johnpork",
         "townhallLevel": 13,
         "mapPosition": 6,
+        "attacks": [
+          {
+            "attackerTag": "#GCY8PR02J",
+            "defenderTag": "#GCVV2928Y",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 11,
+            "duration": 67
+          },
+          {
+            "attackerTag": "#GCY8PR02J",
+            "defenderTag": "#LUYYVLQ9C",
+            "stars": 1,
+            "destructionPercentage": 88,
+            "order": 12,
+            "duration": 89
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#R2CQPRLJL",
@@ -150,7 +184,9 @@
           "destructionPercentage": 93,
           "order": 1,
           "duration": 163
-        }
+        },
+        "donations": 139,
+        "role": "admin"
       },
       {
         "tag": "#YGLLU0UU9",
@@ -175,7 +211,9 @@
             "duration": 119
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 0,
+        "donations": 160,
+        "role": "member"
       }
     ]
   },
@@ -257,7 +295,15 @@
         "name": "deep",
         "townhallLevel": 12,
         "mapPosition": 8,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GCY8PR02J",
+          "defenderTag": "#GCVV2928Y",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 11,
+          "duration": 67
+        }
       },
       {
         "tag": "#PGP9UGV99",
@@ -312,7 +358,15 @@
         "name": "Levo",
         "townhallLevel": 14,
         "mapPosition": 3,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GCY8PR02J",
+          "defenderTag": "#LUYYVLQ9C",
+          "stars": 1,
+          "destructionPercentage": 88,
+          "order": 12,
+          "duration": 89
+        }
       },
       {
         "tag": "#9R22QUJ00",
