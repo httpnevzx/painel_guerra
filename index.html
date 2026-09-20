@@ -170,6 +170,8 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            will-change: opacity, transform;
+            backface-visibility: hidden;
             transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .intro-overlay.hidden {
@@ -223,25 +225,28 @@
             height: 50px;
             top: 50%; left: 50%;
             margin-top: -25px; margin-left: -170px;
-            filter: drop-shadow(0 0 15px #ff3300) drop-shadow(0 0 35px #ffaa00);
+            filter: drop-shadow(0 0 18px #ff4400);
+            will-change: transform;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
         }
 
         .flaming-sword.left-sword {
-            transform: translate(-120vw, -120vh) rotate(-45deg);
+            transform: translate3d(-120vw, -120vh, 0) rotate(-45deg);
             animation: sword-left-slash 0.9s cubic-bezier(0.1, 0.9, 0.2, 1) 0.5s forwards;
         }
         @keyframes sword-left-slash {
-            0%   { transform: translate(-100vw, -100vh) rotate(-45deg) scale(1.4); }
-            100% { transform: translate(0, 0) rotate(-45deg) scale(1); }
+            0%   { transform: translate3d(-100vw, -100vh, 0) rotate(-45deg) scale(1.3); }
+            100% { transform: translate3d(0, 0, 0) rotate(-45deg) scale(1); }
         }
 
         .flaming-sword.right-sword {
-            transform: translate(120vw, -120vh) rotate(45deg);
+            transform: translate3d(120vw, -120vh, 0) rotate(45deg);
             animation: sword-right-slash 0.9s cubic-bezier(0.1, 0.9, 0.2, 1) 0.5s forwards;
         }
         @keyframes sword-right-slash {
-            0%   { transform: translate(100vw, -100vh) rotate(45deg) scale(1.4); }
-            100% { transform: translate(0, 0) rotate(45deg) scale(1); }
+            0%   { transform: translate3d(100vw, -100vh, 0) rotate(45deg) scale(1.3); }
+            100% { transform: translate3d(0, 0, 0) rotate(45deg) scale(1); }
         }
 
         .intro-title-box {
@@ -1597,9 +1602,11 @@ setInterval(updateSeasonCountdown, 1000);
         height = canvas.height = window.innerHeight;
     });
 
-    // Embers & Explosive Impact Sparks Canvas System
+    // Embers & Explosive Impact Sparks Canvas System (High Performance 60FPS)
     const particles = [];
-    const numEmbers = 70;
+    const numEmbers = 45;
+    let animId = null;
+    let active = true;
 
     for (let i = 0; i < numEmbers; i++) {
         particles.push({
@@ -1607,7 +1614,7 @@ setInterval(updateSeasonCountdown, 1000);
             y: Math.random() * height,
             vx: (Math.random() - 0.5) * 1.5,
             vy: -Math.random() * 2 - 0.5,
-            size: Math.random() * 3 + 1,
+            size: Math.random() * 2.5 + 1,
             color: Math.random() > 0.3 ? '#ff6600' : '#ffcc00',
             alpha: Math.random()
         });
@@ -1616,24 +1623,25 @@ setInterval(updateSeasonCountdown, 1000);
     function createExplosionSparks() {
         const cx = width / 2;
         const cy = height / 2;
-        for (let i = 0; i < 180; i++) {
+        for (let i = 0; i < 90; i++) {
             const angle = Math.random() * Math.PI * 2;
-            const speed = Math.random() * 16 + 5;
+            const speed = Math.random() * 14 + 4;
             particles.push({
                 x: cx,
                 y: cy,
                 vx: Math.cos(angle) * speed,
                 vy: Math.sin(angle) * speed,
-                size: Math.random() * 4 + 2,
+                size: Math.random() * 3.5 + 2,
                 color: Math.random() > 0.35 ? '#ffffff' : (Math.random() > 0.5 ? '#ffea00' : '#ff3300'),
                 alpha: 1,
-                decay: Math.random() * 0.025 + 0.015,
+                decay: Math.random() * 0.025 + 0.018,
                 isSpark: true
             });
         }
     }
 
     function animateParticles() {
+        if (!active) return;
         ctx.clearRect(0, 0, width, height);
 
         for (let i = particles.length - 1; i >= 0; i--) {
@@ -1646,15 +1654,11 @@ setInterval(updateSeasonCountdown, 1000);
                 p.vy *= 0.94;
                 p.alpha -= p.decay;
 
-                ctx.save();
                 ctx.globalAlpha = Math.max(0, p.alpha);
                 ctx.fillStyle = p.color;
-                ctx.shadowColor = p.color;
-                ctx.shadowBlur = 10;
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
                 ctx.fill();
-                ctx.restore();
 
                 if (p.alpha <= 0) particles.splice(i, 1);
             } else {
@@ -1664,18 +1668,14 @@ setInterval(updateSeasonCountdown, 1000);
                 if (p.x < 0) p.x = width;
                 if (p.x > width) p.x = 0;
 
-                ctx.save();
                 ctx.globalAlpha = p.alpha;
                 ctx.fillStyle = p.color;
-                ctx.shadowColor = p.color;
-                ctx.shadowBlur = 8;
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
                 ctx.fill();
-                ctx.restore();
             }
         }
-        requestAnimationFrame(animateParticles);
+        animId = requestAnimationFrame(animateParticles);
     }
     animateParticles();
 
@@ -1697,6 +1697,8 @@ setInterval(updateSeasonCountdown, 1000);
     // 3. Smooth transition to dashboard & Linkin Park auto-start at t = 4.4s
     setTimeout(() => {
         if (overlay) overlay.classList.add('hidden');
+        active = false;
+        if (animId) cancelAnimationFrame(animId);
         toggleYtBox(); // Plays Linkin Park theme automatically on entry!
     }, 4400);
 })();
