@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png"
     },
     "clanLevel": 8,
-    "attacks": 11,
-    "stars": 27,
-    "destructionPercentage": 95.2,
+    "attacks": 12,
+    "stars": 28,
+    "destructionPercentage": 96.8,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -85,6 +85,14 @@
             "destructionPercentage": 98,
             "order": 14,
             "duration": 180
+          },
+          {
+            "attackerTag": "#QRL2CJG9",
+            "defenderTag": "#PGP9UGV99",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 15,
+            "duration": 172
           }
         ],
         "opponentAttacks": 0,
@@ -328,14 +336,14 @@
         "name": "HEXPI",
         "townhallLevel": 15,
         "mapPosition": 2,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#9UYPCVPLL",
+          "attackerTag": "#QRL2CJG9",
           "defenderTag": "#PGP9UGV99",
-          "stars": 2,
-          "destructionPercentage": 84,
-          "order": 5,
-          "duration": 168
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 15,
+          "duration": 172
         }
       },
       {
