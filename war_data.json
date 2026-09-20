@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png"
     },
     "clanLevel": 8,
-    "attacks": 7,
-    "stars": 19,
-    "destructionPercentage": 65.4,
+    "attacks": 8,
+    "stars": 22,
+    "destructionPercentage": 75.4,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -54,6 +54,14 @@
             "destructionPercentage": 100,
             "order": 8,
             "duration": 133
+          },
+          {
+            "attackerTag": "#292YJJ02V",
+            "defenderTag": "#YUC0P2RVQ",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 10,
+            "duration": 114
           }
         ],
         "opponentAttacks": 0
@@ -326,7 +334,15 @@
         "name": "cronaa",
         "townhallLevel": 12,
         "mapPosition": 7,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#292YJJ02V",
+          "defenderTag": "#YUC0P2RVQ",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 10,
+          "duration": 114
+        }
       }
     ]
   }
