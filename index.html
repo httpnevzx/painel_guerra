@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚔️ GÓD OF War — Painel de Guerra</title>
+    <title>⚔️ GÓD OF War — Evento Temporada 30 Dias</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
         /* ── Reset & Base ────────────────────────────────────────── */
@@ -30,542 +30,242 @@
             overflow-x: hidden;
         }
 
-        /* ── Animated Background ─────────────────────────────────── */
+        /* ── Background & FX ────────────────────────────────────── */
         body::before {
             content: '';
-            position: fixed;
-            inset: 0;
+            position: fixed; inset: 0;
             background:
                 radial-gradient(ellipse 80% 60% at 50% -20%, rgba(0,240,255,.08) 0%, transparent 60%),
                 radial-gradient(ellipse 60% 50% at 80% 100%, rgba(255,0,229,.06) 0%, transparent 50%),
                 radial-gradient(ellipse 40% 40% at 10% 80%, rgba(0,255,136,.04) 0%, transparent 50%);
-            z-index: -2;
-            pointer-events: none;
+            z-index: -2; pointer-events: none;
         }
 
-        /* grid lines */
         body::after {
             content: '';
-            position: fixed;
-            inset: 0;
+            position: fixed; inset: 0;
             background-image:
                 linear-gradient(rgba(0,240,255,.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(0,240,255,.03) 1px, transparent 1px);
             background-size: 60px 60px;
-            z-index: -1;
-            pointer-events: none;
+            z-index: -1; pointer-events: none;
         }
 
-        /* ── Floating Particles ──────────────────────────────────── */
-        .particles {
-            position: fixed; inset: 0; pointer-events: none; z-index: -1; overflow: hidden;
-        }
+        .particles { position: fixed; inset: 0; pointer-events: none; z-index: -1; overflow: hidden; }
         .particle {
-            position: absolute;
-            width: 2px; height: 2px;
-            background: var(--cyan);
-            border-radius: 50%;
-            opacity: 0;
+            position: absolute; width: 2px; height: 2px; background: var(--cyan); border-radius: 50%; opacity: 0;
             animation: float-up linear infinite;
         }
         @keyframes float-up {
-            0%   { opacity: 0; transform: translateY(100vh) scale(0); }
-            10%  { opacity: 1; }
-            90%  { opacity: 1; }
+            0% { opacity: 0; transform: translateY(100vh) scale(0); }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
             100% { opacity: 0; transform: translateY(-10vh) scale(1); }
         }
 
-        /* ── Layout ──────────────────────────────────────────────── */
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
 
-        /* ── Header / Hero ───────────────────────────────────────── */
-        .hero {
-            text-align: center;
-            padding: 50px 20px 30px;
-            position: relative;
-        }
+        /* ── Hero ────────────────────────────────────────────────── */
+        .hero { text-align: center; padding: 40px 20px 20px; }
         .hero-badge {
-            width: 120px; height: 120px;
-            border-radius: 50%;
-            border: 3px solid var(--cyan);
-            box-shadow: 0 0 30px rgba(0,240,255,.3), inset 0 0 20px rgba(0,240,255,.1);
-            animation: pulse-glow 3s ease-in-out infinite;
-            margin: 0 auto 20px;
+            width: 110px; height: 110px; border-radius: 50%; border: 3px solid var(--cyan);
+            box-shadow: 0 0 30px rgba(0,240,255,.3); animation: pulse-glow 3s infinite; margin: 0 auto 15px;
         }
         @keyframes pulse-glow {
             0%, 100% { box-shadow: 0 0 30px rgba(0,240,255,.3); }
-            50%      { box-shadow: 0 0 50px rgba(0,240,255,.5), 0 0 80px rgba(0,240,255,.2); }
+            50% { box-shadow: 0 0 50px rgba(0,240,255,.6); }
         }
         .hero h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: clamp(1.8rem, 5vw, 3.2rem);
-            font-weight: 900;
+            font-family: 'Orbitron', sans-serif; font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 900;
             background: linear-gradient(135deg, var(--cyan), var(--magenta));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            margin-bottom: 8px;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            text-transform: uppercase; letter-spacing: 4px; margin-bottom: 6px;
         }
         .hero .subtitle {
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 0.95rem;
-            color: rgba(0,240,255,.6);
-            letter-spacing: 6px;
-            text-transform: uppercase;
+            font-family: 'Share Tech Mono', monospace; font-size: 0.95rem; color: rgba(0,240,255,.8);
+            letter-spacing: 4px; text-transform: uppercase;
         }
 
-        /* ── Status Banner ───────────────────────────────────────── */
+        /* ── Season Event Announcement Banner ─────────────────────── */
+        .season-banner {
+            background: linear-gradient(135deg, rgba(255,0,229,.12), rgba(0,240,255,.12));
+            border: 1px solid rgba(0,240,255,.3);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 25px 0 35px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0,240,255,.08);
+        }
+        .season-banner::before {
+            content: 'SEASON 30 DIAS';
+            position: absolute;
+            top: -10px; right: 20px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem; font-weight: 900;
+            color: rgba(255,255,255,.03);
+            pointer-events: none;
+        }
+        .season-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem; font-weight: 800;
+            color: var(--gold); text-transform: uppercase; letter-spacing: 2px;
+            display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+        }
+        .season-desc {
+            font-size: 0.95rem; line-height: 1.6; color: #d0d8e8; margin-bottom: 16px;
+        }
+        .rules-chips {
+            display: flex; flex-wrap: wrap; gap: 10px;
+        }
+        .chip {
+            background: rgba(10, 15, 40, 0.8);
+            border: 1px solid rgba(255,255,255,.15);
+            padding: 8px 14px; border-radius: 20px;
+            font-size: 0.85rem; display: flex; align-items: center; gap: 8px;
+        }
+        .chip.gold { border-color: rgba(255,215,0,.4); color: var(--gold); }
+        .chip.green { border-color: rgba(0,255,136,.4); color: var(--green); }
+        .chip.cyan { border-color: rgba(0,240,255,.4); color: var(--cyan); }
+        .chip.red { border-color: rgba(255,56,96,.4); color: #ff88a0; }
+
+        /* ── Status Bar ─────────────────────────────────────────── */
         .status-bar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            margin: 30px auto 10px;
-            padding: 12px 28px;
-            background: linear-gradient(135deg, rgba(255,215,0,.1), rgba(255,0,229,.08));
-            border: 1px solid rgba(255,215,0,.25);
-            border-radius: 50px;
-            width: fit-content;
-            animation: border-shift 4s ease-in-out infinite;
+            display: flex; align-items: center; justify-content: center; gap: 12px;
+            margin: 20px auto 10px; padding: 10px 24px;
+            background: rgba(255,215,0,.08); border: 1px solid rgba(255,215,0,.25);
+            border-radius: 50px; width: fit-content;
         }
-        @keyframes border-shift {
-            0%, 100% { border-color: rgba(255,215,0,.25); }
-            50%      { border-color: rgba(255,0,229,.35); }
-        }
-        .status-dot {
-            width: 10px; height: 10px;
-            border-radius: 50%;
-            background: var(--gold);
-            animation: blink 1.5s ease-in-out infinite;
-        }
-        .status-dot.prep { background: var(--gold); }
-        .status-dot.battle { background: var(--red); }
-        .status-dot.ended { background: var(--green); }
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50%      { opacity: .3; }
-        }
-        .status-text {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-
-        /* ── Countdown ───────────────────────────────────────────── */
-        .countdown-section { text-align: center; margin: 25px 0 35px; }
-        .countdown-label {
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 0.75rem;
-            color: rgba(0,240,255,.5);
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        .countdown-item {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 14px 18px;
-            min-width: 75px;
-            text-align: center;
-        }
-        .countdown-item .num {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--cyan);
-            line-height: 1;
-        }
-        .countdown-item .lbl {
-            font-size: 0.65rem;
-            color: rgba(255,255,255,.4);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-top: 4px;
-        }
+        .status-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--green); animation: blink 1.5s infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+        .status-text { font-family: 'Orbitron', sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 2px; }
 
         /* ── VS Section ──────────────────────────────────────────── */
         .vs-section {
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            gap: 20px;
-            margin: 30px 0 40px;
-            padding: 30px;
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            backdrop-filter: blur(10px);
+            display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 20px;
+            margin: 25px 0 35px; padding: 25px; background: var(--card-bg);
+            border: 1px solid var(--border); border-radius: 16px; backdrop-filter: blur(10px);
         }
-        .vs-clan {
-            text-align: center;
-        }
-        .vs-clan img {
-            width: 80px; height: 80px;
-            border-radius: 50%;
-            border: 2px solid var(--border);
-            margin-bottom: 10px;
-        }
-        .vs-clan .clan-name {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 4px;
-        }
-        .vs-clan .clan-level {
-            font-size: 0.8rem;
-            color: rgba(0,240,255,.6);
-        }
-        .vs-clan .clan-stats {
-            margin-top: 10px;
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 0.85rem;
-        }
-        .vs-clan .clan-stats span {
-            display: inline-block;
-            margin: 0 6px;
-        }
+        .vs-clan { text-align: center; }
+        .vs-clan img { width: 75px; height: 75px; border-radius: 50%; border: 2px solid var(--border); margin-bottom: 8px; }
+        .vs-clan .clan-name { font-family: 'Orbitron', sans-serif; font-size: 1.1rem; font-weight: 700; color: #fff; }
+        .vs-clan .clan-stats { margin-top: 8px; font-family: 'Share Tech Mono', monospace; font-size: 0.85rem; }
+        .vs-clan .clan-stats span { display: inline-block; margin: 0 6px; }
         .vs-divider {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.2rem;
-            font-weight: 900;
+            font-family: 'Orbitron', sans-serif; font-size: 2.2rem; font-weight: 900;
             background: linear-gradient(180deg, var(--red), var(--magenta));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 40px rgba(255,0,229,.3);
-        }
-        .vs-us { border-right: 2px solid rgba(0,240,255,.1); padding-right: 20px; }
-        .vs-them { border-left: 2px solid rgba(255,0,229,.1); padding-left: 20px; }
-
-        /* ── Scoreboard / Stats Cards ────────────────────────────── */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 15px;
-            margin: 30px 0;
-        }
-        .stat-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            transition: border-color .3s, transform .3s;
-        }
-        .stat-card:hover {
-            border-color: var(--cyan);
-            transform: translateY(-3px);
-        }
-        .stat-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--cyan), transparent);
-        }
-        .stat-card .icon { font-size: 1.6rem; margin-bottom: 6px; }
-        .stat-card .value {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--cyan);
-        }
-        .stat-card .label {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,.45);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 4px;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
 
         /* ── Section Title ───────────────────────────────────────── */
         .section-title {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin: 40px 0 20px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
+            font-family: 'Orbitron', sans-serif; font-size: 1.2rem; font-weight: 700;
+            letter-spacing: 3px; text-transform: uppercase; margin: 35px 0 18px;
+            display: flex; align-items: center; gap: 12px;
         }
-        .section-title::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: linear-gradient(90deg, var(--cyan), transparent);
-        }
+        .section-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--cyan), transparent); }
 
         /* ── Prizes Section ──────────────────────────────────────── */
-        .prizes-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
+        .prizes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
         .prize-card {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 28px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            transition: transform .3s, box-shadow .3s;
+            background: var(--card-bg); border-radius: 16px; padding: 25px; text-align: center;
+            position: relative; overflow: hidden; transition: transform .3s;
         }
-        .prize-card:hover {
-            transform: translateY(-5px);
-        }
-        .prize-card.gold {
-            border: 1px solid rgba(255,215,0,.35);
-            box-shadow: 0 0 30px rgba(255,215,0,.08);
-        }
-        .prize-card.gold:hover { box-shadow: 0 0 40px rgba(255,215,0,.15); }
-        .prize-card.silver {
-            border: 1px solid rgba(192,192,192,.25);
-            box-shadow: 0 0 20px rgba(192,192,192,.05);
-        }
-        .prize-card.bronze {
-            border: 1px solid rgba(205,127,50,.25);
-            box-shadow: 0 0 20px rgba(205,127,50,.05);
-        }
-        .prize-medal {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        .prize-rank {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 6px;
-        }
+        .prize-card:hover { transform: translateY(-5px); }
+        .prize-card.gold { border: 1px solid rgba(255,215,0,.35); box-shadow: 0 0 25px rgba(255,215,0,.08); }
+        .prize-card.silver { border: 1px solid rgba(192,192,192,.25); }
+        .prize-card.bronze { border: 1px solid rgba(205,127,50,.25); }
+        .prize-medal { font-size: 3rem; margin-bottom: 8px; }
+        .prize-rank { font-family: 'Orbitron', sans-serif; font-size: 1.1rem; font-weight: 800; letter-spacing: 2px; margin-bottom: 6px; }
         .prize-card.gold .prize-rank { color: var(--gold); }
         .prize-card.silver .prize-rank { color: var(--silver); }
         .prize-card.bronze .prize-rank { color: var(--bronze); }
-        .prize-criteria {
-            font-size: 0.85rem;
-            color: rgba(255,255,255,.5);
-            margin-bottom: 12px;
-        }
+        .prize-criteria { font-size: 0.85rem; color: rgba(255,255,255,.6); margin-bottom: 12px; }
         .prize-reward {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 600;
-            padding: 6px 16px;
-            border-radius: 20px;
-            display: inline-block;
+            font-family: 'Orbitron', sans-serif; font-size: 0.85rem; font-weight: 600; padding: 8px 16px;
+            border-radius: 20px; display: inline-block;
         }
-        .prize-card.gold .prize-reward {
-            background: rgba(255,215,0,.12);
-            color: var(--gold);
-            border: 1px solid rgba(255,215,0,.25);
-        }
-        .prize-card.silver .prize-reward {
-            background: rgba(192,192,192,.1);
-            color: var(--silver);
-            border: 1px solid rgba(192,192,192,.2);
-        }
-        .prize-card.bronze .prize-reward {
-            background: rgba(205,127,50,.1);
-            color: var(--bronze);
-            border: 1px solid rgba(205,127,50,.2);
-        }
+        .prize-card.gold .prize-reward { background: rgba(255,215,0,.15); color: var(--gold); border: 1px solid rgba(255,215,0,.3); }
+        .prize-card.silver .prize-reward { background: rgba(192,192,192,.15); color: var(--silver); border: 1px solid rgba(192,192,192,.3); }
+        .prize-card.bronze .prize-reward { background: rgba(205,127,50,.15); color: var(--bronze); border: 1px solid rgba(205,127,50,.3); }
 
         /* ── Members Table ───────────────────────────────────────── */
         .members-table-wrap {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            overflow: hidden;
-            backdrop-filter: blur(10px);
+            background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px;
+            overflow-x: auto; backdrop-filter: blur(10px);
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
         thead th {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: rgba(0,240,255,.7);
-            padding: 16px 14px;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-            background: rgba(0,240,255,.03);
+            font-family: 'Orbitron', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 2px;
+            text-transform: uppercase; color: rgba(0,240,255,.7); padding: 14px 12px;
+            border-bottom: 1px solid var(--border); background: rgba(0,240,255,.03);
         }
-        tbody tr {
-            transition: background .2s;
-            border-bottom: 1px solid rgba(255,255,255,.03);
-        }
-        tbody tr:hover {
-            background: rgba(0,240,255,.04);
-        }
-        tbody td {
-            padding: 14px;
-            font-size: 0.95rem;
-            vertical-align: middle;
-        }
-        .member-pos {
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 700;
-            color: rgba(255,255,255,.35);
-            font-size: 0.85rem;
-        }
-        .member-name {
-            font-weight: 600;
-            color: #fff;
-        }
+        tbody tr { transition: background .2s; border-bottom: 1px solid rgba(255,255,255,.03); }
+        tbody tr:hover { background: rgba(0,240,255,.04); }
+        tbody tr.staff-row { opacity: 0.75; background: rgba(255,255,255,.01); }
+        tbody td { padding: 12px; font-size: 0.95rem; vertical-align: middle; }
+        .member-pos { font-family: 'Orbitron', sans-serif; font-weight: 700; color: rgba(255,255,255,.5); }
+        .member-name { font-weight: 600; color: #fff; }
         .th-badge {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px; height: 32px;
-            border-radius: 8px;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.75rem;
-            font-weight: 700;
-            background: rgba(0,240,255,.08);
-            border: 1px solid rgba(0,240,255,.2);
-            color: var(--cyan);
+            display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px;
+            border-radius: 8px; font-family: 'Orbitron', sans-serif; font-size: 0.75rem; font-weight: 700;
+            background: rgba(0,240,255,.08); border: 1px solid rgba(0,240,255,.2); color: var(--cyan);
         }
-        .stars {
-            color: var(--gold);
-            font-size: 1.1rem;
-            letter-spacing: 2px;
+        .stars { color: var(--gold); font-size: 1rem; letter-spacing: 1px; }
+        .status-badge {
+            font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 12px; display: inline-block;
         }
-        .attacks-badge {
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 0.85rem;
-            padding: 4px 10px;
-            border-radius: 6px;
-            background: rgba(0,255,136,.08);
-            border: 1px solid rgba(0,255,136,.15);
-            color: var(--green);
-        }
-        .attacks-badge.none {
-            background: rgba(255,255,255,.03);
-            border-color: rgba(255,255,255,.08);
-            color: rgba(255,255,255,.3);
-        }
-        .destruction {
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 0.9rem;
-        }
-        .performance-bar {
-            width: 100%;
-            height: 4px;
-            background: rgba(255,255,255,.06);
-            border-radius: 4px;
-            overflow: hidden;
-            margin-top: 4px;
-        }
-        .performance-bar-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 1s ease;
-        }
+        .status-badge.eligible { background: rgba(0,255,136,.12); color: var(--green); border: 1px solid rgba(0,255,136,.3); }
+        .status-badge.need-donations { background: rgba(255,215,0,.12); color: var(--gold); border: 1px solid rgba(255,215,0,.3); }
+        .status-badge.staff { background: rgba(0,240,255,.1); color: var(--cyan); border: 1px solid rgba(0,240,255,.25); }
 
-        /* ── Footer ──────────────────────────────────────────────── */
-        .footer {
-            text-align: center;
-            padding: 40px 20px;
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 0.7rem;
-            color: rgba(255,255,255,.2);
-            letter-spacing: 3px;
+        .donations-badge {
+            font-family: 'Share Tech Mono', monospace; font-size: 0.85rem; padding: 3px 8px; border-radius: 6px;
         }
+        .donations-badge.ok { color: var(--green); }
+        .donations-badge.pending { color: var(--gold); }
 
-        /* ── Responsive ──────────────────────────────────────────── */
-        @media (max-width: 768px) {
-            .vs-section { grid-template-columns: 1fr; text-align: center; }
-            .vs-us, .vs-them { border: none; padding: 0; }
-            .vs-divider { margin: 10px 0; }
-            table { font-size: 0.85rem; }
-            thead th, tbody td { padding: 10px 8px; }
-        }
-
-        /* ── Scanline Overlay ────────────────────────────────────── */
-        .scanline {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 2px,
-                rgba(0,0,0,.03) 2px,
-                rgba(0,0,0,.03) 4px
-            );
-            pointer-events: none;
-            z-index: 9999;
-        }
-
-        /* ── Animations ──────────────────────────────────────────── */
-        @keyframes slide-up {
-            from { opacity: 0; transform: translateY(30px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-        .animate { animation: slide-up .6s ease-out both; }
-        .delay-1 { animation-delay: .1s; }
-        .delay-2 { animation-delay: .2s; }
-        .delay-3 { animation-delay: .3s; }
-        .delay-4 { animation-delay: .4s; }
+        .footer { text-align: center; padding: 35px 20px; font-family: 'Share Tech Mono', monospace; font-size: 0.7rem; color: rgba(255,255,255,.25); letter-spacing: 2px; }
     </style>
 </head>
 <body>
 
-<div class="scanline"></div>
-
-<!-- Particles -->
 <div class="particles" id="particles"></div>
 
 <div class="container">
 
     <!-- ─── HERO ───────────────────────────────────────────── -->
-    <div class="hero animate">
+    <div class="hero">
         <img class="hero-badge" id="heroBadge" src="" alt="Clan Badge">
-        <h1 id="heroName"></h1>
-        <div class="subtitle">⚔️ Painel de Guerra — Evento de Premiação</div>
+        <h1 id="heroName">GÓD OF WAR</h1>
+        <div class="subtitle">⚔️ RUN DA TEMPORADA (30 DIAS) — RANKING & PREMIAÇÕES</div>
     </div>
 
-    <!-- ─── STATUS ─────────────────────────────────────────── -->
-    <div class="status-bar animate delay-1" id="statusBar">
-        <div class="status-dot" id="statusDot"></div>
-        <span class="status-text" id="statusText"></span>
-    </div>
-
-    <!-- ─── COUNTDOWN ──────────────────────────────────────── -->
-    <div class="countdown-section animate delay-2">
-        <div class="countdown-label" id="countdownLabel">Tempo para o início da batalha</div>
-        <div class="countdown">
-            <div class="countdown-item"><div class="num" id="cdDays">--</div><div class="lbl">Dias</div></div>
-            <div class="countdown-item"><div class="num" id="cdHours">--</div><div class="lbl">Horas</div></div>
-            <div class="countdown-item"><div class="num" id="cdMins">--</div><div class="lbl">Min</div></div>
-            <div class="countdown-item"><div class="num" id="cdSecs">--</div><div class="lbl">Seg</div></div>
+    <!-- ─── SEASON EVENT ANNOUNCEMENT ─────────────────────── -->
+    <div class="season-banner">
+        <div class="season-title">🏆 Evento Oficial: Desafio dos 30 Dias</div>
+        <div class="season-desc">
+            Válido a partir das próximas guerras! Quem acumular mais estrelas em guerra durante os 30 dias de temporada levará os prêmios exclusivos do clã. Incentivo para novos membros e veteranos mostrarem sua força!
+        </div>
+        <div class="rules-chips">
+            <div class="chip gold">🎁 Prêmios: Passe, Skins & Gemas</div>
+            <div class="chip green">📦 Requisito 1: > 100 Doações no Clã</div>
+            <div class="chip cyan">📱 Requisito 2: Estar no Grupo do WhatsApp</div>
+            <div class="chip red">🛡️ Transparência: Coordenadores (Líder/Co-Líderes) fora da disputa dos prêmios</div>
         </div>
     </div>
 
+    <!-- ─── STATUS ─────────────────────────────────────────── -->
+    <div class="status-bar">
+        <div class="status-dot"></div>
+        <span class="status-text" id="statusText">⚔️ BATALHA EM ANDAMENTO</span>
+    </div>
+
     <!-- ─── VS ─────────────────────────────────────────────── -->
-    <div class="vs-section animate delay-2">
-        <div class="vs-clan vs-us">
+    <div class="vs-section">
+        <div class="vs-clan">
             <img id="usBadge" src="" alt="">
-            <div class="clan-name" id="usName"></div>
-            <div class="clan-level" id="usLevel"></div>
+            <div class="clan-name" id="usName">GÓD OF War</div>
             <div class="clan-stats">
                 <span>⭐ <strong id="usStars">0</strong></span>
                 <span>⚔️ <strong id="usAtks">0</strong></span>
@@ -573,10 +273,9 @@
             </div>
         </div>
         <div class="vs-divider">VS</div>
-        <div class="vs-clan vs-them">
+        <div class="vs-clan">
             <img id="themBadge" src="" alt="">
-            <div class="clan-name" id="themName"></div>
-            <div class="clan-level" id="themLevel"></div>
+            <div class="clan-name" id="themName">Adversário</div>
             <div class="clan-stats">
                 <span>⭐ <strong id="themStars">0</strong></span>
                 <span>⚔️ <strong id="themAtks">0</strong></span>
@@ -585,523 +284,123 @@
         </div>
     </div>
 
-    <!-- ─── STATS ──────────────────────────────────────────── -->
-    <div class="stats-grid animate delay-3">
-        <div class="stat-card"><div class="icon">👥</div><div class="value" id="teamSize">--</div><div class="label">vs</div></div>
-        <div class="stat-card"><div class="icon">⚔️</div><div class="value" id="atkPerMember">--</div><div class="label">Ataques/Membro</div></div>
-        <div class="stat-card"><div class="icon">⭐</div><div class="value" id="totalStarsPossible">--</div><div class="label">Estrelas Possíveis</div></div>
-        <div class="stat-card"><div class="icon">🏆</div><div class="value" id="warState">--</div><div class="label">Estado</div></div>
-    </div>
-
     <!-- ─── PRIZES ─────────────────────────────────────────── -->
-    <div class="section-title animate delay-3">🏅 Premiações do Evento</div>
-    <div class="prizes-grid animate delay-4">
+    <div class="section-title">🎁 Premiação do Evento (Membros Elegíveis)</div>
+    <div class="prizes-grid">
         <div class="prize-card gold">
             <div class="prize-medal">🥇</div>
-            <div class="prize-rank">MVP da Guerra</div>
-            <div class="prize-criteria">Mais estrelas + maior % destruição</div>
-            <div class="prize-reward">🏆 Promoção + Título Exclusivo</div>
+            <div class="prize-rank">1º LUGAR DA RUN</div>
+            <div class="prize-criteria">Maior acúmulo de estrelas + >100 Doações + WhatsApp</div>
+            <div class="prize-reward" id="prize1">🎟️ PASSE DE TEMPORADA + SKIN</div>
         </div>
         <div class="prize-card silver">
             <div class="prize-medal">🥈</div>
-            <div class="prize-rank">Destruidor</div>
-            <div class="prize-criteria">Maior % de destruição total</div>
-            <div class="prize-reward">⬆️ Promoção a Ancião</div>
+            <div class="prize-rank">2º LUGAR DA RUN</div>
+            <div class="prize-criteria">Segundo maior acumulador + >100 Doações + WhatsApp</div>
+            <div class="prize-reward" id="prize2">🎨 SKIN DE HERÓI EXCLUSIVA</div>
         </div>
         <div class="prize-card bronze">
             <div class="prize-medal">🥉</div>
-            <div class="prize-rank">Guerreiro Fiel</div>
-            <div class="prize-criteria">Usou todos os ataques + 3 estrelas</div>
-            <div class="prize-reward">✨ Reconhecimento no Clã</div>
+            <div class="prize-rank">3º LUGAR DA RUN</div>
+            <div class="prize-criteria">Terceiro maior acumulador + >100 Doações + WhatsApp</div>
+            <div class="prize-reward" id="prize3">💎 PACOTE DE GEMAS</div>
         </div>
     </div>
 
-    <!-- ─── OUR MEMBERS TABLE ──────────────────────────────── -->
-    <div class="section-title animate delay-4">🛡️ Nossos Guerreiros</div>
-    <div class="members-table-wrap animate delay-4">
+    <!-- ─── MEMBERS TABLE ──────────────────────────────────── -->
+    <div class="section-title">🛡️ Ranking dos Guerreiros (Temporada 30 Dias)</div>
+    <div class="members-table-wrap">
         <table>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Nome</th>
+                    <th>Rank</th>
+                    <th>Nome do Membro</th>
+                    <th>Cargo</th>
                     <th>TH</th>
-                    <th>Estrelas</th>
+                    <th>Estrelas Guerra</th>
                     <th>Ataques</th>
-                    <th>Destruição</th>
-                    <th>Performance</th>
+                    <th>Doações</th>
+                    <th>Status no Evento</th>
                 </tr>
             </thead>
             <tbody id="ourMembers"></tbody>
         </table>
     </div>
 
-    <!-- ─── OPPONENT MEMBERS TABLE ─────────────────────────── -->
-    <div class="section-title animate delay-4">🗡️ Adversários</div>
-    <div class="members-table-wrap animate delay-4">
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Nome</th>
-                    <th>TH</th>
-                    <th>Ataques Recebidos</th>
-                </tr>
-            </thead>
-            <tbody id="theirMembers"></tbody>
-        </table>
-    </div>
-
     <div class="footer">
-        GÓD OF WAR — SISTEMA DE MONITORAMENTO DE GUERRA v1.0 — CLASH OF CLANS API
+        GÓD OF WAR — SISTEMA DE EVENTOS & GUERRAS 30 DIAS — CLASH OF CLANS API
     </div>
 
 </div>
 
 <script>
-// ── War Data (embedded from war_data.json) ──────────────────────────────
+// ── War Data Placeholder (Will be replaced by update_dashboard.py) ──
 const WAR_DATA = {
   "state": "inWar",
   "teamSize": 10,
   "attacksPerMember": 2,
-  "battleModifier": "none",
-  "preparationStartTime": "20260919T171707.000Z",
-  "startTime": "20260920T161707.000Z",
-  "endTime": "20260921T161707.000Z",
   "clan": {
     "tag": "#2JLQUR2CV",
     "name": "GÓD OF War",
     "badgeUrls": {
       "small": "https://api-assets.clashofclans.com/badges/70/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png",
-      "large": "https://api-assets.clashofclans.com/badges/512/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png",
       "medium": "https://api-assets.clashofclans.com/badges/200/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png"
     },
-    "clanLevel": 8,
-    "attacks": 8,
-    "stars": 22,
-    "destructionPercentage": 75.4,
-    "members": [
-      {
-        "tag": "#GGQPRRURV",
-        "name": "namtugal",
-        "townhallLevel": 13,
-        "mapPosition": 5,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#R2CQPRLJL",
-          "defenderTag": "#GGQPRRURV",
-          "stars": 2,
-          "destructionPercentage": 64,
-          "order": 2,
-          "duration": 105
-        }
-      },
-      {
-        "tag": "#GYP00G8PR",
-        "name": "JP Chavoso",
-        "townhallLevel": 14,
-        "mapPosition": 3,
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#292YJJ02V",
-        "name": "》Storm Killer《",
-        "townhallLevel": 13,
-        "mapPosition": 4,
-        "attacks": [
-          {
-            "attackerTag": "#292YJJ02V",
-            "defenderTag": "#GUGV099YL",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 8,
-            "duration": 133
-          },
-          {
-            "attackerTag": "#292YJJ02V",
-            "defenderTag": "#YUC0P2RVQ",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 10,
-            "duration": 114
-          }
-        ],
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#QRL2CJG9",
-        "name": "Jonas",
-        "townhallLevel": 15,
-        "mapPosition": 2,
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#G9ULQQJP2",
-        "name": "Hedris",
-        "townhallLevel": 12,
-        "mapPosition": 10,
-        "attacks": [
-          {
-            "attackerTag": "#G9ULQQJP2",
-            "defenderTag": "#GYGQCG29P",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 3,
-            "duration": 75
-          },
-          {
-            "attackerTag": "#G9ULQQJP2",
-            "defenderTag": "#9R22QUJ00",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 4,
-            "duration": 124
-          }
-        ],
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#9UYPCVPLL",
-        "name": "LINKIN PARK",
-        "townhallLevel": 15,
-        "mapPosition": 1,
-        "attacks": [
-          {
-            "attackerTag": "#9UYPCVPLL",
-            "defenderTag": "#PGP9UGV99",
-            "stars": 2,
-            "destructionPercentage": 84,
-            "order": 5,
-            "duration": 168
-          },
-          {
-            "attackerTag": "#9UYPCVPLL",
-            "defenderTag": "#PJCVUYC9R",
-            "stars": 2,
-            "destructionPercentage": 70,
-            "order": 6,
-            "duration": 120
-          }
-        ],
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#GVUPL0Y2L",
-        "name": "marmela",
-        "townhallLevel": 12,
-        "mapPosition": 8,
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#GU82Q92JP",
-        "name": "After",
-        "townhallLevel": 12,
-        "mapPosition": 9,
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#GCY8PR02J",
-        "name": "johnpork",
-        "townhallLevel": 13,
-        "mapPosition": 6,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#R2CQPRLJL",
-          "defenderTag": "#GCY8PR02J",
-          "stars": 2,
-          "destructionPercentage": 93,
-          "order": 1,
-          "duration": 163
-        }
-      },
-      {
-        "tag": "#YGLLU0UU9",
-        "name": "ÉOBRABOXX",
-        "townhallLevel": 14,
-        "mapPosition": 7,
-        "attacks": [
-          {
-            "attackerTag": "#YGLLU0UU9",
-            "defenderTag": "#GJCCR0P8L",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 7,
-            "duration": 145
-          },
-          {
-            "attackerTag": "#YGLLU0UU9",
-            "defenderTag": "#R2CQPRLJL",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 9,
-            "duration": 119
-          }
-        ],
-        "opponentAttacks": 0
-      }
-    ]
+    "attacks": 2,
+    "stars": 6,
+    "destructionPercentage": 20.0,
+    "members": []
   },
   "opponent": {
-    "tag": "#2J8GY288C",
-    "name": "B̶L̶A̶C̶K̶/clan",
+    "name": "Adversário",
     "badgeUrls": {
-      "small": "https://api-assets.clashofclans.com/badges/70/I8gAATsHLACQSQptqq-I99Og2gFNr1cD27hDy5wl_B8.png",
-      "large": "https://api-assets.clashofclans.com/badges/512/I8gAATsHLACQSQptqq-I99Og2gFNr1cD27hDy5wl_B8.png",
       "medium": "https://api-assets.clashofclans.com/badges/200/I8gAATsHLACQSQptqq-I99Og2gFNr1cD27hDy5wl_B8.png"
     },
-    "clanLevel": 9,
-    "attacks": 2,
-    "stars": 4,
-    "destructionPercentage": 15.7,
-    "members": [
-      {
-        "tag": "#GYGQCG29P",
-        "name": "BLACK.¥.STICK",
-        "townhallLevel": 11,
-        "mapPosition": 10,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#G9ULQQJP2",
-          "defenderTag": "#GYGQCG29P",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 3,
-          "duration": 75
-        }
-      },
-      {
-        "tag": "#PJCVUYC9R",
-        "name": "WiNtEr₋DrAgOn₋7",
-        "townhallLevel": 15,
-        "mapPosition": 1,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#9UYPCVPLL",
-          "defenderTag": "#PJCVUYC9R",
-          "stars": 2,
-          "destructionPercentage": 70,
-          "order": 6,
-          "duration": 120
-        }
-      },
-      {
-        "tag": "#GUGV099YL",
-        "name": "indadul",
-        "townhallLevel": 13,
-        "mapPosition": 5,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#292YJJ02V",
-          "defenderTag": "#GUGV099YL",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 8,
-          "duration": 133
-        }
-      },
-      {
-        "tag": "#GJCCR0P8L",
-        "name": "BLACK¥GoD",
-        "townhallLevel": 13,
-        "mapPosition": 4,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#YGLLU0UU9",
-          "defenderTag": "#GJCCR0P8L",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 7,
-          "duration": 145
-        }
-      },
-      {
-        "tag": "#GCVV2928Y",
-        "name": "deep",
-        "townhallLevel": 12,
-        "mapPosition": 8,
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#PGP9UGV99",
-        "name": "HEXPI",
-        "townhallLevel": 15,
-        "mapPosition": 2,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#9UYPCVPLL",
-          "defenderTag": "#PGP9UGV99",
-          "stars": 2,
-          "destructionPercentage": 84,
-          "order": 5,
-          "duration": 168
-        }
-      },
-      {
-        "tag": "#R2CQPRLJL",
-        "name": "TGXthanaung",
-        "townhallLevel": 13,
-        "mapPosition": 6,
-        "attacks": [
-          {
-            "attackerTag": "#R2CQPRLJL",
-            "defenderTag": "#GCY8PR02J",
-            "stars": 2,
-            "destructionPercentage": 93,
-            "order": 1,
-            "duration": 163
-          },
-          {
-            "attackerTag": "#R2CQPRLJL",
-            "defenderTag": "#GGQPRRURV",
-            "stars": 2,
-            "destructionPercentage": 64,
-            "order": 2,
-            "duration": 105
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#YGLLU0UU9",
-          "defenderTag": "#R2CQPRLJL",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 9,
-          "duration": 119
-        }
-      },
-      {
-        "tag": "#LUYYVLQ9C",
-        "name": "Levo",
-        "townhallLevel": 14,
-        "mapPosition": 3,
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#9R22QUJ00",
-        "name": "Dibakor",
-        "townhallLevel": 12,
-        "mapPosition": 9,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#G9ULQQJP2",
-          "defenderTag": "#9R22QUJ00",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 4,
-          "duration": 124
-        }
-      },
-      {
-        "tag": "#YUC0P2RVQ",
-        "name": "cronaa",
-        "townhallLevel": 12,
-        "mapPosition": 7,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#292YJJ02V",
-          "defenderTag": "#YUC0P2RVQ",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 10,
-          "duration": 114
-        }
-      }
-    ]
+    "attacks": 1,
+    "stars": 2,
+    "destructionPercentage": 6.4
   }
 };
 
-// ── Helpers ─────────────────────────────────────────────────────────────
-function parseCoC(dateStr) {
-    // "20260920T161707.000Z" → ISO
-    const s = dateStr;
-    return new Date(
-        `${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)}T${s.slice(9,11)}:${s.slice(11,13)}:${s.slice(13,15)}Z`
-    );
-}
-
-function pad(n) { return String(n).padStart(2, '0'); }
-
-// ── Populate Header ─────────────────────────────────────────────────────
-document.getElementById('heroBadge').src = WAR_DATA.clan.badgeUrls.medium;
-document.getElementById('heroName').textContent = WAR_DATA.clan.name;
-
-// ── Status ──────────────────────────────────────────────────────────────
-const stateMap = {
-    preparation: { text: '🛡️ Fase de Preparação', cls: 'prep' },
-    inWar:       { text: '⚔️ Batalha em Andamento', cls: 'battle' },
-    warEnded:    { text: '🏁 Guerra Encerrada', cls: 'ended' }
-};
-const stateInfo = stateMap[WAR_DATA.state] || stateMap.preparation;
-document.getElementById('statusText').textContent = stateInfo.text;
-document.getElementById('statusDot').classList.add(stateInfo.cls);
-
-// ── Countdown ───────────────────────────────────────────────────────────
-const targetTime = WAR_DATA.state === 'preparation'
-    ? parseCoC(WAR_DATA.startTime)
-    : parseCoC(WAR_DATA.endTime);
-
-if (WAR_DATA.state === 'preparation') {
-    document.getElementById('countdownLabel').textContent = 'Tempo para o início da batalha';
-} else if (WAR_DATA.state === 'inWar') {
-    document.getElementById('countdownLabel').textContent = 'Tempo restante da batalha';
-} else {
-    document.getElementById('countdownLabel').textContent = 'Guerra encerrada';
-}
-
-function updateCountdown() {
-    const now = new Date();
-    let diff = Math.max(0, targetTime - now) / 1000;
-    const d = Math.floor(diff / 86400); diff -= d * 86400;
-    const h = Math.floor(diff / 3600);  diff -= h * 3600;
-    const m = Math.floor(diff / 60);    diff -= m * 60;
-    const s = Math.floor(diff);
-    document.getElementById('cdDays').textContent  = pad(d);
-    document.getElementById('cdHours').textContent = pad(h);
-    document.getElementById('cdMins').textContent  = pad(m);
-    document.getElementById('cdSecs').textContent  = pad(s);
-}
-updateCountdown();
-setInterval(updateCountdown, 1000);
-
-// ── VS Section ──────────────────────────────────────────────────────────
+// ── Populate Basic Data ──────────────────────────────────────────────────
 const us   = WAR_DATA.clan;
 const them = WAR_DATA.opponent;
 
+document.getElementById('heroBadge').src = us.badgeUrls.medium;
 document.getElementById('usBadge').src   = us.badgeUrls.medium;
 document.getElementById('usName').textContent  = us.name;
-document.getElementById('usLevel').textContent = `Nível ${us.clanLevel}`;
 document.getElementById('usStars').textContent = us.stars;
 document.getElementById('usAtks').textContent  = us.attacks;
 document.getElementById('usDest').textContent  = us.destructionPercentage.toFixed(1) + '%';
 
-document.getElementById('themBadge').src   = them.badgeUrls.medium;
+if (them.badgeUrls) document.getElementById('themBadge').src = them.badgeUrls.medium;
 document.getElementById('themName').textContent  = them.name;
-document.getElementById('themLevel').textContent = `Nível ${them.clanLevel}`;
-document.getElementById('themStars').textContent = them.stars;
-document.getElementById('themAtks').textContent  = them.attacks;
-document.getElementById('themDest').textContent  = them.destructionPercentage.toFixed(1) + '%';
+document.getElementById('themStars').textContent = them.stars || 0;
+document.getElementById('themAtks').textContent  = them.attacks || 0;
+document.getElementById('themDest').textContent  = (them.destructionPercentage || 0).toFixed(1) + '%';
 
-// ── Stats Cards ─────────────────────────────────────────────────────────
-document.getElementById('teamSize').textContent = `${WAR_DATA.teamSize} x ${WAR_DATA.teamSize}`;
-document.getElementById('atkPerMember').textContent = WAR_DATA.attacksPerMember;
-document.getElementById('totalStarsPossible').textContent = WAR_DATA.teamSize * 3;
-const stateLabels = { preparation: 'PREPARAÇÃO', inWar: 'BATALHA', warEnded: 'ENCERRADA' };
-document.getElementById('warState').textContent = stateLabels[WAR_DATA.state] || WAR_DATA.state;
+// ── Member Ranking & Eligibility Calculation ────────────────────────────
+const roleMap = {
+    leader: 'Líder (Staff)',
+    coLeader: 'Co-Líder (Staff)',
+    admin: 'Ancião',
+    member: 'Membro'
+};
 
-// ── Our Members Table ───────────────────────────────────────────────────
-// ── Our Members Table (Sorted by Event Performance & Tie-Breakers) ────────
-const ourTbody = document.getElementById('ourMembers');
-
-// Process performance data for each member
-const membersWithStats = us.members.map(m => {
+const processedMembers = (us.members || []).map(m => {
     const attacks = m.attacks || [];
     const totalStars = attacks.reduce((s, a) => s + a.stars, 0);
     const avgDest = attacks.length > 0
         ? (attacks.reduce((s, a) => s + a.destructionPercentage, 0) / attacks.length)
         : 0;
     const usedAttacks = attacks.length;
-    // Find the latest attack order (for tie-breaker: lower order = finished earlier)
     const maxOrder = attacks.length > 0 ? Math.max(...attacks.map(a => a.order)) : 9999;
-    const totalTime = attacks.reduce((s, a) => s + (a.duration || 0), 0);
+    const donations = m.donations || 0;
+    const role = m.role || 'member';
+
+    const isStaff = (role === 'leader' || role === 'coLeader');
+    const hasMinDonations = donations >= 100;
+    const isEligible = !isStaff && hasMinDonations;
 
     return {
         ...m,
@@ -1109,99 +408,89 @@ const membersWithStats = us.members.map(m => {
         avgDest,
         usedAttacks,
         maxOrder,
-        totalTime
+        donations,
+        role,
+        isStaff,
+        hasMinDonations,
+        isEligible
     };
 });
 
-// Sort by: 1. Stars (desc), 2. Destruction % (desc), 3. Attack Speed / Order (asc), 4. Map Pos (asc)
-membersWithStats.sort((a, b) => {
+// Sort by: 1. Stars (desc), 2. Destruction % (desc), 3. Order (asc), 4. Map Pos (asc)
+processedMembers.sort((a, b) => {
     if (b.totalStars !== a.totalStars) return b.totalStars - a.totalStars;
     if (b.avgDest !== a.avgDest) return b.avgDest - a.avgDest;
     if (a.maxOrder !== b.maxOrder) return a.maxOrder - b.maxOrder;
-    if (a.totalTime !== b.totalTime) return a.totalTime - b.totalTime;
     return a.mapPosition - b.mapPosition;
 });
 
-// Update Prize Cards with Current Leaders
-if (membersWithStats[0] && membersWithStats[0].usedAttacks > 0) {
-    const leader1 = membersWithStats[0];
-    const goldCard = document.querySelector('.prize-card.gold .prize-reward');
-    if (goldCard) goldCard.innerHTML = `👑 Líder Atual: <strong>${leader1.name}</strong> (${leader1.totalStars}⭐ | ${leader1.avgDest.toFixed(0)}%)`;
+// Find Top 3 Eligible Members for Prize Cards
+const eligibleLeaders = processedMembers.filter(m => m.isEligible);
+
+if (eligibleLeaders[0]) {
+    document.getElementById('prize1').innerHTML = `🥇 1º: <strong>${eligibleLeaders[0].name}</strong> (${eligibleLeaders[0].totalStars}⭐ | ${eligibleLeaders[0].donations} doações)`;
 }
-if (membersWithStats[1] && membersWithStats[1].usedAttacks > 0) {
-    const leader2 = membersWithStats[1];
-    const silverCard = document.querySelector('.prize-card.silver .prize-reward');
-    if (silverCard) silverCard.innerHTML = `🥈 2º Lugar: <strong>${leader2.name}</strong> (${leader2.totalStars}⭐ | ${leader2.avgDest.toFixed(0)}%)`;
+if (eligibleLeaders[1]) {
+    document.getElementById('prize2').innerHTML = `🥈 2º: <strong>${eligibleLeaders[1].name}</strong> (${eligibleLeaders[1].totalStars}⭐ | ${eligibleLeaders[1].donations} doações)`;
 }
-if (membersWithStats[2] && membersWithStats[2].usedAttacks > 0) {
-    const leader3 = membersWithStats[2];
-    const bronzeCard = document.querySelector('.prize-card.bronze .prize-reward');
-    if (bronzeCard) bronzeCard.innerHTML = `🥉 3º Lugar: <strong>${leader3.name}</strong> (${leader3.totalStars}⭐ | ${leader3.avgDest.toFixed(0)}%)`;
+if (eligibleLeaders[2]) {
+    document.getElementById('prize3').innerHTML = `🥉 3º: <strong>${eligibleLeaders[2].name}</strong> (${eligibleLeaders[2].totalStars}⭐ | ${eligibleLeaders[2].donations} doações)`;
 }
 
-membersWithStats.forEach((m, idx) => {
-    const usedAttacks = m.usedAttacks;
-    const maxAttacks = WAR_DATA.attacksPerMember;
+// ── Populate Table ──────────────────────────────────────────────────────
+const ourTbody = document.getElementById('ourMembers');
+let eligibleRankCounter = 1;
 
-    const perfScore = usedAttacks > 0
-        ? Math.round((m.totalStars / (maxAttacks * 3)) * 100)
-        : 0;
+processedMembers.forEach((m, idx) => {
+    let rankBadge = `#${idx + 1}`;
+    let rowClass = '';
 
-    const barColor = perfScore >= 80 ? 'var(--green)' :
-                     perfScore >= 50 ? 'var(--gold)'  :
-                     perfScore >  0  ? 'var(--red)'   : 'rgba(255,255,255,.1)';
+    if (m.isStaff) {
+        rankBadge = `🛡️ Staff`;
+        rowClass = 'staff-row';
+    } else if (m.isEligible) {
+        if (eligibleRankCounter === 1) rankBadge = '🥇';
+        else if (eligibleRankCounter === 2) rankBadge = '🥈';
+        else if (eligibleRankCounter === 3) rankBadge = '🥉';
+        else rankBadge = `#${eligibleRankCounter}`;
+        eligibleRankCounter++;
+    }
 
-    const starsDisplay = usedAttacks > 0
-        ? '⭐'.repeat(m.totalStars) + '☆'.repeat(Math.max(0, maxAttacks * 3 - m.totalStars))
-        : '<span style="color:rgba(255,255,255,.2)">Aguardando...</span>';
+    let statusHtml = '';
+    if (m.isStaff) {
+        statusHtml = `<span class="status-badge staff">🛡️ Coordenador (Fora da disputa)</span>`;
+    } else if (m.hasMinDonations) {
+        statusHtml = `<span class="status-badge eligible">🏆 Elegível ao Prêmio (WhatsApp OK)</span>`;
+    } else {
+        statusHtml = `<span class="status-badge need-donations">⚠️ Falta Doações (${m.donations}/100)</span>`;
+    }
 
-    const atkClass = usedAttacks > 0 ? '' : 'none';
-    const rankBadges = ['🥇', '🥈', '🥉'];
-    const rankDisplay = (usedAttacks > 0 && idx < 3) ? rankBadges[idx] : `#${idx + 1}`;
-
-    const destStr = usedAttacks > 0 ? m.avgDest.toFixed(1) + '%' : '<span style="color:rgba(255,255,255,.2)">—</span>';
+    const donClass = m.hasMinDonations ? 'ok' : 'pending';
+    const roleText = roleMap[m.role] || m.role;
 
     const tr = document.createElement('tr');
+    tr.className = rowClass;
     tr.innerHTML = `
-        <td><span class="member-pos" style="${idx < 3 && usedAttacks > 0 ? 'font-size:1.2rem;' : ''}">${rankDisplay}</span></td>
-        <td><span class="member-name">${m.name}</span> <small style="color:rgba(255,255,255,.3); font-size:0.75rem;">(Vila ${m.mapPosition})</small></td>
+        <td><span class="member-pos">${rankBadge}</span></td>
+        <td><span class="member-name">${m.name}</span></td>
+        <td><span style="font-size:0.85rem; color:rgba(255,255,255,.6);">${roleText}</span></td>
         <td><span class="th-badge">${m.townhallLevel}</span></td>
-        <td><span class="stars">${starsDisplay}</span></td>
-        <td><span class="attacks-badge ${atkClass}">${usedAttacks}/${maxAttacks}</span></td>
-        <td class="destruction">${destStr}</td>
-        <td>
-            <div class="performance-bar">
-                <div class="performance-bar-fill" style="width:${perfScore}%; background:${barColor}"></div>
-            </div>
-        </td>
+        <td><span class="stars">${m.usedAttacks > 0 ? '⭐'.repeat(m.totalStars) : '☆'} (${m.totalStars}⭐)</span></td>
+        <td><span style="font-family:'Share Tech Mono'">${m.usedAttacks}/2</span></td>
+        <td><span class="donations-badge ${donClass}">${m.donations} / 100</span></td>
+        <td>${statusHtml}</td>
     `;
     ourTbody.appendChild(tr);
 });
 
-// ── Opponent Members Table ──────────────────────────────────────────────
-const theirTbody = document.getElementById('theirMembers');
-const sortedThem = [...them.members].sort((a, b) => a.mapPosition - b.mapPosition);
-
-sortedThem.forEach(m => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-        <td><span class="member-pos">${m.mapPosition}</span></td>
-        <td><span class="member-name">${m.name}</span></td>
-        <td><span class="th-badge">${m.townhallLevel}</span></td>
-        <td><span class="attacks-badge ${m.opponentAttacks > 0 ? '' : 'none'}">${m.opponentAttacks} ataque(s)</span></td>
-    `;
-    theirTbody.appendChild(tr);
-});
-
-// ── Particles ───────────────────────────────────────────────────────────
+// Particles
 const particlesEl = document.getElementById('particles');
-for (let i = 0; i < 40; i++) {
+for (let i = 0; i < 35; i++) {
     const p = document.createElement('div');
     p.className = 'particle';
     p.style.left = Math.random() * 100 + '%';
     p.style.animationDuration = (6 + Math.random() * 10) + 's';
     p.style.animationDelay = Math.random() * 8 + 's';
-    p.style.width = p.style.height = (1 + Math.random() * 2) + 'px';
     if (Math.random() > 0.7) p.style.background = 'var(--magenta)';
     particlesEl.appendChild(p);
 }
