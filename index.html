@@ -131,84 +131,132 @@
             border-bottom: 1px solid rgba(0,240,255,.2);
         }
 
-        /* ── Cyberpunk Intro Splash Screen ──────────────────────── */
+        /* ── Dark Fantasy Anime Intro Overlay ──────────────────── */
         .intro-overlay {
             position: fixed;
             inset: 0;
-            background: #060814;
+            background: #040308;
             z-index: 99999;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 20px;
-            transition: opacity 0.8s ease, transform 0.8s ease;
+            overflow: hidden;
+            transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .intro-overlay.hidden {
             opacity: 0;
-            transform: scale(1.1);
+            transform: scale(1.08);
             pointer-events: none;
         }
 
-        .intro-logo {
-            width: 140px; height: 140px;
-            border-radius: 50%;
-            border: 3px solid var(--cyan);
-            box-shadow: 0 0 50px rgba(0,240,255,.5), inset 0 0 30px rgba(0,240,255,.2);
-            margin-bottom: 25px;
-            animation: intro-pulse 2s infinite alternate;
+        .intro-overlay.shake {
+            animation: camera-shake 0.35s cubic-bezier(.36,.07,.19,.97) both;
         }
-        @keyframes intro-pulse {
-            0% { transform: scale(0.95); box-shadow: 0 0 30px rgba(0,240,255,.4); }
-            100% { transform: scale(1.05); box-shadow: 0 0 70px rgba(255,0,229,.6); }
+        @keyframes camera-shake {
+            10%, 90% { transform: translate3d(-3px, 3px, 0) scale(1.01); }
+            20%, 80% { transform: translate3d(5px, -4px, 0) scale(1.02); }
+            30%, 50%, 70% { transform: translate3d(-6px, 5px, 0) scale(1.03); }
+            40%, 60% { transform: translate3d(6px, -5px, 0) scale(1.02); }
         }
 
-        .intro-title {
+        .intro-flash {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, #ffffff 0%, #ffea88 40%, transparent 80%);
+            opacity: 0;
+            pointer-events: none;
+            z-index: 15;
+            transition: opacity 0.05s ease-out;
+        }
+        .intro-flash.active {
+            opacity: 1;
+        }
+
+        #introCanvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .swords-container {
+            position: absolute;
+            inset: 0;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .flaming-sword {
+            position: absolute;
+            width: 340px;
+            height: 50px;
+            top: 50%; left: 50%;
+            margin-top: -25px; margin-left: -170px;
+            filter: drop-shadow(0 0 15px #ff3300) drop-shadow(0 0 35px #ffaa00);
+        }
+
+        .flaming-sword.left-sword {
+            transform: translate(-120vw, -120vh) rotate(-45deg);
+            animation: sword-left-slash 0.9s cubic-bezier(0.1, 0.9, 0.2, 1) 0.5s forwards;
+        }
+        @keyframes sword-left-slash {
+            0%   { transform: translate(-100vw, -100vh) rotate(-45deg) scale(1.4); }
+            100% { transform: translate(0, 0) rotate(-45deg) scale(1); }
+        }
+
+        .flaming-sword.right-sword {
+            transform: translate(120vw, -120vh) rotate(45deg);
+            animation: sword-right-slash 0.9s cubic-bezier(0.1, 0.9, 0.2, 1) 0.5s forwards;
+        }
+        @keyframes sword-right-slash {
+            0%   { transform: translate(100vw, -100vh) rotate(45deg) scale(1.4); }
+            100% { transform: translate(0, 0) rotate(45deg) scale(1); }
+        }
+
+        .intro-title-box {
+            position: absolute;
+            z-index: 20;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.5);
+            pointer-events: none;
+            transition: opacity 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .intro-title-box.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .intro-title-text {
             font-family: 'Orbitron', sans-serif;
-            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-size: clamp(2.5rem, 8vw, 5.5rem);
             font-weight: 900;
-            background: linear-gradient(135deg, var(--cyan), var(--magenta), var(--gold));
+            letter-spacing: 12px;
+            background: linear-gradient(180deg, #ffffff 0%, #ffe600 35%, #ff8800 70%, #990000 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-            margin-bottom: 10px;
-            text-shadow: 0 0 30px rgba(0,240,255,.3);
+            text-shadow:
+                0 0 20px rgba(255, 230, 0, 0.8),
+                0 0 40px rgba(255, 100, 0, 0.6),
+                0 0 70px rgba(255, 0, 0, 0.4);
+            filter: drop-shadow(0 0 25px rgba(255, 200, 0, 0.6));
+            animation: title-glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes title-glow {
+            0%   { filter: drop-shadow(0 0 20px rgba(255, 200, 0, 0.6)); }
+            100% { filter: drop-shadow(0 0 40px rgba(255, 50, 0, 0.9)); }
         }
 
-        .intro-subtitle {
+        .intro-sub-text {
             font-family: 'Share Tech Mono', monospace;
-            font-size: 1rem;
-            color: var(--cyan);
-            letter-spacing: 4px;
+            font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+            color: #ffd700;
+            letter-spacing: 6px;
             text-transform: uppercase;
-            margin-bottom: 35px;
-            opacity: 0.9;
-        }
-
-        .intro-start-btn {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 800;
-            letter-spacing: 3px;
-            color: #060814;
-            background: linear-gradient(90deg, var(--cyan), var(--green));
-            border: none;
-            padding: 16px 40px;
-            border-radius: 40px;
-            cursor: pointer;
-            box-shadow: 0 0 30px rgba(0,255,136,.4);
-            transition: all .3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .intro-start-btn:hover {
-            transform: scale(1.06);
-            box-shadow: 0 0 50px rgba(0,240,255,.7);
-            background: linear-gradient(90deg, var(--green), var(--magenta));
-            color: #fff;
+            margin-top: 10px;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
         }
 
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
@@ -485,14 +533,58 @@
 </head>
 <body>
 
-<!-- Cyberpunk Opening Intro Overlay -->
+<!-- Dark Fantasy Anime Cinematic Intro Overlay -->
 <div class="intro-overlay" id="introOverlay">
-    <img class="intro-logo" src="https://api-assets.clashofclans.com/badges/512/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png" alt="GÓD OF WAR Logo">
-    <div class="intro-title">GÓD OF WAR</div>
-    <div class="intro-subtitle">⚡ SYSTEM INITIALIZATION COMPLETE — TEMPORADA 30 DIAS ⚡</div>
-    <button class="intro-start-btn" onclick="startDashboardIntro()">
-        <span>⚔️ ENTRAR NO PAINEL DE GUERRA</span>
-    </button>
+    <div class="intro-flash" id="introFlash"></div>
+    <canvas id="introCanvas"></canvas>
+
+    <div class="swords-container">
+        <!-- Left Flaming Sword -->
+        <svg class="flaming-sword left-sword" viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="bladeGradLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#330000"/>
+                    <stop offset="30%" stop-color="#ff1a00"/>
+                    <stop offset="70%" stop-color="#ffaa00"/>
+                    <stop offset="100%" stop-color="#ffffff"/>
+                </linearGradient>
+                <filter id="glowLeft" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="4" result="blur"/>
+                    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                </filter>
+            </defs>
+            <path d="M 10 30 Q 150 10 380 30 Q 150 50 10 30 Z" fill="url(#bladeGradLeft)" opacity="0.7" filter="url(#glowLeft)"/>
+            <path d="M 40 26 L 370 28 L 390 30 L 370 32 L 40 34 Z" fill="#ffffff"/>
+            <rect x="20" y="15" width="20" height="30" rx="4" fill="#ffd700"/>
+            <circle cx="15" cy="30" r="10" fill="#cc0000"/>
+        </svg>
+
+        <!-- Right Flaming Sword -->
+        <svg class="flaming-sword right-sword" viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="bladeGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#330000"/>
+                    <stop offset="30%" stop-color="#ff1a00"/>
+                    <stop offset="70%" stop-color="#ffaa00"/>
+                    <stop offset="100%" stop-color="#ffffff"/>
+                </linearGradient>
+                <filter id="glowRight" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="4" result="blur"/>
+                    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                </filter>
+            </defs>
+            <path d="M 10 30 Q 150 10 380 30 Q 150 50 10 30 Z" fill="url(#bladeGradRight)" opacity="0.7" filter="url(#glowRight)"/>
+            <path d="M 40 26 L 370 28 L 390 30 L 370 32 L 40 34 Z" fill="#ffffff"/>
+            <rect x="20" y="15" width="20" height="30" rx="4" fill="#ffd700"/>
+            <circle cx="15" cy="30" r="10" fill="#cc0000"/>
+        </svg>
+    </div>
+
+    <!-- Title Box (GOD OF WAR) — NOT SHOWN UNTIL SWORDS COLLIDE -->
+    <div class="intro-title-box" id="introTitleBox">
+        <div class="intro-title-text">GOD OF WAR</div>
+        <div class="intro-sub-text">⚔️ TEMPORADA DE GUERRAS 30 DIAS ⚔️</div>
+    </div>
 </div>
 
 <div class="particles" id="particles"></div>
@@ -1216,6 +1308,127 @@ function updateSeasonCountdown() {
 
 updateSeasonCountdown();
 setInterval(updateSeasonCountdown, 1000);
+
+// ── Dark Fantasy Anime Intro Sequence Controller ────────────────────────
+(function initDarkAnimeIntro() {
+    const overlay  = document.getElementById('introOverlay');
+    const flash    = document.getElementById('introFlash');
+    const titleBox = document.getElementById('introTitleBox');
+    const canvas   = document.getElementById('introCanvas');
+    if (!canvas || !overlay) return;
+
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    });
+
+    // Embers & Explosive Impact Sparks Canvas System
+    const particles = [];
+    const numEmbers = 70;
+
+    for (let i = 0; i < numEmbers; i++) {
+        particles.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            vx: (Math.random() - 0.5) * 1.5,
+            vy: -Math.random() * 2 - 0.5,
+            size: Math.random() * 3 + 1,
+            color: Math.random() > 0.3 ? '#ff6600' : '#ffcc00',
+            alpha: Math.random()
+        });
+    }
+
+    function createExplosionSparks() {
+        const cx = width / 2;
+        const cy = height / 2;
+        for (let i = 0; i < 180; i++) {
+            const angle = Math.random() * Math.PI * 2;
+            const speed = Math.random() * 16 + 5;
+            particles.push({
+                x: cx,
+                y: cy,
+                vx: Math.cos(angle) * speed,
+                vy: Math.sin(angle) * speed,
+                size: Math.random() * 4 + 2,
+                color: Math.random() > 0.35 ? '#ffffff' : (Math.random() > 0.5 ? '#ffea00' : '#ff3300'),
+                alpha: 1,
+                decay: Math.random() * 0.025 + 0.015,
+                isSpark: true
+            });
+        }
+    }
+
+    function animateParticles() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = particles.length - 1; i >= 0; i--) {
+            const p = particles[i];
+
+            if (p.isSpark) {
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vx *= 0.94;
+                p.vy *= 0.94;
+                p.alpha -= p.decay;
+
+                ctx.save();
+                ctx.globalAlpha = Math.max(0, p.alpha);
+                ctx.fillStyle = p.color;
+                ctx.shadowColor = p.color;
+                ctx.shadowBlur = 10;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+
+                if (p.alpha <= 0) particles.splice(i, 1);
+            } else {
+                p.x += p.vx;
+                p.y += p.vy;
+                if (p.y < 0) p.y = height;
+                if (p.x < 0) p.x = width;
+                if (p.x > width) p.x = 0;
+
+                ctx.save();
+                ctx.globalAlpha = p.alpha;
+                ctx.fillStyle = p.color;
+                ctx.shadowColor = p.color;
+                ctx.shadowBlur = 8;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+        requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // 1. Exact Impact Collision at t = 1.4s
+    setTimeout(() => {
+        if (overlay) overlay.classList.add('shake');
+        if (flash) {
+            flash.classList.add('active');
+            setTimeout(() => flash.classList.remove('active'), 250);
+        }
+        createExplosionSparks();
+    }, 1400);
+
+    // 2. Title "GOD OF WAR" appears ONLY AFTER collision at t = 1.65s
+    setTimeout(() => {
+        if (titleBox) titleBox.classList.add('show');
+    }, 1650);
+
+    // 3. Smooth transition to dashboard & Linkin Park auto-start at t = 4.4s
+    setTimeout(() => {
+        if (overlay) overlay.classList.add('hidden');
+        toggleYtBox(); // Plays Linkin Park theme automatically on entry!
+    }, 4400);
+})();
 
 // ── Linkin Park — Heavy Is The Crown (YouTube Integration) ──────────────
 function toggleYtBox() {
