@@ -193,7 +193,15 @@
         "name": "After",
         "townhallLevel": 12,
         "mapPosition": 9,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#YUC0P2RVQ",
+          "defenderTag": "#GU82Q92JP",
+          "stars": 1,
+          "destructionPercentage": 91,
+          "order": 18,
+          "duration": 125
+        },
         "donations": 190,
         "role": "admin"
       },
@@ -270,9 +278,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/I8gAATsHLACQSQptqq-I99Og2gFNr1cD27hDy5wl_B8.png"
     },
     "clanLevel": 9,
-    "attacks": 3,
-    "stars": 6,
-    "destructionPercentage": 23.9,
+    "attacks": 4,
+    "stars": 7,
+    "destructionPercentage": 33.0,
     "members": [
       {
         "tag": "#GYGQCG29P",
@@ -442,6 +450,16 @@
         "name": "cronaa",
         "townhallLevel": 12,
         "mapPosition": 7,
+        "attacks": [
+          {
+            "attackerTag": "#YUC0P2RVQ",
+            "defenderTag": "#GU82Q92JP",
+            "stars": 1,
+            "destructionPercentage": 91,
+            "order": 18,
+            "duration": 125
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#292YJJ02V",
