@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png"
     },
     "clanLevel": 8,
-    "attacks": 13,
+    "attacks": 14,
     "stars": 29,
-    "destructionPercentage": 97.0,
+    "destructionPercentage": 97.4,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -49,6 +49,14 @@
             "destructionPercentage": 100,
             "order": 16,
             "duration": 143
+          },
+          {
+            "attackerTag": "#GYP00G8PR",
+            "defenderTag": "#PJCVUYC9R",
+            "stars": 2,
+            "destructionPercentage": 74,
+            "order": 17,
+            "duration": 149
           }
         ],
         "opponentAttacks": 0,
@@ -286,14 +294,14 @@
         "name": "WiNtEr₋DrAgOn₋7",
         "townhallLevel": 15,
         "mapPosition": 1,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#9UYPCVPLL",
+          "attackerTag": "#GYP00G8PR",
           "defenderTag": "#PJCVUYC9R",
           "stars": 2,
-          "destructionPercentage": 70,
-          "order": 6,
-          "duration": 120
+          "destructionPercentage": 74,
+          "order": 17,
+          "duration": 149
         }
       },
       {
