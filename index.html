@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>⚔️ GOD OF War — Evento Temporada 30 Dias</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet">
     <style>
         /* ── Reset & Base ────────────────────────────────────────────── */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -830,6 +830,568 @@
                 transform-origin: bottom right;
             }
         }
+
+        /* ── Tab Switcher Navigation Bar ───────────────────────────────── */
+        .tab-nav-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+            margin: 0 auto 25px;
+            max-width: 680px;
+            padding: 7px;
+            background: rgba(10, 15, 35, 0.88);
+            border: 1px solid rgba(0, 240, 255, 0.35);
+            border-radius: 50px;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(0, 240, 255, 0.1);
+            position: relative;
+            z-index: 100;
+        }
+        .tab-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 13px 20px;
+            border-radius: 40px;
+            border: 1px solid transparent;
+            background: transparent;
+            color: rgba(255, 255, 255, 0.6);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .tab-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.04);
+        }
+        .tab-btn .tab-icon { font-size: 1.25rem; }
+        .tab-btn .tab-text-wrap { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+        .tab-btn .tab-title { font-size: 0.88rem; letter-spacing: 1.5px; }
+        .tab-btn .tab-sub { font-family: 'Share Tech Mono', monospace; font-size: 0.68rem; opacity: 0.6; text-transform: uppercase; }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.22), rgba(255, 0, 229, 0.18));
+            border-color: var(--cyan);
+            color: #fff;
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.35), inset 0 0 12px rgba(0, 240, 255, 0.2);
+            transform: scale(1.02);
+        }
+        .tab-btn.japan-btn.active {
+            background: linear-gradient(135deg, rgba(230, 0, 51, 0.3), rgba(255, 215, 0, 0.18));
+            border-color: #e60033;
+            color: #ffd700;
+            box-shadow: 0 0 25px rgba(230, 0, 51, 0.45), inset 0 0 12px rgba(255, 215, 0, 0.15);
+        }
+
+        .tab-view {
+            display: none;
+            opacity: 0;
+            transform: translateY(15px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .tab-view.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── Sakura Canvas (Falling Petals) ────────────────────────────── */
+        #sakuraCanvas {
+            position: fixed; inset: 0; pointer-events: none; z-index: -2;
+            opacity: 0; transition: opacity 0.8s ease;
+        }
+
+        /* ── Japanese Sanctuary Theme Styles ───────────────────────────── */
+        .japan-sanctuary-hero {
+            text-align: center;
+            padding: 30px 20px 20px;
+            position: relative;
+        }
+        .japan-torii-header {
+            font-size: 3rem;
+            filter: drop-shadow(0 0 20px rgba(230, 0, 51, 0.8));
+            animation: torii-float 4s ease-in-out infinite alternate;
+            margin-bottom: 5px;
+        }
+        @keyframes torii-float {
+            0% { transform: translateY(0) scale(1); }
+            100% { transform: translateY(-8px) scale(1.05); }
+        }
+        .japan-sanctuary-hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2.2rem, 6vw, 3.4rem);
+            font-weight: 900;
+            letter-spacing: 4px;
+            background: linear-gradient(180deg, #ffffff 0%, #ffd700 45%, #e60033 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(230, 0, 51, 0.5);
+            margin-bottom: 8px;
+        }
+        .japan-sanctuary-hero .japan-sub {
+            font-family: 'Shippori Mincho', serif;
+            font-size: 1rem;
+            color: #ffb7c5;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px rgba(255, 183, 197, 0.6);
+            margin-bottom: 22px;
+        }
+
+        /* Clan Honor Metrics */
+        .japan-metrics-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 30px;
+        }
+        .j-metric-item {
+            background: rgba(22, 10, 18, 0.85);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: 10px 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 0 15px rgba(230, 0, 51, 0.15);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+        .j-metric-item:hover {
+            transform: translateY(-3px);
+            border-color: #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+        .j-metric-val {
+            font-family: 'Cinzel', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffd700;
+        }
+        .j-metric-lbl {
+            font-size: 0.78rem;
+            color: #ffb7c5;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ── Header Badge Component (Torii & Kanji) ────────────────────── */
+        .japan-header-badge {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(90deg, rgba(230, 0, 51, 0.25) 0%, rgba(20, 8, 14, 0.85) 60%, rgba(212, 175, 55, 0.2) 100%);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            border-left: 6px solid #e60033;
+            border-radius: 14px;
+            padding: 18px 24px;
+            margin: 35px 0 25px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(230, 0, 51, 0.2);
+            position: relative;
+        }
+        .japan-header-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .japan-header-left .torii-icon {
+            font-size: 2.4rem;
+            filter: drop-shadow(0 0 12px #e60033);
+        }
+        .japan-header-left h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.35rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #ffd700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            margin-bottom: 4px;
+        }
+        .japan-header-left p {
+            font-size: 0.88rem;
+            color: #ffb7c5;
+            letter-spacing: 1px;
+        }
+        .kanji-seal {
+            font-family: 'Shippori Mincho', serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: rgba(255, 215, 0, 0.4);
+            border: 2px solid rgba(255, 215, 0, 0.35);
+            padding: 4px 12px;
+            border-radius: 8px;
+            letter-spacing: 4px;
+            text-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+        }
+
+        /* ── Cúpula de Liderança (Altar Imperial do Shogunato) ──────────── */
+        .shogun-council-wrap {
+            position: relative;
+            margin-bottom: 45px;
+        }
+        .council-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 22px;
+            margin-top: 15px;
+        }
+
+        .council-card {
+            background: linear-gradient(145deg, rgba(28, 10, 20, 0.92) 0%, rgba(12, 5, 9, 0.96) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 16px;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(14px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(230, 0, 51, 0.1);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .council-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, transparent, #ffd700, #e60033, transparent);
+        }
+        .council-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: #ffd700;
+            box-shadow: 0 20px 40px rgba(230, 0, 51, 0.35), 0 0 25px rgba(255, 215, 0, 0.25);
+        }
+
+        /* Card Especial do Líder (Shogun) */
+        .council-card.shogun {
+            grid-column: 1 / -1;
+            background: linear-gradient(145deg, rgba(45, 12, 28, 0.95) 0%, rgba(16, 5, 12, 0.98) 100%);
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 35px rgba(255, 215, 0, 0.3), inset 0 0 30px rgba(230, 0, 51, 0.2);
+            padding: 30px;
+        }
+        .council-card.shogun::before {
+            height: 4px;
+            background: linear-gradient(90deg, #e60033, #ffd700, #ff00e5, #ffd700, #e60033);
+        }
+
+        .council-card-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .council-member-info {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        .council-avatar-wrap {
+            position: relative;
+            width: 75px; height: 75px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%;
+            background: rgba(230, 0, 51, 0.2);
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+        .council-avatar-icon { font-size: 2.3rem; }
+        .council-card.shogun .council-avatar-wrap {
+            width: 90px; height: 90px;
+            border: 3px solid #ffd700;
+            box-shadow: 0 0 35px rgba(255, 215, 0, 0.6);
+        }
+        .council-card.shogun .council-avatar-icon { font-size: 3rem; }
+
+        .council-name-block {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .council-role-badge {
+            font-family: 'Shippori Mincho', serif;
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 20px;
+            width: fit-content;
+            display: flex; align-items: center; gap: 6px;
+        }
+        .council-role-badge.shogun-badge {
+            background: rgba(255, 215, 0, 0.2);
+            border: 1px solid #ffd700;
+            color: #ffd700;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+        .council-role-badge.daimyo-badge {
+            background: rgba(230, 0, 51, 0.2);
+            border: 1px solid rgba(230, 0, 51, 0.6);
+            color: #ff8095;
+            box-shadow: 0 0 10px rgba(230, 0, 51, 0.3);
+        }
+
+        .council-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.45rem;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+        }
+        .council-card.shogun .council-name {
+            font-size: 1.85rem;
+            color: #ffd700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+        }
+
+        .council-stats-strip {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .c-stat-box {
+            background: rgba(10, 4, 8, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 8px 14px;
+            text-align: center;
+            min-width: 80px;
+        }
+        .c-stat-box .c-stat-val {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            color: #ffd700;
+        }
+        .c-stat-box .c-stat-lbl {
+            font-size: 0.68rem;
+            color: #ffb7c5;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 2px;
+        }
+
+        /* ── Pergaminho dos Demais Membros ─────────────────────────────── */
+        .scroll-members-wrap {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .japan-controls-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+        }
+        .japan-search-box {
+            position: relative;
+            flex: 1;
+            min-width: 260px;
+        }
+        .japan-search-box .search-icon {
+            position: absolute;
+            left: 14px; top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            opacity: 0.6;
+        }
+        .japan-search-box input {
+            width: 100%;
+            background: rgba(20, 8, 16, 0.85);
+            border: 1px solid rgba(255, 215, 0, 0.35);
+            border-radius: 30px;
+            padding: 10px 18px 10px 42px;
+            color: #fff;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .japan-search-box input:focus {
+            border-color: #ffd700;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .japan-filter-buttons {
+            display: flex;
+            gap: 8px;
+        }
+        .j-filter-btn {
+            background: rgba(22, 10, 18, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 8px 16px;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Shippori Mincho', serif;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .j-filter-btn:hover {
+            border-color: #e60033;
+            color: #fff;
+        }
+        .j-filter-btn.active {
+            background: rgba(230, 0, 51, 0.25);
+            border-color: #e60033;
+            color: #ffd700;
+            box-shadow: 0 0 12px rgba(230, 0, 51, 0.35);
+        }
+
+        /* Tabela Estilo Pergaminho Japonês */
+        .japan-table-scroll-container {
+            position: relative;
+            background: rgba(14, 6, 12, 0.92);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 16px;
+            overflow-x: auto;
+            backdrop-filter: blur(14px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(230, 0, 51, 0.08);
+        }
+        .japan-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        .japan-table thead th {
+            font-family: 'Shippori Mincho', serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #ffd700;
+            padding: 15px 14px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+            background: rgba(230, 0, 51, 0.08);
+            text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+            white-space: nowrap;
+        }
+        .japan-table tbody tr {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            transition: all 0.25s ease;
+        }
+        .japan-table tbody tr:hover {
+            background: rgba(230, 0, 51, 0.12) !important;
+            box-shadow: inset 0 0 15px rgba(230, 0, 51, 0.2);
+        }
+        .japan-table tbody td {
+            padding: 13px 14px;
+            font-size: 0.95rem;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        .j-rank-num {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .j-member-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #fff;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .j-member-name:hover {
+            color: #ffd700;
+            text-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+            transform: translateX(4px);
+        }
+
+        .th-seal {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px; height: 32px;
+            border-radius: 8px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 800;
+            background: rgba(230, 0, 51, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            color: #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.15);
+        }
+
+        .j-role-pill {
+            font-family: 'Shippori Mincho', serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .j-role-pill.admin {
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.45);
+            color: #ffd700;
+        }
+        .j-role-pill.member {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Loyalty Days Badges */
+        .loyalty-badge {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .loyalty-badge.founder {
+            background: linear-gradient(90deg, rgba(255, 215, 0, 0.25), rgba(230, 0, 51, 0.25));
+            border: 1px solid #ffd700;
+            color: #ffd700;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+        }
+        .loyalty-badge.veteran {
+            background: rgba(230, 0, 51, 0.2);
+            border: 1px solid #e60033;
+            color: #ff99aa;
+            box-shadow: 0 0 10px rgba(230, 0, 51, 0.3);
+        }
+        .loyalty-badge.loyal {
+            background: rgba(255, 183, 197, 0.15);
+            border: 1px solid rgba(255, 183, 197, 0.4);
+            color: #ffb7c5;
+        }
+        .loyalty-badge.recruit {
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            color: #00ff88;
+        }
+
+        @media (max-width: 768px) {
+            .tab-nav-wrapper {
+                flex-direction: column;
+                border-radius: 24px;
+                gap: 8px;
+                padding: 10px;
+            }
+            .tab-btn { width: 100%; justify-content: center; }
+            .council-card.shogun { padding: 20px; }
+            .council-card-inner { flex-direction: column; align-items: flex-start; }
+            .council-stats-strip { width: 100%; justify-content: space-between; }
+            .japan-header-badge { flex-direction: column; align-items: flex-start; gap: 12px; }
+            .kanji-seal { align-self: flex-end; }
+        }
     </style>
 </head>
 <body>
@@ -890,6 +1452,7 @@
 
 <!-- Futuristic Interactive Canvas, Cursor Glow & 3D Grid Background -->
 <canvas id="bgConstellationCanvas"></canvas>
+<canvas id="sakuraCanvas"></canvas>
 <div class="cursor-glow" id="cursorGlow"></div>
 <div class="hex-overlay"></div>
 <div class="cyber-horizon-glow"></div>
@@ -918,6 +1481,29 @@
 <div class="particles" id="particles"></div>
 
 <div class="container">
+
+    <!-- ─── TAB SWITCHER NAVIGATION ───────────────────────────────────── -->
+    <div class="tab-nav-wrapper">
+        <button class="tab-btn active" id="tabBtnWar" onclick="switchTab('war')">
+            <span class="tab-icon">⚔️</span>
+            <span class="tab-text-wrap">
+                <span class="tab-title">PAINEL DE GUERRA</span>
+                <span class="tab-sub">Operação 30 Dias</span>
+            </span>
+        </button>
+        <button class="tab-btn japan-btn" id="tabBtnJapan" onclick="switchTab('japan')">
+            <span class="tab-icon">🌸</span>
+            <span class="tab-text-wrap">
+                <span class="tab-title">TEMPLO DOS MEMBROS</span>
+                <span class="tab-sub">Cúpula &amp; Clã Completo</span>
+            </span>
+        </button>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- ─── ABA 1: PAINEL DE GUERRA (CYBER SCENERY) ───────────────────── -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <div id="viewWar" class="tab-view active">
 
     <!-- ─── HERO ──────────────────────────────────────────────────────── -->
     <div class="hero">
@@ -1047,8 +1633,120 @@
         </table>
     </div>
 
-    <div class="footer">
-        GOD OF WAR — SISTEMA DE EVENTOS &amp; GUERRAS 30 DIAS — CLASH OF CLANS API
+    </div>
+    <!-- ─── FIM DA ABA 1: PAINEL DE GUERRA ────────────────────────────── -->
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- ─── ABA 2: TEMPLO JAPONÊS DOS MEMBROS (JAPÃO FEUDAL) ───────────── -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <div id="viewJapan" class="tab-view">
+
+        <!-- Hero do Santuário Japonês -->
+        <div class="japan-sanctuary-hero">
+            <div class="japan-torii-header">⛩️</div>
+            <h1>TEMPLO DE GUERREIROS</h1>
+            <div class="japan-sub">武士道 • ORDEM, HONRA E LEALDADE • CLÃ GOD OF WAR</div>
+
+            <!-- Métricas de Honra do Clã -->
+            <div class="japan-metrics-bar">
+                <div class="j-metric-item">
+                    <span style="font-size: 1.5rem;">🏯</span>
+                    <div>
+                        <div class="j-metric-val">NÍVEL 8</div>
+                        <div class="j-metric-lbl">Fortaleza do Clã</div>
+                    </div>
+                </div>
+                <div class="j-metric-item">
+                    <span style="font-size: 1.5rem;">👥</span>
+                    <div>
+                        <div class="j-metric-val" id="jTotalCount">40 / 50</div>
+                        <div class="j-metric-lbl">Guerreiros Ativos</div>
+                    </div>
+                </div>
+                <div class="j-metric-item">
+                    <span style="font-size: 1.5rem;">🏆</span>
+                    <div>
+                        <div class="j-metric-val">35.300</div>
+                        <div class="j-metric-lbl">Pontos de Honra</div>
+                    </div>
+                </div>
+                <div class="j-metric-item">
+                    <span style="font-size: 1.5rem;">⚔️</span>
+                    <div>
+                        <div class="j-metric-val">34 VITÓRIAS</div>
+                        <div class="j-metric-lbl">Guerras Vencidas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── CÚPULA DE LIDERANÇA (SHOGUNATO) ────────────────────────── -->
+        <div class="shogun-council-wrap">
+            <div class="japan-header-badge">
+                <div class="japan-header-left">
+                    <span class="torii-icon">⛩️</span>
+                    <div>
+                        <h2>CÚPULA DO SHOGUNATO — LÍDER &amp; CO-LÍDERES</h2>
+                        <p>O Conselho Supremo de Guerra — Mestres Estrategistas do Clã GOD OF WAR</p>
+                    </div>
+                </div>
+                <div class="kanji-seal">幕府</div>
+            </div>
+
+            <!-- Cards da Cúpula (Renderizados dinamicamente pelo JS) -->
+            <div class="council-grid" id="councilCardsContainer"></div>
+        </div>
+
+        <!-- ─── PERGAMINHO DOS DEMAIS MEMBROS ──────────────────────────── -->
+        <div class="scroll-members-wrap">
+            <div class="japan-header-badge">
+                <div class="japan-header-left">
+                    <span class="torii-icon">📜</span>
+                    <div>
+                        <h2>PERGAMINHO DOS GUERREIROS &amp; SAMURAIS</h2>
+                        <p>Anciãos e combatentes jurados ao clã (<span id="japanMemberCount">34</span> Membros)</p>
+                    </div>
+                </div>
+                <div class="kanji-seal">武士</div>
+            </div>
+
+            <!-- Controles: Busca e Filtros -->
+            <div class="japan-controls-bar">
+                <div class="japan-search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="japanSearchInput" placeholder="Buscar por guerreiro ou Centro de Vila..." oninput="filterJapanMembers()">
+                </div>
+                <div class="japan-filter-buttons">
+                    <button class="j-filter-btn active" id="jBtnAll" onclick="setJapanFilter('all', this)">Todos (<span id="countAll">34</span>)</button>
+                    <button class="j-filter-btn" id="jBtnAdmin" onclick="setJapanFilter('admin', this)">Anciãos (<span id="countAdmin">12</span>)</button>
+                    <button class="j-filter-btn" id="jBtnMember" onclick="setJapanFilter('member', this)">Samurais (<span id="countMember">22</span>)</button>
+                </div>
+            </div>
+
+            <!-- Tabela em Pergaminho Japonês -->
+            <div class="japan-table-scroll-container">
+                <table class="japan-table">
+                    <thead>
+                        <tr>
+                            <th>Honra</th>
+                            <th>Guerreiro</th>
+                            <th>Patente</th>
+                            <th>Centro de Vila</th>
+                            <th>Nível XP</th>
+                            <th>Troféus</th>
+                            <th>Doações</th>
+                            <th>Tempo no Clã (Lealdade)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="japanGeneralMembersTbody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer" style="color: #ffb7c5; opacity: 0.5;">
+            GOD OF WAR — ORDEM DOS SAMURAIS — TEMPORADA 30 DIAS
+        </div>
+
     </div>
 
 </div>
@@ -1065,7 +1763,7 @@ const WAR_DATA = {
   "endTime": "20260921T161707.000Z",
   "clan": {
     "tag": "#2JLQUR2CV",
-    "name": "GÓD OF War",
+    "name": "GOD OF War",
     "badgeUrls": {
       "small": "https://api-assets.clashofclans.com/badges/70/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png",
       "large": "https://api-assets.clashofclans.com/badges/512/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png",
@@ -1719,6 +2417,2371 @@ const holoObserver = new IntersectionObserver((entries, observer) => {
 }, { threshold: 0.05 });
 
 document.querySelectorAll('.members-table-wrap').forEach(el => holoObserver.observe(el));
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+// ─── ABA 2: TEMPLO DOS MEMBROS — CÚPULA DE LIDERANÇA & GUERREIROS ──────────
+// ═══════════════════════════════════════════════════════════════════════════
+const CLAN_MEMBERS = [
+  {
+    "tag": "#QRL2CJG9",
+    "name": "Jonas",
+    "role": "coLeader",
+    "townHallLevel": 15,
+    "expLevel": 132,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000021,
+      "name": "Golem League 21",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png"
+      }
+    },
+    "trophies": 98,
+    "builderBaseTrophies": 2799,
+    "clanRank": 1,
+    "previousClanRank": 1,
+    "donations": 473,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000047
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000023,
+      "name": "Iron League III"
+    },
+    "daysInClan": 315,
+    "joinedDate": "2023-11-10"
+  },
+  {
+    "tag": "#9UYPCVPLL",
+    "name": "LINKIN PARK",
+    "role": "admin",
+    "townHallLevel": 15,
+    "expLevel": 171,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000019,
+      "name": "Golem League 19",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2684,
+    "clanRank": 2,
+    "previousClanRank": 2,
+    "donations": 403,
+    "donationsReceived": 298,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000011
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000023,
+      "name": "Iron League III"
+    },
+    "daysInClan": 135,
+    "joinedDate": "2026-05-09"
+  },
+  {
+    "tag": "#GGQPRRURV",
+    "name": "namtugal",
+    "role": "coLeader",
+    "townHallLevel": 13,
+    "expLevel": 129,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000018,
+      "name": "Witch League 18",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
+      }
+    },
+    "trophies": 281,
+    "builderBaseTrophies": 2837,
+    "clanRank": 3,
+    "previousClanRank": 3,
+    "donations": 411,
+    "donationsReceived": 236,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000153
+        },
+        {
+          "type": "decoration",
+          "id": 82000062
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000024,
+      "name": "Iron League II"
+    },
+    "daysInClan": 290,
+    "joinedDate": "2023-12-05"
+  },
+  {
+    "tag": "#292YJJ02V",
+    "name": "》Storm Killer《",
+    "role": "leader",
+    "townHallLevel": 13,
+    "expLevel": 160,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000017,
+      "name": "Witch League 17",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3mEMvpajLceJ3EKu7u_JIh_cOEsT7wyh701zum9hqCY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3mEMvpajLceJ3EKu7u_JIh_cOEsT7wyh701zum9hqCY.png"
+      }
+    },
+    "trophies": 75,
+    "builderBaseTrophies": 2286,
+    "clanRank": 4,
+    "previousClanRank": 4,
+    "donations": 1457,
+    "donationsReceived": 615,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000108
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "daysInClan": 420,
+    "joinedDate": "2023-07-28"
+  },
+  {
+    "tag": "#GYP00G8PR",
+    "name": "JP Chavoso",
+    "role": "coLeader",
+    "townHallLevel": 14,
+    "expLevel": 128,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000017,
+      "name": "Witch League 17",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3mEMvpajLceJ3EKu7u_JIh_cOEsT7wyh701zum9hqCY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3mEMvpajLceJ3EKu7u_JIh_cOEsT7wyh701zum9hqCY.png"
+      }
+    },
+    "trophies": 48,
+    "builderBaseTrophies": 220,
+    "clanRank": 5,
+    "previousClanRank": 5,
+    "donations": 249,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000140
+        },
+        {
+          "type": "roof",
+          "id": 82000149
+        },
+        {
+          "type": "decoration",
+          "id": 82000071
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000002,
+      "name": "Wood League III"
+    },
+    "daysInClan": 245,
+    "joinedDate": "2024-01-19"
+  },
+  {
+    "tag": "#YJVRGUGVJ",
+    "name": "Cibele❤️",
+    "role": "coLeader",
+    "townHallLevel": 13,
+    "expLevel": 132,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000015,
+      "name": "Valkyrie League 15",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png"
+      }
+    },
+    "trophies": 262,
+    "builderBaseTrophies": 2049,
+    "clanRank": 6,
+    "previousClanRank": 6,
+    "donations": 234,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000042
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "daysInClan": 19,
+    "joinedDate": "2026-09-02"
+  },
+  {
+    "tag": "#R8R22C08Y",
+    "name": "Megatron",
+    "role": "coLeader",
+    "townHallLevel": 13,
+    "expLevel": 126,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000015,
+      "name": "Valkyrie League 15",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2418,
+    "clanRank": 7,
+    "previousClanRank": 7,
+    "donations": 451,
+    "donationsReceived": 47,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000052
+        },
+        {
+          "type": "roof",
+          "id": 82000031
+        },
+        {
+          "type": "decoration",
+          "id": 82000064
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "daysInClan": 17,
+    "joinedDate": "2026-09-04"
+  },
+  {
+    "tag": "#GVUPL0Y2L",
+    "name": "marmela",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 103,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000013,
+      "name": "Valkyrie League 13",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
+      }
+    },
+    "trophies": 273,
+    "builderBaseTrophies": 2312,
+    "clanRank": 8,
+    "previousClanRank": 8,
+    "donations": 53,
+    "donationsReceived": 144,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000044
+        },
+        {
+          "type": "decoration",
+          "id": 82000062
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "daysInClan": 17,
+    "joinedDate": "2026-09-04"
+  },
+  {
+    "tag": "#GCY8PR02J",
+    "name": "johnpork",
+    "role": "admin",
+    "townHallLevel": 13,
+    "expLevel": 116,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000013,
+      "name": "Valkyrie League 13",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
+      }
+    },
+    "trophies": 85,
+    "builderBaseTrophies": 2181,
+    "clanRank": 9,
+    "previousClanRank": 9,
+    "donations": 63,
+    "donationsReceived": 360,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000053
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "daysInClan": 93,
+    "joinedDate": "2026-06-20"
+  },
+  {
+    "tag": "#QGYU9GYC",
+    "name": "BadBoy Xavier",
+    "role": "admin",
+    "townHallLevel": 14,
+    "expLevel": 176,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000012,
+      "name": "Wizard League 12",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+      }
+    },
+    "trophies": 389,
+    "builderBaseTrophies": 2280,
+    "clanRank": 10,
+    "previousClanRank": 10,
+    "donations": 572,
+    "donationsReceived": 590,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000032
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "daysInClan": 162,
+    "joinedDate": "2026-04-12"
+  },
+  {
+    "tag": "#LGG9RJ8PC",
+    "name": "peixoto",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 112,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000012,
+      "name": "Wizard League 12",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+      }
+    },
+    "trophies": 132,
+    "builderBaseTrophies": 2394,
+    "clanRank": 11,
+    "previousClanRank": 11,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000052
+        },
+        {
+          "type": "roof",
+          "id": 82000030
+        },
+        {
+          "type": "decoration",
+          "id": 82000064
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "daysInClan": 140,
+    "joinedDate": "2026-05-04"
+  },
+  {
+    "tag": "#QYLPQ9P0Y",
+    "name": "Maykon",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 143,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000012,
+      "name": "Wizard League 12",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+      }
+    },
+    "trophies": 105,
+    "builderBaseTrophies": 2556,
+    "clanRank": 12,
+    "previousClanRank": 12,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000006
+        },
+        {
+          "type": "walls",
+          "id": 82000055
+        },
+        {
+          "type": "roof",
+          "id": 82000046
+        },
+        {
+          "type": "decoration",
+          "id": 82000059
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "daysInClan": 16,
+    "joinedDate": "2026-09-05"
+  },
+  {
+    "tag": "#L9JULURCP",
+    "name": "GODBLACK",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 115,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000012,
+      "name": "Wizard League 12",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 1975,
+    "clanRank": 13,
+    "previousClanRank": 13,
+    "donations": 45,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000061
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000019,
+      "name": "Copper League I"
+    },
+    "daysInClan": 36,
+    "joinedDate": "2026-08-16"
+  },
+  {
+    "tag": "#GJLC89UG8",
+    "name": "Robson",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 109,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000012,
+      "name": "Wizard League 12",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2063,
+    "clanRank": 14,
+    "previousClanRank": 14,
+    "donations": 34,
+    "donationsReceived": 774,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "daysInClan": 66,
+    "joinedDate": "2026-07-17"
+  },
+  {
+    "tag": "#28UVGLLQP",
+    "name": "Carlos123wx",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 133,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000011,
+      "name": "Wizard League 11",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2548,
+    "clanRank": 15,
+    "previousClanRank": 15,
+    "donations": 213,
+    "donationsReceived": 224,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000009
+        },
+        {
+          "type": "decoration",
+          "id": 82000061
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "daysInClan": 35,
+    "joinedDate": "2026-08-17"
+  },
+  {
+    "tag": "#P2UJGG22P",
+    "name": "RAFAEL br",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 142,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000011,
+      "name": "Wizard League 11",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 3040,
+    "clanRank": 16,
+    "previousClanRank": 16,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000015
+        },
+        {
+          "type": "decoration",
+          "id": 82000064
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000025,
+      "name": "Iron League I"
+    },
+    "daysInClan": 58,
+    "joinedDate": "2026-07-25"
+  },
+  {
+    "tag": "#G9ULQQJP2",
+    "name": "Hedris",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 97,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000010,
+      "name": "Wizard League 10",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
+      }
+    },
+    "trophies": 302,
+    "builderBaseTrophies": 1289,
+    "clanRank": 17,
+    "previousClanRank": 17,
+    "donations": 42,
+    "donationsReceived": 0,
+    "builderBaseLeague": {
+      "id": 44000012,
+      "name": "Stone League III"
+    },
+    "daysInClan": 102,
+    "joinedDate": "2026-06-11"
+  },
+  {
+    "tag": "#QLYUCRG9U",
+    "name": "M Thug Stronda",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 109,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000010,
+      "name": "Wizard League 10",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
+      }
+    },
+    "trophies": 179,
+    "builderBaseTrophies": 1939,
+    "clanRank": 18,
+    "previousClanRank": 18,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000053
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000060
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000019,
+      "name": "Copper League I"
+    },
+    "daysInClan": 75,
+    "joinedDate": "2026-07-08"
+  },
+  {
+    "tag": "#Q0YGRQLCQ",
+    "name": "mestre",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 122,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000010,
+      "name": "Wizard League 10",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2284,
+    "clanRank": 19,
+    "previousClanRank": 19,
+    "donations": 112,
+    "donationsReceived": 72,
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "daysInClan": 64,
+    "joinedDate": "2026-07-19"
+  },
+  {
+    "tag": "#R9PV90U00",
+    "name": "deka",
+    "role": "admin",
+    "townHallLevel": 11,
+    "expLevel": 87,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000010,
+      "name": "Wizard League 10",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2306,
+    "clanRank": 20,
+    "previousClanRank": 20,
+    "donations": 164,
+    "donationsReceived": 67,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000154
+        },
+        {
+          "type": "walls",
+          "id": 82000155
+        },
+        {
+          "type": "roof",
+          "id": 82000157
+        },
+        {
+          "type": "decoration",
+          "id": 82000156
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "daysInClan": 83,
+    "joinedDate": "2026-06-30"
+  },
+  {
+    "tag": "#2LGUVVC99",
+    "name": "#BAD BOY#",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 141,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000009,
+      "name": "Archer League 9",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
+      }
+    },
+    "trophies": 387,
+    "builderBaseTrophies": 1699,
+    "clanRank": 21,
+    "previousClanRank": 21,
+    "donations": 156,
+    "donationsReceived": 576,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000015
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000016,
+      "name": "Copper League IV"
+    },
+    "daysInClan": 140,
+    "joinedDate": "2026-05-04"
+  },
+  {
+    "tag": "#YCY2YYYUP",
+    "name": "farrapo",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 128,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000009,
+      "name": "Archer League 9",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
+      }
+    },
+    "trophies": 46,
+    "builderBaseTrophies": 2177,
+    "clanRank": 22,
+    "previousClanRank": 22,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000052
+        },
+        {
+          "type": "roof",
+          "id": 82000032
+        },
+        {
+          "type": "decoration",
+          "id": 82000060
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "daysInClan": 76,
+    "joinedDate": "2026-07-07"
+  },
+  {
+    "tag": "#Y2VVRCUL9",
+    "name": "-NeoNiizBackJR-",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 123,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000009,
+      "name": "Archer League 9",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 1894,
+    "clanRank": 23,
+    "previousClanRank": 23,
+    "donations": 198,
+    "donationsReceived": 710,
+    "builderBaseLeague": {
+      "id": 44000018,
+      "name": "Copper League II"
+    },
+    "daysInClan": 142,
+    "joinedDate": "2026-05-02"
+  },
+  {
+    "tag": "#80C2V90Q",
+    "name": "♤Home Simpson♧",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 137,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000008,
+      "name": "Archer League 8",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
+      }
+    },
+    "trophies": 460,
+    "builderBaseTrophies": 1400,
+    "clanRank": 24,
+    "previousClanRank": 24,
+    "donations": 336,
+    "donationsReceived": 426,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000016
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000014,
+      "name": "Stone League I"
+    },
+    "daysInClan": 45,
+    "joinedDate": "2026-08-07"
+  },
+  {
+    "tag": "#QGLRQRQLJ",
+    "name": "F4NT4SM4",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 80,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000008,
+      "name": "Archer League 8",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
+      }
+    },
+    "trophies": 169,
+    "builderBaseTrophies": 1790,
+    "clanRank": 25,
+    "previousClanRank": 25,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000160
+        },
+        {
+          "type": "walls",
+          "id": 82000159
+        },
+        {
+          "type": "roof",
+          "id": 82000161
+        },
+        {
+          "type": "decoration",
+          "id": 82000158
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000017,
+      "name": "Copper League III"
+    },
+    "daysInClan": 42,
+    "joinedDate": "2026-08-10"
+  },
+  {
+    "tag": "#Y8PLPVJJ0",
+    "name": "Danielsrabelo",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 113,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000008,
+      "name": "Archer League 8",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
+      }
+    },
+    "trophies": 126,
+    "builderBaseTrophies": 2477,
+    "clanRank": 26,
+    "previousClanRank": 26,
+    "donations": 1,
+    "donationsReceived": 42,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000053
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "daysInClan": 54,
+    "joinedDate": "2026-07-29"
+  },
+  {
+    "tag": "#Q8QQC2QR9",
+    "name": "Cleyton Ribeiro",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 113,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000008,
+      "name": "Archer League 8",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
+      }
+    },
+    "trophies": 78,
+    "builderBaseTrophies": 1827,
+    "clanRank": 27,
+    "previousClanRank": 27,
+    "donations": 3,
+    "donationsReceived": 67,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000031
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000018,
+      "name": "Copper League II"
+    },
+    "daysInClan": 23,
+    "joinedDate": "2026-08-29"
+  },
+  {
+    "tag": "#QRCVRL899",
+    "name": "Tenha medo",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 101,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000008,
+      "name": "Archer League 8",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2048,
+    "clanRank": 28,
+    "previousClanRank": 28,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000011
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "daysInClan": 15,
+    "joinedDate": "2026-09-06"
+  },
+  {
+    "tag": "#GU82Q92JP",
+    "name": "After",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 95,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000008,
+      "name": "Archer League 8",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 40,
+    "clanRank": 29,
+    "previousClanRank": 29,
+    "donations": 190,
+    "donationsReceived": 268,
+    "builderBaseLeague": {
+      "id": 44000000,
+      "name": "Wood League V"
+    },
+    "daysInClan": 141,
+    "joinedDate": "2026-05-03"
+  },
+  {
+    "tag": "#LL8QJCU02",
+    "name": "rei _james",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 120,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000008,
+      "name": "Archer League 8",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2715,
+    "clanRank": 30,
+    "previousClanRank": 30,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000037
+        },
+        {
+          "type": "decoration",
+          "id": 82000062
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000023,
+      "name": "Iron League III"
+    },
+    "daysInClan": 49,
+    "joinedDate": "2026-08-03"
+  },
+  {
+    "tag": "#GUQ822R8Q",
+    "name": "YArdorius",
+    "role": "admin",
+    "townHallLevel": 11,
+    "expLevel": 87,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000007,
+      "name": "Archer League 7",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/x1c7byHQmOHQVKGxAn1sqOW2XOCzTYW-e6OKjq-FBco.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/x1c7byHQmOHQVKGxAn1sqOW2XOCzTYW-e6OKjq-FBco.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 1213,
+    "clanRank": 31,
+    "previousClanRank": 31,
+    "donations": 88,
+    "donationsReceived": 35,
+    "builderBaseLeague": {
+      "id": 44000012,
+      "name": "Stone League III"
+    },
+    "daysInClan": 80,
+    "joinedDate": "2026-07-03"
+  },
+  {
+    "tag": "#QRQCP2Q0P",
+    "name": "jeizyHlima",
+    "role": "member",
+    "townHallLevel": 11,
+    "expLevel": 108,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000006,
+      "name": "Barbarian League 6",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/pQHVG1p0IboE8Ggp0U1YR7U8dWhVn4YSS1zSPH61F0I.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/pQHVG1p0IboE8Ggp0U1YR7U8dWhVn4YSS1zSPH61F0I.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2362,
+    "clanRank": 32,
+    "previousClanRank": 32,
+    "donations": 0,
+    "donationsReceived": 536,
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "daysInClan": 49,
+    "joinedDate": "2026-08-03"
+  },
+  {
+    "tag": "#Y2LP8RV9J",
+    "name": "Liihzinha",
+    "role": "member",
+    "townHallLevel": 10,
+    "expLevel": 89,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000005,
+      "name": "Barbarian League 5",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7Alm6gwA1lYoRn5m8vrXAfbTKIK2fFU7OxfYhYwWJYM.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7Alm6gwA1lYoRn5m8vrXAfbTKIK2fFU7OxfYhYwWJYM.png"
+      }
+    },
+    "trophies": 298,
+    "builderBaseTrophies": 2102,
+    "clanRank": 33,
+    "previousClanRank": 33,
+    "donations": 61,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000009
+        },
+        {
+          "type": "decoration",
+          "id": 82000060
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "daysInClan": 23,
+    "joinedDate": "2026-08-29"
+  },
+  {
+    "tag": "#9JUJVPVUQ",
+    "name": "Targaryen",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 141,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2525,
+    "clanRank": 34,
+    "previousClanRank": 0,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000009
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "daysInClan": 60,
+    "joinedDate": "2026-07-23"
+  },
+  {
+    "tag": "#GVRPCCLUL",
+    "name": "Bruxo",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 109,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2353,
+    "clanRank": 35,
+    "previousClanRank": 34,
+    "donations": 80,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000052
+        },
+        {
+          "type": "roof",
+          "id": 82000031
+        },
+        {
+          "type": "decoration",
+          "id": 82000064
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "daysInClan": 141,
+    "joinedDate": "2026-05-03"
+  },
+  {
+    "tag": "#G0JUG29CG",
+    "name": "loren_ghost",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 96,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 1238,
+    "clanRank": 36,
+    "previousClanRank": 35,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000140
+        },
+        {
+          "type": "roof",
+          "id": 82000108
+        },
+        {
+          "type": "decoration",
+          "id": 82000060
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000012,
+      "name": "Stone League III"
+    },
+    "daysInClan": 52,
+    "joinedDate": "2026-07-31"
+  },
+  {
+    "tag": "#Y882VUVGJ",
+    "name": "Guilherme ✌♣",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 122,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2708,
+    "clanRank": 37,
+    "previousClanRank": 36,
+    "donations": 142,
+    "donationsReceived": 72,
+    "builderBaseLeague": {
+      "id": 44000023,
+      "name": "Iron League III"
+    },
+    "daysInClan": 85,
+    "joinedDate": "2026-06-28"
+  },
+  {
+    "tag": "#LVYP8RVGR",
+    "name": "IGOR_SILVA",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 137,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2237,
+    "clanRank": 38,
+    "previousClanRank": 37,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000006
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000011
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "daysInClan": 71,
+    "joinedDate": "2026-07-12"
+  },
+  {
+    "tag": "#2LRRG9Q8L",
+    "name": "CrazyBrPlay",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 120,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 1598,
+    "clanRank": 39,
+    "previousClanRank": 38,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000009
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000015,
+      "name": "Copper League V"
+    },
+    "daysInClan": 13,
+    "joinedDate": "2026-09-08"
+  },
+  {
+    "tag": "#YGLLU0UU9",
+    "name": "ÉOBRABOXX",
+    "role": "member",
+    "townHallLevel": 14,
+    "expLevel": 101,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2457,
+    "clanRank": 40,
+    "previousClanRank": 39,
+    "donations": 160,
+    "donationsReceived": 52,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000053
+        },
+        {
+          "type": "roof",
+          "id": 82000028
+        },
+        {
+          "type": "decoration",
+          "id": 82000062
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "daysInClan": 59,
+    "joinedDate": "2026-07-24"
+  }
+];
+
+let currentTab = 'war';
+let activeJapanFilter = 'all';
+
+function switchTab(tabName) {
+    if (tabName === currentTab) return;
+    currentTab = tabName;
+
+    const btnWar = document.getElementById('tabBtnWar');
+    const btnJapan = document.getElementById('tabBtnJapan');
+    const viewWar = document.getElementById('viewWar');
+    const viewJapan = document.getElementById('viewJapan');
+    const sakuraCanvas = document.getElementById('sakuraCanvas');
+    const bgConstellationCanvas = document.getElementById('bgConstellationCanvas');
+    const cyberGrid = document.querySelector('.cyber-grid-container');
+    const cyberPillars = document.querySelectorAll('.cyber-pillar');
+    const cyberHorizon = document.querySelector('.cyber-horizon-glow');
+
+    if (tabName === 'japan') {
+        btnWar.classList.remove('active');
+        btnJapan.classList.add('active');
+        viewWar.classList.remove('active');
+        viewJapan.classList.add('active');
+
+        if (sakuraCanvas) sakuraCanvas.style.opacity = '1';
+        if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '0.08';
+        if (cyberGrid) cyberGrid.style.opacity = '0.08';
+        cyberPillars.forEach(p => p.style.opacity = '0.05');
+        if (cyberHorizon) cyberHorizon.style.opacity = '0.05';
+
+        document.body.style.background = '#0e0610';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        btnJapan.classList.remove('active');
+        btnWar.classList.add('active');
+        viewJapan.classList.remove('active');
+        viewWar.classList.add('active');
+
+        if (sakuraCanvas) sakuraCanvas.style.opacity = '0';
+        if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '1';
+        if (cyberGrid) cyberGrid.style.opacity = '1';
+        cyberPillars.forEach(p => p.style.opacity = '0.7');
+        if (cyberHorizon) cyberHorizon.style.opacity = '0.8';
+
+        document.body.style.background = 'var(--bg)';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+}
+
+// ── Sakura Falling Petals Engine ──────────────────────────────────────────
+(function initSakuraEngine() {
+    const canvas = document.getElementById('sakuraCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    });
+
+    const petals = [];
+    const petalColors = [
+        'rgba(255, 183, 197, 0.85)',
+        'rgba(255, 204, 215, 0.75)',
+        'rgba(255, 166, 190, 0.8)',
+        'rgba(255, 141, 161, 0.7)',
+        'rgba(255, 230, 238, 0.9)'
+    ];
+
+    for (let i = 0; i < 45; i++) {
+        petals.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            size: Math.random() * 9 + 6,
+            speedY: Math.random() * 1.3 + 0.6,
+            speedX: Math.random() * 0.8 - 0.2,
+            angle: Math.random() * Math.PI * 2,
+            rotSpeed: (Math.random() - 0.5) * 0.025,
+            swaySpeed: Math.random() * 0.015 + 0.008,
+            swayAmp: Math.random() * 30 + 15,
+            color: petalColors[Math.floor(Math.random() * petalColors.length)],
+            origX: Math.random() * width
+        });
+    }
+
+    function drawPetal(ctx, x, y, size, angle, color) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(angle);
+        ctx.fillStyle = color;
+        ctx.beginPath();
+        ctx.moveTo(0, -size);
+        ctx.bezierCurveTo(size * 0.7, -size * 0.5, size * 0.7, size * 0.5, 0, size);
+        ctx.bezierCurveTo(-size * 0.7, size * 0.5, -size * 0.7, -size * 0.5, 0, -size);
+        ctx.fill();
+        ctx.restore();
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < petals.length; i++) {
+            const p = petals[i];
+            p.angle += p.rotSpeed;
+            p.y += p.speedY;
+            p.x = p.origX + Math.sin(p.y * p.swaySpeed) * p.swayAmp;
+
+            if (p.y > height + 25) {
+                p.y = -25;
+                p.origX = Math.random() * width;
+                p.x = p.origX;
+            }
+            if (p.x < -25) p.origX = width + 25;
+            if (p.x > width + 25) p.origX = -25;
+
+            drawPetal(ctx, p.x, p.y, p.size, p.angle, p.color);
+        }
+        requestAnimationFrame(animate);
+    }
+    animate();
+})();
+
+// ── Populate Cúpula de Liderança (Shogunato) & Membros do Templo ──────────
+function initJapanTab() {
+    const councilContainer = document.getElementById('councilCardsContainer');
+    const tableBody = document.getElementById('japanGeneralMembersTbody');
+    if (!councilContainer || !tableBody) return;
+
+    // Separate Council (Leader & Co-Leaders) from General Members
+    const councilMembers = CLAN_MEMBERS.filter(m => m.role === 'leader' || m.role === 'coLeader');
+    // Sort council: Leader first, then Co-Leaders by days in clan desc
+    councilMembers.sort((a, b) => {
+        if (a.role === 'leader') return -1;
+        if (b.role === 'leader') return 1;
+        return (b.daysInClan || 0) - (a.daysInClan || 0);
+    });
+
+    // General members: Anciãos and Membros
+    const generalMembers = CLAN_MEMBERS.filter(m => m.role !== 'leader' && m.role !== 'coLeader');
+    // Sort general members by clanRank (or trophies desc)
+    generalMembers.sort((a, b) => (a.clanRank || 99) - (b.clanRank || 99));
+
+    // Render Council
+    councilContainer.innerHTML = '';
+    councilMembers.forEach(m => {
+        const isLeader = m.role === 'leader';
+        const cardClass = isLeader ? 'council-card shogun' : 'council-card daimyo';
+        const crownTag = isLeader ? '<div class="shogun-crown">👑 XÓGUM SUPREMO • LÍDER GERAL</div>' : '';
+        const rolePill = isLeader
+            ? '<div class="council-role-badge shogun-badge">⚔️ 征夷大将軍 • LÍDER SUPREMO</div>'
+            : '<div class="council-role-badge daimyo-badge">⛩️ 大名 • CO-LÍDER DO CONSELHO</div>';
+        const avatarIcon = isLeader ? '👑' : '🏯';
+
+        const card = document.createElement('div');
+        card.className = cardClass;
+        card.innerHTML = `
+            ${crownTag}
+            <div class="council-card-inner">
+                <div class="council-member-info">
+                    <div class="council-avatar-wrap">
+                        <span class="council-avatar-icon">${avatarIcon}</span>
+                    </div>
+                    <div class="council-name-block">
+                        ${rolePill}
+                        <div class="council-name">${m.name}</div>
+                        <div class="j-member-tag" style="font-family:'Share Tech Mono'; font-size:0.8rem; color:rgba(255,215,0,0.6);">${m.tag}</div>
+                    </div>
+                </div>
+                <div class="council-stats-strip">
+                    <div class="c-stat-box">
+                        <div class="c-stat-val" style="color: #ffd700;">CV ${m.townHallLevel}</div>
+                        <div class="c-stat-lbl">Centro de Vila</div>
+                    </div>
+                    <div class="c-stat-box">
+                        <div class="c-stat-val" style="color: #ffd700;">⏳ ${m.daysInClan || 1}d</div>
+                        <div class="c-stat-lbl">No Clã (Lealdade)</div>
+                    </div>
+                    <div class="c-stat-box">
+                        <div class="c-stat-val" style="color: #ffb7c5;">🏆 ${m.trophies}</div>
+                        <div class="c-stat-lbl">Troféus</div>
+                    </div>
+                    <div class="c-stat-box">
+                        <div class="c-stat-val" style="color: #00ff88;">📦 ${m.donations}</div>
+                        <div class="c-stat-lbl">Doações</div>
+                    </div>
+                    <div class="c-stat-box">
+                        <div class="c-stat-val" style="color: #00f0ff;">⚡ ${m.expLevel}</div>
+                        <div class="c-stat-lbl">Nível XP</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        councilContainer.appendChild(card);
+    });
+
+    // Update Counts
+    const adminCount = generalMembers.filter(m => m.role === 'admin').length;
+    const regularCount = generalMembers.filter(m => m.role === 'member').length;
+    const totalGeneral = generalMembers.length;
+
+    const countAllEl = document.getElementById('countAll');
+    const countAdminEl = document.getElementById('countAdmin');
+    const countMemberEl = document.getElementById('countMember');
+    const japanMemberCountEl = document.getElementById('japanMemberCount');
+
+    if (countAllEl) countAllEl.textContent = totalGeneral;
+    if (countAdminEl) countAdminEl.textContent = adminCount;
+    if (countMemberEl) countMemberEl.textContent = regularCount;
+    if (japanMemberCountEl) japanMemberCountEl.textContent = totalGeneral;
+
+    // Render General Members Table
+    renderGeneralMembers(generalMembers);
+}
+
+function renderGeneralMembers(list) {
+    const tableBody = document.getElementById('japanGeneralMembersTbody');
+    if (!tableBody) return;
+    tableBody.innerHTML = '';
+
+    list.forEach((m, idx) => {
+        let rankBadge = `<span class="j-rank-num">#${idx + 1}</span>`;
+        if (idx === 0) rankBadge = '🥇';
+        else if (idx === 1) rankBadge = '🥈';
+        else if (idx === 2) rankBadge = '🥉';
+
+        const rolePill = m.role === 'admin'
+            ? `<span class="j-role-pill admin">⛩️ Ancião (Hatamoto)</span>`
+            : `<span class="j-role-pill member">⚔️ Samurai (Membro)</span>`;
+
+        const days = m.daysInClan || 1;
+        let loyaltyBadge = '';
+        if (days >= 180) {
+            loyaltyBadge = `<span class="loyalty-badge founder">🏯 Veterano (${days}d)</span>`;
+        } else if (days >= 60) {
+            loyaltyBadge = `<span class="loyalty-badge veteran">⚔️ Guardião (${days}d)</span>`;
+        } else if (days >= 30) {
+            loyaltyBadge = `<span class="loyalty-badge loyal">🌸 Samurai (${days}d)</span>`;
+        } else {
+            loyaltyBadge = `<span class="loyalty-badge recruit">🌱 Recruta (${days}d)</span>`;
+        }
+
+        const donColor = m.donations >= 100 ? '#00ff88' : '#e0e6f0';
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${rankBadge}</td>
+            <td>
+                <div class="j-member-name">${m.name}</div>
+                <div style="font-family:'Share Tech Mono'; font-size:0.75rem; color:rgba(255,255,255,0.4);">${m.tag}</div>
+            </td>
+            <td>${rolePill}</td>
+            <td><span class="th-seal">CV ${m.townHallLevel}</span></td>
+            <td><span style="font-family:'Share Tech Mono'; color:rgba(255,255,255,0.85);">Nv. ${m.expLevel}</span></td>
+            <td><span style="font-family:'Share Tech Mono'; color:#ffd700; font-weight:700;">🏆 ${m.trophies}</span></td>
+            <td><span style="font-family:'Share Tech Mono'; color:${donColor}; font-weight:700;">📦 ${m.donations}</span></td>
+            <td>${loyaltyBadge}</td>
+        `;
+        tableBody.appendChild(tr);
+    });
+}
+
+function filterJapanMembers() {
+    const searchInput = document.getElementById('japanSearchInput');
+    const term = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+    const generalMembers = CLAN_MEMBERS.filter(m => m.role !== 'leader' && m.role !== 'coLeader');
+
+    const filtered = generalMembers.filter(m => {
+        if (activeJapanFilter !== 'all' && m.role !== activeJapanFilter) return false;
+        if (!term) return true;
+
+        const nameMatch = m.name.toLowerCase().includes(term);
+        const tagMatch = m.tag.toLowerCase().includes(term);
+        const thMatch = `cv${m.townHallLevel}`.includes(term) || `th${m.townHallLevel}`.includes(term) || `cv ${m.townHallLevel}`.includes(term) || String(m.townHallLevel) === term;
+        return nameMatch || tagMatch || thMatch;
+    });
+
+    filtered.sort((a, b) => (a.clanRank || 99) - (b.clanRank || 99));
+    renderGeneralMembers(filtered);
+
+    const japanMemberCountEl = document.getElementById('japanMemberCount');
+    if (japanMemberCountEl) japanMemberCountEl.textContent = filtered.length;
+}
+
+function setJapanFilter(role, btn) {
+    activeJapanFilter = role;
+    document.querySelectorAll('.j-filter-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    filterJapanMembers();
+}
+
+// Initialize Japan Tab on Load
+initJapanTab();
+
+
 
 // ── Cyberpunk Intro Transition ────────────────────────────────────────────
 function startDashboardIntro() {
