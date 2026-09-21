@@ -669,6 +669,32 @@
         .donations-badge.ok { color: var(--green); }
         .donations-badge.pending { color: var(--gold); }
 
+        .atk-rec-badge {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .atk-rec-badge:hover {
+            transform: scale(1.1);
+        }
+        .atk-rec-badge.hit {
+            background: rgba(255, 0, 85, 0.12);
+            border: 1px solid rgba(255, 0, 85, 0.35);
+            color: #ff3860;
+            box-shadow: 0 0 10px rgba(255, 0, 85, 0.2);
+        }
+        .atk-rec-badge.clean {
+            background: rgba(0, 240, 255, 0.08);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            color: rgba(255, 255, 255, 0.5);
+        }
+
         .footer { text-align: center; padding: 35px 20px; font-family: 'Share Tech Mono', monospace; font-size: 0.7rem; color: rgba(255,255,255,.25); letter-spacing: 2px; }
 
         /* ── Mobile Responsive Overhaul (< 768px) ──────────────────────── */
@@ -888,7 +914,8 @@
                     <th>Cargo</th>
                     <th>TH</th>
                     <th>Estrelas Guerra</th>
-                    <th>Ataques</th>
+                    <th>Ataques Feitos</th>
+                    <th>Ataques Recebidos</th>
                     <th>Doações</th>
                     <th>Status no Evento</th>
                 </tr>
@@ -908,6 +935,7 @@
                     <th style="color: rgba(255, 56, 96, 0.8);">TH</th>
                     <th style="color: rgba(255, 56, 96, 0.8);">Ataques Usados</th>
                     <th style="color: rgba(255, 56, 96, 0.8);">Estrelas Dadas</th>
+                    <th style="color: rgba(255, 56, 96, 0.8);">Ataques Recebidos</th>
                     <th style="color: rgba(255, 56, 96, 0.8);">Defesa da Vila Inimiga</th>
                 </tr>
             </thead>
@@ -972,7 +1000,7 @@ const WAR_DATA = {
       },
       {
         "tag": "#292YJJ02V",
-        "name": "〈Storm Killer〉",
+        "name": "》Storm Killer《",
         "townhallLevel": 13,
         "mapPosition": 4,
         "attacks": [
@@ -1170,7 +1198,7 @@ const WAR_DATA = {
   },
   "opponent": {
     "tag": "#2J8GY288C",
-    "name": "BÜLÜAÜCÜKÜ/clan",
+    "name": "B̶L̶A̶C̶K̶/clan",
     "badgeUrls": {
       "small": "https://api-assets.clashofclans.com/badges/70/I8gAATsHLACQSQptqq-I99Og2gFNr1cD27hDy5wl_B8.png",
       "large": "https://api-assets.clashofclans.com/badges/512/I8gAATsHLACQSQptqq-I99Og2gFNr1cD27hDy5wl_B8.png",
@@ -1198,7 +1226,7 @@ const WAR_DATA = {
       },
       {
         "tag": "#PJCVUYC9R",
-        "name": "WiNtEr꩹DrAgOn꩹7",
+        "name": "WiNtEr₋DrAgOn₋7",
         "townhallLevel": 15,
         "mapPosition": 1,
         "opponentAttacks": 1,
@@ -1473,6 +1501,11 @@ processedMembers.forEach((m, idx) => {
         ? `<span class="stars-clean">⭐ <strong class="star-count">${m.totalStars}</strong></span>`
         : `<span class="stars-clean dim">☆ 0</span>`;
 
+    const atkRecCount = m.opponentAttacks !== undefined ? m.opponentAttacks : (m.bestOpponentAttack ? 1 : 0);
+    const atkRecBadge = atkRecCount > 0
+        ? `<span class="atk-rec-badge hit">${atkRecCount}x 💥</span>`
+        : `<span class="atk-rec-badge clean">0x 🛡️</span>`;
+
     const tr = document.createElement('tr');
     tr.className = `${rowClass} holo-row`;
     tr.style.animationDelay = `${(idx * 0.08 + 0.1).toFixed(2)}s`;
@@ -1483,6 +1516,7 @@ processedMembers.forEach((m, idx) => {
         <td><span class="th-badge">${m.townhallLevel}</span></td>
         <td>${starsHtml}</td>
         <td><span style="font-family:'Share Tech Mono'">${m.usedAttacks}/2</span></td>
+        <td>${atkRecBadge}</td>
         <td><span class="donations-badge ${donClass}">${m.donations} / 100</span></td>
         <td>${statusHtml}</td>
     `;
@@ -1499,8 +1533,13 @@ if (theirTbody && them.members) {
 
     sortedThem.forEach((m, idx) => {
         const attacks = m.attacks || [];
-        const usedAttacks = m.opponentAttacks || attacks.length;
+        const usedAttacks = attacks.length;
         const totalStars = attacks.reduce((s, a) => s + a.stars, 0);
+
+        const atkRecCount = m.opponentAttacks !== undefined ? m.opponentAttacks : (m.bestOpponentAttack ? 1 : 0);
+        const atkRecBadge = atkRecCount > 0
+            ? `<span class="atk-rec-badge hit">${atkRecCount}x 💥</span>`
+            : `<span class="atk-rec-badge clean">0x 🛡️</span>`;
 
         const bestDef = m.bestOpponentAttack;
         let defStatusHtml = '<span style="color:rgba(255,255,255,.3)">Intacta</span>';
@@ -1522,6 +1561,7 @@ if (theirTbody && them.members) {
             <td><span class="th-badge" style="background:rgba(255,56,96,.1); border-color:rgba(255,56,96,.3); color:var(--red);">${m.townhallLevel}</span></td>
             <td><span style="font-family:'Share Tech Mono'">${usedAttacks}/2</span></td>
             <td><span class="stars-clean ${totalStars > 0 ? '' : 'dim'}">⭐ ${totalStars}</span></td>
+            <td>${atkRecBadge}</td>
             <td>${defStatusHtml}</td>
         `;
         theirTbody.appendChild(tr);
