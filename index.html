@@ -30,15 +30,55 @@
             overflow-x: hidden;
         }
 
-        /* ── Cyberpunk Interactive Constellation & Futuristic HUD Background ── */
+        /* ── Clash of Clans Cyber Scenery (Paisagem Cibernética CoC) ────── */
         #bgConstellationCanvas {
             position: fixed; inset: 0; pointer-events: none; z-index: -2;
         }
 
+        .cyber-horizon-glow {
+            position: fixed;
+            top: 42%; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, transparent 0%, #00f0ff 25%, #ff00e5 50%, #00ff88 75%, transparent 100%);
+            box-shadow: 0 0 25px #00f0ff, 0 0 50px #ff00e5;
+            pointer-events: none; z-index: -3;
+            opacity: 0.8;
+            animation: horizon-pulse 4s ease-in-out infinite alternate;
+        }
+        @keyframes horizon-pulse {
+            0% { opacity: 0.5; filter: drop-shadow(0 0 10px #00f0ff); }
+            100% { opacity: 0.95; filter: drop-shadow(0 0 35px #ff00e5); }
+        }
+
+        .cyber-pillar {
+            position: fixed; top: 0; bottom: 0; width: 60px;
+            pointer-events: none; z-index: -2; opacity: 0.7;
+            display: flex; flex-direction: column; justify-content: space-around; align-items: center;
+        }
+        .cyber-pillar.left { left: 15px; }
+        .cyber-pillar.right { right: 15px; }
+
+        .pillar-line {
+            position: absolute; top: 0; bottom: 0; width: 2px;
+            background: linear-gradient(180deg, transparent, #00f0ff 30%, #ff00e5 70%, transparent);
+            box-shadow: 0 0 15px #00f0ff;
+        }
+        .pillar-node {
+            width: 14px; height: 14px; border-radius: 50%;
+            background: #00f0ff; border: 2px solid #fff;
+            box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff;
+            animation: node-float 3s ease-in-out infinite alternate;
+        }
+        .cyber-pillar.right .pillar-node { background: #ff00e5; box-shadow: 0 0 15px #ff00e5, 0 0 30px #ff00e5; }
+
+        @keyframes node-float {
+            0% { transform: scale(0.8) translateY(0); opacity: 0.6; }
+            100% { transform: scale(1.3) translateY(-12px); opacity: 1; }
+        }
+
         .cursor-glow {
-            position: fixed; width: 550px; height: 550px;
+            position: fixed; width: 600px; height: 600px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(0, 240, 255, 0.12) 0%, rgba(255, 0, 229, 0.05) 45%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 240, 255, 0.15) 0%, rgba(255, 0, 229, 0.06) 45%, transparent 70%);
             pointer-events: none;
             z-index: -1;
             transform: translate(-50%, -50%);
@@ -49,10 +89,10 @@
         .hex-overlay {
             position: fixed; inset: 0; z-index: -3; pointer-events: none;
             background-image:
-                radial-gradient(rgba(0, 240, 255, 0.12) 1px, transparent 0),
-                linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+                radial-gradient(rgba(0, 240, 255, 0.14) 1px, transparent 0),
+                linear-gradient(rgba(0, 240, 255, 0.04) 1px, transparent 1px);
             background-size: 32px 32px, 64px 64px;
-            opacity: 0.5;
+            opacity: 0.6;
         }
 
         .cyber-grid-container {
@@ -62,26 +102,26 @@
         .cyber-grid {
             position: absolute; width: 200%; height: 200%; top: -50%; left: -50%;
             background-image:
-                linear-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 240, 255, 0.1) 1px, transparent 1px);
+                linear-gradient(rgba(0, 240, 255, 0.15) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 240, 255, 0.15) 1px, transparent 1px);
             background-size: 50px 50px;
             transform: rotateX(65deg);
-            animation: cyber-grid-scroll 16s linear infinite;
+            animation: cyber-grid-scroll 14s linear infinite;
         }
         @keyframes cyber-grid-scroll {
             0% { transform: rotateX(65deg) translateY(0); }
             100% { transform: rotateX(65deg) translateY(50px); }
         }
         .nebula {
-            position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.2;
+            position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.25;
             pointer-events: none; animation: nebula-pulse 8s ease-in-out infinite alternate;
         }
-        .nebula-1 { width: 650px; height: 650px; background: #00f0ff; top: -150px; left: -100px; }
-        .nebula-2 { width: 750px; height: 750px; background: #ff00e5; bottom: -200px; right: -100px; animation-delay: 3s; }
-        .nebula-3 { width: 550px; height: 550px; background: #00ff88; top: 35%; left: 25%; animation-delay: 6s; }
+        .nebula-1 { width: 700px; height: 700px; background: #00f0ff; top: -150px; left: -100px; }
+        .nebula-2 { width: 800px; height: 800px; background: #ff00e5; bottom: -200px; right: -100px; animation-delay: 3s; }
+        .nebula-3 { width: 600px; height: 600px; background: #00ff88; top: 35%; left: 25%; animation-delay: 6s; }
         @keyframes nebula-pulse {
-            0% { transform: scale(1) translate(0, 0); opacity: 0.15; }
-            100% { transform: scale(1.3) translate(40px, -30px); opacity: 0.28; }
+            0% { transform: scale(1) translate(0, 0); opacity: 0.18; }
+            100% { transform: scale(1.35) translate(40px, -30px); opacity: 0.32; }
         }
 
         /* HUD Corner Brackets for Panel Elevation */
@@ -852,6 +892,21 @@
 <canvas id="bgConstellationCanvas"></canvas>
 <div class="cursor-glow" id="cursorGlow"></div>
 <div class="hex-overlay"></div>
+<div class="cyber-horizon-glow"></div>
+
+<!-- Clash Cyber Energy Pillars (Flanking Sides) -->
+<div class="cyber-pillar left">
+    <div class="pillar-line"></div>
+    <div class="pillar-node"></div>
+    <div class="pillar-node"></div>
+    <div class="pillar-node"></div>
+</div>
+<div class="cyber-pillar right">
+    <div class="pillar-line"></div>
+    <div class="pillar-node"></div>
+    <div class="pillar-node"></div>
+    <div class="pillar-node"></div>
+</div>
 
 <div class="cyber-grid-container">
     <div class="cyber-grid"></div>
@@ -1010,7 +1065,7 @@ const WAR_DATA = {
   "endTime": "20260921T161707.000Z",
   "clan": {
     "tag": "#2JLQUR2CV",
-    "name": "GOD OF War",
+    "name": "GÓD OF War",
     "badgeUrls": {
       "small": "https://api-assets.clashofclans.com/badges/70/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png",
       "large": "https://api-assets.clashofclans.com/badges/512/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png",
@@ -1647,8 +1702,8 @@ for (let i = 0; i < 35; i++) {
     particlesEl.appendChild(p);
 }
 
-// ── Interactive High-Tech Constellation & Particle Mesh Canvas ─────────────
-(function initConstellationBg() {
+// ── Clash Cyber Scenery Interactive Shader Engine ────────────────────────
+(function initCyberSceneryEngine() {
     const canvas = document.getElementById('bgConstellationCanvas');
     const cursorGlow = document.getElementById('cursorGlow');
     if (!canvas) return;
@@ -1656,8 +1711,8 @@ for (let i = 0; i < 35; i++) {
     const ctx = canvas.getContext('2d');
     let width = canvas.width = window.innerWidth;
     let height = canvas.height = window.innerHeight;
-
     let mouse = { x: width / 2, y: height / 2, active: false };
+    const ripples = [];
 
     window.addEventListener('resize', () => {
         width = canvas.width = window.innerWidth;
@@ -1674,7 +1729,19 @@ for (let i = 0; i < 35; i++) {
         }
     });
 
-    const numNodes = Math.floor(Math.min(width, 1400) / 18);
+    window.addEventListener('click', (e) => {
+        ripples.push({
+            x: e.clientX,
+            y: e.clientY,
+            radius: 5,
+            maxRadius: 180 + Math.random() * 80,
+            color: Math.random() > 0.5 ? '#00f0ff' : '#ff00e5',
+            alpha: 1
+        });
+    });
+
+    // 1. Constellation Nodes
+    const numNodes = Math.floor(Math.min(width, 1400) / 16);
     const nodes = [];
     const colors = ['#00f0ff', '#ff00e5', '#ffd700', '#00ff88'];
 
@@ -1682,17 +1749,79 @@ for (let i = 0; i < 35; i++) {
         nodes.push({
             x: Math.random() * width,
             y: Math.random() * height,
-            vx: (Math.random() - 0.5) * 0.8,
-            vy: (Math.random() - 0.5) * 0.8,
-            radius: Math.random() * 2 + 1,
+            vx: (Math.random() - 0.5) * 0.9,
+            vy: (Math.random() - 0.5) * 0.9,
+            radius: Math.random() * 2.2 + 1,
             color: colors[Math.floor(Math.random() * colors.length)],
             alpha: Math.random() * 0.6 + 0.3
+        });
+    }
+
+    // 2. Floating Cyber Cubes / Town Hall Energy Diamonds
+    const numCubes = 12;
+    const cubes = [];
+    for (let i = 0; i < numCubes; i++) {
+        cubes.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            size: Math.random() * 18 + 10,
+            vy: -Math.random() * 0.7 - 0.3,
+            rot: Math.random() * Math.PI * 2,
+            rotSpeed: (Math.random() - 0.5) * 0.03,
+            color: Math.random() > 0.4 ? 'rgba(0, 240, 255, 0.4)' : 'rgba(255, 0, 229, 0.4)'
+        });
+    }
+
+    // 3. Matrix Digital Code Drops
+    const matrixChars = '01#2JLQUR2CV★⚔️TH16CLASH';
+    const matrixColumns = Math.floor(width / 45);
+    const drops = [];
+    for (let i = 0; i < matrixColumns; i++) {
+        drops.push({
+            x: i * 45 + Math.random() * 20,
+            y: Math.random() * height,
+            speed: Math.random() * 1.5 + 0.8,
+            char: matrixChars[Math.floor(Math.random() * matrixChars.length)]
         });
     }
 
     function draw() {
         ctx.clearRect(0, 0, width, height);
 
+        // A. Draw Matrix Digital Code Drops
+        ctx.font = '10px "Share Tech Mono", monospace';
+        for (let i = 0; i < drops.length; i++) {
+            const drop = drops[i];
+            ctx.fillStyle = 'rgba(0, 240, 255, 0.18)';
+            ctx.fillText(drop.char, drop.x, drop.y);
+            drop.y += drop.speed;
+            if (drop.y > height) {
+                drop.y = -20;
+                drop.x = Math.random() * width;
+                drop.char = matrixChars[Math.floor(Math.random() * matrixChars.length)];
+            }
+        }
+
+        // B. Draw Floating Cyber Hologram Diamonds (Town Hall Cores)
+        for (let i = 0; i < cubes.length; i++) {
+            const c = cubes[i];
+            c.y += c.vy;
+            c.rot += c.rotSpeed;
+            if (c.y < -40) {
+                c.y = height + 40;
+                c.x = Math.random() * width;
+            }
+
+            ctx.save();
+            ctx.translate(c.x, c.y);
+            ctx.rotate(c.rot);
+            ctx.strokeStyle = c.color;
+            ctx.lineWidth = 1.2;
+            ctx.strokeRect(-c.size / 2, -c.size / 2, c.size, c.size);
+            ctx.restore();
+        }
+
+        // C. Draw Constellation Laser Mesh Nodes
         for (let i = 0; i < nodes.length; i++) {
             const nodeA = nodes[i];
             nodeA.x += nodeA.vx;
@@ -1705,17 +1834,17 @@ for (let i = 0; i < 35; i++) {
                 const dx = mouse.x - nodeA.x;
                 const dy = mouse.y - nodeA.y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
-                if (dist < 180) {
+                if (dist < 190) {
                     const angle = Math.atan2(dy, dx);
-                    const force = (180 - dist) / 180;
+                    const force = (190 - dist) / 190;
                     nodeA.x -= Math.cos(angle) * force * 1.5;
                     nodeA.y -= Math.sin(angle) * force * 1.5;
 
                     ctx.beginPath();
                     ctx.moveTo(nodeA.x, nodeA.y);
                     ctx.lineTo(mouse.x, mouse.y);
-                    ctx.strokeStyle = `rgba(0, 240, 255, ${0.4 * (1 - dist / 180)})`;
-                    ctx.lineWidth = 0.8;
+                    ctx.strokeStyle = `rgba(0, 240, 255, ${0.45 * (1 - dist / 190)})`;
+                    ctx.lineWidth = 0.9;
                     ctx.stroke();
                 }
             }
@@ -1726,12 +1855,12 @@ for (let i = 0; i < 35; i++) {
                 const dy = nodeA.y - nodeB.y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
 
-                if (dist < 130) {
+                if (dist < 140) {
                     ctx.beginPath();
                     ctx.moveTo(nodeA.x, nodeA.y);
                     ctx.lineTo(nodeB.x, nodeB.y);
-                    ctx.strokeStyle = `rgba(0, 240, 255, ${0.2 * (1 - dist / 130)})`;
-                    ctx.lineWidth = 0.6;
+                    ctx.strokeStyle = `rgba(0, 240, 255, ${0.22 * (1 - dist / 140)})`;
+                    ctx.lineWidth = 0.7;
                     ctx.stroke();
                 }
             }
@@ -1740,10 +1869,30 @@ for (let i = 0; i < 35; i++) {
             ctx.arc(nodeA.x, nodeA.y, nodeA.radius, 0, Math.PI * 2);
             ctx.fillStyle = nodeA.color;
             ctx.globalAlpha = nodeA.alpha;
-            ctx.shadowBlur = 8;
+            ctx.shadowBlur = 10;
             ctx.shadowColor = nodeA.color;
             ctx.fill();
             ctx.shadowBlur = 0;
+            ctx.globalAlpha = 1.0;
+        }
+
+        // D. Draw Interactive Click Ripples
+        for (let i = ripples.length - 1; i >= 0; i--) {
+            const r = ripples[i];
+            r.radius += 4;
+            r.alpha -= 0.025;
+
+            if (r.alpha <= 0 || r.radius >= r.maxRadius) {
+                ripples.splice(i, 1);
+                continue;
+            }
+
+            ctx.beginPath();
+            ctx.arc(r.x, r.y, r.radius, 0, Math.PI * 2);
+            ctx.strokeStyle = r.color;
+            ctx.lineWidth = 2;
+            ctx.globalAlpha = r.alpha;
+            ctx.stroke();
             ctx.globalAlpha = 1.0;
         }
 
