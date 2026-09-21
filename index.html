@@ -1763,7 +1763,7 @@ const WAR_DATA = {
   "endTime": "20260921T161707.000Z",
   "clan": {
     "tag": "#2JLQUR2CV",
-    "name": "GOD OF War",
+    "name": "GÓD OF War",
     "badgeUrls": {
       "small": "https://api-assets.clashofclans.com/badges/70/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png",
       "large": "https://api-assets.clashofclans.com/badges/512/CcePp6velVQLlmvq7GsfWnhUxTV83Yk-86cLg2dpv9k.png",
@@ -2536,7 +2536,7 @@ const CLAN_MEMBERS = [
   {
     "tag": "#GGQPRRURV",
     "name": "namtugal",
-    "role": "coLeader",
+    "role": "admin",
     "townHallLevel": 13,
     "expLevel": 129,
     "league": {
@@ -4502,17 +4502,23 @@ function switchTab(tabName) {
     const cyberPillars = document.querySelectorAll('.cyber-pillar');
     const cyberHorizon = document.querySelector('.cyber-horizon-glow');
 
+    const particlesEl = document.getElementById('particles');
+    const cursorGlow = document.getElementById('cursorGlow');
+
     if (tabName === 'japan') {
         btnWar.classList.remove('active');
         btnJapan.classList.add('active');
         viewWar.classList.remove('active');
         viewJapan.classList.add('active');
 
+        // Completely hide ALL cyber elements
         if (sakuraCanvas) sakuraCanvas.style.opacity = '1';
-        if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '0.08';
-        if (cyberGrid) cyberGrid.style.opacity = '0.08';
-        cyberPillars.forEach(p => p.style.opacity = '0.05');
-        if (cyberHorizon) cyberHorizon.style.opacity = '0.05';
+        if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '0';
+        if (cyberGrid) cyberGrid.style.display = 'none';
+        cyberPillars.forEach(p => p.style.display = 'none');
+        if (cyberHorizon) cyberHorizon.style.display = 'none';
+        if (particlesEl) particlesEl.style.display = 'none';
+        if (cursorGlow) cursorGlow.style.display = 'none';
 
         document.body.style.background = '#0e0610';
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -4522,11 +4528,14 @@ function switchTab(tabName) {
         viewJapan.classList.remove('active');
         viewWar.classList.add('active');
 
+        // Restore ALL cyber elements
         if (sakuraCanvas) sakuraCanvas.style.opacity = '0';
         if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '1';
-        if (cyberGrid) cyberGrid.style.opacity = '1';
-        cyberPillars.forEach(p => p.style.opacity = '0.7');
-        if (cyberHorizon) cyberHorizon.style.opacity = '0.8';
+        if (cyberGrid) cyberGrid.style.display = '';
+        cyberPillars.forEach(p => p.style.display = '');
+        if (cyberHorizon) cyberHorizon.style.display = '';
+        if (particlesEl) particlesEl.style.display = '';
+        if (cursorGlow) cursorGlow.style.display = '';
 
         document.body.style.background = 'var(--bg)';
         window.scrollTo({ top: 0, behavior: 'smooth' });
