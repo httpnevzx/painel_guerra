@@ -4821,6 +4821,28 @@ function switchTab(tabName) {
     }
 }
 
+// Make switchTab explicitly global on window
+window.switchTab = switchTab;
+
+// Bind direct click and touch listeners to tab buttons
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bindTabListeners);
+} else {
+    bindTabListeners();
+}
+window.addEventListener('load', bindTabListeners);
+
+function bindTabListeners() {
+    const bWar = document.getElementById('tabBtnWar');
+    const bJapan = document.getElementById('tabBtnJapan');
+    if (bWar) {
+        bWar.onclick = function(e) { if (e) e.preventDefault(); switchTab('war'); };
+    }
+    if (bJapan) {
+        bJapan.onclick = function(e) { if (e) e.preventDefault(); switchTab('japan'); };
+    }
+}
+
 // ── Sakura Falling Petals Engine ──────────────────────────────────────────
 (function initSakuraEngine() {
     const canvas = document.getElementById('sakuraCanvas');
