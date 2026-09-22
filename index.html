@@ -2152,21 +2152,26 @@ const WAR_DATA = {
 };
 
 // ── Populate Basic Data ──────────────────────────────────────────────────
-const us   = WAR_DATA.clan;
-const them = WAR_DATA.opponent;
+try {
+const us   = WAR_DATA.clan || {};
+const them = WAR_DATA.opponent || {};
 
-document.getElementById('heroBadge').src = us.badgeUrls.medium;
-document.getElementById('usBadge').src   = us.badgeUrls.medium;
-document.getElementById('usName').textContent  = us.name;
-document.getElementById('usStars').textContent = us.stars;
-document.getElementById('usAtks').textContent  = us.attacks;
-document.getElementById('usDest').textContent  = us.destructionPercentage.toFixed(1) + '%';
+const _el = (id) => document.getElementById(id);
 
-if (them.badgeUrls) document.getElementById('themBadge').src = them.badgeUrls.medium;
-document.getElementById('themName').textContent  = them.name;
-document.getElementById('themStars').textContent = them.stars || 0;
-document.getElementById('themAtks').textContent  = them.attacks || 0;
-document.getElementById('themDest').textContent  = (them.destructionPercentage || 0).toFixed(1) + '%';
+if (us.badgeUrls) { if (_el('heroBadge')) _el('heroBadge').src = us.badgeUrls.medium; if (_el('usBadge')) _el('usBadge').src = us.badgeUrls.medium; }
+if (_el('usName')) _el('usName').textContent = us.name || 'GOD OF War';
+if (_el('usStars')) _el('usStars').textContent = us.stars || 0;
+if (_el('usAtks')) _el('usAtks').textContent = us.attacks || 0;
+if (_el('usDest')) _el('usDest').textContent = (us.destructionPercentage || 0).toFixed(1) + '%';
+
+if (them && them.name) {
+    if (them.badgeUrls && _el('themBadge')) _el('themBadge').src = them.badgeUrls.medium;
+    if (_el('themName')) _el('themName').textContent = them.name || 'Adversário';
+    if (_el('themStars')) _el('themStars').textContent = them.stars || 0;
+    if (_el('themAtks')) _el('themAtks').textContent = them.attacks || 0;
+    if (_el('themDest')) _el('themDest').textContent = (them.destructionPercentage || 0).toFixed(1) + '%';
+}
+} catch(e) { console.warn('Populate Basic Data error:', e); }
 
 // ── Season Data Placeholder ────────────────────────────────────────────
 const SEASON_DATA = {
