@@ -5411,11 +5411,24 @@ setInterval(updateSeasonCountdown, 1000);
         if (titleBox) titleBox.classList.add('show');
     }, 1650);
 
+    // Safety Click-to-Skip Intro
+    if (overlay) {
+        overlay.addEventListener('click', () => {
+            overlay.classList.add('hidden');
+            active = false;
+            if (animId) cancelAnimationFrame(animId);
+            setTimeout(() => { overlay.style.display = 'none'; }, 600);
+        });
+    }
+
     setTimeout(() => {
-        if (overlay) overlay.classList.add('hidden');
+        if (overlay) {
+            overlay.classList.add('hidden');
+            setTimeout(() => { overlay.style.display = 'none'; }, 600);
+        }
         active = false;
         if (animId) cancelAnimationFrame(animId);
-        startMusicAuto();
+        try { startMusicAuto(); } catch (e) {}
     }, 4400);
 })();
 
@@ -5432,13 +5445,21 @@ function toggleMusic() {
 
     isAudioPlaying = !isAudioPlaying;
 
+    try {
+        if (iframe.contentWindow) {
+            if (isAudioPlaying) {
+                iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+            } else {
+                iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+            }
+        }
+    } catch (e) {}
+
     if (isAudioPlaying) {
-        iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
         if (musicIcon) musicIcon.textContent = '🎵';
         if (musicText) musicText.textContent = 'LINKIN PARK 🎵';
         if (soundWave) soundWave.classList.add('playing');
     } else {
-        iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
         if (musicIcon) musicIcon.textContent = '🔇';
         if (musicText) musicText.textContent = 'MUTADO';
         if (soundWave) soundWave.classList.remove('playing');
@@ -5450,13 +5471,15 @@ function startMusicAuto() {
     const musicIcon = document.getElementById('musicIcon');
     const musicText = document.getElementById('musicText');
     const soundWave = document.getElementById('soundWave');
-    if (iframe) {
-        iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-        isAudioPlaying = true;
-        if (musicIcon) musicIcon.textContent = '🎵';
-        if (musicText) musicText.textContent = 'LINKIN PARK 🎵';
-        if (soundWave) soundWave.classList.add('playing');
-    }
+    try {
+        if (iframe && iframe.contentWindow) {
+            iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+            isAudioPlaying = true;
+            if (musicIcon) musicIcon.textContent = '🎵';
+            if (musicText) musicText.textContent = 'LINKIN PARK 🎵';
+            if (soundWave) soundWave.classList.add('playing');
+        }
+    } catch (e) {}
 }
 </script>
 
