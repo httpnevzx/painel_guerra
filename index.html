@@ -4770,6 +4770,9 @@ function switchTab(tabName) {
         viewWar.classList.remove('active');
         viewJapan.classList.add('active');
 
+        // Populate/re-render Cúpula & Members
+        try { initJapanTab(); } catch(e) {}
+
         // Completely hide ALL cyber elements
         if (sakuraCanvas) sakuraCanvas.style.opacity = '1';
         if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '0';
@@ -5046,8 +5049,13 @@ function setJapanFilter(role, btn) {
     filterJapanMembers();
 }
 
-// Initialize Japan Tab on Load
-initJapanTab();
+// Initialize Japan Tab on Load & DOMReady
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initJapanTab);
+} else {
+    initJapanTab();
+}
+window.addEventListener('load', initJapanTab);
 
 
 
