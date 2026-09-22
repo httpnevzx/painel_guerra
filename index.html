@@ -1524,7 +1524,7 @@
         </div>
         <div class="rules-chips">
             <div class="chip gold">🎽 Prêmios: Passe, Skins &amp; Gemas</div>
-            <div class="chip green">📦 Requisito 1: &gt; 100 Doações no Clã</div>
+            <div class="chip green">📦 Requisito 1: &gt; 500 Doações no Clã</div>
             <div class="chip cyan">📱 Requisito 2: Estar no Grupo do WhatsApp</div>
             <div class="chip red">🛡️ Transparência: Coordenadores (Líder/Co-Líderes) fora da disputa dos prêmios</div>
         </div>
@@ -1547,89 +1547,46 @@
         <span class="status-text" id="statusText">⚔️ BATALHA EM ANDAMENTO</span>
     </div>
 
-    <!-- ─── VS ───────────────────────────────────────────────────────── -->
-    <div class="vs-section hud-bracket">
-        <div class="vs-clan">
-            <img id="usBadge" src="" alt="">
-            <div class="clan-name" id="usName">GOD OF War</div>
-            <div class="clan-stats">
-                <span>⭐ <strong id="usStars">0</strong></span>
-                <span>⚔️ <strong id="usAtks">0</strong></span>
-                <span>💥 <strong id="usDest">0%</strong></span>
-            </div>
-        </div>
-        <div class="vs-divider">VS</div>
-        <div class="vs-clan">
-            <img id="themBadge" src="" alt="">
-            <div class="clan-name" id="themName">Adversário</div>
-            <div class="clan-stats">
-                <span>⭐ <strong id="themStars">0</strong></span>
-                <span>⚔️ <strong id="themAtks">0</strong></span>
-                <span>💥 <strong id="themDest">0%</strong></span>
-            </div>
-        </div>
-    </div>
-
     <!-- ─── PRIZES ──────────────────────────────────────────────────── -->
     <div class="section-title">🎽 Premiação do Evento (Membros Elegíveis)</div>
     <div class="prizes-grid">
         <div class="prize-card gold hud-bracket">
             <div class="prize-medal">🥇</div>
             <div class="prize-rank">1º LUGAR DA RUN</div>
-            <div class="prize-criteria">Maior acúmulo de estrelas + &gt;100 Doações + WhatsApp</div>
+            <div class="prize-criteria">Maior acúmulo de estrelas + &gt;500 Doações + WhatsApp</div>
             <div class="prize-reward" id="prize1">🎟️ PASSE DE TEMPORADA + SKIN</div>
         </div>
         <div class="prize-card silver hud-bracket">
             <div class="prize-medal">🥈</div>
             <div class="prize-rank">2º LUGAR DA RUN</div>
-            <div class="prize-criteria">Segundo maior acumulador + &gt;100 Doações + WhatsApp</div>
+            <div class="prize-criteria">Segundo maior acumulador + &gt;500 Doações + WhatsApp</div>
             <div class="prize-reward" id="prize2">🎨 SKIN DE HERÓI EXCLUSIVA</div>
         </div>
         <div class="prize-card bronze hud-bracket">
             <div class="prize-medal">🥉</div>
             <div class="prize-rank">3º LUGAR DA RUN</div>
-            <div class="prize-criteria">Terceiro maior acumulador + &gt;100 Doações + WhatsApp</div>
+            <div class="prize-criteria">Terceiro maior acumulador + &gt;500 Doações + WhatsApp</div>
             <div class="prize-reward" id="prize3">💎 PACOTE DE GEMAS</div>
         </div>
     </div>
 
     <!-- ─── MEMBERS TABLE ────────────────────────────────────────────── -->
-    <div class="section-title">🛡️ Ranking dos Guerreiros (Temporada 30 Dias)</div>
+    <div class="section-title">🏆 Ranking Acumulado da Season 30 Dias (Apenas Guerreiros em Guerra)</div>
     <div class="members-table-wrap hud-bracket">
         <table>
             <thead>
                 <tr>
                     <th>Rank</th>
-                    <th>Nome do Membro</th>
+                    <th>Guerreiro</th>
                     <th>Cargo</th>
                     <th>TH</th>
-                    <th>Estrelas Guerra</th>
-                    <th>Ataques Feitos</th>
-                    <th>Ataques Recebidos</th>
-                    <th>Doações</th>
+                    <th>⭐ Estrelas Acumuladas</th>
+                    <th>⚔️ Guerras Participadas</th>
+                    <th>📦 Doações (Season)</th>
                     <th>Status no Evento</th>
                 </tr>
             </thead>
             <tbody id="ourMembers"></tbody>
-        </table>
-    </div>
-
-    <!-- ─── OPPONENT MEMBERS TABLE ───────────────────────────────────── -->
-    <div class="section-title" style="color: var(--red); margin-top: 45px;">⚔️ QG do Clã Adversário (<span id="themTitleName">Inimigo</span>) — Estatísticas ao Vivo</div>
-    <div class="members-table-wrap" style="border-color: rgba(255, 56, 96, 0.3);">
-        <table>
-            <thead>
-                <tr>
-                    <th style="color: rgba(255, 56, 96, 0.8);">Vila</th>
-                    <th style="color: rgba(255, 56, 96, 0.8);">Guerreiro Inimigo</th>
-                    <th style="color: rgba(255, 56, 96, 0.8);">TH</th>
-                    <th style="color: rgba(255, 56, 96, 0.8);">Ataques Usados</th>
-                    <th style="color: rgba(255, 56, 96, 0.8);">Estrelas Dadas</th>
-                    <th style="color: rgba(255, 56, 96, 0.8);">Ataques Recebidos</th>
-                    <th style="color: rgba(255, 56, 96, 0.8);">Defesa da Vila Inimiga</th>
-                </tr>
-            </thead>
-            <tbody id="theirMembers"></tbody>
         </table>
     </div>
 
@@ -2210,7 +2167,337 @@ document.getElementById('themStars').textContent = them.stars || 0;
 document.getElementById('themAtks').textContent  = them.attacks || 0;
 document.getElementById('themDest').textContent  = (them.destructionPercentage || 0).toFixed(1) + '%';
 
-// ── Member Ranking & Eligibility Calculation ─────────────────────────────
+// ── Season Data Placeholder ────────────────────────────────────────────
+const SEASON_DATA = {
+  "seasonStart": "2026-09-22T00:00:00-04:00",
+  "seasonEnd": "2026-10-22T00:00:00-04:00",
+  "processedWarIds": [
+    "20260921T171416.000Z"
+  ],
+  "donationBaselines": {},
+  "lastSeenDonations": {
+    "#QRL2CJG9": 608,
+    "#9UYPCVPLL": 480,
+    "#GGQPRRURV": 441,
+    "#GYP00G8PR": 249,
+    "#292YJJ02V": 1933,
+    "#YJVRGUGVJ": 321,
+    "#R8R22C08Y": 451,
+    "#QGYU9GYC": 582,
+    "#GCY8PR02J": 139,
+    "#GVUPL0Y2L": 53,
+    "#LGG9RJ8PC": 0,
+    "#L9JULURCP": 45,
+    "#GJLC89UG8": 34,
+    "#G9ULQQJP2": 42,
+    "#80C2V90Q": 547,
+    "#28UVGLLQP": 248,
+    "#QLYUCRG9U": 0,
+    "#P2UJGG22P": 0,
+    "#2LGUVVC99": 160,
+    "#Q0YGRQLCQ": 112,
+    "#R9PV90U00": 165,
+    "#QGLRQRQLJ": 0,
+    "#YCY2YYYUP": 0,
+    "#Y2VVRCUL9": 198,
+    "#90YCRLUY0": 0,
+    "#LQV2QRVJR": 0,
+    "#Y8PLPVJJ0": 1,
+    "#Q8QQC2QR9": 3,
+    "#GU82Q92JP": 190,
+    "#GUQ822R8Q": 88,
+    "#QRQCP2Q0P": 0,
+    "#Y2LP8RV9J": 61,
+    "#9JUJVPVUQ": 0,
+    "#GVRPCCLUL": 80,
+    "#G0JUG29CG": 0,
+    "#UJUUJRLY": 0,
+    "#Y882VUVGJ": 142,
+    "#LVYP8RVGR": 0,
+    "#GG2JUVG2P": 0,
+    "#GYU8QLLVJ": 0,
+    "#YGLLU0UU9": 160
+  },
+  "seasonMembers": {
+    "#QGLRQRQLJ": {
+      "tag": "#QGLRQRQLJ",
+      "name": "F4NT4SM4",
+      "role": "member",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#GGQPRRURV": {
+      "tag": "#GGQPRRURV",
+      "name": "namtugal",
+      "role": "admin",
+      "townHallLevel": 13,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 441
+    },
+    "#YCY2YYYUP": {
+      "tag": "#YCY2YYYUP",
+      "name": "farrapo",
+      "role": "member",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#GYP00G8PR": {
+      "tag": "#GYP00G8PR",
+      "name": "JP Chavoso",
+      "role": "coLeader",
+      "townHallLevel": 14,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 249
+    },
+    "#GJLC89UG8": {
+      "tag": "#GJLC89UG8",
+      "name": "Robson",
+      "role": "member",
+      "townHallLevel": 13,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 34
+    },
+    "#292YJJ02V": {
+      "tag": "#292YJJ02V",
+      "name": "》Storm Killer《",
+      "role": "leader",
+      "townHallLevel": 13,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 1933
+    },
+    "#LQV2QRVJR": {
+      "tag": "#LQV2QRVJR",
+      "name": "Rosa₪Floresida₪",
+      "role": "member",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#Q0YGRQLCQ": {
+      "tag": "#Q0YGRQLCQ",
+      "name": "mestre",
+      "role": "member",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 112
+    },
+    "#QRL2CJG9": {
+      "tag": "#QRL2CJG9",
+      "name": "Jonas",
+      "role": "coLeader",
+      "townHallLevel": 15,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 608
+    },
+    "#9JUJVPVUQ": {
+      "tag": "#9JUJVPVUQ",
+      "name": "Targaryen",
+      "role": "member",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#G9ULQQJP2": {
+      "tag": "#G9ULQQJP2",
+      "name": "Hedris",
+      "role": "admin",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 42
+    },
+    "#Q8QQC2QR9": {
+      "tag": "#Q8QQC2QR9",
+      "name": "Cleyton Ribeiro",
+      "role": "member",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 3
+    },
+    "#G0JUG29CG": {
+      "tag": "#G0JUG29CG",
+      "name": "loren_ghost",
+      "role": "member",
+      "townHallLevel": 13,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#9UYPCVPLL": {
+      "tag": "#9UYPCVPLL",
+      "name": "LINKIN PARK",
+      "role": "coLeader",
+      "townHallLevel": 15,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 480
+    },
+    "#QRQCP2Q0P": {
+      "tag": "#QRQCP2Q0P",
+      "name": "jeizyHlima",
+      "role": "member",
+      "townHallLevel": 11,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#R8R22C08Y": {
+      "tag": "#R8R22C08Y",
+      "name": "Megatron",
+      "role": "coLeader",
+      "townHallLevel": 13,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 451
+    },
+    "#2LGUVVC99": {
+      "tag": "#2LGUVVC99",
+      "name": "#BAD BOY#",
+      "role": "admin",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 160
+    },
+    "#LVYP8RVGR": {
+      "tag": "#LVYP8RVGR",
+      "name": "IGOR_SILVA",
+      "role": "member",
+      "townHallLevel": 13,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#GVUPL0Y2L": {
+      "tag": "#GVUPL0Y2L",
+      "name": "marmela",
+      "role": "member",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 53
+    },
+    "#GG2JUVG2P": {
+      "tag": "#GG2JUVG2P",
+      "name": "Leo 2015",
+      "role": "member",
+      "townHallLevel": 13,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#GU82Q92JP": {
+      "tag": "#GU82Q92JP",
+      "name": "After",
+      "role": "admin",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 190
+    },
+    "#GUQ822R8Q": {
+      "tag": "#GUQ822R8Q",
+      "name": "YArdorius",
+      "role": "admin",
+      "townHallLevel": 11,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 88
+    },
+    "#GCY8PR02J": {
+      "tag": "#GCY8PR02J",
+      "name": "johnpork",
+      "role": "admin",
+      "townHallLevel": 13,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 139
+    },
+    "#GYU8QLLVJ": {
+      "tag": "#GYU8QLLVJ",
+      "name": "kayky2005",
+      "role": "member",
+      "townHallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#YGLLU0UU9": {
+      "tag": "#YGLLU0UU9",
+      "name": "ÉOBRABOXX",
+      "role": "member",
+      "townHallLevel": 14,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 160
+    }
+  }
+};
+
+// ── Season Ranking & Eligibility Calculation ────────────────────────────
 const roleMap = {
     leader: 'Líder (Staff)',
     coLeader: 'Co-Líder (Staff)',
@@ -2218,155 +2505,127 @@ const roleMap = {
     member: 'Membro'
 };
 
-const processedMembers = (us.members || []).map(m => {
-    const attacks = m.attacks || [];
-    const totalStars = attacks.reduce((s, a) => s + a.stars, 0);
-    const avgDest = attacks.length > 0
-        ? (attacks.reduce((s, a) => s + a.destructionPercentage, 0) / attacks.length)
-        : 0;
-    const usedAttacks = attacks.length;
-    const maxOrder = attacks.length > 0 ? Math.max(...attacks.map(a => a.order)) : 9999;
+const seasonMembersList = Object.values(SEASON_DATA.seasonMembers || {}).filter(m => (m.warCount || 0) >= 1);
+
+const processedSeasonMembers = seasonMembersList.map(m => {
+    const totalStars = m.totalStars || 0;
+    const totalAttacks = m.totalAttacks || 0;
+    const totalDestruction = m.totalDestruction || 0.0;
+    const avgDest = totalAttacks > 0 ? (totalDestruction / totalAttacks) : 0;
     const donations = m.donations || 0;
     const role = m.role || 'member';
+    const warCount = m.warCount || 1;
 
     const isStaff = (role === 'leader' || role === 'coLeader');
-    const hasMinDonations = donations >= 100;
+    const hasMinDonations = donations >= 500;
     const isEligible = !isStaff && hasMinDonations;
 
     return {
         ...m,
         totalStars,
+        totalAttacks,
         avgDest,
-        usedAttacks,
-        maxOrder,
         donations,
         role,
+        warCount,
         isStaff,
         hasMinDonations,
         isEligible
     };
 });
 
-// Sort by: 1. Stars (desc), 2. Destruction % (desc), 3. Order (asc), 4. Map Pos (asc)
-processedMembers.sort((a, b) => {
+// Sort by: 1. Total Stars (desc), 2. Avg Destruction % (desc), 3. Donations (desc), 4. War Count (desc)
+processedSeasonMembers.sort((a, b) => {
     if (b.totalStars !== a.totalStars) return b.totalStars - a.totalStars;
     if (b.avgDest !== a.avgDest) return b.avgDest - a.avgDest;
-    if (a.maxOrder !== b.maxOrder) return a.maxOrder - b.maxOrder;
-    return a.mapPosition - b.mapPosition;
+    if (b.donations !== a.donations) return b.donations - a.donations;
+    return b.warCount - a.warCount;
 });
 
 // Find Top 3 Eligible Members for Prize Cards
-const eligibleLeaders = processedMembers.filter(m => m.isEligible);
+const eligibleLeaders = processedSeasonMembers.filter(m => m.isEligible);
 
-if (eligibleLeaders[0]) {
-    document.getElementById('prize1').innerHTML = `🥇 1º: <strong>${eligibleLeaders[0].name}</strong> (${eligibleLeaders[0].totalStars}⭐ | ${eligibleLeaders[0].donations} doações)`;
-}
-if (eligibleLeaders[1]) {
-    document.getElementById('prize2').innerHTML = `🥈 2º: <strong>${eligibleLeaders[1].name}</strong> (${eligibleLeaders[1].totalStars}⭐ | ${eligibleLeaders[1].donations} doações)`;
-}
-if (eligibleLeaders[2]) {
-    document.getElementById('prize3').innerHTML = `🥉 3º: <strong>${eligibleLeaders[2].name}</strong> (${eligibleLeaders[2].totalStars}⭐ | ${eligibleLeaders[2].donations} doações)`;
-}
+const p1 = document.getElementById('prize1');
+const p2 = document.getElementById('prize2');
+const p3 = document.getElementById('prize3');
 
-// ── Populate Table ───────────────────────────────────────────────────────
-const ourTbody = document.getElementById('ourMembers');
-let eligibleRankCounter = 1;
-
-processedMembers.forEach((m, idx) => {
-    let rankBadge = `#${idx + 1}`;
-    let rowClass = '';
-
-    if (m.isStaff) {
-        rankBadge = `🛡️ Staff`;
-        rowClass = 'staff-row';
-    } else if (m.isEligible) {
-        if (eligibleRankCounter === 1) rankBadge = '🥇';
-        else if (eligibleRankCounter === 2) rankBadge = '🥈';
-        else if (eligibleRankCounter === 3) rankBadge = '🥉';
-        else rankBadge = `#${eligibleRankCounter}`;
-        eligibleRankCounter++;
-    }
-
-    let statusHtml = '';
-    if (m.isStaff) {
-        statusHtml = `<span class="status-badge staff">🛡️ Coordenador (Fora da disputa)</span>`;
-    } else if (m.hasMinDonations) {
-        statusHtml = `<span class="status-badge eligible">🏆 Elegível ao Prêmio (WhatsApp OK)</span>`;
+if (p1) {
+    if (eligibleLeaders[0]) {
+        p1.innerHTML = `🥇 1º: <strong>${eligibleLeaders[0].name}</strong> (${eligibleLeaders[0].totalStars}⭐ | ${eligibleLeaders[0].donations} doações)`;
     } else {
-        statusHtml = `<span class="status-badge need-donations">⚠️ Falta Doações (${m.donations}/100)</span>`;
+        p1.innerHTML = `🎟️ PASSE DE TEMPORADA + SKIN (Em disputa)`;
     }
+}
 
-    const donClass = m.hasMinDonations ? 'ok' : 'pending';
-    const roleText = roleMap[m.role] || m.role;
+if (p2) {
+    if (eligibleLeaders[1]) {
+        p2.innerHTML = `🥈 2º: <strong>${eligibleLeaders[1].name}</strong> (${eligibleLeaders[1].totalStars}⭐ | ${eligibleLeaders[1].donations} doações)`;
+    } else {
+        p2.innerHTML = `🎨 SKIN DE HERÓI EXCLUSIVA (Em disputa)`;
+    }
+}
 
-    const starsHtml = m.usedAttacks > 0
-        ? `<span class="stars-clean">⭐ <strong class="star-count">${m.totalStars}</strong></span>`
-        : `<span class="stars-clean dim">☆ 0</span>`;
+if (p3) {
+    if (eligibleLeaders[2]) {
+        p3.innerHTML = `🥉 3º: <strong>${eligibleLeaders[2].name}</strong> (${eligibleLeaders[2].totalStars}⭐ | ${eligibleLeaders[2].donations} doações)`;
+    } else {
+        p3.innerHTML = `💎 PACOTE DE GEMAS (Em disputa)`;
+    }
+}
 
-    const atkRecCount = m.opponentAttacks !== undefined ? m.opponentAttacks : (m.bestOpponentAttack ? 1 : 0);
-    const atkRecBadge = atkRecCount > 0
-        ? `<span class="atk-rec-badge hit">${atkRecCount}x 💥</span>`
-        : `<span class="atk-rec-badge clean">0x 🛡️</span>`;
+// ── Populate Season Ranking Table ──────────────────────────────────────
+const ourTbody = document.getElementById('ourMembers');
+if (ourTbody) {
+    ourTbody.innerHTML = '';
+    let eligibleRankCounter = 1;
 
-    const tr = document.createElement('tr');
-    tr.className = `${rowClass} holo-row`;
-    tr.style.animationDelay = `${(idx * 0.08 + 0.1).toFixed(2)}s`;
-    tr.innerHTML = `
-        <td><span class="member-pos">${rankBadge}</span></td>
-        <td><span class="member-name">${m.name}</span></td>
-        <td><span style="font-size:0.85rem; color:rgba(255,255,255,.6);">${roleText}</span></td>
-        <td><span class="th-badge">${m.townhallLevel}</span></td>
-        <td>${starsHtml}</td>
-        <td><span style="font-family:'Share Tech Mono'">${m.usedAttacks}/2</span></td>
-        <td>${atkRecBadge}</td>
-        <td><span class="donations-badge ${donClass}">${m.donations} / 100</span></td>
-        <td>${statusHtml}</td>
-    `;
-    ourTbody.appendChild(tr);
-});
+    processedSeasonMembers.forEach((m, idx) => {
+        let rankBadge = `#${idx + 1}`;
+        let rowClass = '';
 
-// ── Populate Opponent Members Table ─────────────────────────────────────
-const theirTbody = document.getElementById('theirMembers');
-if (theirTbody && them.members) {
-    const sortedThem = [...them.members].sort((a, b) => a.mapPosition - b.mapPosition);
-
-    const themTitleEl = document.getElementById('themTitleName');
-    if (themTitleEl) themTitleEl.textContent = them.name;
-
-    sortedThem.forEach((m, idx) => {
-        const attacks = m.attacks || [];
-        const usedAttacks = attacks.length;
-        const totalStars = attacks.reduce((s, a) => s + a.stars, 0);
-
-        const atkRecCount = m.opponentAttacks !== undefined ? m.opponentAttacks : (m.bestOpponentAttack ? 1 : 0);
-        const atkRecBadge = atkRecCount > 0
-            ? `<span class="atk-rec-badge hit">${atkRecCount}x 💥</span>`
-            : `<span class="atk-rec-badge clean">0x 🛡️</span>`;
-
-        const bestDef = m.bestOpponentAttack;
-        let defStatusHtml = '<span style="color:rgba(255,255,255,.3)">Intacta</span>';
-
-        if (bestDef) {
-            if (bestDef.stars === 3) {
-                defStatusHtml = `<span style="color:var(--green); font-weight:bold;">💀 Destruída 100% (${bestDef.stars}⭐)</span>`;
-            } else {
-                defStatusHtml = `<span style="color:var(--gold);">💥 Danificada (${bestDef.stars}⭐ ${bestDef.destructionPercentage}%)</span>`;
-            }
+        if (m.isStaff) {
+            rankBadge = `🛡️ Staff`;
+            rowClass = 'staff-row';
+        } else if (m.isEligible) {
+            if (eligibleRankCounter === 1) rankBadge = '🥇';
+            else if (eligibleRankCounter === 2) rankBadge = '🥈';
+            else if (eligibleRankCounter === 3) rankBadge = '🥉';
+            else rankBadge = `#${eligibleRankCounter}`;
+            eligibleRankCounter++;
         }
 
+        let statusHtml = '';
+        if (m.isStaff) {
+            statusHtml = `<span class="status-badge staff">🛡️ Coordenador (Fora da disputa)</span>`;
+        } else if (m.hasMinDonations) {
+            statusHtml = `<span class="status-badge eligible">🏆 Elegível ao Prêmio (WhatsApp OK)</span>`;
+        } else {
+            statusHtml = `<span class="status-badge need-donations">⚠️ Falta Doações (${m.donations}/500)</span>`;
+        }
+
+        const donClass = m.hasMinDonations ? 'ok' : 'pending';
+        const roleText = roleMap[m.role] || m.role;
+
+        const starsHtml = `<span class="stars-clean">⭐ <strong class="star-count">${m.totalStars}</strong></span>`;
+        const warCountHtml = `<span style="font-family:'Share Tech Mono'; color:#00f0ff; font-weight:bold;">${m.warCount} ${m.warCount === 1 ? 'Guerra' : 'Guerras'}</span>`;
+
         const tr = document.createElement('tr');
-        tr.className = 'holo-row';
-        tr.style.animationDelay = `${(idx * 0.08 + 0.15).toFixed(2)}s`;
+        tr.className = `${rowClass} holo-row`;
+        tr.style.animationDelay = `${(idx * 0.05 + 0.05).toFixed(2)}s`;
         tr.innerHTML = `
-            <td><span class="member-pos">Vila #${m.mapPosition}</span></td>
-            <td><span class="member-name">${m.name}</span></td>
-            <td><span class="th-badge" style="background:rgba(255,56,96,.1); border-color:rgba(255,56,96,.3); color:var(--red);">${m.townhallLevel}</span></td>
-            <td><span style="font-family:'Share Tech Mono'">${usedAttacks}/2</span></td>
-            <td><span class="stars-clean ${totalStars > 0 ? '' : 'dim'}">⭐ ${totalStars}</span></td>
-            <td>${atkRecBadge}</td>
-            <td>${defStatusHtml}</td>
+            <td><span class="member-pos">${rankBadge}</span></td>
+            <td>
+                <span class="member-name">${m.name}</span>
+                <div style="font-family:'Share Tech Mono'; font-size:0.75rem; color:rgba(255,255,255,0.4);">${m.tag}</div>
+            </td>
+            <td><span style="font-size:0.85rem; color:rgba(255,255,255,.6);">${roleText}</span></td>
+            <td><span class="th-badge">${m.townhallLevel}</span></td>
+            <td>${starsHtml}</td>
+            <td>${warCountHtml}</td>
+            <td><span class="donations-badge ${donClass}">${m.donations} / 500</span></td>
+            <td>${statusHtml}</td>
         `;
-        theirTbody.appendChild(tr);
+        ourTbody.appendChild(tr);
     });
 }
 
