@@ -1392,10 +1392,25 @@
             .council-stats-strip { width: 100%; justify-content: space-between; }
             .japan-header-badge { flex-direction: column; align-items: flex-start; gap: 12px; }
             .kanji-seal { align-self: flex-end; }
+        /* ── Japanese Temple Background Landscape Overlay ────────────── */
+        .japan-bg-overlay {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(rgba(14, 6, 16, 0.62), rgba(14, 6, 16, 0.80)), url('japan_bg.jpg') center center / cover no-repeat fixed;
+            z-index: -3;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+            pointer-events: none;
+        }
+        .japan-bg-overlay.active {
+            opacity: 1;
         }
     </style>
 </head>
 <body>
+
+<!-- Japanese Temple Background Overlay -->
+<div class="japan-bg-overlay" id="japanBgOverlay"></div>
 
 <!-- Dark Fantasy Anime Cinematic Intro Overlay -->
 <div class="intro-overlay" id="introOverlay">
@@ -6064,6 +6079,7 @@ function switchTab(tabName) {
 
     const particlesEl = document.getElementById('particles');
     const cursorGlow = document.getElementById('cursorGlow');
+    const japanBgOverlay = document.getElementById('japanBgOverlay');
 
     if (tabName === 'japan') {
         if (btnWar) btnWar.classList.remove('active');
@@ -6083,7 +6099,7 @@ function switchTab(tabName) {
         // Populate/re-render Cúpula & Members
         try { initJapanTab(); } catch(e) {}
 
-        // Completely hide ALL cyber elements
+        // Completely hide ALL cyber elements and show Japanese background
         if (sakuraCanvas) sakuraCanvas.style.opacity = '1';
         if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '0';
         if (cyberGrid) cyberGrid.style.display = 'none';
@@ -6091,6 +6107,8 @@ function switchTab(tabName) {
         if (cyberHorizon) cyberHorizon.style.display = 'none';
         if (particlesEl) particlesEl.style.display = 'none';
         if (cursorGlow) cursorGlow.style.display = 'none';
+
+        if (japanBgOverlay) japanBgOverlay.classList.add('active');
 
         document.body.style.background = '#0e0610';
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -6109,7 +6127,7 @@ function switchTab(tabName) {
             viewWar.style.opacity = '1';
         }
 
-        // Restore ALL cyber elements
+        // Restore ALL cyber elements and hide Japanese background
         if (sakuraCanvas) sakuraCanvas.style.opacity = '0';
         if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '1';
         if (cyberGrid) cyberGrid.style.display = '';
@@ -6117,6 +6135,8 @@ function switchTab(tabName) {
         if (cyberHorizon) cyberHorizon.style.display = '';
         if (particlesEl) particlesEl.style.display = '';
         if (cursorGlow) cursorGlow.style.display = '';
+
+        if (japanBgOverlay) japanBgOverlay.classList.remove('active');
 
         document.body.style.background = 'var(--bg)';
         window.scrollTo({ top: 0, behavior: 'smooth' });
