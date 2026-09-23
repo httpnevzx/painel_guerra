@@ -919,7 +919,7 @@
     "name": "Jefferson morae",
     "role": "member",
     "townHallLevel": 13,
-    "expLevel": 163,
+    "expLevel": 164,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1992,7 +1992,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2397,
+    "builderBaseTrophies": 2407,
     "clanRank": 39,
     "previousClanRank": 0,
     "donations": 0,
@@ -2018,8 +2018,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
+      "id": 44000022,
+      "name": "Brass League I"
     },
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
