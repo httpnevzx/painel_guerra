@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 25,
-    "stars": 59,
-    "destructionPercentage": 81.88,
+    "attacks": 27,
+    "stars": 65,
+    "destructionPercentage": 89.88,
     "members": [
       {
         "tag": "#QGLRQRQLJ",
@@ -68,7 +68,15 @@
         "name": "farrapo",
         "townhallLevel": 12,
         "mapPosition": 13,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#Q9VCQ9G0P",
+          "defenderTag": "#YCY2YYYUP",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 45,
+          "duration": 152
+        },
         "donations": 0,
         "role": "member"
       },
@@ -122,7 +130,15 @@
             "duration": 102
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#Q9VCQ9G0P",
+          "defenderTag": "#GJLC89UG8",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 46,
+          "duration": 175
+        },
         "donations": 34,
         "role": "member"
       },
@@ -131,6 +147,24 @@
         "name": "》Storm Killer《",
         "townhallLevel": 13,
         "mapPosition": 5,
+        "attacks": [
+          {
+            "attackerTag": "#292YJJ02V",
+            "defenderTag": "#LGC89YUJV",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 43,
+            "duration": 88
+          },
+          {
+            "attackerTag": "#292YJJ02V",
+            "defenderTag": "#Q9J2QUC00",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 44,
+            "duration": 80
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#90LY9UVGU",
@@ -603,9 +637,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/3jEgT0iPK0aacLxZjMlXWaS4EsrOEKpTBhaLU1ZO9eo.png"
     },
     "clanLevel": 5,
-    "attacks": 17,
-    "stars": 35,
-    "destructionPercentage": 54.04,
+    "attacks": 19,
+    "stars": 41,
+    "destructionPercentage": 62.04,
     "members": [
       {
         "tag": "#GL08G2R8R",
@@ -674,7 +708,15 @@
         "name": "OMAR 1✨",
         "townhallLevel": 12,
         "mapPosition": 16,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#292YJJ02V",
+          "defenderTag": "#LGC89YUJV",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 43,
+          "duration": 88
+        }
       },
       {
         "tag": "#Q0C0R82JC",
@@ -696,6 +738,24 @@
         "name": "G. F. X. R",
         "townhallLevel": 12,
         "mapPosition": 12,
+        "attacks": [
+          {
+            "attackerTag": "#Q9VCQ9G0P",
+            "defenderTag": "#YCY2YYYUP",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 45,
+            "duration": 152
+          },
+          {
+            "attackerTag": "#Q9VCQ9G0P",
+            "defenderTag": "#GJLC89UG8",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 46,
+            "duration": 175
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#GJLC89UG8",
@@ -1106,7 +1166,15 @@
         "name": "يوسف",
         "townhallLevel": 12,
         "mapPosition": 17,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#292YJJ02V",
+          "defenderTag": "#Q9J2QUC00",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 44,
+          "duration": 80
+        }
       }
     ]
   }
