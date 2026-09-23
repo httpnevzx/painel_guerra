@@ -6,38 +6,38 @@
   ],
   "donationBaselines": {},
   "lastSeenDonations": {
-    "#QRL2CJG9": 608,
-    "#9UYPCVPLL": 480,
+    "#QRL2CJG9": 638,
+    "#9UYPCVPLL": 601,
     "#GGQPRRURV": 441,
-    "#GYP00G8PR": 249,
-    "#292YJJ02V": 1933,
-    "#YJVRGUGVJ": 321,
+    "#GYP00G8PR": 264,
+    "#292YJJ02V": 2574,
+    "#YJVRGUGVJ": 536,
     "#R8R22C08Y": 451,
-    "#QGYU9GYC": 582,
-    "#GCY8PR02J": 139,
+    "#QGYU9GYC": 796,
+    "#GCY8PR02J": 156,
     "#GVUPL0Y2L": 53,
     "#LGG9RJ8PC": 0,
     "#L9JULURCP": 45,
     "#GJLC89UG8": 34,
     "#G9ULQQJP2": 42,
-    "#80C2V90Q": 547,
+    "#80C2V90Q": 619,
     "#28UVGLLQP": 248,
     "#QLYUCRG9U": 0,
     "#P2UJGG22P": 0,
-    "#2LGUVVC99": 160,
-    "#Q0YGRQLCQ": 112,
+    "#2LGUVVC99": 190,
+    "#Q0YGRQLCQ": 114,
     "#R9PV90U00": 165,
     "#QGLRQRQLJ": 0,
     "#YCY2YYYUP": 0,
     "#Y2VVRCUL9": 198,
-    "#90YCRLUY0": 0,
+    "#90YCRLUY0": 32,
     "#LQV2QRVJR": 0,
     "#Y8PLPVJJ0": 1,
     "#Q8QQC2QR9": 3,
     "#GU82Q92JP": 190,
-    "#GUQ822R8Q": 88,
+    "#GUQ822R8Q": 140,
     "#QRQCP2Q0P": 0,
-    "#Y2LP8RV9J": 61,
+    "#Y2LP8RV9J": 68,
     "#9JUJVPVUQ": 0,
     "#GVRPCCLUL": 80,
     "#G0JUG29CG": 0,
@@ -46,7 +46,14 @@
     "#LVYP8RVGR": 0,
     "#GG2JUVG2P": 0,
     "#GYU8QLLVJ": 0,
-    "#YGLLU0UU9": 160
+    "#YGLLU0UU9": 160,
+    "#GJCGJU8JL": 0,
+    "#PUQGPV8PC": 0,
+    "#9VRQRUR20": 0,
+    "#L90Y8VJ09": 0,
+    "#GQ2L8L9JY": 0,
+    "#R08PU9VP0": 0,
+    "#GLQJVVVR9": 0
   },
   "seasonMembers": {
     "#QGLRQRQLJ": {
@@ -91,7 +98,7 @@
       "totalAttacks": 0,
       "totalDestruction": 0.0,
       "warCount": 1,
-      "donations": 249
+      "donations": 264
     },
     "#GJLC89UG8": {
       "tag": "#GJLC89UG8",
@@ -113,7 +120,7 @@
       "totalAttacks": 0,
       "totalDestruction": 0.0,
       "warCount": 1,
-      "donations": 1933
+      "donations": 2574
     },
     "#LQV2QRVJR": {
       "tag": "#LQV2QRVJR",
@@ -135,7 +142,7 @@
       "totalAttacks": 0,
       "totalDestruction": 0.0,
       "warCount": 1,
-      "donations": 112
+      "donations": 114
     },
     "#QRL2CJG9": {
       "tag": "#QRL2CJG9",
@@ -146,7 +153,7 @@
       "totalAttacks": 0,
       "totalDestruction": 0.0,
       "warCount": 1,
-      "donations": 608
+      "donations": 638
     },
     "#9JUJVPVUQ": {
       "tag": "#9JUJVPVUQ",
@@ -201,7 +208,7 @@
       "totalAttacks": 0,
       "totalDestruction": 0.0,
       "warCount": 1,
-      "donations": 480
+      "donations": 601
     },
     "#QRQCP2Q0P": {
       "tag": "#QRQCP2Q0P",
@@ -234,7 +241,7 @@
       "totalAttacks": 0,
       "totalDestruction": 0.0,
       "warCount": 1,
-      "donations": 160
+      "donations": 190
     },
     "#LVYP8RVGR": {
       "tag": "#LVYP8RVGR",
@@ -289,7 +296,7 @@
       "totalAttacks": 0,
       "totalDestruction": 0.0,
       "warCount": 1,
-      "donations": 88
+      "donations": 140
     },
     "#GCY8PR02J": {
       "tag": "#GCY8PR02J",
@@ -300,7 +307,7 @@
       "totalAttacks": 0,
       "totalDestruction": 0.0,
       "warCount": 1,
-      "donations": 139
+      "donations": 156
     },
     "#GYU8QLLVJ": {
       "tag": "#GYU8QLLVJ",
