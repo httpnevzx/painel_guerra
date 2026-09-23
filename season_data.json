@@ -121,9 +121,9 @@
       "name": "》Storm Killer《",
       "role": "leader",
       "townHallLevel": 13,
-      "totalStars": 0,
-      "totalAttacks": 0,
-      "totalDestruction": 0.0,
+      "totalStars": 6,
+      "totalAttacks": 2,
+      "totalDestruction": 200.0,
       "warCount": 1,
       "donations": 2574,
       "townhallLevel": 13
@@ -403,9 +403,9 @@
         "name": "》Storm Killer《",
         "role": "leader",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       },
       "#LQV2QRVJR": {
         "name": "Rosa₪Floresida₪",
