@@ -3457,32 +3457,35 @@ processedSeasonMembers.sort((a, b) => {
     return b.warCount - a.warCount;
 });
 
-// Find Top 3 Eligible Members for Prize Cards
-const eligibleLeaders = processedSeasonMembers.filter(m => m.isEligible);
+// Find Top 3 Non-Staff Members for Prize Cards
+const topNonStaff = processedSeasonMembers.filter(m => !m.isStaff);
 
 const p1 = document.getElementById('prize1');
 const p2 = document.getElementById('prize2');
 const p3 = document.getElementById('prize3');
 
 if (p1) {
-    if (eligibleLeaders[0]) {
-        p1.innerHTML = `🥇 1º: <strong>${eligibleLeaders[0].name}</strong> (${eligibleLeaders[0].totalStars}⭐ | ${eligibleLeaders[0].donations} doações)`;
+    if (topNonStaff[0]) {
+        const donText = topNonStaff[0].hasMinDonations ? '🏆 Elegível' : `${topNonStaff[0].donations}/500 doações`;
+        p1.innerHTML = `🥇 1º: <strong>${topNonStaff[0].name}</strong> (${topNonStaff[0].totalStars}⭐ | ${donText})`;
     } else {
         p1.innerHTML = `🎟️ PASSE DE TEMPORADA + SKIN (Em disputa)`;
     }
 }
 
 if (p2) {
-    if (eligibleLeaders[1]) {
-        p2.innerHTML = `🥈 2º: <strong>${eligibleLeaders[1].name}</strong> (${eligibleLeaders[1].totalStars}⭐ | ${eligibleLeaders[1].donations} doações)`;
+    if (topNonStaff[1]) {
+        const donText = topNonStaff[1].hasMinDonations ? '🏆 Elegível' : `${topNonStaff[1].donations}/500 doações`;
+        p2.innerHTML = `🥈 2º: <strong>${topNonStaff[1].name}</strong> (${topNonStaff[1].totalStars}⭐ | ${donText})`;
     } else {
         p2.innerHTML = `🎨 SKIN DE HERÓI EXCLUSIVA (Em disputa)`;
     }
 }
 
 if (p3) {
-    if (eligibleLeaders[2]) {
-        p3.innerHTML = `🥉 3º: <strong>${eligibleLeaders[2].name}</strong> (${eligibleLeaders[2].totalStars}⭐ | ${eligibleLeaders[2].donations} doações)`;
+    if (topNonStaff[2]) {
+        const donText = topNonStaff[2].hasMinDonations ? '🏆 Elegível' : `${topNonStaff[2].donations}/500 doações`;
+        p3.innerHTML = `🥉 3º: <strong>${topNonStaff[2].name}</strong> (${topNonStaff[2].totalStars}⭐ | ${donText})`;
     } else {
         p3.innerHTML = `💎 PACOTE DE GEMAS (Em disputa)`;
     }
