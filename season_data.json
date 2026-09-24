@@ -10,7 +10,7 @@
     "#9UYPCVPLL": 654,
     "#GGQPRRURV": 441,
     "#GYP00G8PR": 264,
-    "#292YJJ02V": 3280,
+    "#292YJJ02V": 3332,
     "#YJVRGUGVJ": 566,
     "#R8R22C08Y": 628,
     "#QGYU9GYC": 1718,
@@ -41,7 +41,7 @@
     "#9JUJVPVUQ": 0,
     "#GVRPCCLUL": 80,
     "#G0JUG29CG": 0,
-    "#UJUUJRLY": 258,
+    "#UJUUJRLY": 330,
     "#Y882VUVGJ": 142,
     "#LVYP8RVGR": 0,
     "#GG2JUVG2P": 0,
@@ -99,9 +99,9 @@
       "name": "JP Chavoso",
       "role": "coLeader",
       "townHallLevel": 14,
-      "totalStars": 3,
-      "totalAttacks": 2,
-      "totalDestruction": 163.0,
+      "totalStars": 8,
+      "totalAttacks": 4,
+      "totalDestruction": 339.0,
       "warCount": 2,
       "donations": 264,
       "townhallLevel": 14
@@ -127,7 +127,7 @@
       "totalAttacks": 2,
       "totalDestruction": 200.0,
       "warCount": 2,
-      "donations": 3280,
+      "donations": 3332,
       "townhallLevel": 13
     },
     "#LQV2QRVJR": {
@@ -183,9 +183,9 @@
       "name": "Hedris",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 3,
-      "totalAttacks": 1,
-      "totalDestruction": 100.0,
+      "totalStars": 6,
+      "totalAttacks": 2,
+      "totalDestruction": 200.0,
       "warCount": 2,
       "donations": 85,
       "townhallLevel": 12
@@ -351,9 +351,9 @@
       "name": "ÉOBRABOXX",
       "role": "member",
       "townHallLevel": 14,
-      "totalStars": 6,
-      "totalAttacks": 2,
-      "totalDestruction": 200.0,
+      "totalStars": 12,
+      "totalAttacks": 4,
+      "totalDestruction": 400.0,
       "warCount": 2,
       "donations": 191,
       "townhallLevel": 14
@@ -364,9 +364,9 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 0,
-      "totalAttacks": 0,
-      "totalDestruction": 0.0,
+      "totalStars": 3,
+      "totalAttacks": 1,
+      "totalDestruction": 100.0,
       "warCount": 1,
       "donations": 0
     },
@@ -440,7 +440,7 @@
       "totalAttacks": 1,
       "totalDestruction": 100.0,
       "warCount": 1,
-      "donations": 258
+      "donations": 330
     },
     "#90YCRLUY0": {
       "tag": "#90YCRLUY0",
@@ -663,9 +663,9 @@
         "name": "Marcello Palha",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#GGQPRRURV": {
         "name": "namtugal",
@@ -679,9 +679,9 @@
         "name": "JP Chavoso",
         "role": "coLeader",
         "townHallLevel": 14,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 5,
+        "attacks": 2,
+        "destruction": 176
       },
       "#GJLC89UG8": {
         "name": "Robson",
@@ -743,9 +743,9 @@
         "name": "Hedris",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#GJCGJU8JL": {
         "name": "Igorzin",
@@ -855,9 +855,9 @@
         "name": "ÉOBRABOXX",
         "role": "member",
         "townHallLevel": 14,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       }
     }
   }
