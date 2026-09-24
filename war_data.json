@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 0,
-    "stars": 0,
-    "destructionPercentage": 0.0,
+    "attacks": 1,
+    "stars": 3,
+    "destructionPercentage": 4.0,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -159,6 +159,16 @@
         "name": "Jefferson morae",
         "townhallLevel": 13,
         "mapPosition": 9,
+        "attacks": [
+          {
+            "attackerTag": "#UJUUJRLY",
+            "defenderTag": "#20LUVLCGR",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 1,
+            "duration": 169
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 258,
         "role": "member"
@@ -285,7 +295,15 @@
         "name": "franks",
         "townhallLevel": 13,
         "mapPosition": 9,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#UJUUJRLY",
+          "defenderTag": "#20LUVLCGR",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 1,
+          "duration": 169
+        }
       },
       {
         "tag": "#9PYRLUR08",
