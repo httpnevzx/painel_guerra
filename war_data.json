@@ -15,15 +15,25 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 3,
-    "stars": 9,
-    "destructionPercentage": 12.0,
+    "attacks": 9,
+    "stars": 26,
+    "destructionPercentage": 35.04,
     "members": [
       {
         "tag": "#9VRQRUR20",
         "name": "Marcello Palha",
         "townhallLevel": 12,
         "mapPosition": 11,
+        "attacks": [
+          {
+            "attackerTag": "#9VRQRUR20",
+            "defenderTag": "#8PV8QG2YP",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 8,
+            "duration": 89
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 0,
         "role": "member"
@@ -42,6 +52,24 @@
         "name": "JP Chavoso",
         "townhallLevel": 14,
         "mapPosition": 4,
+        "attacks": [
+          {
+            "attackerTag": "#GYP00G8PR",
+            "defenderTag": "#QCG2VLPUQ",
+            "stars": 2,
+            "destructionPercentage": 76,
+            "order": 9,
+            "duration": 180
+          },
+          {
+            "attackerTag": "#GYP00G8PR",
+            "defenderTag": "#LGURRQQRC",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 11,
+            "duration": 138
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 264,
         "role": "coLeader"
@@ -61,7 +89,7 @@
         "townhallLevel": 13,
         "mapPosition": 6,
         "opponentAttacks": 0,
-        "donations": 3280,
+        "donations": 3332,
         "role": "leader"
       },
       {
@@ -114,6 +142,16 @@
         "name": "Hedris",
         "townhallLevel": 12,
         "mapPosition": 24,
+        "attacks": [
+          {
+            "attackerTag": "#G9ULQQJP2",
+            "defenderTag": "#R828PCLQG",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 10,
+            "duration": 72
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#GQJYVQPVP",
@@ -178,7 +216,7 @@
           }
         ],
         "opponentAttacks": 0,
-        "donations": 258,
+        "donations": 330,
         "role": "member"
       },
       {
@@ -286,6 +324,24 @@
         "name": "ÉOBRABOXX",
         "townhallLevel": 14,
         "mapPosition": 8,
+        "attacks": [
+          {
+            "attackerTag": "#YGLLU0UU9",
+            "defenderTag": "#LLULRPGYQ",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 6,
+            "duration": 137
+          },
+          {
+            "attackerTag": "#YGLLU0UU9",
+            "defenderTag": "#G80QYQ89U",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 7,
+            "duration": 124
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 191,
         "role": "member"
@@ -407,7 +463,15 @@
         "name": "جوکر",
         "townhallLevel": 13,
         "mapPosition": 5,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#YGLLU0UU9",
+          "defenderTag": "#LLULRPGYQ",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 6,
+          "duration": 137
+        }
       },
       {
         "tag": "#YJVGJ2ULP",
@@ -428,7 +492,15 @@
         "name": "Mahdi",
         "townhallLevel": 9,
         "mapPosition": 24,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#G9ULQQJP2",
+          "defenderTag": "#R828PCLQG",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 10,
+          "duration": 72
+        }
       },
       {
         "tag": "#828RCQLC",
@@ -442,7 +514,15 @@
         "name": "BRIM_CRAFT",
         "townhallLevel": 14,
         "mapPosition": 6,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#YGLLU0UU9",
+          "defenderTag": "#G80QYQ89U",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 7,
+          "duration": 124
+        }
       },
       {
         "tag": "#Q9VRJ9GUQ",
@@ -463,14 +543,30 @@
         "name": "bhavik shah",
         "townhallLevel": 13,
         "mapPosition": 11,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#9VRQRUR20",
+          "defenderTag": "#8PV8QG2YP",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 8,
+          "duration": 89
+        }
       },
       {
         "tag": "#QCG2VLPUQ",
         "name": "VistaSan",
         "townhallLevel": 14,
         "mapPosition": 4,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GYP00G8PR",
+          "defenderTag": "#QCG2VLPUQ",
+          "stars": 2,
+          "destructionPercentage": 76,
+          "order": 9,
+          "duration": 180
+        }
       },
       {
         "tag": "#9UCQUC89C",
@@ -513,7 +609,15 @@
         "name": "lautloser Schre",
         "townhallLevel": 15,
         "mapPosition": 3,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GYP00G8PR",
+          "defenderTag": "#LGURRQQRC",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 11,
+          "duration": 138
+        }
       },
       {
         "tag": "#Q2VRVVQP2",
