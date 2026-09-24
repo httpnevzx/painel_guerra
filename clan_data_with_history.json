@@ -1940,7 +1940,7 @@
     "name": "YArdorius",
     "role": "admin",
     "townHallLevel": 11,
-    "expLevel": 88,
+    "expLevel": 89,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1957,7 +1957,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/x1c7byHQmOHQVKGxAn1sqOW2XOCzTYW-e6OKjq-FBco.png"
       }
     },
-    "trophies": 58,
+    "trophies": 98,
     "builderBaseTrophies": 1213,
     "clanRank": 37,
     "previousClanRank": 36,
