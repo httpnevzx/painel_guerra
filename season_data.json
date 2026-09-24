@@ -6,32 +6,32 @@
   ],
   "donationBaselines": {},
   "lastSeenDonations": {
-    "#QRL2CJG9": 638,
-    "#9UYPCVPLL": 601,
+    "#QRL2CJG9": 803,
+    "#9UYPCVPLL": 654,
     "#GGQPRRURV": 441,
     "#GYP00G8PR": 264,
-    "#292YJJ02V": 2574,
-    "#YJVRGUGVJ": 536,
-    "#R8R22C08Y": 526,
-    "#QGYU9GYC": 796,
-    "#GCY8PR02J": 156,
+    "#292YJJ02V": 3209,
+    "#YJVRGUGVJ": 566,
+    "#R8R22C08Y": 628,
+    "#QGYU9GYC": 1718,
+    "#GCY8PR02J": 207,
     "#GVUPL0Y2L": 53,
     "#LGG9RJ8PC": 0,
     "#L9JULURCP": 45,
     "#GJLC89UG8": 34,
-    "#G9ULQQJP2": 42,
-    "#80C2V90Q": 619,
+    "#G9ULQQJP2": 85,
+    "#80C2V90Q": 941,
     "#28UVGLLQP": 248,
     "#QLYUCRG9U": 0,
     "#P2UJGG22P": 0,
-    "#2LGUVVC99": 190,
+    "#2LGUVVC99": 220,
     "#Q0YGRQLCQ": 114,
-    "#R9PV90U00": 165,
+    "#R9PV90U00": 172,
     "#QGLRQRQLJ": 0,
     "#YCY2YYYUP": 0,
     "#Y2VVRCUL9": 198,
-    "#90YCRLUY0": 32,
-    "#LQV2QRVJR": 0,
+    "#90YCRLUY0": 64,
+    "#LQV2QRVJR": 2,
     "#Y8PLPVJJ0": 1,
     "#Q8QQC2QR9": 3,
     "#GU82Q92JP": 190,
@@ -41,19 +41,21 @@
     "#9JUJVPVUQ": 0,
     "#GVRPCCLUL": 80,
     "#G0JUG29CG": 0,
-    "#UJUUJRLY": 0,
+    "#UJUUJRLY": 258,
     "#Y882VUVGJ": 142,
     "#LVYP8RVGR": 0,
     "#GG2JUVG2P": 0,
     "#GYU8QLLVJ": 0,
-    "#YGLLU0UU9": 160,
+    "#YGLLU0UU9": 191,
     "#GJCGJU8JL": 0,
     "#PUQGPV8PC": 0,
     "#9VRQRUR20": 0,
     "#L90Y8VJ09": 0,
     "#GQ2L8L9JY": 0,
     "#R08PU9VP0": 0,
-    "#GLQJVVVR9": 0
+    "#GLQJVVVR9": 0,
+    "#Q0URR9VC9": 0,
+    "#82CQY0Q8V": 3
   },
   "seasonMembers": {
     "#QGLRQRQLJ": {
@@ -76,7 +78,7 @@
       "totalStars": 6,
       "totalAttacks": 2,
       "totalDestruction": 200.0,
-      "warCount": 1,
+      "warCount": 2,
       "donations": 441,
       "townhallLevel": 13
     },
@@ -100,7 +102,7 @@
       "totalStars": 3,
       "totalAttacks": 2,
       "totalDestruction": 163.0,
-      "warCount": 1,
+      "warCount": 2,
       "donations": 264,
       "townhallLevel": 14
     },
@@ -112,20 +114,20 @@
       "totalStars": 6,
       "totalAttacks": 2,
       "totalDestruction": 200.0,
-      "warCount": 1,
+      "warCount": 2,
       "donations": 34,
       "townhallLevel": 13
     },
     "#292YJJ02V": {
       "tag": "#292YJJ02V",
-      "name": "》Storm Killer《",
+      "name": "Nevzx 躾⛩️",
       "role": "leader",
       "townHallLevel": 13,
       "totalStars": 6,
       "totalAttacks": 2,
       "totalDestruction": 200.0,
-      "warCount": 1,
-      "donations": 2574,
+      "warCount": 2,
+      "donations": 3209,
       "townhallLevel": 13
     },
     "#LQV2QRVJR": {
@@ -136,21 +138,21 @@
       "totalStars": 2,
       "totalAttacks": 2,
       "totalDestruction": 187.0,
-      "warCount": 1,
-      "donations": 0,
+      "warCount": 2,
+      "donations": 2,
       "townhallLevel": 12
     },
     "#Q0YGRQLCQ": {
       "tag": "#Q0YGRQLCQ",
       "name": "mestre",
       "role": "member",
-      "townHallLevel": 12,
+      "townHallLevel": 13,
       "totalStars": 0,
       "totalAttacks": 0,
       "totalDestruction": 0.0,
-      "warCount": 1,
+      "warCount": 2,
       "donations": 114,
-      "townhallLevel": 12
+      "townhallLevel": 13
     },
     "#QRL2CJG9": {
       "tag": "#QRL2CJG9",
@@ -160,8 +162,8 @@
       "totalStars": 5,
       "totalAttacks": 2,
       "totalDestruction": 193.0,
-      "warCount": 1,
-      "donations": 638,
+      "warCount": 2,
+      "donations": 803,
       "townhallLevel": 15
     },
     "#9JUJVPVUQ": {
@@ -172,7 +174,7 @@
       "totalStars": 1,
       "totalAttacks": 1,
       "totalDestruction": 84.0,
-      "warCount": 1,
+      "warCount": 2,
       "donations": 0,
       "townhallLevel": 12
     },
@@ -184,8 +186,8 @@
       "totalStars": 3,
       "totalAttacks": 1,
       "totalDestruction": 100.0,
-      "warCount": 1,
-      "donations": 42,
+      "warCount": 2,
+      "donations": 85,
       "townhallLevel": 12
     },
     "#Q8QQC2QR9": {
@@ -220,8 +222,8 @@
       "totalStars": 5,
       "totalAttacks": 2,
       "totalDestruction": 170.0,
-      "warCount": 1,
-      "donations": 601,
+      "warCount": 2,
+      "donations": 654,
       "townhallLevel": 15
     },
     "#QRQCP2Q0P": {
@@ -245,7 +247,7 @@
       "totalAttacks": 2,
       "totalDestruction": 200.0,
       "warCount": 1,
-      "donations": 526,
+      "donations": 628,
       "townhallLevel": 13
     },
     "#2LGUVVC99": {
@@ -256,8 +258,8 @@
       "totalStars": 0,
       "totalAttacks": 0,
       "totalDestruction": 0.0,
-      "warCount": 1,
-      "donations": 190,
+      "warCount": 2,
+      "donations": 220,
       "townhallLevel": 12
     },
     "#LVYP8RVGR": {
@@ -280,7 +282,7 @@
       "totalStars": 0,
       "totalAttacks": 0,
       "totalDestruction": 0.0,
-      "warCount": 1,
+      "warCount": 2,
       "donations": 53,
       "townhallLevel": 12
     },
@@ -304,7 +306,7 @@
       "totalStars": 5,
       "totalAttacks": 2,
       "totalDestruction": 200.0,
-      "warCount": 1,
+      "warCount": 2,
       "donations": 190,
       "townhallLevel": 12
     },
@@ -316,7 +318,7 @@
       "totalStars": 6,
       "totalAttacks": 2,
       "totalDestruction": 200.0,
-      "warCount": 1,
+      "warCount": 2,
       "donations": 140,
       "townhallLevel": 11
     },
@@ -328,8 +330,8 @@
       "totalStars": 3,
       "totalAttacks": 1,
       "totalDestruction": 100.0,
-      "warCount": 1,
-      "donations": 156,
+      "warCount": 2,
+      "donations": 207,
       "townhallLevel": 13
     },
     "#GYU8QLLVJ": {
@@ -340,7 +342,7 @@
       "totalStars": 2,
       "totalAttacks": 2,
       "totalDestruction": 91.0,
-      "warCount": 1,
+      "warCount": 2,
       "donations": 0,
       "townhallLevel": 12
     },
@@ -352,9 +354,105 @@
       "totalStars": 6,
       "totalAttacks": 2,
       "totalDestruction": 200.0,
-      "warCount": 1,
-      "donations": 160,
+      "warCount": 2,
+      "donations": 191,
       "townhallLevel": 14
+    },
+    "#9VRQRUR20": {
+      "tag": "#9VRQRUR20",
+      "name": "Marcello Palha",
+      "role": "member",
+      "townHallLevel": 12,
+      "townhallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#R08PU9VP0": {
+      "tag": "#R08PU9VP0",
+      "name": "bielx2.0",
+      "role": "member",
+      "townHallLevel": 12,
+      "townhallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#GJCGJU8JL": {
+      "tag": "#GJCGJU8JL",
+      "name": "Igorzin",
+      "role": "member",
+      "townHallLevel": 12,
+      "townhallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#GVRPCCLUL": {
+      "tag": "#GVRPCCLUL",
+      "name": "Bruxo",
+      "role": "admin",
+      "townHallLevel": 12,
+      "townhallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 80
+    },
+    "#PUQGPV8PC": {
+      "tag": "#PUQGPV8PC",
+      "name": "PITBULL.E",
+      "role": "member",
+      "townHallLevel": 12,
+      "townhallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#Q0URR9VC9": {
+      "tag": "#Q0URR9VC9",
+      "name": "THE APELA",
+      "role": "member",
+      "townHallLevel": 15,
+      "townhallLevel": 15,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 0
+    },
+    "#UJUUJRLY": {
+      "tag": "#UJUUJRLY",
+      "name": "Jefferson morae",
+      "role": "member",
+      "townHallLevel": 13,
+      "townhallLevel": 13,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 258
+    },
+    "#90YCRLUY0": {
+      "tag": "#90YCRLUY0",
+      "name": "king renan",
+      "role": "member",
+      "townHallLevel": 12,
+      "townhallLevel": 12,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 64
     }
   },
   "warHistory": {
@@ -558,6 +656,208 @@
         "stars": 6,
         "attacks": 2,
         "destruction": 200
+      }
+    },
+    "20260923T221241.000Z": {
+      "#9VRQRUR20": {
+        "name": "Marcello Palha",
+        "role": "member",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GGQPRRURV": {
+        "name": "namtugal",
+        "role": "admin",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GYP00G8PR": {
+        "name": "JP Chavoso",
+        "role": "coLeader",
+        "townHallLevel": 14,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GJLC89UG8": {
+        "name": "Robson",
+        "role": "member",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#292YJJ02V": {
+        "name": "Nevzx 躾⛩️",
+        "role": "leader",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#LQV2QRVJR": {
+        "name": "Rosa₪Floresida₪",
+        "role": "member",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#Q0YGRQLCQ": {
+        "name": "mestre",
+        "role": "member",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#QRL2CJG9": {
+        "name": "Jonas",
+        "role": "coLeader",
+        "townHallLevel": 15,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#9JUJVPVUQ": {
+        "name": "Targaryen",
+        "role": "member",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#R08PU9VP0": {
+        "name": "bielx2.0",
+        "role": "member",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#G9ULQQJP2": {
+        "name": "Hedris",
+        "role": "admin",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GJCGJU8JL": {
+        "name": "Igorzin",
+        "role": "member",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GVRPCCLUL": {
+        "name": "Bruxo",
+        "role": "admin",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#PUQGPV8PC": {
+        "name": "PITBULL.E",
+        "role": "member",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#Q0URR9VC9": {
+        "name": "THE APELA",
+        "role": "member",
+        "townHallLevel": 15,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#UJUUJRLY": {
+        "name": "Jefferson morae",
+        "role": "member",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#9UYPCVPLL": {
+        "name": "LINKIN PARK",
+        "role": "coLeader",
+        "townHallLevel": 15,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#90YCRLUY0": {
+        "name": "king renan",
+        "role": "member",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#2LGUVVC99": {
+        "name": "#BAD BOY#",
+        "role": "admin",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GVUPL0Y2L": {
+        "name": "marmela",
+        "role": "member",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GU82Q92JP": {
+        "name": "After",
+        "role": "admin",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GUQ822R8Q": {
+        "name": "YArdorius",
+        "role": "admin",
+        "townHallLevel": 11,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GCY8PR02J": {
+        "name": "johnpork",
+        "role": "admin",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GYU8QLLVJ": {
+        "name": "kayky2005",
+        "role": "member",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#YGLLU0UU9": {
+        "name": "ÉOBRABOXX",
+        "role": "member",
+        "townHallLevel": 14,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
       }
     }
   }
