@@ -1405,6 +1405,103 @@
         .japan-bg-overlay.active {
             opacity: 1;
         }
+
+        /* ── Current War Scorecard Styles ────────────────────────────── */
+        .current-war-card {
+            background: rgba(14, 22, 38, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin: 20px 0 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 240, 255, 0.08);
+        }
+        .current-war-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .current-war-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            color: #00f0ff;
+            font-weight: 700;
+        }
+        .vs-scoreboard {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .team-side {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex: 1;
+        }
+        .team-side.them-side {
+            justify-content: flex-end;
+        }
+        .team-badge-img {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 10px rgba(0,240,255,0.4));
+        }
+        .team-name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        .team-stats {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1.2rem;
+            color: #ffd700;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stars-val {
+            font-size: 1.5rem;
+            color: #ffd700;
+        }
+        .dest-val {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .atks-val {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.8rem;
+            color: rgba(0, 240, 255, 0.7);
+            margin-top: 2px;
+        }
+        .vs-badge {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: #ff2a6d;
+            padding: 8px 16px;
+            background: rgba(255, 42, 109, 0.15);
+            border: 1px solid rgba(255, 42, 109, 0.4);
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 42, 109, 0.3);
+            letter-spacing: 2px;
+        }
+        .align-right {
+            text-align: right;
+        }
+        @media (max-width: 768px) {
+            .vs-scoreboard { flex-direction: column; gap: 16px; }
+            .team-side { width: 100%; justify-content: center !important; }
+            .align-right { text-align: center; }
+        }
     </style>
 </head>
 <body>
@@ -1557,10 +1654,47 @@
         </div>
     </div>
 
-    <!-- ─── STATUS ──────────────────────────────────────────────────── -->
+    <!-- ─── STATUS & CURRENT WAR SCORECARD ──────────────────────────── -->
     <div class="status-bar">
         <div class="status-dot"></div>
         <span class="status-text" id="statusText">⚔️ BATALHA EM ANDAMENTO</span>
+    </div>
+
+    <!-- ─── CURRENT WAR VS SCOREBOARD ───────────────────────────────── -->
+    <div class="current-war-card hud-bracket" id="currentWarCard">
+        <div class="current-war-header">
+            <div class="status-dot"></div>
+            <span class="current-war-title">⚔️ CONFRONTO DA GUERRA ATUAL</span>
+        </div>
+        <div class="vs-scoreboard">
+            <!-- Our Clan -->
+            <div class="team-side us-side">
+                <img id="usBadge" src="" alt="GOD OF WAR" class="team-badge-img">
+                <div class="team-details">
+                    <div class="team-name" id="usName">GOD OF WAR</div>
+                    <div class="team-stats">
+                        <span class="stars-val" id="usStars">0</span> <span class="star-icon">⭐</span>
+                        <span class="dest-val" id="usDest">(0.0%)</span>
+                    </div>
+                    <div class="atks-val"><span id="usAtks">0</span> ataques realizados</div>
+                </div>
+            </div>
+
+            <div class="vs-badge">VS</div>
+
+            <!-- Opponent Clan -->
+            <div class="team-side them-side">
+                <div class="team-details align-right">
+                    <div class="team-name" id="themName">Adversário</div>
+                    <div class="team-stats">
+                        <span class="dest-val" id="themDest">(0.0%)</span>
+                        <span class="stars-val" id="themStars">0</span> <span class="star-icon">⭐</span>
+                    </div>
+                    <div class="atks-val"><span id="themAtks">0</span> ataques realizados</div>
+                </div>
+                <img id="themBadge" src="" alt="Adversário" class="team-badge-img">
+            </div>
+        </div>
     </div>
 
     <!-- ─── PRIZES ──────────────────────────────────────────────────── -->
@@ -1708,6 +1842,7 @@
                             <th>Nível XP</th>
                             <th>Troféus</th>
                             <th>Doações</th>
+                            <th>Estrelas Guerra</th>
                         </tr>
                     </thead>
                     <tbody id="japanGeneralMembersTbody"></tbody>
@@ -1742,9 +1877,9 @@ const WAR_DATA = {
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 0,
-    "stars": 0,
-    "destructionPercentage": 0.0,
+    "attacks": 1,
+    "stars": 3,
+    "destructionPercentage": 4.0,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -1886,6 +2021,16 @@ const WAR_DATA = {
         "name": "Jefferson morae",
         "townhallLevel": 13,
         "mapPosition": 9,
+        "attacks": [
+          {
+            "attackerTag": "#UJUUJRLY",
+            "defenderTag": "#20LUVLCGR",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 1,
+            "duration": 169
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 258,
         "role": "member"
@@ -2012,7 +2157,15 @@ const WAR_DATA = {
         "name": "franks",
         "townhallLevel": 13,
         "mapPosition": 9,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#UJUUJRLY",
+          "defenderTag": "#20LUVLCGR",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 1,
+          "duration": 169
+        }
       },
       {
         "tag": "#9PYRLUR08",
@@ -2626,9 +2779,9 @@ const SEASON_DATA = {
       "role": "member",
       "townHallLevel": 13,
       "townhallLevel": 13,
-      "totalStars": 0,
-      "totalAttacks": 0,
-      "totalDestruction": 0.0,
+      "totalStars": 3,
+      "totalAttacks": 1,
+      "totalDestruction": 100.0,
       "warCount": 1,
       "donations": 258
     },
@@ -2973,9 +3126,9 @@ const SEASON_DATA = {
         "name": "Jefferson morae",
         "role": "member",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#9UYPCVPLL": {
         "name": "LINKIN PARK",
@@ -5818,6 +5971,18 @@ function initJapanTab() {
     const tableBody = document.getElementById('japanGeneralMembersTbody');
     if (!councilContainer || !tableBody) return;
 
+    // Calculate season stars map from SEASON_DATA
+    const seasonStarsMap = {};
+    if (typeof SEASON_DATA !== 'undefined' && SEASON_DATA.seasonMembers) {
+        Object.values(SEASON_DATA.seasonMembers).forEach(sm => {
+            seasonStarsMap[sm.tag] = sm.totalStars || 0;
+        });
+    }
+
+    CLAN_MEMBERS.forEach(m => {
+        m.warStars = seasonStarsMap[m.tag] || 0;
+    });
+
     // Separate Council (Leader & Co-Leaders) from General Members
     const councilMembers = CLAN_MEMBERS.filter(m => m.role === 'leader' || m.role === 'coLeader');
     // Sort council: Leader first, then Co-Leaders by days in clan desc
@@ -5870,6 +6035,10 @@ function initJapanTab() {
                     <div class="c-stat-box">
                         <div class="c-stat-val" style="color: #00ff88;">📦 ${m.donations || 0}</div>
                         <div class="c-stat-lbl">Doações</div>
+                    </div>
+                    <div class="c-stat-box">
+                        <div class="c-stat-val" style="color: #ffcc00;">⭐ ${m.warStars || 0}</div>
+                        <div class="c-stat-lbl">Estrelas Guerra</div>
                     </div>
                     <div class="c-stat-box">
                         <div class="c-stat-val" style="color: #00f0ff;">⚡ ${m.expLevel || 100}</div>
@@ -5929,6 +6098,7 @@ function renderGeneralMembers(list) {
             <td><span style="font-family:'Share Tech Mono'; color:rgba(255,255,255,0.85);">Nv. ${m.expLevel || 100}</span></td>
             <td><span style="font-family:'Share Tech Mono'; color:#ffd700; font-weight:700;">🏆 ${m.trophies || 0}</span></td>
             <td><span style="font-family:'Share Tech Mono'; color:${donColor}; font-weight:700;">📦 ${m.donations || 0}</span></td>
+            <td><span style="font-family:'Share Tech Mono'; color:#ffcc00; font-weight:700;">⭐ ${m.warStars || 0}</span></td>
         `;
         tableBody.appendChild(tr);
     });
