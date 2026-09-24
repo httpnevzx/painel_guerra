@@ -315,9 +315,9 @@
       "name": "YArdorius",
       "role": "admin",
       "townHallLevel": 11,
-      "totalStars": 6,
-      "totalAttacks": 2,
-      "totalDestruction": 200.0,
+      "totalStars": 9,
+      "totalAttacks": 3,
+      "totalDestruction": 300.0,
       "warCount": 2,
       "donations": 140,
       "townhallLevel": 11
@@ -831,9 +831,9 @@
         "name": "YArdorius",
         "role": "admin",
         "townHallLevel": 11,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#GCY8PR02J": {
         "name": "johnpork",
