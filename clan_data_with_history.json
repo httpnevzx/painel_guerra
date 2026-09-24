@@ -168,6 +168,62 @@
     "joinedDate": "2024-01-19"
   },
   {
+    "tag": "#292YJJ02V",
+    "name": "Nevzx 躾⛩️",
+    "role": "leader",
+    "townHallLevel": 13,
+    "expLevel": 161,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000018,
+      "name": "Witch League 18",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
+      }
+    },
+    "trophies": 8,
+    "builderBaseTrophies": 2249,
+    "clanRank": 4,
+    "previousClanRank": 5,
+    "donations": 3332,
+    "donationsReceived": 918,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000108
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 989,
+    "daysInClan": 420,
+    "joinedDate": "2023-07-28"
+  },
+  {
     "tag": "#GGQPRRURV",
     "name": "namtugal",
     "role": "admin",
@@ -191,7 +247,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2885,
-    "clanRank": 4,
+    "clanRank": 5,
     "previousClanRank": 4,
     "donations": 441,
     "donationsReceived": 330,
@@ -224,62 +280,6 @@
     "joinedDate": "2023-12-05"
   },
   {
-    "tag": "#292YJJ02V",
-    "name": "Nevzx 躾⛩️",
-    "role": "leader",
-    "townHallLevel": 13,
-    "expLevel": 161,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000018,
-      "name": "Witch League 18",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 2249,
-    "clanRank": 5,
-    "previousClanRank": 5,
-    "donations": 3280,
-    "donationsReceived": 918,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000001
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000108
-        },
-        {
-          "type": "decoration",
-          "id": 82000063
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
-    },
-    "warStars": 989,
-    "daysInClan": 420,
-    "joinedDate": "2023-07-28"
-  },
-  {
     "tag": "#Q0URR9VC9",
     "name": "THE APELA",
     "role": "member",
@@ -302,7 +302,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2579,
+    "builderBaseTrophies": 2624,
     "clanRank": 6,
     "previousClanRank": 6,
     "donations": 0,
@@ -328,8 +328,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000022,
-      "name": "Brass League I"
+      "id": 44000023,
+      "name": "Iron League III"
     },
     "warStars": 410,
     "daysInClan": 1,
@@ -586,7 +586,7 @@
     "clanRank": 11,
     "previousClanRank": 47,
     "donations": 191,
-    "donationsReceived": 52,
+    "donationsReceived": 104,
     "playerHouse": {
       "elements": [
         {
@@ -957,7 +957,7 @@
     "builderBaseTrophies": 2004,
     "clanRank": 18,
     "previousClanRank": 17,
-    "donations": 258,
+    "donations": 330,
     "donationsReceived": 462,
     "builderBaseLeague": {
       "id": 44000020,
@@ -1366,7 +1366,7 @@
     "clanRank": 26,
     "previousClanRank": 25,
     "donations": 0,
-    "donationsReceived": 288,
+    "donationsReceived": 360,
     "playerHouse": {
       "elements": [
         {
@@ -1400,7 +1400,7 @@
     "name": "king renan",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 123,
+    "expLevel": 124,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1957,7 +1957,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/x1c7byHQmOHQVKGxAn1sqOW2XOCzTYW-e6OKjq-FBco.png"
       }
     },
-    "trophies": 178,
+    "trophies": 258,
     "builderBaseTrophies": 1213,
     "clanRank": 37,
     "previousClanRank": 36,
