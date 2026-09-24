@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 9,
-    "stars": 26,
-    "destructionPercentage": 35.04,
+    "attacks": 10,
+    "stars": 29,
+    "destructionPercentage": 39.04,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -97,6 +97,16 @@
         "name": "Rosa₪Floresida₪",
         "townhallLevel": 12,
         "mapPosition": 23,
+        "attacks": [
+          {
+            "attackerTag": "#LQV2QRVJR",
+            "defenderTag": "#R0UCY2RR9",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 12,
+            "duration": 103
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 2,
         "role": "member"
@@ -441,7 +451,15 @@
         "name": "عبدالروف",
         "townhallLevel": 11,
         "mapPosition": 23,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#LQV2QRVJR",
+          "defenderTag": "#R0UCY2RR9",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 12,
+          "duration": 103
+        }
       },
       {
         "tag": "#R8P0CQ92G",
