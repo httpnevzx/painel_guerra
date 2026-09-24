@@ -1415,7 +1415,7 @@
             backdrop-filter: blur(12px) !important;
             border: 1px solid rgba(0, 240, 255, 0.35) !important;
             border-radius: 14px !important;
-            padding: 20px 24px !important;
+            padding: 16px 20px !important;
             margin: 20px 0 30px !important;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(0, 240, 255, 0.1) !important;
             width: 100% !important;
@@ -1425,47 +1425,50 @@
             display: flex !important;
             align-items: center !important;
             gap: 10px !important;
-            margin-bottom: 16px !important;
-            padding-bottom: 10px !important;
+            margin-bottom: 14px !important;
+            padding-bottom: 8px !important;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
         }
         .cw-title {
             font-family: 'Orbitron', sans-serif !important;
-            font-size: 0.95rem !important;
+            font-size: 0.9rem !important;
             letter-spacing: 2px !important;
             color: #00f0ff !important;
             font-weight: 700 !important;
         }
         .cw-scoreboard {
-            display: flex !important;
-            flex-direction: row !important;
+            display: grid !important;
+            grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) !important;
             align-items: center !important;
-            justify-content: space-between !important;
-            gap: 24px !important;
+            gap: 16px !important;
             width: 100% !important;
         }
         .cw-team {
             display: flex !important;
             flex-direction: row !important;
             align-items: center !important;
-            gap: 16px !important;
-            flex: 1 1 0% !important;
+            gap: 12px !important;
+            min-width: 0 !important;
         }
         .cw-team.cw-them {
             justify-content: flex-end !important;
         }
         .cw-badge-img {
-            width: 72px !important;
-            height: 72px !important;
-            min-width: 72px !important;
-            min-height: 72px !important;
+            width: 56px !important;
+            height: 56px !important;
+            min-width: 56px !important;
+            min-height: 56px !important;
             object-fit: contain !important;
-            filter: drop-shadow(0 0 12px rgba(0,240,255,0.4)) !important;
+            filter: drop-shadow(0 0 10px rgba(0,240,255,0.4)) !important;
             display: block !important;
+            flex-shrink: 0 !important;
+            margin: 0 !important;
         }
         .cw-info {
             display: flex !important;
             flex-direction: column !important;
+            min-width: 0 !important;
+            overflow: hidden !important;
         }
         .cw-info.cw-right {
             align-items: flex-end !important;
@@ -1473,65 +1476,67 @@
         }
         .cw-name {
             font-family: 'Orbitron', sans-serif !important;
-            font-size: 1.2rem !important;
+            font-size: 1.05rem !important;
             font-weight: 900 !important;
             color: #ffffff !important;
-            margin-bottom: 4px !important;
+            margin-bottom: 2px !important;
+            white-space: nowrap !important;
+            text-overflow: ellipsis !important;
+            overflow: hidden !important;
         }
         .cw-score {
             font-family: 'Share Tech Mono', monospace !important;
-            font-size: 1.3rem !important;
+            font-size: 1.1rem !important;
             color: #ffd700 !important;
             font-weight: 700 !important;
             display: flex !important;
             align-items: center !important;
-            gap: 6px !important;
+            gap: 4px !important;
+            white-space: nowrap !important;
         }
         .cw-stars {
-            font-size: 1.6rem !important;
+            font-size: 1.35rem !important;
             color: #ffd700 !important;
             font-weight: 900 !important;
         }
         .cw-star-icon {
-            font-size: 1.2rem !important;
+            font-size: 1.1rem !important;
         }
         .cw-dest {
-            font-size: 0.95rem !important;
+            font-size: 0.85rem !important;
             color: rgba(255, 255, 255, 0.75) !important;
         }
         .cw-atks {
             font-family: 'Share Tech Mono', monospace !important;
-            font-size: 0.85rem !important;
+            font-size: 0.78rem !important;
             color: rgba(0, 240, 255, 0.8) !important;
-            margin-top: 2px !important;
+            margin-top: 1px !important;
+            white-space: nowrap !important;
         }
         .cw-vs-badge {
             font-family: 'Orbitron', sans-serif !important;
-            font-size: 1.3rem !important;
+            font-size: 1.1rem !important;
             font-weight: 900 !important;
             color: #ff2a6d !important;
-            padding: 10px 20px !important;
+            padding: 8px 14px !important;
             background: rgba(255, 42, 109, 0.15) !important;
             border: 1px solid rgba(255, 42, 109, 0.5) !important;
             border-radius: 8px !important;
-            box-shadow: 0 0 20px rgba(255, 42, 109, 0.3) !important;
+            box-shadow: 0 0 15px rgba(255, 42, 109, 0.3) !important;
             letter-spacing: 2px !important;
             flex-shrink: 0 !important;
+            text-align: center !important;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 480px) {
             .cw-scoreboard {
-                flex-direction: column !important;
-                gap: 16px !important;
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
             }
             .cw-team, .cw-team.cw-them {
                 justify-content: center !important;
                 width: 100% !important;
             }
-            .cw-info.cw-right {
-                align-items: center !important;
-                text-align: center !important;
-            }
-            .cw-info {
+            .cw-info.cw-right, .cw-info {
                 align-items: center !important;
                 text-align: center !important;
             }
@@ -5421,7 +5426,7 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/x1c7byHQmOHQVKGxAn1sqOW2XOCzTYW-e6OKjq-FBco.png"
       }
     },
-    "trophies": 98,
+    "trophies": 178,
     "builderBaseTrophies": 1213,
     "clanRank": 37,
     "previousClanRank": 36,
