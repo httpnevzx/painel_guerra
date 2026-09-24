@@ -10,7 +10,7 @@
     "#9UYPCVPLL": 654,
     "#GGQPRRURV": 441,
     "#GYP00G8PR": 264,
-    "#292YJJ02V": 3209,
+    "#292YJJ02V": 3280,
     "#YJVRGUGVJ": 566,
     "#R8R22C08Y": 628,
     "#QGYU9GYC": 1718,
@@ -30,7 +30,7 @@
     "#QGLRQRQLJ": 0,
     "#YCY2YYYUP": 0,
     "#Y2VVRCUL9": 198,
-    "#90YCRLUY0": 64,
+    "#90YCRLUY0": 141,
     "#LQV2QRVJR": 2,
     "#Y8PLPVJJ0": 1,
     "#Q8QQC2QR9": 3,
@@ -127,7 +127,7 @@
       "totalAttacks": 2,
       "totalDestruction": 200.0,
       "warCount": 2,
-      "donations": 3209,
+      "donations": 3280,
       "townhallLevel": 13
     },
     "#LQV2QRVJR": {
@@ -452,7 +452,7 @@
       "totalAttacks": 0,
       "totalDestruction": 0.0,
       "warCount": 1,
-      "donations": 64
+      "donations": 141
     }
   },
   "warHistory": {
