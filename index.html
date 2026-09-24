@@ -1406,101 +1406,132 @@
             opacity: 1;
         }
 
-        /* ── Current War Scorecard Styles ────────────────────────────── */
-        .current-war-card {
-            background: rgba(14, 22, 38, 0.75);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(0, 240, 255, 0.3);
-            border-radius: 14px;
-            padding: 20px 24px;
-            margin: 20px 0 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 240, 255, 0.08);
+        /* ── Current War Scorecard Styles (Isolated .cw-) ────────────── */
+        .cw-card {
+            background: rgba(10, 16, 28, 0.85) !important;
+            backdrop-filter: blur(12px) !important;
+            border: 1px solid rgba(0, 240, 255, 0.35) !important;
+            border-radius: 14px !important;
+            padding: 20px 24px !important;
+            margin: 20px 0 30px !important;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(0, 240, 255, 0.1) !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
         }
-        .current-war-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 16px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        .cw-header {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            margin-bottom: 16px !important;
+            padding-bottom: 10px !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
         }
-        .current-war-title {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            color: #00f0ff;
-            font-weight: 700;
+        .cw-title {
+            font-family: 'Orbitron', sans-serif !important;
+            font-size: 0.95rem !important;
+            letter-spacing: 2px !important;
+            color: #00f0ff !important;
+            font-weight: 700 !important;
         }
-        .vs-scoreboard {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
+        .cw-scoreboard {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: 24px !important;
+            width: 100% !important;
         }
-        .team-side {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            flex: 1;
+        .cw-team {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            gap: 16px !important;
+            flex: 1 1 0% !important;
         }
-        .team-side.them-side {
-            justify-content: flex-end;
+        .cw-team.cw-them {
+            justify-content: flex-end !important;
         }
-        .team-badge-img {
-            width: 64px;
-            height: 64px;
-            object-fit: contain;
-            filter: drop-shadow(0 0 10px rgba(0,240,255,0.4));
+        .cw-badge-img {
+            width: 72px !important;
+            height: 72px !important;
+            min-width: 72px !important;
+            min-height: 72px !important;
+            object-fit: contain !important;
+            filter: drop-shadow(0 0 12px rgba(0,240,255,0.4)) !important;
+            display: block !important;
         }
-        .team-name {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.15rem;
-            font-weight: 900;
-            color: #fff;
-            margin-bottom: 4px;
+        .cw-info {
+            display: flex !important;
+            flex-direction: column !important;
         }
-        .team-stats {
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 1.2rem;
-            color: #ffd700;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+        .cw-info.cw-right {
+            align-items: flex-end !important;
+            text-align: right !important;
         }
-        .stars-val {
-            font-size: 1.5rem;
-            color: #ffd700;
+        .cw-name {
+            font-family: 'Orbitron', sans-serif !important;
+            font-size: 1.2rem !important;
+            font-weight: 900 !important;
+            color: #ffffff !important;
+            margin-bottom: 4px !important;
         }
-        .dest-val {
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.7);
+        .cw-score {
+            font-family: 'Share Tech Mono', monospace !important;
+            font-size: 1.3rem !important;
+            color: #ffd700 !important;
+            font-weight: 700 !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 6px !important;
         }
-        .atks-val {
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 0.8rem;
-            color: rgba(0, 240, 255, 0.7);
-            margin-top: 2px;
+        .cw-stars {
+            font-size: 1.6rem !important;
+            color: #ffd700 !important;
+            font-weight: 900 !important;
         }
-        .vs-badge {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.2rem;
-            font-weight: 900;
-            color: #ff2a6d;
-            padding: 8px 16px;
-            background: rgba(255, 42, 109, 0.15);
-            border: 1px solid rgba(255, 42, 109, 0.4);
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(255, 42, 109, 0.3);
-            letter-spacing: 2px;
+        .cw-star-icon {
+            font-size: 1.2rem !important;
         }
-        .align-right {
-            text-align: right;
+        .cw-dest {
+            font-size: 0.95rem !important;
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+        .cw-atks {
+            font-family: 'Share Tech Mono', monospace !important;
+            font-size: 0.85rem !important;
+            color: rgba(0, 240, 255, 0.8) !important;
+            margin-top: 2px !important;
+        }
+        .cw-vs-badge {
+            font-family: 'Orbitron', sans-serif !important;
+            font-size: 1.3rem !important;
+            font-weight: 900 !important;
+            color: #ff2a6d !important;
+            padding: 10px 20px !important;
+            background: rgba(255, 42, 109, 0.15) !important;
+            border: 1px solid rgba(255, 42, 109, 0.5) !important;
+            border-radius: 8px !important;
+            box-shadow: 0 0 20px rgba(255, 42, 109, 0.3) !important;
+            letter-spacing: 2px !important;
+            flex-shrink: 0 !important;
         }
         @media (max-width: 768px) {
-            .vs-scoreboard { flex-direction: column; gap: 16px; }
-            .team-side { width: 100%; justify-content: center !important; }
-            .align-right { text-align: center; }
+            .cw-scoreboard {
+                flex-direction: column !important;
+                gap: 16px !important;
+            }
+            .cw-team, .cw-team.cw-them {
+                justify-content: center !important;
+                width: 100% !important;
+            }
+            .cw-info.cw-right {
+                align-items: center !important;
+                text-align: center !important;
+            }
+            .cw-info {
+                align-items: center !important;
+                text-align: center !important;
+            }
         }
     </style>
 </head>
@@ -1661,38 +1692,39 @@
     </div>
 
     <!-- ─── CURRENT WAR VS SCOREBOARD ───────────────────────────────── -->
-    <div class="current-war-card hud-bracket" id="currentWarCard">
-        <div class="current-war-header">
+    <div class="cw-card hud-bracket" id="currentWarCard">
+        <div class="cw-header">
             <div class="status-dot"></div>
-            <span class="current-war-title">⚔️ CONFRONTO DA GUERRA ATUAL</span>
+            <span class="cw-title">⚔️ CONFRONTO DA GUERRA ATUAL</span>
         </div>
-        <div class="vs-scoreboard">
-            <!-- Our Clan -->
-            <div class="team-side us-side">
-                <img id="usBadge" src="" alt="GOD OF WAR" class="team-badge-img">
-                <div class="team-details">
-                    <div class="team-name" id="usName">GOD OF WAR</div>
-                    <div class="team-stats">
-                        <span class="stars-val" id="usStars">0</span> <span class="star-icon">⭐</span>
-                        <span class="dest-val" id="usDest">(0.0%)</span>
+        <div class="cw-scoreboard">
+            <!-- Our Clan (GOD OF WAR) -->
+            <div class="cw-team cw-us">
+                <img id="usBadge" src="" alt="GOD OF WAR" class="cw-badge-img">
+                <div class="cw-info">
+                    <div class="cw-name" id="usName">GOD OF WAR</div>
+                    <div class="cw-score">
+                        <span class="cw-stars" id="usStars">0</span> <span class="cw-star-icon">⭐</span>
+                        <span class="cw-dest" id="usDest">(0.0%)</span>
                     </div>
-                    <div class="atks-val"><span id="usAtks">0</span> ataques realizados</div>
+                    <div class="cw-atks"><span id="usAtks">0</span> ataques realizados</div>
                 </div>
             </div>
 
-            <div class="vs-badge">VS</div>
+            <!-- VS Badge -->
+            <div class="cw-vs-badge">VS</div>
 
             <!-- Opponent Clan -->
-            <div class="team-side them-side">
-                <div class="team-details align-right">
-                    <div class="team-name" id="themName">Adversário</div>
-                    <div class="team-stats">
-                        <span class="dest-val" id="themDest">(0.0%)</span>
-                        <span class="stars-val" id="themStars">0</span> <span class="star-icon">⭐</span>
+            <div class="cw-team cw-them">
+                <div class="cw-info cw-right">
+                    <div class="cw-name" id="themName">Adversário</div>
+                    <div class="cw-score">
+                        <span class="cw-dest" id="themDest">(0.0%)</span>
+                        <span class="cw-stars" id="themStars">0</span> <span class="cw-star-icon">⭐</span>
                     </div>
-                    <div class="atks-val"><span id="themAtks">0</span> ataques realizados</div>
+                    <div class="cw-atks"><span id="themAtks">0</span> ataques realizados</div>
                 </div>
-                <img id="themBadge" src="" alt="Adversário" class="team-badge-img">
+                <img id="themBadge" src="" alt="Adversário" class="cw-badge-img">
             </div>
         </div>
     </div>
@@ -1923,7 +1955,7 @@ const WAR_DATA = {
         "townhallLevel": 13,
         "mapPosition": 6,
         "opponentAttacks": 0,
-        "donations": 3209,
+        "donations": 3280,
         "role": "leader"
       },
       {
@@ -2050,7 +2082,7 @@ const WAR_DATA = {
         "townhallLevel": 12,
         "mapPosition": 16,
         "opponentAttacks": 0,
-        "donations": 64,
+        "donations": 141,
         "role": "member"
       },
       {
@@ -2353,7 +2385,7 @@ const SEASON_DATA = {
     "#9UYPCVPLL": 654,
     "#GGQPRRURV": 441,
     "#GYP00G8PR": 264,
-    "#292YJJ02V": 3209,
+    "#292YJJ02V": 3280,
     "#YJVRGUGVJ": 566,
     "#R8R22C08Y": 628,
     "#QGYU9GYC": 1718,
@@ -2373,7 +2405,7 @@ const SEASON_DATA = {
     "#QGLRQRQLJ": 0,
     "#YCY2YYYUP": 0,
     "#Y2VVRCUL9": 198,
-    "#90YCRLUY0": 64,
+    "#90YCRLUY0": 141,
     "#LQV2QRVJR": 2,
     "#Y8PLPVJJ0": 1,
     "#Q8QQC2QR9": 3,
@@ -2470,7 +2502,7 @@ const SEASON_DATA = {
       "totalAttacks": 2,
       "totalDestruction": 200.0,
       "warCount": 2,
-      "donations": 3209,
+      "donations": 3280,
       "townhallLevel": 13
     },
     "#LQV2QRVJR": {
@@ -2795,7 +2827,7 @@ const SEASON_DATA = {
       "totalAttacks": 0,
       "totalDestruction": 0.0,
       "warCount": 1,
-      "donations": 64
+      "donations": 141
     }
   },
   "warHistory": {
@@ -3410,6 +3442,7 @@ const CLAN_MEMBERS = [
       "id": 44000023,
       "name": "Iron League III"
     },
+    "warStars": 284,
     "daysInClan": 315,
     "joinedDate": "2023-11-10"
   },
@@ -3465,6 +3498,7 @@ const CLAN_MEMBERS = [
       "id": 44000023,
       "name": "Iron League III"
     },
+    "warStars": 210,
     "daysInClan": 135,
     "joinedDate": "2026-05-09"
   },
@@ -3520,6 +3554,7 @@ const CLAN_MEMBERS = [
       "id": 44000002,
       "name": "Wood League III"
     },
+    "warStars": 523,
     "daysInClan": 245,
     "joinedDate": "2024-01-19"
   },
@@ -3575,6 +3610,7 @@ const CLAN_MEMBERS = [
       "id": 44000024,
       "name": "Iron League II"
     },
+    "warStars": 267,
     "daysInClan": 290,
     "joinedDate": "2023-12-05"
   },
@@ -3604,7 +3640,7 @@ const CLAN_MEMBERS = [
     "builderBaseTrophies": 2249,
     "clanRank": 5,
     "previousClanRank": 5,
-    "donations": 3209,
+    "donations": 3280,
     "donationsReceived": 918,
     "playerHouse": {
       "elements": [
@@ -3630,6 +3666,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 989,
     "daysInClan": 420,
     "joinedDate": "2023-07-28"
   },
@@ -3685,6 +3722,7 @@ const CLAN_MEMBERS = [
       "id": 44000022,
       "name": "Brass League I"
     },
+    "warStars": 410,
     "daysInClan": 1,
     "joinedDate": "2026-09-24"
   },
@@ -3740,6 +3778,7 @@ const CLAN_MEMBERS = [
       "id": 44000020,
       "name": "Brass League III"
     },
+    "warStars": 475,
     "daysInClan": 19,
     "joinedDate": "2026-09-02"
   },
@@ -3795,6 +3834,7 @@ const CLAN_MEMBERS = [
       "id": 44000022,
       "name": "Brass League I"
     },
+    "warStars": 230,
     "daysInClan": 17,
     "joinedDate": "2026-09-04"
   },
@@ -3850,6 +3890,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 955,
     "daysInClan": 162,
     "joinedDate": "2026-04-12"
   },
@@ -3905,6 +3946,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 119,
     "daysInClan": 93,
     "joinedDate": "2026-06-20"
   },
@@ -3960,6 +4002,7 @@ const CLAN_MEMBERS = [
       "id": 44000022,
       "name": "Brass League I"
     },
+    "warStars": 83,
     "daysInClan": 59,
     "joinedDate": "2026-07-24"
   },
@@ -4015,6 +4058,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 141,
     "daysInClan": 17,
     "joinedDate": "2026-09-04"
   },
@@ -4070,6 +4114,7 @@ const CLAN_MEMBERS = [
       "id": 44000020,
       "name": "Brass League III"
     },
+    "warStars": 167,
     "daysInClan": 66,
     "joinedDate": "2026-07-17"
   },
@@ -4125,6 +4170,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 136,
     "daysInClan": 140,
     "joinedDate": "2026-05-04"
   },
@@ -4180,6 +4226,7 @@ const CLAN_MEMBERS = [
       "id": 44000019,
       "name": "Copper League I"
     },
+    "warStars": 62,
     "daysInClan": 36,
     "joinedDate": "2026-08-16"
   },
@@ -4235,6 +4282,7 @@ const CLAN_MEMBERS = [
       "id": 44000014,
       "name": "Stone League I"
     },
+    "warStars": 960,
     "daysInClan": 45,
     "joinedDate": "2026-08-07"
   },
@@ -4270,6 +4318,7 @@ const CLAN_MEMBERS = [
       "id": 44000012,
       "name": "Stone League III"
     },
+    "warStars": 97,
     "daysInClan": 102,
     "joinedDate": "2026-06-11"
   },
@@ -4300,11 +4349,12 @@ const CLAN_MEMBERS = [
     "clanRank": 18,
     "previousClanRank": 17,
     "donations": 258,
-    "donationsReceived": 385,
+    "donationsReceived": 462,
     "builderBaseLeague": {
       "id": 44000020,
       "name": "Brass League III"
     },
+    "warStars": 741,
     "daysInClan": 1,
     "joinedDate": "2026-09-21"
   },
@@ -4360,6 +4410,7 @@ const CLAN_MEMBERS = [
       "id": 44000019,
       "name": "Copper League I"
     },
+    "warStars": 41,
     "daysInClan": 75,
     "joinedDate": "2026-07-08"
   },
@@ -4415,6 +4466,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 112,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
@@ -4470,6 +4522,7 @@ const CLAN_MEMBERS = [
       "id": 44000022,
       "name": "Brass League I"
     },
+    "warStars": 203,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
@@ -4505,6 +4558,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 90,
     "daysInClan": 64,
     "joinedDate": "2026-07-19"
   },
@@ -4560,6 +4614,7 @@ const CLAN_MEMBERS = [
       "id": 44000022,
       "name": "Brass League I"
     },
+    "warStars": 137,
     "daysInClan": 35,
     "joinedDate": "2026-08-17"
   },
@@ -4615,6 +4670,7 @@ const CLAN_MEMBERS = [
       "id": 44000016,
       "name": "Copper League IV"
     },
+    "warStars": 900,
     "daysInClan": 140,
     "joinedDate": "2026-05-04"
   },
@@ -4670,6 +4726,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 22,
     "daysInClan": 83,
     "joinedDate": "2026-06-30"
   },
@@ -4725,6 +4782,7 @@ const CLAN_MEMBERS = [
       "id": 44000025,
       "name": "Iron League I"
     },
+    "warStars": 341,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
@@ -4754,8 +4812,8 @@ const CLAN_MEMBERS = [
     "builderBaseTrophies": 2595,
     "clanRank": 27,
     "previousClanRank": 26,
-    "donations": 64,
-    "donationsReceived": 72,
+    "donations": 141,
+    "donationsReceived": 143,
     "playerHouse": {
       "elements": [
         {
@@ -4780,6 +4838,7 @@ const CLAN_MEMBERS = [
       "id": 44000022,
       "name": "Brass League I"
     },
+    "warStars": 93,
     "daysInClan": 1,
     "joinedDate": "2026-09-21"
   },
@@ -4835,6 +4894,7 @@ const CLAN_MEMBERS = [
       "id": 44000017,
       "name": "Copper League III"
     },
+    "warStars": 53,
     "daysInClan": 42,
     "joinedDate": "2026-08-10"
   },
@@ -4870,6 +4930,7 @@ const CLAN_MEMBERS = [
       "id": 44000018,
       "name": "Copper League II"
     },
+    "warStars": 190,
     "daysInClan": 142,
     "joinedDate": "2026-05-02"
   },
@@ -4925,6 +4986,7 @@ const CLAN_MEMBERS = [
       "id": 44000008,
       "name": "Clay League II"
     },
+    "warStars": 1071,
     "daysInClan": 1,
     "joinedDate": "2026-09-24"
   },
@@ -4980,6 +5042,7 @@ const CLAN_MEMBERS = [
       "id": 44000022,
       "name": "Brass League I"
     },
+    "warStars": 179,
     "daysInClan": 1,
     "joinedDate": "2026-09-21"
   },
@@ -5035,6 +5098,7 @@ const CLAN_MEMBERS = [
       "id": 44000020,
       "name": "Brass League III"
     },
+    "warStars": 192,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
@@ -5090,6 +5154,7 @@ const CLAN_MEMBERS = [
       "id": 44000022,
       "name": "Brass League I"
     },
+    "warStars": 740,
     "daysInClan": 60,
     "joinedDate": "2026-07-23"
   },
@@ -5145,6 +5210,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 133,
     "daysInClan": 54,
     "joinedDate": "2026-07-29"
   },
@@ -5200,6 +5266,7 @@ const CLAN_MEMBERS = [
       "id": 44000018,
       "name": "Copper League II"
     },
+    "warStars": 114,
     "daysInClan": 23,
     "joinedDate": "2026-08-29"
   },
@@ -5255,6 +5322,7 @@ const CLAN_MEMBERS = [
       "id": 44000020,
       "name": "Brass League III"
     },
+    "warStars": 56,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
@@ -5290,6 +5358,7 @@ const CLAN_MEMBERS = [
       "id": 44000012,
       "name": "Stone League III"
     },
+    "warStars": 18,
     "daysInClan": 80,
     "joinedDate": "2026-07-03"
   },
@@ -5345,6 +5414,7 @@ const CLAN_MEMBERS = [
       "id": 44000020,
       "name": "Brass League III"
     },
+    "warStars": 91,
     "daysInClan": 23,
     "joinedDate": "2026-08-29"
   },
@@ -5380,6 +5450,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 28,
     "daysInClan": 49,
     "joinedDate": "2026-08-03"
   },
@@ -5435,6 +5506,7 @@ const CLAN_MEMBERS = [
       "id": 44000022,
       "name": "Brass League I"
     },
+    "warStars": 60,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
@@ -5490,6 +5562,7 @@ const CLAN_MEMBERS = [
       "id": 44000013,
       "name": "Stone League II"
     },
+    "warStars": 0,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
@@ -5545,6 +5618,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 98,
     "daysInClan": 141,
     "joinedDate": "2026-05-03"
   },
@@ -5600,6 +5674,7 @@ const CLAN_MEMBERS = [
       "id": 44000012,
       "name": "Stone League III"
     },
+    "warStars": 31,
     "daysInClan": 52,
     "joinedDate": "2026-07-31"
   },
@@ -5635,6 +5710,7 @@ const CLAN_MEMBERS = [
       "id": 44000023,
       "name": "Iron League III"
     },
+    "warStars": 3,
     "daysInClan": 85,
     "joinedDate": "2026-06-28"
   },
@@ -5690,6 +5766,7 @@ const CLAN_MEMBERS = [
       "id": 44000021,
       "name": "Brass League II"
     },
+    "warStars": 26,
     "daysInClan": 71,
     "joinedDate": "2026-07-12"
   },
@@ -5725,6 +5802,7 @@ const CLAN_MEMBERS = [
       "id": 44000000,
       "name": "Wood League V"
     },
+    "warStars": 102,
     "daysInClan": 141,
     "joinedDate": "2026-05-03"
   },
@@ -5780,6 +5858,7 @@ const CLAN_MEMBERS = [
       "id": 44000017,
       "name": "Copper League III"
     },
+    "warStars": 5,
     "daysInClan": 1,
     "joinedDate": "2026-09-21"
   }
