@@ -361,7 +361,15 @@
             "duration": 114
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#R0UCY2RR9",
+          "defenderTag": "#GYU8QLLVJ",
+          "stars": 1,
+          "destructionPercentage": 61,
+          "order": 17,
+          "duration": 114
+        },
         "donations": 0,
         "role": "member"
       },
@@ -403,9 +411,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/UpsMW0oDBbrkFRohqyng4UPkGAxvG-rszjrAjHcOpZQ.png"
     },
     "clanLevel": 4,
-    "attacks": 2,
-    "stars": 3,
-    "destructionPercentage": 4.52,
+    "attacks": 3,
+    "stars": 4,
+    "destructionPercentage": 6.96,
     "members": [
       {
         "tag": "#2YLG8VGQG",
@@ -503,6 +511,16 @@
         "name": "عبدالروف",
         "townhallLevel": 11,
         "mapPosition": 23,
+        "attacks": [
+          {
+            "attackerTag": "#R0UCY2RR9",
+            "defenderTag": "#GYU8QLLVJ",
+            "stars": 1,
+            "destructionPercentage": 61,
+            "order": 17,
+            "duration": 114
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#LQV2QRVJR",
