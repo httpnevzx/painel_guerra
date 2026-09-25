@@ -190,10 +190,10 @@
       }
     },
     "trophies": 8,
-    "builderBaseTrophies": 2249,
+    "builderBaseTrophies": 2292,
     "clanRank": 4,
     "previousClanRank": 5,
-    "donations": 3362,
+    "donations": 3409,
     "donationsReceived": 918,
     "playerHouse": {
       "elements": [
@@ -284,7 +284,7 @@
     "name": "THE APELA",
     "role": "member",
     "townHallLevel": 15,
-    "expLevel": 186,
+    "expLevel": 187,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -958,7 +958,7 @@
     "clanRank": 18,
     "previousClanRank": 17,
     "donations": 442,
-    "donationsReceived": 462,
+    "donationsReceived": 509,
     "builderBaseLeague": {
       "id": 44000020,
       "name": "Brass League III"
@@ -989,7 +989,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
       }
     },
-    "trophies": 86,
+    "trophies": 110,
     "builderBaseTrophies": 1939,
     "clanRank": 19,
     "previousClanRank": 18,
