@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 12,
-    "stars": 32,
-    "destructionPercentage": 43.64,
+    "attacks": 13,
+    "stars": 35,
+    "destructionPercentage": 47.64,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -262,6 +262,16 @@
         "name": "#BAD BOY#",
         "townhallLevel": 12,
         "mapPosition": 20,
+        "attacks": [
+          {
+            "attackerTag": "#2LGUVVC99",
+            "defenderTag": "#GUCGYPR9V",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 15,
+            "duration": 91
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 220,
         "role": "admin"
@@ -470,7 +480,15 @@
         "name": "mad",
         "townhallLevel": 12,
         "mapPosition": 20,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#2LGUVVC99",
+          "defenderTag": "#GUCGYPR9V",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 15,
+          "duration": 91
+        }
       },
       {
         "tag": "#R0UCY2RR9",
