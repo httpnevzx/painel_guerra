@@ -183,9 +183,9 @@
       "name": "Hedris",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 6,
-      "totalAttacks": 2,
-      "totalDestruction": 200.0,
+      "totalStars": 9,
+      "totalAttacks": 3,
+      "totalDestruction": 300.0,
       "warCount": 2,
       "donations": 85,
       "townhallLevel": 12
@@ -743,9 +743,9 @@
         "name": "Hedris",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       },
       "#GJCGJU8JL": {
         "name": "Igorzin",
