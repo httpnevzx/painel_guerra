@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 10,
-    "stars": 29,
-    "destructionPercentage": 39.04,
+    "attacks": 11,
+    "stars": 30,
+    "destructionPercentage": 41.44,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -325,6 +325,16 @@
         "name": "kayky2005",
         "townhallLevel": 12,
         "mapPosition": 22,
+        "attacks": [
+          {
+            "attackerTag": "#GYU8QLLVJ",
+            "defenderTag": "#R0PVYVP8Y",
+            "stars": 1,
+            "destructionPercentage": 60,
+            "order": 13,
+            "duration": 61
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 0,
         "role": "member"
@@ -554,7 +564,15 @@
         "name": "navid",
         "townhallLevel": 12,
         "mapPosition": 22,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GYU8QLLVJ",
+          "defenderTag": "#R0PVYVP8Y",
+          "stars": 1,
+          "destructionPercentage": 60,
+          "order": 13,
+          "duration": 61
+        }
       },
       {
         "tag": "#8PV8QG2YP",
