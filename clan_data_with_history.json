@@ -564,7 +564,7 @@
     "name": "ÉOBRABOXX",
     "role": "member",
     "townHallLevel": 14,
-    "expLevel": 102,
+    "expLevel": 103,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -581,7 +581,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
       }
     },
-    "trophies": 24,
+    "trophies": 39,
     "builderBaseTrophies": 2468,
     "clanRank": 11,
     "previousClanRank": 47,
