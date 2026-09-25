@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 13,
-    "stars": 35,
-    "destructionPercentage": 47.64,
+    "attacks": 14,
+    "stars": 36,
+    "destructionPercentage": 51.36,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -32,6 +32,14 @@
             "destructionPercentage": 100,
             "order": 8,
             "duration": 89
+          },
+          {
+            "attackerTag": "#9VRQRUR20",
+            "defenderTag": "#8L9GPRUGU",
+            "stars": 1,
+            "destructionPercentage": 93,
+            "order": 16,
+            "duration": 114
           }
         ],
         "opponentAttacks": 0,
@@ -547,7 +555,15 @@
         "name": "KING",
         "townhallLevel": 13,
         "mapPosition": 10,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#9VRQRUR20",
+          "defenderTag": "#8L9GPRUGU",
+          "stars": 1,
+          "destructionPercentage": 93,
+          "order": 16,
+          "duration": 114
+        }
       },
       {
         "tag": "#R828PCLQG",
