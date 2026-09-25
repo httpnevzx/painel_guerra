@@ -364,9 +364,9 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 3,
-      "totalAttacks": 1,
-      "totalDestruction": 100.0,
+      "totalStars": 4,
+      "totalAttacks": 2,
+      "totalDestruction": 193.0,
       "warCount": 1,
       "donations": 0
     },
@@ -663,9 +663,9 @@
         "name": "Marcello Palha",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 4,
+        "attacks": 2,
+        "destruction": 193
       },
       "#GGQPRRURV": {
         "name": "namtugal",
