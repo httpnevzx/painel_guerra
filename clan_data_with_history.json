@@ -193,7 +193,7 @@
     "builderBaseTrophies": 2969,
     "clanRank": 4,
     "previousClanRank": 5,
-    "donations": 513,
+    "donations": 570,
     "donationsReceived": 424,
     "playerHouse": {
       "elements": [
@@ -1070,7 +1070,7 @@
     "clanRank": 20,
     "previousClanRank": 19,
     "donations": 895,
-    "donationsReceived": 992,
+    "donationsReceived": 1049,
     "builderBaseLeague": {
       "id": 44000020,
       "name": "Brass League III"
@@ -2068,7 +2068,7 @@
     "name": "bielx2.0",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 105,
+    "expLevel": 106,
     "league": {
       "id": 29000000,
       "name": "Unranked",
