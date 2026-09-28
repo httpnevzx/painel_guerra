@@ -7,14 +7,14 @@
   "donationBaselines": {},
   "lastSeenDonations": {
     "#QRL2CJG9": 1000,
-    "#9UYPCVPLL": 791,
+    "#9UYPCVPLL": 801,
     "#GGQPRRURV": 513,
     "#GYP00G8PR": 374,
     "#292YJJ02V": 4088,
     "#YJVRGUGVJ": 653,
     "#R8R22C08Y": 673,
     "#QGYU9GYC": 2281,
-    "#GCY8PR02J": 375,
+    "#GCY8PR02J": 407,
     "#GVUPL0Y2L": 144,
     "#LGG9RJ8PC": 0,
     "#L9JULURCP": 45,
@@ -223,7 +223,7 @@
       "totalAttacks": 4,
       "totalDestruction": 306.0,
       "warCount": 3,
-      "donations": 791,
+      "donations": 801,
       "townhallLevel": 15
     },
     "#QRQCP2Q0P": {
@@ -331,7 +331,7 @@
       "totalAttacks": 3,
       "totalDestruction": 281.0,
       "warCount": 3,
-      "donations": 375,
+      "donations": 407,
       "townhallLevel": 13
     },
     "#GYU8QLLVJ": {
