@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 25,
-    "stars": 60,
-    "destructionPercentage": 82.08,
+    "attacks": 26,
+    "stars": 62,
+    "destructionPercentage": 85.44,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -344,6 +344,16 @@
         "name": "LINKIN PARK",
         "townhallLevel": 15,
         "mapPosition": 2,
+        "attacks": [
+          {
+            "attackerTag": "#9UYPCVPLL",
+            "defenderTag": "#PP8UUUURC",
+            "stars": 2,
+            "destructionPercentage": 84,
+            "order": 36,
+            "duration": 151
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#8V9CY99JQ",
@@ -613,7 +623,15 @@
         "name": "Dilan",
         "townhallLevel": 15,
         "mapPosition": 2,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#9UYPCVPLL",
+          "defenderTag": "#PP8UUUURC",
+          "stars": 2,
+          "destructionPercentage": 84,
+          "order": 36,
+          "duration": 151
+        }
       },
       {
         "tag": "#L9YYQVG29",
