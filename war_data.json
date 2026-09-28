@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 2,
-    "stars": 5,
-    "destructionPercentage": 7.4,
+    "attacks": 3,
+    "stars": 6,
+    "destructionPercentage": 11.04,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -175,7 +175,15 @@
         "name": "Jefferson morae",
         "townhallLevel": 13,
         "mapPosition": 9,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#88QR8VYYQ",
+          "defenderTag": "#UJUUJRLY",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 6,
+          "duration": 85
+        },
         "donations": 821,
         "role": "admin"
       },
@@ -248,6 +256,16 @@
         "name": "johnpork",
         "townhallLevel": 13,
         "mapPosition": 7,
+        "attacks": [
+          {
+            "attackerTag": "#GCY8PR02J",
+            "defenderTag": "#QJ20J29G8",
+            "stars": 1,
+            "destructionPercentage": 91,
+            "order": 7,
+            "duration": 97
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 375,
         "role": "admin"
@@ -291,9 +309,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 3,
-    "stars": 3,
-    "destructionPercentage": 5.76,
+    "attacks": 4,
+    "stars": 6,
+    "destructionPercentage": 9.76,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -415,6 +433,16 @@
         "name": "goler oaknshild",
         "townhallLevel": 13,
         "mapPosition": 9,
+        "attacks": [
+          {
+            "attackerTag": "#88QR8VYYQ",
+            "defenderTag": "#UJUUJRLY",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 6,
+            "duration": 85
+          }
+        ],
         "opponentAttacks": 0
       },
       {
@@ -490,7 +518,15 @@
         "name": "kampeng",
         "townhallLevel": 13,
         "mapPosition": 7,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GCY8PR02J",
+          "defenderTag": "#QJ20J29G8",
+          "stars": 1,
+          "destructionPercentage": 91,
+          "order": 7,
+          "duration": 97
+        }
       },
       {
         "tag": "#GR9UJ9UCY",
