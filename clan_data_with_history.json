@@ -728,6 +728,62 @@
     "joinedDate": "2026-09-04"
   },
   {
+    "tag": "#80C2V90Q",
+    "name": "♤Home Simpson♧",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 139,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000012,
+      "name": "Wizard League 12",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+      }
+    },
+    "trophies": 40,
+    "builderBaseTrophies": 1400,
+    "clanRank": 14,
+    "previousClanRank": 16,
+    "donations": 1203,
+    "donationsReceived": 1438,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000016
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000014,
+      "name": "Stone League I"
+    },
+    "warStars": 960,
+    "daysInClan": 45,
+    "joinedDate": "2026-08-07"
+  },
+  {
     "tag": "#L9JULURCP",
     "name": "GODBLACK",
     "role": "member",
@@ -751,7 +807,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 1975,
-    "clanRank": 14,
+    "clanRank": 15,
     "previousClanRank": 15,
     "donations": 45,
     "donationsReceived": 0,
@@ -807,7 +863,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 1290,
-    "clanRank": 15,
+    "clanRank": 16,
     "previousClanRank": 18,
     "donations": 85,
     "donationsReceived": 0,
@@ -842,8 +898,8 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2366,
-    "clanRank": 16,
+    "builderBaseTrophies": 2602,
+    "clanRank": 17,
     "previousClanRank": 17,
     "donations": 0,
     "donationsReceived": 248,
@@ -868,8 +924,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
+      "id": 44000023,
+      "name": "Iron League III"
     },
     "warStars": 112,
     "daysInClan": 1,
@@ -899,7 +955,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2573,
-    "clanRank": 17,
+    "clanRank": 18,
     "previousClanRank": 21,
     "donations": 22,
     "donationsReceived": 543,
@@ -955,7 +1011,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2442,
-    "clanRank": 18,
+    "clanRank": 19,
     "previousClanRank": 14,
     "donations": 0,
     "donationsReceived": 0,
@@ -1011,7 +1067,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2061,
-    "clanRank": 19,
+    "clanRank": 20,
     "previousClanRank": 19,
     "donations": 824,
     "donationsReceived": 915,
@@ -1022,62 +1078,6 @@
     "warStars": 741,
     "daysInClan": 1,
     "joinedDate": "2026-09-21"
-  },
-  {
-    "tag": "#80C2V90Q",
-    "name": "♤Home Simpson♧",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 139,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000012,
-      "name": "Wizard League 12",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 1400,
-    "clanRank": 20,
-    "previousClanRank": 16,
-    "donations": 1203,
-    "donationsReceived": 1438,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000000
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000016
-        },
-        {
-          "type": "decoration",
-          "id": 82000058
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000014,
-      "name": "Stone League I"
-    },
-    "warStars": 960,
-    "daysInClan": 45,
-    "joinedDate": "2026-08-07"
   },
   {
     "tag": "#Y8PLPVJJ0",
@@ -1994,7 +1994,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2003,
+    "builderBaseTrophies": 2053,
     "clanRank": 38,
     "previousClanRank": 38,
     "donations": 241,
