@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 18,
-    "stars": 45,
-    "destructionPercentage": 62.08,
+    "attacks": 19,
+    "stars": 48,
+    "destructionPercentage": 66.08,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -113,7 +113,7 @@
         "townhallLevel": 13,
         "mapPosition": 6,
         "opponentAttacks": 0,
-        "donations": 4145,
+        "donations": 4217,
         "role": "leader"
       },
       {
@@ -210,6 +210,16 @@
         "name": "Hedris",
         "townhallLevel": 12,
         "mapPosition": 24,
+        "attacks": [
+          {
+            "attackerTag": "#G9ULQQJP2",
+            "defenderTag": "#GVYQCU9UV",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 28,
+            "duration": 103
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 85,
         "role": "admin"
@@ -664,7 +674,15 @@
         "name": "그냥 아르샤",
         "townhallLevel": 10,
         "mapPosition": 24,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#G9ULQQJP2",
+          "defenderTag": "#GVYQCU9UV",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 28,
+          "duration": 103
+        }
       },
       {
         "tag": "#GGCPGJRLV",
