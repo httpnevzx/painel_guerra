@@ -76,8 +76,8 @@
       "role": "admin",
       "townHallLevel": 13,
       "totalStars": 9,
-      "totalAttacks": 5,
-      "totalDestruction": 487.0,
+      "totalAttacks": 6,
+      "totalDestruction": 577.0,
       "warCount": 3,
       "donations": 513,
       "townhallLevel": 13
@@ -886,8 +886,8 @@
         "role": "admin",
         "townHallLevel": 13,
         "stars": 2,
-        "attacks": 1,
-        "destruction": 100
+        "attacks": 2,
+        "destruction": 190
       },
       "#GYP00G8PR": {
         "name": "JP Chavoso",
