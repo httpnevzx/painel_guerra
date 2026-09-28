@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 21,
-    "stars": 53,
-    "destructionPercentage": 74.04,
+    "attacks": 22,
+    "stars": 54,
+    "destructionPercentage": 74.08,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -307,6 +307,14 @@
             "destructionPercentage": 74,
             "order": 15,
             "duration": 152
+          },
+          {
+            "attackerTag": "#UJUUJRLY",
+            "defenderTag": "#GCCGGU9QG",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 31,
+            "duration": 165
           }
         ],
         "opponentAttacks": 1,
@@ -554,14 +562,14 @@
         "name": "Muhamad riyan",
         "townhallLevel": 12,
         "mapPosition": 14,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#GVRPCCLUL",
+          "attackerTag": "#UJUUJRLY",
           "defenderTag": "#GCCGGU9QG",
-          "stars": 2,
-          "destructionPercentage": 99,
-          "order": 30,
-          "duration": 149
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 31,
+          "duration": 165
         }
       },
       {
