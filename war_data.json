@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 11,
+    "attacks": 12,
     "stars": 27,
-    "destructionPercentage": 37.88,
+    "destructionPercentage": 38.08,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -41,6 +41,14 @@
             "destructionPercentage": 100,
             "order": 20,
             "duration": 155
+          },
+          {
+            "attackerTag": "#GGQPRRURV",
+            "defenderTag": "#GR9UJ9UCY",
+            "stars": 2,
+            "destructionPercentage": 90,
+            "order": 21,
+            "duration": 180
           }
         ],
         "opponentAttacks": 0,
@@ -739,13 +747,13 @@
         "name": "Sinta",
         "townhallLevel": 13,
         "mapPosition": 8,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#YGLLU0UU9",
+          "attackerTag": "#GGQPRRURV",
           "defenderTag": "#GR9UJ9UCY",
           "stars": 2,
-          "destructionPercentage": 85,
-          "order": 1,
+          "destructionPercentage": 90,
+          "order": 21,
           "duration": 180
         }
       },
