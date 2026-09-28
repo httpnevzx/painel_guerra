@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 1,
-    "stars": 2,
-    "destructionPercentage": 3.4,
+    "attacks": 2,
+    "stars": 5,
+    "destructionPercentage": 7.4,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -204,8 +204,18 @@
         "name": "marmela",
         "townhallLevel": 12,
         "mapPosition": 19,
+        "attacks": [
+          {
+            "attackerTag": "#GVUPL0Y2L",
+            "defenderTag": "#QY02U99VL",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 2,
+            "duration": 121
+          }
+        ],
         "opponentAttacks": 0,
-        "donations": 132,
+        "donations": 144,
         "role": "member"
       },
       {
@@ -414,7 +424,15 @@
         "name": "BOSAN TAMPAN",
         "townhallLevel": 12,
         "mapPosition": 19,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GVUPL0Y2L",
+          "defenderTag": "#QY02U99VL",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 2,
+          "duration": 121
+        }
       },
       {
         "tag": "#GCCY2LPPC",
