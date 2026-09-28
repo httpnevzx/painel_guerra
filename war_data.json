@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 9,
-    "stars": 22,
-    "destructionPercentage": 33.52,
+    "attacks": 10,
+    "stars": 25,
+    "destructionPercentage": 37.52,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -341,6 +341,14 @@
             "destructionPercentage": 100,
             "order": 18,
             "duration": 100
+          },
+          {
+            "attackerTag": "#GU82Q92JP",
+            "defenderTag": "#GCVVP2CUP",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 19,
+            "duration": 97
           }
         ],
         "opponentAttacks": 0,
@@ -543,7 +551,15 @@
         "name": "Cihuii",
         "townhallLevel": 12,
         "mapPosition": 20,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GU82Q92JP",
+          "defenderTag": "#GCVVP2CUP",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 19,
+          "duration": 97
+        }
       },
       {
         "tag": "#GVYQCU9UV",
