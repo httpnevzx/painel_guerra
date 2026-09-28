@@ -15,7 +15,7 @@
     "#R8R22C08Y": 673,
     "#QGYU9GYC": 2281,
     "#GCY8PR02J": 375,
-    "#GVUPL0Y2L": 132,
+    "#GVUPL0Y2L": 144,
     "#LGG9RJ8PC": 0,
     "#L9JULURCP": 45,
     "#GJLC89UG8": 153,
@@ -279,11 +279,11 @@
       "name": "marmela",
       "role": "member",
       "townHallLevel": 12,
-      "totalStars": 0,
-      "totalAttacks": 0,
-      "totalDestruction": 0.0,
+      "totalStars": 3,
+      "totalAttacks": 1,
+      "totalDestruction": 100.0,
       "warCount": 3,
-      "donations": 132,
+      "donations": 144,
       "townhallLevel": 12
     },
     "#GG2JUVG2P": {
@@ -1037,9 +1037,9 @@
         "name": "marmela",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#GU82Q92JP": {
         "name": "After",
