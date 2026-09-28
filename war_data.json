@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 6,
-    "stars": 14,
-    "destructionPercentage": 22.0,
+    "attacks": 7,
+    "stars": 16,
+    "destructionPercentage": 25.52,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -42,6 +42,16 @@
         "name": "JP Chavoso",
         "townhallLevel": 14,
         "mapPosition": 4,
+        "attacks": [
+          {
+            "attackerTag": "#GYP00G8PR",
+            "defenderTag": "#GUVJYQJ8J",
+            "stars": 2,
+            "destructionPercentage": 88,
+            "order": 16,
+            "duration": 154
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#LYQPLGPP2",
@@ -468,7 +478,15 @@
         "name": "裡揚·維賈亞",
         "townhallLevel": 14,
         "mapPosition": 5,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GYP00G8PR",
+          "defenderTag": "#GUVJYQJ8J",
+          "stars": 2,
+          "destructionPercentage": 88,
+          "order": 16,
+          "duration": 154
+        }
       },
       {
         "tag": "#LYQPLGPP2",
