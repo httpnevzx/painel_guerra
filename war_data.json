@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 4,
-    "stars": 9,
-    "destructionPercentage": 15.04,
+    "attacks": 5,
+    "stars": 12,
+    "destructionPercentage": 19.04,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -102,6 +102,14 @@
             "destructionPercentage": 100,
             "order": 13,
             "duration": 106
+          },
+          {
+            "attackerTag": "#Q0YGRQLCQ",
+            "defenderTag": "#R29L8Q99Q",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 14,
+            "duration": 107
           }
         ],
         "opponentAttacks": 1,
@@ -435,7 +443,15 @@
         "name": "Muichiro",
         "townhallLevel": 12,
         "mapPosition": 17,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#Q0YGRQLCQ",
+          "defenderTag": "#R29L8Q99Q",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 14,
+          "duration": 107
+        }
       },
       {
         "tag": "#GUVJYQJ8J",
