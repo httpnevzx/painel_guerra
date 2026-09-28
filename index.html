@@ -1409,136 +1409,136 @@
             opacity: 1;
         }
 
-        /* ── Current War 3-Card Grid Styles (Matching Top 3 Cards) ─────── */
-        .cw-prizes-grid {
-            display: grid !important;
-            grid-template-columns: repeat(3, 1fr) !important;
-            gap: 20px !important;
-            margin: 20px 0 35px !important;
+        /* ── Current War Scorecard Styles (Isolated .cw-) ────────────── */
+        .cw-card {
+            background: rgba(10, 16, 28, 0.85) !important;
+            backdrop-filter: blur(12px) !important;
+            border: 1px solid rgba(0, 240, 255, 0.35) !important;
+            border-radius: 14px !important;
+            padding: 16px 20px !important;
+            margin: 20px 0 30px !important;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(0, 240, 255, 0.1) !important;
             width: 100% !important;
             box-sizing: border-box !important;
         }
-        .cw-card-box {
-            background: rgba(10, 16, 32, 0.88) !important;
-            backdrop-filter: blur(14px) !important;
-            border: 1px solid rgba(0, 240, 255, 0.3) !important;
-            border-radius: 16px !important;
-            padding: 24px 18px !important;
+        .cw-header {
             display: flex !important;
-            flex-direction: column !important;
             align-items: center !important;
-            justify-content: center !important;
-            text-align: center !important;
-            position: relative !important;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 240, 255, 0.05) !important;
-            transition: transform 0.3s ease, border-color 0.3s ease !important;
+            gap: 10px !important;
+            margin-bottom: 14px !important;
+            padding-bottom: 8px !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
         }
-        .cw-card-box:hover {
-            transform: translateY(-4px) !important;
-            border-color: rgba(0, 240, 255, 0.6) !important;
-        }
-        .cw-card-box.us-box {
-            border-color: rgba(0, 240, 255, 0.45) !important;
-            box-shadow: 0 10px 30px rgba(0, 240, 255, 0.15) !important;
-        }
-        .cw-card-box.vs-box {
-            border-color: rgba(255, 42, 109, 0.45) !important;
-            background: rgba(22, 10, 28, 0.88) !important;
-            box-shadow: 0 10px 30px rgba(255, 42, 109, 0.15) !important;
-        }
-        .cw-card-box.them-box {
-            border-color: rgba(255, 215, 0, 0.35) !important;
-        }
-        .cw-card-tag {
+        .cw-title {
             font-family: 'Orbitron', sans-serif !important;
-            font-size: 0.75rem !important;
-            font-weight: 800 !important;
+            font-size: 0.9rem !important;
             letter-spacing: 2px !important;
             color: #00f0ff !important;
-            background: rgba(0, 240, 255, 0.12) !important;
-            border: 1px solid rgba(0, 240, 255, 0.3) !important;
-            padding: 4px 12px !important;
-            border-radius: 12px !important;
-            margin-bottom: 12px !important;
+            font-weight: 700 !important;
         }
-        .cw-card-tag.them-tag {
-            color: #ffd700 !important;
-            background: rgba(255, 215, 0, 0.12) !important;
-            border-color: rgba(255, 215, 0, 0.3) !important;
+        .cw-scoreboard {
+            display: grid !important;
+            grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) !important;
+            align-items: center !important;
+            gap: 16px !important;
+            width: 100% !important;
         }
-        .cw-card-badge {
-            width: 72px !important;
-            height: 72px !important;
+        .cw-team {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            gap: 12px !important;
+            min-width: 0 !important;
+        }
+        .cw-team.cw-them {
+            justify-content: flex-end !important;
+        }
+        .cw-badge-img {
+            width: 56px !important;
+            height: 56px !important;
+            min-width: 56px !important;
+            min-height: 56px !important;
             object-fit: contain !important;
-            filter: drop-shadow(0 0 12px rgba(0, 240, 255, 0.4)) !important;
-            margin-bottom: 10px !important;
+            filter: drop-shadow(0 0 10px rgba(0,240,255,0.4)) !important;
+            display: block !important;
+            flex-shrink: 0 !important;
+            margin: 0 !important;
         }
-        .cw-card-name {
+        .cw-info {
+            display: flex !important;
+            flex-direction: column !important;
+            min-width: 0 !important;
+            overflow: hidden !important;
+        }
+        .cw-info.cw-right {
+            align-items: flex-end !important;
+            text-align: right !important;
+        }
+        .cw-name {
             font-family: 'Orbitron', sans-serif !important;
-            font-size: 1.25rem !important;
+            font-size: 1.05rem !important;
             font-weight: 900 !important;
             color: #ffffff !important;
-            margin-bottom: 8px !important;
-            letter-spacing: 1px !important;
+            margin-bottom: 2px !important;
+            white-space: nowrap !important;
+            text-overflow: ellipsis !important;
+            overflow: hidden !important;
         }
-        .cw-card-stars {
-            font-family: 'Orbitron', sans-serif !important;
-            font-size: 2.2rem !important;
-            font-weight: 900 !important;
+        .cw-score {
+            font-family: 'Share Tech Mono', monospace !important;
+            font-size: 1.1rem !important;
             color: #ffd700 !important;
+            font-weight: 700 !important;
             display: flex !important;
             align-items: center !important;
-            justify-content: center !important;
-            gap: 6px !important;
-            margin-bottom: 4px !important;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5) !important;
+            gap: 4px !important;
+            white-space: nowrap !important;
         }
-        .cw-card-dest {
-            font-family: 'Share Tech Mono', monospace !important;
-            font-size: 1.05rem !important;
-            color: rgba(255, 255, 255, 0.85) !important;
-            margin-bottom: 8px !important;
+        .cw-stars {
+            font-size: 1.35rem !important;
+            color: #ffd700 !important;
+            font-weight: 900 !important;
         }
-        .cw-card-atks {
-            font-family: 'Share Tech Mono', monospace !important;
+        .cw-star-icon {
+            font-size: 1.1rem !important;
+        }
+        .cw-dest {
             font-size: 0.85rem !important;
-            color: rgba(0, 240, 255, 0.85) !important;
-            background: rgba(0, 240, 255, 0.08) !important;
-            border: 1px solid rgba(0, 240, 255, 0.25) !important;
-            padding: 5px 14px !important;
-            border-radius: 20px !important;
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+        .cw-atks {
+            font-family: 'Share Tech Mono', monospace !important;
+            font-size: 0.78rem !important;
+            color: rgba(0, 240, 255, 0.8) !important;
+            margin-top: 1px !important;
+            white-space: nowrap !important;
         }
         .cw-vs-badge {
             font-family: 'Orbitron', sans-serif !important;
-            font-size: 3rem !important;
+            font-size: 1.1rem !important;
             font-weight: 900 !important;
             color: #ff2a6d !important;
-            margin-bottom: 12px !important;
-            text-shadow: 0 0 25px rgba(255, 42, 109, 0.9) !important;
-            letter-spacing: 3px !important;
+            padding: 8px 14px !important;
+            background: rgba(255, 42, 109, 0.15) !important;
+            border: 1px solid rgba(255, 42, 109, 0.5) !important;
+            border-radius: 8px !important;
+            box-shadow: 0 0 15px rgba(255, 42, 109, 0.3) !important;
+            letter-spacing: 2px !important;
+            flex-shrink: 0 !important;
+            text-align: center !important;
         }
-        .cw-status-pill {
-            font-family: 'Orbitron', sans-serif !important;
-            font-size: 0.82rem !important;
-            font-weight: 800 !important;
-            color: #00ff88 !important;
-            background: rgba(0, 255, 136, 0.12) !important;
-            border: 1px solid rgba(0, 255, 136, 0.4) !important;
-            border-radius: 20px !important;
-            padding: 8px 16px !important;
-            letter-spacing: 1px !important;
-            margin-bottom: 8px !important;
-            box-shadow: 0 0 15px rgba(0, 255, 136, 0.2) !important;
-        }
-        .cw-vs-sub {
-            font-family: 'Share Tech Mono', monospace !important;
-            font-size: 0.82rem !important;
-            color: rgba(255, 255, 255, 0.6) !important;
-            letter-spacing: 1px !important;
-        }
-        @media (max-width: 600px) {
-            .cw-prizes-grid {
+        @media (max-width: 480px) {
+            .cw-scoreboard {
                 grid-template-columns: 1fr !important;
+                gap: 12px !important;
+            }
+            .cw-team, .cw-team.cw-them {
+                justify-content: center !important;
+                width: 100% !important;
+            }
+            .cw-info.cw-right, .cw-info {
+                align-items: center !important;
+                text-align: center !important;
             }
         }
     </style>
@@ -1700,39 +1700,39 @@
     </div>
 
     <!-- ─── CURRENT WAR VS SCOREBOARD ───────────────────────────────── -->
-    <div class="cw-card hud-bracket" id="currentWarCard">
-        <div class="cw-header">
+    <div id="currentWarCard" style="background:rgba(10,16,28,0.85);backdrop-filter:blur(12px);border:1px solid rgba(0,240,255,0.35);border-radius:14px;padding:16px 20px;margin:20px 0 30px;box-shadow:0 8px 32px rgba(0,0,0,0.6),inset 0 0 15px rgba(0,240,255,0.1);width:100%;box-sizing:border-box;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.1);">
             <div class="status-dot"></div>
-            <span class="cw-title">⚔️ CONFRONTO DA GUERRA ATUAL</span>
+            <span style="font-family:'Orbitron',sans-serif;font-size:0.9rem;letter-spacing:2px;color:#00f0ff;font-weight:700;">⚔️ CONFRONTO DA GUERRA ATUAL</span>
         </div>
-        <div class="cw-scoreboard">
+        <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:16px;width:100%;">
             <!-- Our Clan (GOD OF WAR) -->
-            <div class="cw-team cw-us">
-                <img id="usBadge" src="" alt="GOD OF WAR" class="cw-badge-img">
-                <div class="cw-info">
-                    <div class="cw-name" id="usName">GOD OF WAR</div>
-                    <div class="cw-score">
-                        <span class="cw-stars" id="usStars">0</span> <span class="cw-star-icon">⭐</span>
-                        <span class="cw-dest" id="usDest">(0.0%)</span>
+            <div style="display:flex;flex-direction:row;align-items:center;gap:12px;flex:1;">
+                <img id="usBadge" src="" alt="GOD OF WAR" style="width:60px;height:60px;min-width:60px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(0,240,255,0.4));flex-shrink:0;">
+                <div style="display:flex;flex-direction:column;">
+                    <div id="usName" style="font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:900;color:#fff;margin-bottom:2px;">GOD OF WAR</div>
+                    <div style="font-family:'Share Tech Mono',monospace;font-size:1.1rem;color:#ffd700;font-weight:700;display:flex;align-items:center;gap:4px;">
+                        <span id="usStars" style="font-size:1.3rem;font-weight:900;">0</span> ⭐
+                        <span id="usDest" style="font-size:0.85rem;color:rgba(255,255,255,0.75);">(0.0%)</span>
                     </div>
-                    <div class="cw-atks"><span id="usAtks">0</span> ataques realizados</div>
+                    <div style="font-family:'Share Tech Mono',monospace;font-size:0.78rem;color:rgba(0,240,255,0.8);"><span id="usAtks">0</span> ataques realizados</div>
                 </div>
             </div>
 
             <!-- VS Badge -->
-            <div class="cw-vs-badge">VS</div>
+            <div style="font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:900;color:#ff2a6d;padding:8px 14px;background:rgba(255,42,109,0.15);border:1px solid rgba(255,42,109,0.5);border-radius:8px;box-shadow:0 0 15px rgba(255,42,109,0.3);letter-spacing:2px;flex-shrink:0;">VS</div>
 
             <!-- Opponent Clan -->
-            <div class="cw-team cw-them">
-                <div class="cw-info cw-right">
-                    <div class="cw-name" id="themName">Adversário</div>
-                    <div class="cw-score">
-                        <span class="cw-dest" id="themDest">(0.0%)</span>
-                        <span class="cw-stars" id="themStars">0</span> <span class="cw-star-icon">⭐</span>
+            <div style="display:flex;flex-direction:row;align-items:center;gap:12px;flex:1;justify-content:flex-end;">
+                <div style="display:flex;flex-direction:column;align-items:flex-end;text-align:right;">
+                    <div id="themName" style="font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:900;color:#fff;margin-bottom:2px;">Adversário</div>
+                    <div style="font-family:'Share Tech Mono',monospace;font-size:1.1rem;color:#ffd700;font-weight:700;display:flex;align-items:center;gap:4px;">
+                        <span id="themDest" style="font-size:0.85rem;color:rgba(255,255,255,0.75);">(0.0%)</span>
+                        <span id="themStars" style="font-size:1.3rem;font-weight:900;">0</span> ⭐
                     </div>
-                    <div class="cw-atks"><span id="themAtks">0</span> ataques realizados</div>
+                    <div style="font-family:'Share Tech Mono',monospace;font-size:0.78rem;color:rgba(0,240,255,0.8);"><span id="themAtks">0</span> ataques realizados</div>
                 </div>
-                <img id="themBadge" src="" alt="Adversário" class="cw-badge-img">
+                <img id="themBadge" src="" alt="Adversário" style="width:60px;height:60px;min-width:60px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(0,240,255,0.4));flex-shrink:0;">
             </div>
         </div>
     </div>
@@ -1917,33 +1917,15 @@ const WAR_DATA = {
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 18,
-    "stars": 48,
-    "destructionPercentage": 67.36,
+    "attacks": 3,
+    "stars": 9,
+    "destructionPercentage": 12.0,
     "members": [
       {
         "tag": "#9VRQRUR20",
         "name": "Marcello Palha",
         "townhallLevel": 12,
         "mapPosition": 11,
-        "attacks": [
-          {
-            "attackerTag": "#9VRQRUR20",
-            "defenderTag": "#8PV8QG2YP",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 8,
-            "duration": 89
-          },
-          {
-            "attackerTag": "#9VRQRUR20",
-            "defenderTag": "#8L9GPRUGU",
-            "stars": 1,
-            "destructionPercentage": 93,
-            "order": 16,
-            "duration": 114
-          }
-        ],
         "opponentAttacks": 0,
         "donations": 0,
         "role": "member"
@@ -1962,24 +1944,6 @@ const WAR_DATA = {
         "name": "JP Chavoso",
         "townhallLevel": 14,
         "mapPosition": 4,
-        "attacks": [
-          {
-            "attackerTag": "#GYP00G8PR",
-            "defenderTag": "#QCG2VLPUQ",
-            "stars": 2,
-            "destructionPercentage": 76,
-            "order": 9,
-            "duration": 180
-          },
-          {
-            "attackerTag": "#GYP00G8PR",
-            "defenderTag": "#LGURRQQRC",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 11,
-            "duration": 138
-          }
-        ],
         "opponentAttacks": 0,
         "donations": 264,
         "role": "coLeader"
@@ -1989,24 +1953,6 @@ const WAR_DATA = {
         "name": "Robson",
         "townhallLevel": 13,
         "mapPosition": 10,
-        "attacks": [
-          {
-            "attackerTag": "#GJLC89UG8",
-            "defenderTag": "#2YLG8VGQG",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 20,
-            "duration": 121
-          },
-          {
-            "attackerTag": "#GJLC89UG8",
-            "defenderTag": "#Q2VRVVQP2",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 21,
-            "duration": 108
-          }
-        ],
         "opponentAttacks": 0,
         "donations": 34,
         "role": "member"
@@ -2017,7 +1963,7 @@ const WAR_DATA = {
         "townhallLevel": 13,
         "mapPosition": 6,
         "opponentAttacks": 0,
-        "donations": 3409,
+        "donations": 3280,
         "role": "leader"
       },
       {
@@ -2025,25 +1971,7 @@ const WAR_DATA = {
         "name": "Rosa₪Floresida₪",
         "townhallLevel": 12,
         "mapPosition": 23,
-        "attacks": [
-          {
-            "attackerTag": "#LQV2QRVJR",
-            "defenderTag": "#R0UCY2RR9",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 12,
-            "duration": 103
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#R0UCY2RR9",
-          "defenderTag": "#LQV2QRVJR",
-          "stars": 2,
-          "destructionPercentage": 80,
-          "order": 18,
-          "duration": 103
-        },
+        "opponentAttacks": 0,
         "donations": 2,
         "role": "member"
       },
@@ -2088,24 +2016,6 @@ const WAR_DATA = {
         "name": "Hedris",
         "townhallLevel": 12,
         "mapPosition": 24,
-        "attacks": [
-          {
-            "attackerTag": "#G9ULQQJP2",
-            "defenderTag": "#R828PCLQG",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 10,
-            "duration": 72
-          },
-          {
-            "attackerTag": "#G9ULQQJP2",
-            "defenderTag": "#QYP09GR09",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 19,
-            "duration": 95
-          }
-        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#GQJYVQPVP",
@@ -2141,16 +2051,6 @@ const WAR_DATA = {
         "name": "PITBULL.E",
         "townhallLevel": 12,
         "mapPosition": 13,
-        "attacks": [
-          {
-            "attackerTag": "#PUQGPV8PC",
-            "defenderTag": "#LPU89YJ2V",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 22,
-            "duration": 110
-          }
-        ],
         "opponentAttacks": 0,
         "donations": 0,
         "role": "member"
@@ -2180,7 +2080,7 @@ const WAR_DATA = {
           }
         ],
         "opponentAttacks": 0,
-        "donations": 442,
+        "donations": 258,
         "role": "member"
       },
       {
@@ -2208,7 +2108,7 @@ const WAR_DATA = {
           }
         ],
         "opponentAttacks": 0,
-        "donations": 173,
+        "donations": 141,
         "role": "member"
       },
       {
@@ -2216,16 +2116,6 @@ const WAR_DATA = {
         "name": "#BAD BOY#",
         "townhallLevel": 12,
         "mapPosition": 20,
-        "attacks": [
-          {
-            "attackerTag": "#2LGUVVC99",
-            "defenderTag": "#GUCGYPR9V",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 15,
-            "duration": 91
-          }
-        ],
         "opponentAttacks": 0,
         "donations": 220,
         "role": "admin"
@@ -2289,33 +2179,7 @@ const WAR_DATA = {
         "name": "kayky2005",
         "townhallLevel": 12,
         "mapPosition": 22,
-        "attacks": [
-          {
-            "attackerTag": "#GYU8QLLVJ",
-            "defenderTag": "#R0PVYVP8Y",
-            "stars": 1,
-            "destructionPercentage": 60,
-            "order": 13,
-            "duration": 61
-          },
-          {
-            "attackerTag": "#GYU8QLLVJ",
-            "defenderTag": "#GQJYVQPVP",
-            "stars": 2,
-            "destructionPercentage": 55,
-            "order": 14,
-            "duration": 114
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#R0UCY2RR9",
-          "defenderTag": "#GYU8QLLVJ",
-          "stars": 1,
-          "destructionPercentage": 61,
-          "order": 17,
-          "duration": 114
-        },
+        "opponentAttacks": 0,
         "donations": 0,
         "role": "member"
       },
@@ -2324,26 +2188,8 @@ const WAR_DATA = {
         "name": "ÉOBRABOXX",
         "townhallLevel": 14,
         "mapPosition": 8,
-        "attacks": [
-          {
-            "attackerTag": "#YGLLU0UU9",
-            "defenderTag": "#LLULRPGYQ",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 6,
-            "duration": 137
-          },
-          {
-            "attackerTag": "#YGLLU0UU9",
-            "defenderTag": "#G80QYQ89U",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 7,
-            "duration": 124
-          }
-        ],
         "opponentAttacks": 0,
-        "donations": 201,
+        "donations": 191,
         "role": "member"
       }
     ]
@@ -2357,24 +2203,16 @@ const WAR_DATA = {
       "medium": "https://api-assets.clashofclans.com/badges/200/UpsMW0oDBbrkFRohqyng4UPkGAxvG-rszjrAjHcOpZQ.png"
     },
     "clanLevel": 4,
-    "attacks": 4,
-    "stars": 6,
-    "destructionPercentage": 10.16,
+    "attacks": 2,
+    "stars": 3,
+    "destructionPercentage": 4.52,
     "members": [
       {
         "tag": "#2YLG8VGQG",
         "name": "UbaldoAngel",
         "townhallLevel": 12,
         "mapPosition": 12,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GJLC89UG8",
-          "defenderTag": "#2YLG8VGQG",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 20,
-          "duration": 121
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#GQJYVQPVP",
@@ -2399,15 +2237,7 @@ const WAR_DATA = {
             "duration": 69
           }
         ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GYU8QLLVJ",
-          "defenderTag": "#GQJYVQPVP",
-          "stars": 2,
-          "destructionPercentage": 55,
-          "order": 14,
-          "duration": 114
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#YQ89JUJGC",
@@ -2450,48 +2280,14 @@ const WAR_DATA = {
         "name": "mad",
         "townhallLevel": 12,
         "mapPosition": 20,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#2LGUVVC99",
-          "defenderTag": "#GUCGYPR9V",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 15,
-          "duration": 91
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#R0UCY2RR9",
         "name": "عبدالروف",
         "townhallLevel": 11,
         "mapPosition": 23,
-        "attacks": [
-          {
-            "attackerTag": "#R0UCY2RR9",
-            "defenderTag": "#GYU8QLLVJ",
-            "stars": 1,
-            "destructionPercentage": 61,
-            "order": 17,
-            "duration": 114
-          },
-          {
-            "attackerTag": "#R0UCY2RR9",
-            "defenderTag": "#LQV2QRVJR",
-            "stars": 2,
-            "destructionPercentage": 80,
-            "order": 18,
-            "duration": 103
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#LQV2QRVJR",
-          "defenderTag": "#R0UCY2RR9",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 12,
-          "duration": 103
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#R8P0CQ92G",
@@ -2513,15 +2309,7 @@ const WAR_DATA = {
         "name": "جوکر",
         "townhallLevel": 13,
         "mapPosition": 5,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#YGLLU0UU9",
-          "defenderTag": "#LLULRPGYQ",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 6,
-          "duration": 137
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#YJVGJ2ULP",
@@ -2535,30 +2323,14 @@ const WAR_DATA = {
         "name": "KING",
         "townhallLevel": 13,
         "mapPosition": 10,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#9VRQRUR20",
-          "defenderTag": "#8L9GPRUGU",
-          "stars": 1,
-          "destructionPercentage": 93,
-          "order": 16,
-          "duration": 114
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#R828PCLQG",
         "name": "Mahdi",
         "townhallLevel": 9,
         "mapPosition": 24,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#G9ULQQJP2",
-          "defenderTag": "#R828PCLQG",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 10,
-          "duration": 72
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#828RCQLC",
@@ -2572,15 +2344,7 @@ const WAR_DATA = {
         "name": "BRIM_CRAFT",
         "townhallLevel": 14,
         "mapPosition": 6,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#YGLLU0UU9",
-          "defenderTag": "#G80QYQ89U",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 7,
-          "duration": 124
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#Q9VRJ9GUQ",
@@ -2594,45 +2358,21 @@ const WAR_DATA = {
         "name": "navid",
         "townhallLevel": 12,
         "mapPosition": 22,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GYU8QLLVJ",
-          "defenderTag": "#R0PVYVP8Y",
-          "stars": 1,
-          "destructionPercentage": 60,
-          "order": 13,
-          "duration": 61
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#8PV8QG2YP",
         "name": "bhavik shah",
         "townhallLevel": 13,
         "mapPosition": 11,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#9VRQRUR20",
-          "defenderTag": "#8PV8QG2YP",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 8,
-          "duration": 89
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#QCG2VLPUQ",
         "name": "VistaSan",
         "townhallLevel": 14,
         "mapPosition": 4,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GYP00G8PR",
-          "defenderTag": "#QCG2VLPUQ",
-          "stars": 2,
-          "destructionPercentage": 76,
-          "order": 9,
-          "duration": 180
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#9UCQUC89C",
@@ -2646,30 +2386,14 @@ const WAR_DATA = {
         "name": "امیدعرب",
         "townhallLevel": 12,
         "mapPosition": 14,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#PUQGPV8PC",
-          "defenderTag": "#LPU89YJ2V",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 22,
-          "duration": 110
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#QYP09GR09",
         "name": "salim",
         "townhallLevel": 12,
         "mapPosition": 19,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#G9ULQQJP2",
-          "defenderTag": "#QYP09GR09",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 19,
-          "duration": 95
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#GCQJUR2LJ",
@@ -2691,30 +2415,14 @@ const WAR_DATA = {
         "name": "lautloser Schre",
         "townhallLevel": 15,
         "mapPosition": 3,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GYP00G8PR",
-          "defenderTag": "#LGURRQQRC",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 11,
-          "duration": 138
-        }
+        "opponentAttacks": 0
       },
       {
         "tag": "#Q2VRVVQP2",
         "name": "TITAN",
         "townhallLevel": 12,
         "mapPosition": 13,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GJLC89UG8",
-          "defenderTag": "#Q2VRVVQP2",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 21,
-          "duration": 108
-        }
+        "opponentAttacks": 0
       }
     ]
   }
@@ -2755,7 +2463,7 @@ const SEASON_DATA = {
     "#9UYPCVPLL": 654,
     "#GGQPRRURV": 441,
     "#GYP00G8PR": 264,
-    "#292YJJ02V": 3409,
+    "#292YJJ02V": 3280,
     "#YJVRGUGVJ": 566,
     "#R8R22C08Y": 628,
     "#QGYU9GYC": 1718,
@@ -2765,7 +2473,7 @@ const SEASON_DATA = {
     "#L9JULURCP": 45,
     "#GJLC89UG8": 34,
     "#G9ULQQJP2": 85,
-    "#80C2V90Q": 971,
+    "#80C2V90Q": 941,
     "#28UVGLLQP": 248,
     "#QLYUCRG9U": 0,
     "#P2UJGG22P": 0,
@@ -2775,7 +2483,7 @@ const SEASON_DATA = {
     "#QGLRQRQLJ": 0,
     "#YCY2YYYUP": 0,
     "#Y2VVRCUL9": 198,
-    "#90YCRLUY0": 173,
+    "#90YCRLUY0": 141,
     "#LQV2QRVJR": 2,
     "#Y8PLPVJJ0": 1,
     "#Q8QQC2QR9": 3,
@@ -2786,12 +2494,12 @@ const SEASON_DATA = {
     "#9JUJVPVUQ": 0,
     "#GVRPCCLUL": 80,
     "#G0JUG29CG": 0,
-    "#UJUUJRLY": 442,
+    "#UJUUJRLY": 258,
     "#Y882VUVGJ": 142,
     "#LVYP8RVGR": 0,
     "#GG2JUVG2P": 0,
     "#GYU8QLLVJ": 0,
-    "#YGLLU0UU9": 201,
+    "#YGLLU0UU9": 191,
     "#GJCGJU8JL": 0,
     "#PUQGPV8PC": 0,
     "#9VRQRUR20": 0,
@@ -2844,9 +2552,9 @@ const SEASON_DATA = {
       "name": "JP Chavoso",
       "role": "coLeader",
       "townHallLevel": 14,
-      "totalStars": 8,
-      "totalAttacks": 4,
-      "totalDestruction": 339.0,
+      "totalStars": 3,
+      "totalAttacks": 2,
+      "totalDestruction": 163.0,
       "warCount": 2,
       "donations": 264,
       "townhallLevel": 14
@@ -2856,9 +2564,9 @@ const SEASON_DATA = {
       "name": "Robson",
       "role": "member",
       "townHallLevel": 13,
-      "totalStars": 12,
-      "totalAttacks": 4,
-      "totalDestruction": 400.0,
+      "totalStars": 6,
+      "totalAttacks": 2,
+      "totalDestruction": 200.0,
       "warCount": 2,
       "donations": 34,
       "townhallLevel": 13
@@ -2872,7 +2580,7 @@ const SEASON_DATA = {
       "totalAttacks": 2,
       "totalDestruction": 200.0,
       "warCount": 2,
-      "donations": 3409,
+      "donations": 3280,
       "townhallLevel": 13
     },
     "#LQV2QRVJR": {
@@ -2880,9 +2588,9 @@ const SEASON_DATA = {
       "name": "Rosa₪Floresida₪",
       "role": "member",
       "townHallLevel": 12,
-      "totalStars": 5,
-      "totalAttacks": 3,
-      "totalDestruction": 287.0,
+      "totalStars": 2,
+      "totalAttacks": 2,
+      "totalDestruction": 187.0,
       "warCount": 2,
       "donations": 2,
       "townhallLevel": 12
@@ -2928,9 +2636,9 @@ const SEASON_DATA = {
       "name": "Hedris",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 9,
-      "totalAttacks": 3,
-      "totalDestruction": 300.0,
+      "totalStars": 3,
+      "totalAttacks": 1,
+      "totalDestruction": 100.0,
       "warCount": 2,
       "donations": 85,
       "townhallLevel": 12
@@ -3000,9 +2708,9 @@ const SEASON_DATA = {
       "name": "#BAD BOY#",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 3,
-      "totalAttacks": 1,
-      "totalDestruction": 100.0,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
       "warCount": 2,
       "donations": 220,
       "townhallLevel": 12
@@ -3084,9 +2792,9 @@ const SEASON_DATA = {
       "name": "kayky2005",
       "role": "member",
       "townHallLevel": 12,
-      "totalStars": 5,
-      "totalAttacks": 4,
-      "totalDestruction": 206.0,
+      "totalStars": 2,
+      "totalAttacks": 2,
+      "totalDestruction": 91.0,
       "warCount": 2,
       "donations": 0,
       "townhallLevel": 12
@@ -3096,11 +2804,11 @@ const SEASON_DATA = {
       "name": "ÉOBRABOXX",
       "role": "member",
       "townHallLevel": 14,
-      "totalStars": 12,
-      "totalAttacks": 4,
-      "totalDestruction": 400.0,
+      "totalStars": 6,
+      "totalAttacks": 2,
+      "totalDestruction": 200.0,
       "warCount": 2,
-      "donations": 201,
+      "donations": 191,
       "townhallLevel": 14
     },
     "#9VRQRUR20": {
@@ -3109,9 +2817,9 @@ const SEASON_DATA = {
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 4,
-      "totalAttacks": 2,
-      "totalDestruction": 193.0,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
       "warCount": 1,
       "donations": 0
     },
@@ -3157,9 +2865,9 @@ const SEASON_DATA = {
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 3,
-      "totalAttacks": 1,
-      "totalDestruction": 100.0,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
       "warCount": 1,
       "donations": 0
     },
@@ -3185,7 +2893,7 @@ const SEASON_DATA = {
       "totalAttacks": 1,
       "totalDestruction": 100.0,
       "warCount": 1,
-      "donations": 442
+      "donations": 258
     },
     "#90YCRLUY0": {
       "tag": "#90YCRLUY0",
@@ -3197,7 +2905,7 @@ const SEASON_DATA = {
       "totalAttacks": 1,
       "totalDestruction": 100.0,
       "warCount": 1,
-      "donations": 173
+      "donations": 141
     }
   },
   "warHistory": {
@@ -3408,9 +3116,9 @@ const SEASON_DATA = {
         "name": "Marcello Palha",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 4,
-        "attacks": 2,
-        "destruction": 193
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
       },
       "#GGQPRRURV": {
         "name": "namtugal",
@@ -3424,17 +3132,17 @@ const SEASON_DATA = {
         "name": "JP Chavoso",
         "role": "coLeader",
         "townHallLevel": 14,
-        "stars": 5,
-        "attacks": 2,
-        "destruction": 176
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
       },
       "#GJLC89UG8": {
         "name": "Robson",
         "role": "member",
         "townHallLevel": 13,
-        "stars": 6,
-        "attacks": 2,
-        "destruction": 200
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
       },
       "#292YJJ02V": {
         "name": "Nevzx 躾⛩️",
@@ -3448,9 +3156,9 @@ const SEASON_DATA = {
         "name": "Rosa₪Floresida₪",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
       },
       "#Q0YGRQLCQ": {
         "name": "mestre",
@@ -3488,9 +3196,9 @@ const SEASON_DATA = {
         "name": "Hedris",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 6,
-        "attacks": 2,
-        "destruction": 200
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
       },
       "#GJCGJU8JL": {
         "name": "Igorzin",
@@ -3512,9 +3220,9 @@ const SEASON_DATA = {
         "name": "PITBULL.E",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
       },
       "#Q0URR9VC9": {
         "name": "THE APELA",
@@ -3552,9 +3260,9 @@ const SEASON_DATA = {
         "name": "#BAD BOY#",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
       },
       "#GVUPL0Y2L": {
         "name": "marmela",
@@ -3592,17 +3300,17 @@ const SEASON_DATA = {
         "name": "kayky2005",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 3,
-        "attacks": 2,
-        "destruction": 115
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
       },
       "#YGLLU0UU9": {
         "name": "ÉOBRABOXX",
         "role": "member",
         "townHallLevel": 14,
-        "stars": 6,
-        "attacks": 2,
-        "destruction": 200
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
       }
     }
   }
@@ -3929,62 +3637,6 @@ const CLAN_MEMBERS = [
     "joinedDate": "2024-01-19"
   },
   {
-    "tag": "#292YJJ02V",
-    "name": "Nevzx 躾⛩️",
-    "role": "leader",
-    "townHallLevel": 13,
-    "expLevel": 161,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000018,
-      "name": "Witch League 18",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
-      }
-    },
-    "trophies": 8,
-    "builderBaseTrophies": 2292,
-    "clanRank": 4,
-    "previousClanRank": 5,
-    "donations": 3409,
-    "donationsReceived": 918,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000001
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000108
-        },
-        {
-          "type": "decoration",
-          "id": 82000063
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
-    },
-    "warStars": 989,
-    "daysInClan": 420,
-    "joinedDate": "2023-07-28"
-  },
-  {
     "tag": "#GGQPRRURV",
     "name": "namtugal",
     "role": "admin",
@@ -4008,7 +3660,7 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 2885,
-    "clanRank": 5,
+    "clanRank": 4,
     "previousClanRank": 4,
     "donations": 441,
     "donationsReceived": 330,
@@ -4041,11 +3693,11 @@ const CLAN_MEMBERS = [
     "joinedDate": "2023-12-05"
   },
   {
-    "tag": "#Q0URR9VC9",
-    "name": "THE APELA",
-    "role": "member",
-    "townHallLevel": 15,
-    "expLevel": 187,
+    "tag": "#292YJJ02V",
+    "name": "Nevzx 躾⛩️",
+    "role": "leader",
+    "townHallLevel": 13,
+    "expLevel": 161,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -4063,7 +3715,63 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2624,
+    "builderBaseTrophies": 2249,
+    "clanRank": 5,
+    "previousClanRank": 5,
+    "donations": 3280,
+    "donationsReceived": 918,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000108
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 989,
+    "daysInClan": 420,
+    "joinedDate": "2023-07-28"
+  },
+  {
+    "tag": "#Q0URR9VC9",
+    "name": "THE APELA",
+    "role": "member",
+    "townHallLevel": 15,
+    "expLevel": 186,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000018,
+      "name": "Witch League 18",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2579,
     "clanRank": 6,
     "previousClanRank": 6,
     "donations": 0,
@@ -4089,8 +3797,8 @@ const CLAN_MEMBERS = [
       ]
     },
     "builderBaseLeague": {
-      "id": 44000023,
-      "name": "Iron League III"
+      "id": 44000022,
+      "name": "Brass League I"
     },
     "warStars": 410,
     "daysInClan": 1,
@@ -4286,7 +3994,7 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
       }
     },
-    "trophies": 192,
+    "trophies": 163,
     "builderBaseTrophies": 2224,
     "clanRank": 10,
     "previousClanRank": 10,
@@ -4325,7 +4033,7 @@ const CLAN_MEMBERS = [
     "name": "ÉOBRABOXX",
     "role": "member",
     "townHallLevel": 14,
-    "expLevel": 103,
+    "expLevel": 102,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -4342,12 +4050,12 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
       }
     },
-    "trophies": 39,
+    "trophies": 13,
     "builderBaseTrophies": 2468,
     "clanRank": 11,
     "previousClanRank": 47,
-    "donations": 201,
-    "donationsReceived": 104,
+    "donations": 191,
+    "donationsReceived": 52,
     "playerHouse": {
       "elements": [
         {
@@ -4459,7 +4167,7 @@ const CLAN_MEMBERS = [
     "clanRank": 13,
     "previousClanRank": 12,
     "donations": 34,
-    "donationsReceived": 954,
+    "donationsReceived": 914,
     "playerHouse": {
       "elements": [
         {
@@ -4626,7 +4334,7 @@ const CLAN_MEMBERS = [
     "builderBaseTrophies": 1400,
     "clanRank": 16,
     "previousClanRank": 15,
-    "donations": 971,
+    "donations": 941,
     "donationsReceived": 1239,
     "playerHouse": {
       "elements": [
@@ -4718,8 +4426,8 @@ const CLAN_MEMBERS = [
     "builderBaseTrophies": 2004,
     "clanRank": 18,
     "previousClanRank": 17,
-    "donations": 442,
-    "donationsReceived": 509,
+    "donations": 258,
+    "donationsReceived": 462,
     "builderBaseLeague": {
       "id": 44000020,
       "name": "Brass League III"
@@ -4750,7 +4458,7 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
       }
     },
-    "trophies": 110,
+    "trophies": 86,
     "builderBaseTrophies": 1939,
     "clanRank": 19,
     "previousClanRank": 18,
@@ -4867,7 +4575,7 @@ const CLAN_MEMBERS = [
     "clanRank": 21,
     "previousClanRank": 20,
     "donations": 0,
-    "donationsReceived": 369,
+    "donationsReceived": 297,
     "playerHouse": {
       "elements": [
         {
@@ -5015,7 +4723,7 @@ const CLAN_MEMBERS = [
     "clanRank": 24,
     "previousClanRank": 22,
     "donations": 220,
-    "donationsReceived": 1484,
+    "donationsReceived": 1412,
     "playerHouse": {
       "elements": [
         {
@@ -5127,7 +4835,7 @@ const CLAN_MEMBERS = [
     "clanRank": 26,
     "previousClanRank": 25,
     "donations": 0,
-    "donationsReceived": 360,
+    "donationsReceived": 288,
     "playerHouse": {
       "elements": [
         {
@@ -5161,7 +4869,7 @@ const CLAN_MEMBERS = [
     "name": "king renan",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 124,
+    "expLevel": 123,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -5182,8 +4890,8 @@ const CLAN_MEMBERS = [
     "builderBaseTrophies": 2595,
     "clanRank": 27,
     "previousClanRank": 26,
-    "donations": 173,
-    "donationsReceived": 173,
+    "donations": 141,
+    "donationsReceived": 143,
     "playerHouse": {
       "elements": [
         {
@@ -5326,7 +5034,7 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
       }
     },
-    "trophies": 448,
+    "trophies": 408,
     "builderBaseTrophies": 852,
     "clanRank": 30,
     "previousClanRank": 29,
@@ -5718,7 +5426,7 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/x1c7byHQmOHQVKGxAn1sqOW2XOCzTYW-e6OKjq-FBco.png"
       }
     },
-    "trophies": 258,
+    "trophies": 178,
     "builderBaseTrophies": 1213,
     "clanRank": 37,
     "previousClanRank": 36,
