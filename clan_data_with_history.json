@@ -249,7 +249,7 @@
     "builderBaseTrophies": 2292,
     "clanRank": 5,
     "previousClanRank": 4,
-    "donations": 4088,
+    "donations": 4130,
     "donationsReceived": 1119,
     "playerHouse": {
       "elements": [
@@ -413,7 +413,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png"
       }
     },
-    "trophies": 0,
+    "trophies": 99,
     "builderBaseTrophies": 2468,
     "clanRank": 8,
     "previousClanRank": 9,
@@ -754,7 +754,7 @@
     "clanRank": 14,
     "previousClanRank": 16,
     "donations": 1203,
-    "donationsReceived": 1438,
+    "donationsReceived": 1440,
     "playerHouse": {
       "elements": [
         {
@@ -1080,6 +1080,62 @@
     "joinedDate": "2026-09-21"
   },
   {
+    "tag": "#90YCRLUY0",
+    "name": "king renan",
+    "role": "admin",
+    "townHallLevel": 13,
+    "expLevel": 125,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000011,
+      "name": "Wizard League 11",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+      }
+    },
+    "trophies": 293,
+    "builderBaseTrophies": 2392,
+    "clanRank": 21,
+    "previousClanRank": 28,
+    "donations": 707,
+    "donationsReceived": 339,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000062
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 93,
+    "daysInClan": 1,
+    "joinedDate": "2026-09-21"
+  },
+  {
     "tag": "#Y8PLPVJJ0",
     "name": "Danielsrabelo",
     "role": "member",
@@ -1103,7 +1159,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2489,
-    "clanRank": 21,
+    "clanRank": 22,
     "previousClanRank": 22,
     "donations": 1,
     "donationsReceived": 42,
@@ -1159,7 +1215,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2279,
-    "clanRank": 22,
+    "clanRank": 23,
     "previousClanRank": 23,
     "donations": 114,
     "donationsReceived": 72,
@@ -1176,7 +1232,7 @@
     "name": "Carlos123wx",
     "role": "member",
     "townHallLevel": 13,
-    "expLevel": 134,
+    "expLevel": 135,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1195,7 +1251,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2499,
-    "clanRank": 23,
+    "clanRank": 24,
     "previousClanRank": 24,
     "donations": 315,
     "donationsReceived": 224,
@@ -1226,62 +1282,6 @@
     "warStars": 137,
     "daysInClan": 35,
     "joinedDate": "2026-08-17"
-  },
-  {
-    "tag": "#90YCRLUY0",
-    "name": "king renan",
-    "role": "admin",
-    "townHallLevel": 13,
-    "expLevel": 125,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000011,
-      "name": "Wizard League 11",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 2392,
-    "clanRank": 24,
-    "previousClanRank": 28,
-    "donations": 677,
-    "donationsReceived": 339,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000001
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000010
-        },
-        {
-          "type": "decoration",
-          "id": 82000062
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
-    },
-    "warStars": 93,
-    "daysInClan": 1,
-    "joinedDate": "2026-09-21"
   },
   {
     "tag": "#QLYUCRG9U",
@@ -1366,7 +1366,7 @@
     "clanRank": 26,
     "previousClanRank": 25,
     "donations": 260,
-    "donationsReceived": 1916,
+    "donationsReceived": 1988,
     "playerHouse": {
       "elements": [
         {
@@ -1660,7 +1660,7 @@
     "name": "Bart simpson",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 130,
+    "expLevel": 131,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1681,7 +1681,7 @@
     "builderBaseTrophies": 852,
     "clanRank": 32,
     "previousClanRank": 31,
-    "donations": 9,
+    "donations": 11,
     "donationsReceived": 445,
     "playerHouse": {
       "elements": [
