@@ -449,8 +449,8 @@
       "townHallLevel": 13,
       "townhallLevel": 13,
       "totalStars": 6,
-      "totalAttacks": 3,
-      "totalDestruction": 260.0,
+      "totalAttacks": 4,
+      "totalDestruction": 336.0,
       "warCount": 2,
       "donations": 779
     },
@@ -1022,8 +1022,8 @@
         "role": "admin",
         "townHallLevel": 13,
         "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "attacks": 2,
+        "destruction": 176
       },
       "#2LGUVVC99": {
         "name": "#BAD BOY#",
