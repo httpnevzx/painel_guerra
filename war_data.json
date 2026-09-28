@@ -208,7 +208,15 @@
         "name": "LINKIN PARK",
         "townhallLevel": 15,
         "mapPosition": 2,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#8V9CY99JQ",
+          "defenderTag": "#9UYPCVPLL",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 11,
+          "duration": 155
+        },
         "donations": 801,
         "role": "coLeader"
       },
@@ -226,7 +234,15 @@
         "name": "king renan",
         "townhallLevel": 13,
         "mapPosition": 15,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#920JG8JR9",
+          "defenderTag": "#90YCRLUY0",
+          "stars": 1,
+          "destructionPercentage": 50,
+          "order": 10,
+          "duration": 105
+        },
         "donations": 662,
         "role": "admin"
       },
@@ -325,9 +341,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 6,
-    "stars": 12,
-    "destructionPercentage": 17.76,
+    "attacks": 8,
+    "stars": 16,
+    "destructionPercentage": 23.76,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -450,6 +466,14 @@
             "destructionPercentage": 100,
             "order": 9,
             "duration": 100
+          },
+          {
+            "attackerTag": "#8V9CY99JQ",
+            "defenderTag": "#9UYPCVPLL",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 11,
+            "duration": 155
           }
         ],
         "opponentAttacks": 0
@@ -582,6 +606,16 @@
         "name": "Jst Sm:)le",
         "townhallLevel": 12,
         "mapPosition": 15,
+        "attacks": [
+          {
+            "attackerTag": "#920JG8JR9",
+            "defenderTag": "#90YCRLUY0",
+            "stars": 1,
+            "destructionPercentage": 50,
+            "order": 10,
+            "duration": 105
+          }
+        ],
         "opponentAttacks": 0
       }
     ]
