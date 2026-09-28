@@ -147,9 +147,9 @@
       "name": "mestre",
       "role": "member",
       "townHallLevel": 13,
-      "totalStars": 3,
-      "totalAttacks": 1,
-      "totalDestruction": 100.0,
+      "totalStars": 6,
+      "totalAttacks": 2,
+      "totalDestruction": 200.0,
       "warCount": 3,
       "donations": 114,
       "townhallLevel": 13
@@ -925,9 +925,9 @@
         "name": "mestre",
         "role": "member",
         "townHallLevel": 13,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       },
       "#QRL2CJG9": {
         "name": "Jonas",
