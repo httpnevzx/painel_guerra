@@ -75,9 +75,9 @@
       "name": "namtugal",
       "role": "admin",
       "townHallLevel": 13,
-      "totalStars": 7,
-      "totalAttacks": 4,
-      "totalDestruction": 387.0,
+      "totalStars": 9,
+      "totalAttacks": 5,
+      "totalDestruction": 487.0,
       "warCount": 3,
       "donations": 513,
       "townhallLevel": 13
@@ -885,9 +885,9 @@
         "name": "namtugal",
         "role": "admin",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 2,
+        "attacks": 1,
+        "destruction": 100
       },
       "#GYP00G8PR": {
         "name": "JP Chavoso",
