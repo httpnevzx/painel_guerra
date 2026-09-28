@@ -99,9 +99,9 @@
       "name": "JP Chavoso",
       "role": "coLeader",
       "townHallLevel": 14,
-      "totalStars": 8,
-      "totalAttacks": 4,
-      "totalDestruction": 339.0,
+      "totalStars": 10,
+      "totalAttacks": 5,
+      "totalDestruction": 427.0,
       "warCount": 3,
       "donations": 416,
       "townhallLevel": 14
@@ -893,9 +893,9 @@
         "name": "JP Chavoso",
         "role": "coLeader",
         "townHallLevel": 14,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 2,
+        "attacks": 1,
+        "destruction": 88
       },
       "#GJLC89UG8": {
         "name": "Robson",
