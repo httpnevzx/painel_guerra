@@ -77,7 +77,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png"
       }
     },
-    "trophies": 0,
+    "trophies": 40,
     "builderBaseTrophies": 2706,
     "clanRank": 2,
     "previousClanRank": 2,
@@ -228,7 +228,7 @@
     "name": "Nevzx 躾⛩️",
     "role": "leader",
     "townHallLevel": 13,
-    "expLevel": 162,
+    "expLevel": 163,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -2346,7 +2346,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2577,
+    "builderBaseTrophies": 2542,
     "clanRank": 45,
     "previousClanRank": 45,
     "donations": 0,
