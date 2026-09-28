@@ -183,9 +183,9 @@
       "name": "Hedris",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 12,
-      "totalAttacks": 4,
-      "totalDestruction": 400.0,
+      "totalStars": 15,
+      "totalAttacks": 5,
+      "totalDestruction": 500.0,
       "warCount": 3,
       "donations": 85,
       "townhallLevel": 12
@@ -400,9 +400,9 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 0,
-      "totalAttacks": 0,
-      "totalDestruction": 0.0,
+      "totalStars": 2,
+      "totalAttacks": 1,
+      "totalDestruction": 99.0,
       "warCount": 2,
       "donations": 80
     },
@@ -957,9 +957,9 @@
         "name": "Hedris",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       },
       "#GJCGJU8JL": {
         "name": "Igorzin",
@@ -973,9 +973,9 @@
         "name": "Bruxo",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 2,
+        "attacks": 1,
+        "destruction": 99
       },
       "#PUQGPV8PC": {
         "name": "PITBULL.E",
