@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 19,
-    "stars": 48,
-    "destructionPercentage": 66.08,
+    "attacks": 21,
+    "stars": 53,
+    "destructionPercentage": 74.04,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -218,6 +218,14 @@
             "destructionPercentage": 100,
             "order": 28,
             "duration": 103
+          },
+          {
+            "attackerTag": "#G9ULQQJP2",
+            "defenderTag": "#GCCY2LPPC",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 29,
+            "duration": 84
           }
         ],
         "opponentAttacks": 0,
@@ -246,6 +254,16 @@
         "name": "Bruxo",
         "townhallLevel": 12,
         "mapPosition": 16,
+        "attacks": [
+          {
+            "attackerTag": "#GVRPCCLUL",
+            "defenderTag": "#GCCGGU9QG",
+            "stars": 2,
+            "destructionPercentage": 99,
+            "order": 30,
+            "duration": 149
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 80,
         "role": "member"
@@ -536,7 +554,15 @@
         "name": "Muhamad riyan",
         "townhallLevel": 12,
         "mapPosition": 14,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GVRPCCLUL",
+          "defenderTag": "#GCCGGU9QG",
+          "stars": 2,
+          "destructionPercentage": 99,
+          "order": 30,
+          "duration": 149
+        }
       },
       {
         "tag": "#PP8UUUURC",
@@ -839,7 +865,15 @@
         "name": "Arsyaa",
         "townhallLevel": 9,
         "mapPosition": 25,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#G9ULQQJP2",
+          "defenderTag": "#GCCY2LPPC",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 29,
+          "duration": 84
+        }
       },
       {
         "tag": "#QJ20J29G8",
