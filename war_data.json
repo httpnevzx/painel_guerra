@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 8,
-    "stars": 19,
-    "destructionPercentage": 29.52,
+    "attacks": 9,
+    "stars": 22,
+    "destructionPercentage": 33.52,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -333,6 +333,16 @@
         "name": "After",
         "townhallLevel": 12,
         "mapPosition": 20,
+        "attacks": [
+          {
+            "attackerTag": "#GU82Q92JP",
+            "defenderTag": "#GV8002U9G",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 18,
+            "duration": 100
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 241,
         "role": "admin"
@@ -457,7 +467,15 @@
         "name": "ARSYA",
         "townhallLevel": 11,
         "mapPosition": 22,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GU82Q92JP",
+          "defenderTag": "#GV8002U9G",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 18,
+          "duration": 100
+        }
       },
       {
         "tag": "#QV0CJPYU9",
