@@ -327,9 +327,9 @@
       "name": "johnpork",
       "role": "admin",
       "townHallLevel": 13,
-      "totalStars": 5,
-      "totalAttacks": 2,
-      "totalDestruction": 190.0,
+      "totalStars": 6,
+      "totalAttacks": 3,
+      "totalDestruction": 281.0,
       "warCount": 3,
       "donations": 375,
       "townhallLevel": 13
@@ -1053,9 +1053,9 @@
         "name": "johnpork",
         "role": "admin",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 1,
+        "attacks": 1,
+        "destruction": 91
       },
       "#GYU8QLLVJ": {
         "name": "kayky2005",
