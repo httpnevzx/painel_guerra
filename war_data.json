@@ -174,7 +174,15 @@
         "name": "THE APELA",
         "townhallLevel": 15,
         "mapPosition": 1,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#8V9CY99JQ",
+          "defenderTag": "#Q0URR9VC9",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 9,
+          "duration": 100
+        },
         "donations": 75,
         "role": "member"
       },
@@ -317,9 +325,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 5,
-    "stars": 9,
-    "destructionPercentage": 13.76,
+    "attacks": 6,
+    "stars": 12,
+    "destructionPercentage": 17.76,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -434,6 +442,16 @@
         "name": "Erick",
         "townhallLevel": 16,
         "mapPosition": 1,
+        "attacks": [
+          {
+            "attackerTag": "#8V9CY99JQ",
+            "defenderTag": "#Q0URR9VC9",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 9,
+            "duration": 100
+          }
+        ],
         "opponentAttacks": 0
       },
       {
