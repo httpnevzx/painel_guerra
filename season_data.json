@@ -10,7 +10,7 @@
     "#9UYPCVPLL": 903,
     "#GGQPRRURV": 513,
     "#GYP00G8PR": 416,
-    "#292YJJ02V": 4088,
+    "#292YJJ02V": 4130,
     "#YJVRGUGVJ": 653,
     "#R8R22C08Y": 673,
     "#QGYU9GYC": 2353,
@@ -30,7 +30,7 @@
     "#QGLRQRQLJ": 0,
     "#YCY2YYYUP": 0,
     "#Y2VVRCUL9": 260,
-    "#90YCRLUY0": 677,
+    "#90YCRLUY0": 707,
     "#LQV2QRVJR": 40,
     "#Y8PLPVJJ0": 1,
     "#Q8QQC2QR9": 3,
@@ -55,7 +55,7 @@
     "#R08PU9VP0": 47,
     "#GLQJVVVR9": 0,
     "#Q0URR9VC9": 75,
-    "#82CQY0Q8V": 9
+    "#82CQY0Q8V": 11
   },
   "seasonMembers": {
     "#QGLRQRQLJ": {
@@ -127,7 +127,7 @@
       "totalAttacks": 3,
       "totalDestruction": 300.0,
       "warCount": 3,
-      "donations": 4088,
+      "donations": 4130,
       "townhallLevel": 13
     },
     "#LQV2QRVJR": {
@@ -159,9 +159,9 @@
       "name": "Jonas",
       "role": "coLeader",
       "townHallLevel": 15,
-      "totalStars": 6,
-      "totalAttacks": 4,
-      "totalDestruction": 374.0,
+      "totalStars": 12,
+      "totalAttacks": 6,
+      "totalDestruction": 574.0,
       "warCount": 3,
       "donations": 1000,
       "townhallLevel": 15
@@ -255,9 +255,9 @@
       "name": "#BAD BOY#",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 6,
-      "totalAttacks": 2,
-      "totalDestruction": 200.0,
+      "totalStars": 12,
+      "totalAttacks": 4,
+      "totalDestruction": 400.0,
       "warCount": 3,
       "donations": 260,
       "townhallLevel": 12
@@ -448,11 +448,11 @@
       "role": "admin",
       "townHallLevel": 13,
       "townhallLevel": 13,
-      "totalStars": 3,
-      "totalAttacks": 2,
-      "totalDestruction": 160.0,
+      "totalStars": 6,
+      "totalAttacks": 3,
+      "totalDestruction": 260.0,
       "warCount": 2,
-      "donations": 677
+      "donations": 707
     },
     "#82CQY0Q8V": {
       "tag": "#82CQY0Q8V",
@@ -460,11 +460,11 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 0,
-      "totalAttacks": 0,
-      "totalDestruction": 0.0,
+      "totalStars": 3,
+      "totalAttacks": 1,
+      "totalDestruction": 100.0,
       "warCount": 1,
-      "donations": 9
+      "donations": 11
     }
   },
   "warHistory": {
@@ -933,9 +933,9 @@
         "name": "Jonas",
         "role": "coLeader",
         "townHallLevel": 15,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       },
       "#9JUJVPVUQ": {
         "name": "Targaryen",
@@ -1013,25 +1013,25 @@
         "name": "Bart simpson",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#90YCRLUY0": {
         "name": "king renan",
         "role": "admin",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#2LGUVVC99": {
         "name": "#BAD BOY#",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       },
       "#GVUPL0Y2L": {
         "name": "marmela",
