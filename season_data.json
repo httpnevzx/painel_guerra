@@ -46,7 +46,7 @@
     "#LVYP8RVGR": 0,
     "#GG2JUVG2P": 0,
     "#GYU8QLLVJ": 2,
-    "#YGLLU0UU9": 246,
+    "#YGLLU0UU9": 329,
     "#GJCGJU8JL": 0,
     "#PUQGPV8PC": 22,
     "#9VRQRUR20": 30,
@@ -351,11 +351,11 @@
       "name": "ÉOBRABOXX",
       "role": "admin",
       "townHallLevel": 14,
-      "totalStars": 14,
-      "totalAttacks": 5,
-      "totalDestruction": 485.0,
+      "totalStars": 17,
+      "totalAttacks": 6,
+      "totalDestruction": 585.0,
       "warCount": 3,
-      "donations": 246,
+      "donations": 329,
       "townhallLevel": 14
     },
     "#9VRQRUR20": {
@@ -1069,9 +1069,9 @@
         "name": "ÉOBRABOXX",
         "role": "admin",
         "townHallLevel": 14,
-        "stars": 2,
-        "attacks": 1,
-        "destruction": 85
+        "stars": 5,
+        "attacks": 2,
+        "destruction": 185
       }
     }
   }
