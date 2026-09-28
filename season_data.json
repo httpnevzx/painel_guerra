@@ -10,7 +10,7 @@
     "#9UYPCVPLL": 903,
     "#GGQPRRURV": 513,
     "#GYP00G8PR": 416,
-    "#292YJJ02V": 4145,
+    "#292YJJ02V": 4217,
     "#YJVRGUGVJ": 653,
     "#R8R22C08Y": 673,
     "#QGYU9GYC": 2353,
@@ -127,7 +127,7 @@
       "totalAttacks": 3,
       "totalDestruction": 300.0,
       "warCount": 3,
-      "donations": 4145,
+      "donations": 4217,
       "townhallLevel": 13
     },
     "#LQV2QRVJR": {
@@ -183,9 +183,9 @@
       "name": "Hedris",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 9,
-      "totalAttacks": 3,
-      "totalDestruction": 300.0,
+      "totalStars": 12,
+      "totalAttacks": 4,
+      "totalDestruction": 400.0,
       "warCount": 3,
       "donations": 85,
       "townhallLevel": 12
@@ -957,9 +957,9 @@
         "name": "Hedris",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#GJCGJU8JL": {
         "name": "Igorzin",
