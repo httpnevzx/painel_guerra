@@ -303,9 +303,9 @@
       "name": "After",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 11,
-      "totalAttacks": 4,
-      "totalDestruction": 400.0,
+      "totalStars": 14,
+      "totalAttacks": 5,
+      "totalDestruction": 500.0,
       "warCount": 3,
       "donations": 241,
       "townhallLevel": 12
@@ -1045,9 +1045,9 @@
         "name": "After",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       },
       "#GCY8PR02J": {
         "name": "johnpork",
