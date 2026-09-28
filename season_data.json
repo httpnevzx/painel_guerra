@@ -412,9 +412,9 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 3,
-      "totalAttacks": 1,
-      "totalDestruction": 100.0,
+      "totalStars": 6,
+      "totalAttacks": 2,
+      "totalDestruction": 200.0,
       "warCount": 2,
       "donations": 22
     },
@@ -981,9 +981,9 @@
         "name": "PITBULL.E",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#Q0URR9VC9": {
         "name": "THE APELA",
