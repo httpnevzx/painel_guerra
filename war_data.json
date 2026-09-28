@@ -123,14 +123,14 @@
         "name": "Igorzin",
         "townhallLevel": 13,
         "mapPosition": 12,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#L9YYQVG29",
+          "attackerTag": "#GJGCVVVR9",
           "defenderTag": "#GJCGJU8JL",
-          "stars": 1,
-          "destructionPercentage": 91,
-          "order": 3,
-          "duration": 166
+          "stars": 2,
+          "destructionPercentage": 75,
+          "order": 4,
+          "duration": 180
         },
         "donations": 0,
         "role": "member"
@@ -283,9 +283,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 1,
-    "stars": 1,
-    "destructionPercentage": 3.64,
+    "attacks": 2,
+    "stars": 2,
+    "destructionPercentage": 3.0,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -421,6 +421,16 @@
         "name": "wapell",
         "townhallLevel": 13,
         "mapPosition": 10,
+        "attacks": [
+          {
+            "attackerTag": "#GJGCVVVR9",
+            "defenderTag": "#GJCGJU8JL",
+            "stars": 2,
+            "destructionPercentage": 75,
+            "order": 4,
+            "duration": 180
+          }
+        ],
         "opponentAttacks": 0
       },
       {
