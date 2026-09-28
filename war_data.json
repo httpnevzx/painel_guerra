@@ -123,7 +123,15 @@
         "name": "Igorzin",
         "townhallLevel": 13,
         "mapPosition": 12,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#L9YYQVG29",
+          "defenderTag": "#GJCGJU8JL",
+          "stars": 1,
+          "destructionPercentage": 91,
+          "order": 3,
+          "duration": 166
+        },
         "donations": 0,
         "role": "member"
       },
@@ -275,9 +283,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 0,
-    "stars": 0,
-    "destructionPercentage": 0.0,
+    "attacks": 1,
+    "stars": 1,
+    "destructionPercentage": 3.64,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -312,6 +320,16 @@
         "name": "Arlan",
         "townhallLevel": 12,
         "mapPosition": 12,
+        "attacks": [
+          {
+            "attackerTag": "#L9YYQVG29",
+            "defenderTag": "#GJCGJU8JL",
+            "stars": 1,
+            "destructionPercentage": 91,
+            "order": 3,
+            "duration": 166
+          }
+        ],
         "opponentAttacks": 0
       },
       {
