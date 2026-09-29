@@ -301,7 +301,15 @@
             "duration": 83
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GCCGGU9QG",
+          "defenderTag": "#PUQGPV8PC",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 42,
+          "duration": 109
+        },
         "donations": 22,
         "role": "member"
       },
@@ -515,7 +523,15 @@
             "duration": 97
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GCVVP2CUP",
+          "defenderTag": "#GU82Q92JP",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 43,
+          "duration": 113
+        },
         "donations": 241,
         "role": "admin"
       },
@@ -601,9 +617,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 11,
-    "stars": 22,
-    "destructionPercentage": 32.32,
+    "attacks": 13,
+    "stars": 28,
+    "destructionPercentage": 40.32,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -650,6 +666,16 @@
         "name": "Muhamad riyan",
         "townhallLevel": 12,
         "mapPosition": 14,
+        "attacks": [
+          {
+            "attackerTag": "#GCCGGU9QG",
+            "defenderTag": "#PUQGPV8PC",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 42,
+            "duration": 109
+          }
+        ],
         "opponentAttacks": 2,
         "bestOpponentAttack": {
           "attackerTag": "#UJUUJRLY",
@@ -815,6 +841,16 @@
         "name": "Cihuii",
         "townhallLevel": 12,
         "mapPosition": 20,
+        "attacks": [
+          {
+            "attackerTag": "#GCVVP2CUP",
+            "defenderTag": "#GU82Q92JP",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 43,
+            "duration": 113
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#GU82Q92JP",
