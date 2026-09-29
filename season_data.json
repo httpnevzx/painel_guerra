@@ -405,8 +405,8 @@
       "townHallLevel": 12,
       "townhallLevel": 12,
       "totalStars": 2,
-      "totalAttacks": 1,
-      "totalDestruction": 99.0,
+      "totalAttacks": 2,
+      "totalDestruction": 161.0,
       "warCount": 2,
       "donations": 87
     },
@@ -978,8 +978,8 @@
         "role": "member",
         "townHallLevel": 12,
         "stars": 2,
-        "attacks": 1,
-        "destruction": 99
+        "attacks": 2,
+        "destruction": 161
       },
       "#PUQGPV8PC": {
         "name": "PITBULL.E",
