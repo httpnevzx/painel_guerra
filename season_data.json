@@ -128,8 +128,8 @@
       "role": "leader",
       "townHallLevel": 13,
       "totalStars": 10,
-      "totalAttacks": 4,
-      "totalDestruction": 400.0,
+      "totalAttacks": 5,
+      "totalDestruction": 494.0,
       "warCount": 3,
       "donations": 4560,
       "townhallLevel": 13
@@ -914,8 +914,8 @@
         "role": "leader",
         "townHallLevel": 13,
         "stars": 1,
-        "attacks": 1,
-        "destruction": 100
+        "attacks": 2,
+        "destruction": 194
       },
       "#LQV2QRVJR": {
         "name": "Rosa₪Floresida₪",
