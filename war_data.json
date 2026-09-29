@@ -650,7 +650,15 @@
             "duration": 158
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GR9UJ9UCY",
+          "defenderTag": "#YGLLU0UU9",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 50,
+          "duration": 102
+        },
         "donations": 406,
         "role": "admin"
       }
@@ -665,9 +673,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 19,
-    "stars": 42,
-    "destructionPercentage": 62.2,
+    "attacks": 20,
+    "stars": 45,
+    "destructionPercentage": 66.2,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -1187,6 +1195,16 @@
         "name": "Sinta",
         "townhallLevel": 13,
         "mapPosition": 8,
+        "attacks": [
+          {
+            "attackerTag": "#GR9UJ9UCY",
+            "defenderTag": "#YGLLU0UU9",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 50,
+            "duration": 102
+          }
+        ],
         "opponentAttacks": 2,
         "bestOpponentAttack": {
           "attackerTag": "#GGQPRRURV",
