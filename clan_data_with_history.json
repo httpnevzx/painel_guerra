@@ -616,62 +616,6 @@
     "joinedDate": "2026-07-24"
   },
   {
-    "tag": "#GJLC89UG8",
-    "name": "Robson",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 111,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000013,
-      "name": "Valkyrie League 13",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 2074,
-    "clanRank": 12,
-    "previousClanRank": 12,
-    "donations": 153,
-    "donationsReceived": 1184,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000002
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000010
-        },
-        {
-          "type": "decoration",
-          "id": 82000063
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000020,
-      "name": "Brass League III"
-    },
-    "warStars": 167,
-    "daysInClan": 66,
-    "joinedDate": "2026-07-17"
-  },
-  {
     "tag": "#GVUPL0Y2L",
     "name": "marmela",
     "role": "member",
@@ -693,9 +637,9 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
       }
     },
-    "trophies": 0,
+    "trophies": 220,
     "builderBaseTrophies": 2345,
-    "clanRank": 13,
+    "clanRank": 12,
     "previousClanRank": 13,
     "donations": 144,
     "donationsReceived": 329,
@@ -726,6 +670,62 @@
     "warStars": 141,
     "daysInClan": 17,
     "joinedDate": "2026-09-04"
+  },
+  {
+    "tag": "#GJLC89UG8",
+    "name": "Robson",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 111,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000013,
+      "name": "Valkyrie League 13",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2074,
+    "clanRank": 13,
+    "previousClanRank": 12,
+    "donations": 153,
+    "donationsReceived": 1184,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "warStars": 167,
+    "daysInClan": 66,
+    "joinedDate": "2026-07-17"
   },
   {
     "tag": "#UJUUJRLY",
@@ -2106,7 +2106,7 @@
       }
     },
     "trophies": 12,
-    "builderBaseTrophies": 1990,
+    "builderBaseTrophies": 1927,
     "clanRank": 40,
     "previousClanRank": 38,
     "donations": 241,
