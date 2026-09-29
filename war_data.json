@@ -15,7 +15,7 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 30,
+    "attacks": 31,
     "stars": 68,
     "destructionPercentage": 96.68,
     "members": [
@@ -534,6 +534,14 @@
             "destructionPercentage": 100,
             "order": 2,
             "duration": 121
+          },
+          {
+            "attackerTag": "#GVUPL0Y2L",
+            "defenderTag": "#QC9P8YUJJ",
+            "stars": 2,
+            "destructionPercentage": 73,
+            "order": 51,
+            "duration": 126
           }
         ],
         "opponentAttacks": 1,
@@ -1110,7 +1118,7 @@
         "name": "al razyq",
         "townhallLevel": 12,
         "mapPosition": 11,
-        "opponentAttacks": 2,
+        "opponentAttacks": 3,
         "bestOpponentAttack": {
           "attackerTag": "#LQV2QRVJR",
           "defenderTag": "#QC9P8YUJJ",
