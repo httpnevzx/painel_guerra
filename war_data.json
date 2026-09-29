@@ -113,7 +113,7 @@
         "townhallLevel": 13,
         "mapPosition": 6,
         "opponentAttacks": 0,
-        "donations": 4446,
+        "donations": 4493,
         "role": "leader"
       },
       {
@@ -496,7 +496,15 @@
             "duration": 121
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GCVVP2CUP",
+          "defenderTag": "#GVUPL0Y2L",
+          "stars": 1,
+          "destructionPercentage": 83,
+          "order": 44,
+          "duration": 120
+        },
         "donations": 144,
         "role": "member"
       },
@@ -617,9 +625,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 13,
-    "stars": 28,
-    "destructionPercentage": 40.32,
+    "attacks": 14,
+    "stars": 29,
+    "destructionPercentage": 43.64,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -849,6 +857,14 @@
             "destructionPercentage": 100,
             "order": 43,
             "duration": 113
+          },
+          {
+            "attackerTag": "#GCVVP2CUP",
+            "defenderTag": "#GVUPL0Y2L",
+            "stars": 1,
+            "destructionPercentage": 83,
+            "order": 44,
+            "duration": 120
           }
         ],
         "opponentAttacks": 1,
