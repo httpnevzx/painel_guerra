@@ -1508,62 +1508,6 @@
     "joinedDate": "2026-06-30"
   },
   {
-    "tag": "#82CQY0Q8V",
-    "name": "Bart simpson",
-    "role": "member",
-    "townHallLevel": 12,
-    "expLevel": 131,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000009,
-      "name": "Archer League 9",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
-      }
-    },
-    "trophies": 18,
-    "builderBaseTrophies": 852,
-    "clanRank": 29,
-    "previousClanRank": 32,
-    "donations": 11,
-    "donationsReceived": 517,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000000
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000017
-        },
-        {
-          "type": "decoration",
-          "id": 82000058
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000008,
-      "name": "Clay League II"
-    },
-    "warStars": 1071,
-    "daysInClan": 1,
-    "joinedDate": "2026-09-24"
-  },
-  {
     "tag": "#QGLRQRQLJ",
     "name": "F4NT4SM4",
     "role": "member",
@@ -1585,9 +1529,9 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
       }
     },
-    "trophies": 0,
+    "trophies": 18,
     "builderBaseTrophies": 1790,
-    "clanRank": 30,
+    "clanRank": 29,
     "previousClanRank": 29,
     "donations": 0,
     "donationsReceived": 0,
@@ -1618,6 +1562,62 @@
     "warStars": 53,
     "daysInClan": 42,
     "joinedDate": "2026-08-10"
+  },
+  {
+    "tag": "#82CQY0Q8V",
+    "name": "Bart simpson",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 131,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000009,
+      "name": "Archer League 9",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
+      }
+    },
+    "trophies": 18,
+    "builderBaseTrophies": 852,
+    "clanRank": 30,
+    "previousClanRank": 32,
+    "donations": 11,
+    "donationsReceived": 517,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000017
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000008,
+      "name": "Clay League II"
+    },
+    "warStars": 1071,
+    "daysInClan": 1,
+    "joinedDate": "2026-09-24"
   },
   {
     "tag": "#LQV2QRVJR",
@@ -2106,7 +2106,7 @@
       }
     },
     "trophies": 12,
-    "builderBaseTrophies": 2010,
+    "builderBaseTrophies": 1990,
     "clanRank": 40,
     "previousClanRank": 38,
     "donations": 241,
@@ -2132,8 +2132,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000020,
-      "name": "Brass League III"
+      "id": 44000019,
+      "name": "Copper League I"
     },
     "warStars": 91,
     "daysInClan": 23,
