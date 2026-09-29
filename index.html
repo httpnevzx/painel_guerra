@@ -6763,7 +6763,7 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2058,
+    "builderBaseTrophies": 2003,
     "clanRank": 39,
     "previousClanRank": 38,
     "donations": 241,
@@ -7225,7 +7225,9 @@ function switchTab(tabName) {
         try { initJapanTab(); } catch(e) {}
 
         // Completely hide ALL cyber elements and show Japanese background
-        if (sakuraCanvas) sakuraCanvas.style.opacity = '1';
+        if (sakuraCanvas) sakuraCanvas.style.opacity = '1'; // Japan tab: only sakura petals
+        const skyCanvasJP = document.getElementById('skyLanternsCanvas');
+        if (skyCanvasJP) skyCanvasJP.style.opacity = '0'; // Hide sky lanterns on Japan tab
         if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '0';
         if (cyberGrid) cyberGrid.style.display = 'none';
         if (cyberPillars) cyberPillars.forEach(p => { if (p) p.style.display = 'none'; });
