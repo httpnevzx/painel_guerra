@@ -1474,7 +1474,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2289,
+    "builderBaseTrophies": 2364,
     "clanRank": 28,
     "previousClanRank": 28,
     "donations": 172,
@@ -2258,7 +2258,7 @@
     "clanRank": 43,
     "previousClanRank": 0,
     "donations": 0,
-    "donationsReceived": 40,
+    "donationsReceived": 72,
     "playerHouse": {
       "elements": [
         {
@@ -2517,7 +2517,7 @@
     "builderBaseTrophies": 40,
     "clanRank": 48,
     "previousClanRank": 46,
-    "donations": 241,
+    "donations": 273,
     "donationsReceived": 812,
     "builderBaseLeague": {
       "id": 44000000,
