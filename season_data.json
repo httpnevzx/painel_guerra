@@ -392,9 +392,9 @@
       "role": "member",
       "townHallLevel": 13,
       "townhallLevel": 13,
-      "totalStars": 3,
-      "totalAttacks": 1,
-      "totalDestruction": 100.0,
+      "totalStars": 4,
+      "totalAttacks": 2,
+      "totalDestruction": 200.0,
       "warCount": 2,
       "donations": 0
     },
@@ -969,9 +969,9 @@
         "name": "Igorzin",
         "role": "member",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 1,
+        "attacks": 1,
+        "destruction": 100
       },
       "#GVRPCCLUL": {
         "name": "Bruxo",
