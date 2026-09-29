@@ -1360,10 +1360,14 @@
             .council-stats-strip { width: 100%; justify-content: space-between; }
             .japan-header-badge { flex-direction: column; align-items: flex-start; gap: 12px; }
             .kanji-seal { align-self: flex-end; }
-        /* ── Japanese Temple Background Landscape Overlay ────────────── */
+        } /* ← close @media (max-width: 768px) */
+
+        /* ── Japanese Temple Background Landscape Overlay ─────────────── */
         .japan-bg-overlay {
-            position: fixed;
+            position: fixed !important;
             inset: 0;
+            width: 100vw;
+            height: 100vh;
             background: linear-gradient(rgba(14, 6, 16, 0.62), rgba(14, 6, 16, 0.80)), url('japan_bg.jpg') center center / cover no-repeat fixed;
             z-index: -3;
             opacity: 0;
@@ -6702,7 +6706,7 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2068,
+    "builderBaseTrophies": 2076,
     "clanRank": 38,
     "previousClanRank": 38,
     "donations": 241,
