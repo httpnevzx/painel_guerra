@@ -251,7 +251,15 @@
         "name": "bielx2.0",
         "townhallLevel": 12,
         "mapPosition": 17,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GV2Y8URGG",
+          "defenderTag": "#R08PU9VP0",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 60,
+          "duration": 92
+        },
         "donations": 47,
         "role": "member"
       },
@@ -723,9 +731,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 26,
-    "stars": 59,
-    "destructionPercentage": 80.0,
+    "attacks": 27,
+    "stars": 62,
+    "destructionPercentage": 84.0,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -1146,6 +1154,14 @@
             "destructionPercentage": 100,
             "order": 45,
             "duration": 124
+          },
+          {
+            "attackerTag": "#GV2Y8URGG",
+            "defenderTag": "#R08PU9VP0",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 60,
+            "duration": 92
           }
         ],
         "opponentAttacks": 1,
