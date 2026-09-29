@@ -465,8 +465,8 @@
       "townHallLevel": 12,
       "townhallLevel": 12,
       "totalStars": 3,
-      "totalAttacks": 1,
-      "totalDestruction": 100.0,
+      "totalAttacks": 2,
+      "totalDestruction": 140.0,
       "warCount": 1,
       "donations": 11
     }
@@ -1018,8 +1018,8 @@
         "role": "member",
         "townHallLevel": 12,
         "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "attacks": 2,
+        "destruction": 140
       },
       "#90YCRLUY0": {
         "name": "king renan",
