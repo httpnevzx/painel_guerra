@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 29,
-    "stars": 67,
-    "destructionPercentage": 96.28,
+    "attacks": 30,
+    "stars": 68,
+    "destructionPercentage": 96.68,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -129,6 +129,14 @@
             "destructionPercentage": 100,
             "order": 39,
             "duration": 97
+          },
+          {
+            "attackerTag": "#LQV2QRVJR",
+            "defenderTag": "#QC9P8YUJJ",
+            "stars": 2,
+            "destructionPercentage": 94,
+            "order": 41,
+            "duration": 102
           }
         ],
         "opponentAttacks": 0,
@@ -543,7 +551,15 @@
         "name": "kayky2005",
         "townhallLevel": 12,
         "mapPosition": 22,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GV8002U9G",
+          "defenderTag": "#GYU8QLLVJ",
+          "stars": 1,
+          "destructionPercentage": 83,
+          "order": 40,
+          "duration": 111
+        },
         "donations": 2,
         "role": "member"
       },
@@ -585,9 +601,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 10,
-    "stars": 21,
-    "destructionPercentage": 29.0,
+    "attacks": 11,
+    "stars": 22,
+    "destructionPercentage": 32.32,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -689,6 +705,16 @@
         "name": "ARSYA",
         "townhallLevel": 11,
         "mapPosition": 22,
+        "attacks": [
+          {
+            "attackerTag": "#GV8002U9G",
+            "defenderTag": "#GYU8QLLVJ",
+            "stars": 1,
+            "destructionPercentage": 83,
+            "order": 40,
+            "duration": 111
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#GU82Q92JP",
@@ -948,14 +974,14 @@
         "name": "al razyq",
         "townhallLevel": 12,
         "mapPosition": 11,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#GCY8PR02J",
+          "attackerTag": "#LQV2QRVJR",
           "defenderTag": "#QC9P8YUJJ",
-          "stars": 1,
-          "destructionPercentage": 84,
-          "order": 38,
-          "duration": 114
+          "stars": 2,
+          "destructionPercentage": 94,
+          "order": 41,
+          "duration": 102
         }
       },
       {
