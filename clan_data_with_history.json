@@ -193,7 +193,7 @@
     "builderBaseTrophies": 2292,
     "clanRank": 4,
     "previousClanRank": 5,
-    "donations": 4575,
+    "donations": 4576,
     "donationsReceived": 1119,
     "playerHouse": {
       "elements": [
@@ -246,7 +246,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2899,
+    "builderBaseTrophies": 2905,
     "clanRank": 5,
     "previousClanRank": 4,
     "donations": 570,
@@ -340,7 +340,7 @@
     "name": "Cibele❤️",
     "role": "coLeader",
     "townHallLevel": 13,
-    "expLevel": 133,
+    "expLevel": 134,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -357,7 +357,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/a3zg3PSqri2WrWD8tGzKs0hJ5OrND1Rx1SJ45f5O0gE.png"
       }
     },
-    "trophies": 0,
+    "trophies": 29,
     "builderBaseTrophies": 2049,
     "clanRank": 7,
     "previousClanRank": 7,
@@ -473,7 +473,7 @@
     "builderBaseTrophies": 2224,
     "clanRank": 9,
     "previousClanRank": 10,
-    "donations": 449,
+    "donations": 562,
     "donationsReceived": 653,
     "playerHouse": {
       "elements": [
@@ -1679,8 +1679,8 @@
     "tag": "#Y2VVRCUL9",
     "name": "-NeoNiizBackJR-",
     "role": "admin",
-    "townHallLevel": 12,
-    "expLevel": 124,
+    "townHallLevel": 13,
+    "expLevel": 125,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1702,7 +1702,7 @@
     "clanRank": 32,
     "previousClanRank": 31,
     "donations": 260,
-    "donationsReceived": 834,
+    "donationsReceived": 876,
     "builderBaseLeague": {
       "id": 44000018,
       "name": "Copper League II"
@@ -1902,7 +1902,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 1733,
+    "builderBaseTrophies": 1567,
     "clanRank": 36,
     "previousClanRank": 0,
     "donations": 0,
@@ -1928,8 +1928,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000017,
-      "name": "Copper League III"
+      "id": 44000015,
+      "name": "Copper League V"
     },
     "warStars": 154,
     "daysInClan": 1,
@@ -2106,7 +2106,7 @@
       }
     },
     "trophies": 28,
-    "builderBaseTrophies": 1932,
+    "builderBaseTrophies": 1984,
     "clanRank": 40,
     "previousClanRank": 38,
     "donations": 241,
@@ -2518,7 +2518,7 @@
     "clanRank": 48,
     "previousClanRank": 46,
     "donations": 273,
-    "donationsReceived": 812,
+    "donationsReceived": 884,
     "builderBaseLeague": {
       "id": 44000000,
       "name": "Wood League V"
