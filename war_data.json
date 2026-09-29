@@ -423,7 +423,15 @@
             "duration": 130
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GVYQCU9UV",
+          "defenderTag": "#82CQY0Q8V",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 46,
+          "duration": 155
+        },
         "donations": 11,
         "role": "member"
       },
@@ -633,9 +641,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 15,
-    "stars": 32,
-    "destructionPercentage": 47.64,
+    "attacks": 16,
+    "stars": 35,
+    "destructionPercentage": 51.64,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -890,6 +898,16 @@
         "name": "그냥 아르샤",
         "townhallLevel": 10,
         "mapPosition": 24,
+        "attacks": [
+          {
+            "attackerTag": "#GVYQCU9UV",
+            "defenderTag": "#82CQY0Q8V",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 46,
+            "duration": 155
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#G9ULQQJP2",
