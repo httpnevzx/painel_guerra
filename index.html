@@ -328,7 +328,7 @@
             text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
         }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 8px 20px 20px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 8px 20px 20px; position: relative; z-index: 10; }
 
         /* ── Hero ───────────────────────────────────────────────────────── */
         .hero { text-align: center; padding: 10px 20px 15px; }
@@ -1645,7 +1645,7 @@
         /* ── Japanese Ornaments for Hero Section ────────────────────────── */
         .hero {
             position: relative;
-            padding: 25px 20px 20px;
+            padding: 8px 20px 15px;
             text-align: center;
         }
         .hero-badge-wrap {
@@ -7215,11 +7215,22 @@ window.switchTab = switchTab;
 
 // Bind direct click and touch listeners to tab buttons
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', bindTabListeners);
+    document.addEventListener('DOMContentLoaded', function() {
+        bindTabListeners();
+        try { switchTab('war'); } catch(e) {}
+        window.scrollTo(0, 0);
+    });
 } else {
     bindTabListeners();
+    try { switchTab('war'); } catch(e) {}
+    window.scrollTo(0, 0);
 }
 window.addEventListener('load', bindTabListeners);
+window.addEventListener('load', function() {
+    // Force war tab active and scroll to top on load
+    try { switchTab('war'); } catch(e) {}
+    window.scrollTo(0, 0);
+});
 
 function bindTabListeners() {
     const bWar = document.getElementById('tabBtnWar');
