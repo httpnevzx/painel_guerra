@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 31,
-    "stars": 68,
-    "destructionPercentage": 96.68,
+    "attacks": 32,
+    "stars": 69,
+    "destructionPercentage": 96.92,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -287,6 +287,16 @@
         "name": "Igorzin",
         "townhallLevel": 13,
         "mapPosition": 12,
+        "attacks": [
+          {
+            "attackerTag": "#GJCGJU8JL",
+            "defenderTag": "#QC9P8YUJJ",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 54,
+            "duration": 110
+          }
+        ],
         "opponentAttacks": 2,
         "bestOpponentAttack": {
           "attackerTag": "#GJGCVVVR9",
@@ -1136,14 +1146,14 @@
         "name": "al razyq",
         "townhallLevel": 12,
         "mapPosition": 11,
-        "opponentAttacks": 3,
+        "opponentAttacks": 4,
         "bestOpponentAttack": {
-          "attackerTag": "#LQV2QRVJR",
+          "attackerTag": "#GJCGJU8JL",
           "defenderTag": "#QC9P8YUJJ",
-          "stars": 2,
-          "destructionPercentage": 94,
-          "order": 41,
-          "duration": 102
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 54,
+          "duration": 110
         }
       },
       {
