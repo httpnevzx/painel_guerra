@@ -77,7 +77,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png"
       }
     },
-    "trophies": 40,
+    "trophies": 69,
     "builderBaseTrophies": 2706,
     "clanRank": 2,
     "previousClanRank": 2,
@@ -1102,7 +1102,7 @@
       }
     },
     "trophies": 293,
-    "builderBaseTrophies": 2392,
+    "builderBaseTrophies": 2450,
     "clanRank": 21,
     "previousClanRank": 24,
     "donations": 779,
@@ -1128,8 +1128,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
+      "id": 44000022,
+      "name": "Brass League I"
     },
     "warStars": 93,
     "daysInClan": 1,
@@ -1828,7 +1828,7 @@
     "name": "Princip3",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 123,
+    "expLevel": 124,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1846,7 +1846,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 1798,
+    "builderBaseTrophies": 1783,
     "clanRank": 35,
     "previousClanRank": 0,
     "donations": 0,
@@ -2067,11 +2067,11 @@
         },
         {
           "type": "roof",
-          "id": 82000009
+          "id": 82000016
         },
         {
           "type": "decoration",
-          "id": 82000060
+          "id": 82000063
         }
       ]
     },
