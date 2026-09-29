@@ -328,10 +328,10 @@
             text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
         }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 8px 20px 20px; }
 
         /* ── Hero ───────────────────────────────────────────────────────── */
-        .hero { text-align: center; padding: 40px 20px 20px; }
+        .hero { text-align: center; padding: 10px 20px 15px; }
         .hero-badge-wrap {
             position: relative; width: 125px; height: 125px; margin: 0 auto 15px;
             display: flex; align-items: center; justify-content: center;
@@ -872,7 +872,7 @@
         /* ── Sakura Canvas (Falling Petals) ────────────────────────────── */
         #sakuraCanvas {
             position: fixed; inset: 0; pointer-events: none; z-index: -2;
-            opacity: 0.9; transition: opacity 0.8s ease;
+            opacity: 0; transition: opacity 0.8s ease; /* Hidden on war tab by default */
         }
 
         /* ── Japanese Sanctuary Theme Styles ───────────────────────────── */
@@ -1531,8 +1531,8 @@
             position: relative;
             width: 100%;
             max-width: 1080px;
-            margin: -5px auto 18px;
-            height: 120px;
+            margin: 0px auto 10px;
+            height: 100px;
             display: flex;
             justify-content: space-around;
             align-items: flex-start;
@@ -1841,7 +1841,7 @@
 <div class="japan-bg-overlay active" id="japanBgOverlay"></div>
 
 <!-- Dark Fantasy Anime Cinematic Intro Overlay -->
-<div class="intro-overlay" id="introOverlay">
+<div class="intro-overlay hidden" id="introOverlay" style="display:none!important;pointer-events:none;">
     <div class="intro-flash" id="introFlash"></div>
     <canvas id="introCanvas"></canvas>
 
@@ -7158,7 +7158,7 @@ function switchTab(tabName) {
         // Apply Japanese Festival theme to War view (with sky lanterns and sakura)
         const skyCanvas = document.getElementById('skyLanternsCanvas');
         if (skyCanvas) skyCanvas.style.opacity = '1';
-        if (sakuraCanvas) sakuraCanvas.style.opacity = '0.9';
+        if (sakuraCanvas) sakuraCanvas.style.opacity = '0'; // War tab: no sakura, only sky lanterns
         if (japanBgOverlay) japanBgOverlay.classList.add('active');
 
         // Keep cyber artifacts hidden
