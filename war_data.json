@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 28,
-    "stars": 64,
-    "destructionPercentage": 92.28,
+    "attacks": 29,
+    "stars": 67,
+    "destructionPercentage": 96.28,
     "members": [
       {
         "tag": "#9VRQRUR20",
@@ -113,7 +113,7 @@
         "townhallLevel": 13,
         "mapPosition": 6,
         "opponentAttacks": 0,
-        "donations": 4379,
+        "donations": 4446,
         "role": "leader"
       },
       {
@@ -121,6 +121,16 @@
         "name": "Rosa₪Floresida₪",
         "townhallLevel": 12,
         "mapPosition": 21,
+        "attacks": [
+          {
+            "attackerTag": "#LQV2QRVJR",
+            "defenderTag": "#QV0CJPYU9",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 39,
+            "duration": 97
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 43,
         "role": "member"
@@ -265,7 +275,7 @@
           }
         ],
         "opponentAttacks": 0,
-        "donations": 80,
+        "donations": 87,
         "role": "member"
       },
       {
@@ -694,7 +704,15 @@
         "name": "Đʀᴀɢᴏ亗ᴇᴍᴘᴇʀᴏʀ",
         "townhallLevel": 12,
         "mapPosition": 13,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#LQV2QRVJR",
+          "defenderTag": "#QV0CJPYU9",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 39,
+          "duration": 97
+        }
       },
       {
         "tag": "#R29L8Q99Q",
