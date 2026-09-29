@@ -570,14 +570,14 @@
             "duration": 126
           }
         ],
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#GCVVP2CUP",
+          "attackerTag": "#R22QJPQYU",
           "defenderTag": "#GVUPL0Y2L",
-          "stars": 1,
-          "destructionPercentage": 83,
-          "order": 44,
-          "duration": 120
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 56,
+          "duration": 107
         },
         "donations": 144,
         "role": "member"
@@ -707,9 +707,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 22,
-    "stars": 50,
-    "destructionPercentage": 70.88,
+    "attacks": 23,
+    "stars": 52,
+    "destructionPercentage": 71.56,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -741,6 +741,16 @@
         "name": "kingkong",
         "townhallLevel": 13,
         "mapPosition": 18,
+        "attacks": [
+          {
+            "attackerTag": "#R22QJPQYU",
+            "defenderTag": "#GVUPL0Y2L",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 56,
+            "duration": 107
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#Q0YGRQLCQ",
