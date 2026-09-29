@@ -21,7 +21,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png"
       }
     },
-    "trophies": 0,
+    "trophies": 30,
     "builderBaseTrophies": 2765,
     "clanRank": 1,
     "previousClanRank": 1,
@@ -785,7 +785,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 40,
+    "trophies": 58,
     "builderBaseTrophies": 1400,
     "clanRank": 15,
     "previousClanRank": 20,
@@ -820,6 +820,62 @@
     "joinedDate": "2026-08-07"
   },
   {
+    "tag": "#PUQGPV8PC",
+    "name": "PITBULL.E",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 138,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000012,
+      "name": "Wizard League 12",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+      }
+    },
+    "trophies": 25,
+    "builderBaseTrophies": 2573,
+    "clanRank": 16,
+    "previousClanRank": 17,
+    "donations": 22,
+    "donationsReceived": 655,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000017
+        },
+        {
+          "type": "decoration",
+          "id": 82000060
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "warStars": 203,
+    "daysInClan": 1,
+    "joinedDate": "2026-09-22"
+  },
+  {
     "tag": "#L9JULURCP",
     "name": "GODBLACK",
     "role": "member",
@@ -843,7 +899,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 1975,
-    "clanRank": 16,
+    "clanRank": 17,
     "previousClanRank": 14,
     "donations": 45,
     "donationsReceived": 0,
@@ -899,7 +955,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 1290,
-    "clanRank": 17,
+    "clanRank": 18,
     "previousClanRank": 15,
     "donations": 85,
     "donationsReceived": 0,
@@ -935,7 +991,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2626,
-    "clanRank": 18,
+    "clanRank": 19,
     "previousClanRank": 16,
     "donations": 0,
     "donationsReceived": 248,
@@ -964,62 +1020,6 @@
       "name": "Iron League III"
     },
     "warStars": 112,
-    "daysInClan": 1,
-    "joinedDate": "2026-09-22"
-  },
-  {
-    "tag": "#PUQGPV8PC",
-    "name": "PITBULL.E",
-    "role": "member",
-    "townHallLevel": 12,
-    "expLevel": 138,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000012,
-      "name": "Wizard League 12",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 2573,
-    "clanRank": 19,
-    "previousClanRank": 17,
-    "donations": 22,
-    "donationsReceived": 655,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000002
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000017
-        },
-        {
-          "type": "decoration",
-          "id": 82000060
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000022,
-      "name": "Brass League I"
-    },
-    "warStars": 203,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
