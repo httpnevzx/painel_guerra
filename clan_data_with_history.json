@@ -137,7 +137,7 @@
     "builderBaseTrophies": 220,
     "clanRank": 3,
     "previousClanRank": 3,
-    "donations": 416,
+    "donations": 486,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -638,7 +638,7 @@
       }
     },
     "trophies": 283,
-    "builderBaseTrophies": 2345,
+    "builderBaseTrophies": 2312,
     "clanRank": 12,
     "previousClanRank": 13,
     "donations": 144,
@@ -846,7 +846,7 @@
     "clanRank": 16,
     "previousClanRank": 18,
     "donations": 22,
-    "donationsReceived": 655,
+    "donationsReceived": 725,
     "playerHouse": {
       "elements": [
         {
@@ -1417,7 +1417,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
       }
     },
-    "trophies": 55,
+    "trophies": 82,
     "builderBaseTrophies": 3073,
     "clanRank": 27,
     "previousClanRank": 27,
@@ -1568,7 +1568,7 @@
     "name": "Rosa₪Floresida₪",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 116,
+    "expLevel": 117,
     "league": {
       "id": 29000000,
       "name": "Unranked",
