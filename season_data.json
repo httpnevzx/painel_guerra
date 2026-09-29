@@ -283,8 +283,8 @@
       "role": "member",
       "townHallLevel": 12,
       "totalStars": 3,
-      "totalAttacks": 3,
-      "totalDestruction": 216.0,
+      "totalAttacks": 4,
+      "totalDestruction": 289.0,
       "warCount": 3,
       "donations": 144,
       "townhallLevel": 12
@@ -1041,8 +1041,8 @@
         "role": "member",
         "townHallLevel": 12,
         "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "attacks": 2,
+        "destruction": 173
       },
       "#GU82Q92JP": {
         "name": "After",
