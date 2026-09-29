@@ -46,7 +46,7 @@
     "#LVYP8RVGR": 0,
     "#GG2JUVG2P": 0,
     "#GYU8QLLVJ": 2,
-    "#YGLLU0UU9": 329,
+    "#YGLLU0UU9": 366,
     "#GJCGJU8JL": 0,
     "#PUQGPV8PC": 22,
     "#9VRQRUR20": 30,
@@ -57,7 +57,8 @@
     "#Q0URR9VC9": 147,
     "#82CQY0Q8V": 11,
     "#GR982GPU": 0,
-    "#UJQYQY9U": 0
+    "#UJQYQY9U": 0,
+    "#G8QY89CY0": 0
   },
   "seasonMembers": {
     "#QGLRQRQLJ": {
@@ -357,7 +358,7 @@
       "totalAttacks": 6,
       "totalDestruction": 585.0,
       "warCount": 3,
-      "donations": 329,
+      "donations": 366,
       "townhallLevel": 14
     },
     "#9VRQRUR20": {
