@@ -251,7 +251,15 @@
             "duration": 156
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#LYQPLGPP2",
+          "defenderTag": "#QRL2CJG9",
+          "stars": 2,
+          "destructionPercentage": 88,
+          "order": 71,
+          "duration": 180
+        },
         "donations": 1060,
         "role": "coLeader"
       },
@@ -781,9 +789,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 33,
-    "stars": 72,
-    "destructionPercentage": 96.0,
+    "attacks": 34,
+    "stars": 74,
+    "destructionPercentage": 99.52,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -1033,6 +1041,14 @@
             "destructionPercentage": 100,
             "order": 12,
             "duration": 157
+          },
+          {
+            "attackerTag": "#LYQPLGPP2",
+            "defenderTag": "#QRL2CJG9",
+            "stars": 2,
+            "destructionPercentage": 88,
+            "order": 71,
+            "duration": 180
           }
         ],
         "opponentAttacks": 1,
