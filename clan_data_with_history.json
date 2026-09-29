@@ -1140,7 +1140,7 @@
     "name": "#BAD BOY#",
     "role": "admin",
     "townHallLevel": 12,
-    "expLevel": 143,
+    "expLevel": 144,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1474,7 +1474,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2335,
+    "builderBaseTrophies": 2289,
     "clanRank": 28,
     "previousClanRank": 28,
     "donations": 172,
@@ -1642,7 +1642,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2184,
+    "builderBaseTrophies": 2236,
     "clanRank": 31,
     "previousClanRank": 30,
     "donations": 43,
@@ -1668,8 +1668,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000020,
-      "name": "Brass League III"
+      "id": 44000021,
+      "name": "Brass League II"
     },
     "warStars": 179,
     "daysInClan": 1,
