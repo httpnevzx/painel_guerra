@@ -210,7 +210,15 @@
         "name": "Targaryen",
         "townhallLevel": 12,
         "mapPosition": 23,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GJQLJV90J",
+          "defenderTag": "#9JUJVPVUQ",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 47,
+          "duration": 108
+        },
         "donations": 0,
         "role": "member"
       },
@@ -641,9 +649,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 16,
-    "stars": 35,
-    "destructionPercentage": 51.64,
+    "attacks": 17,
+    "stars": 38,
+    "destructionPercentage": 55.64,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -1077,6 +1085,16 @@
         "name": "subro",
         "townhallLevel": 11,
         "mapPosition": 23,
+        "attacks": [
+          {
+            "attackerTag": "#GJQLJV90J",
+            "defenderTag": "#9JUJVPVUQ",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 47,
+            "duration": 108
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#2LGUVVC99",
