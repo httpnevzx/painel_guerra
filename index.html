@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>⚔️ GOD OF War — Evento Temporada 30 Dias</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Shippori+Mincho:wght@500;700;800&family=Noto+Serif+JP:wght@600;700;900&display=swap" rel="stylesheet">
     <style>
         /* ── Reset & Base ────────────────────────────────────────────── */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,7 +27,7 @@
 
         body {
             font-family: 'Rajdhani', sans-serif;
-            background: var(--bg);
+            background: linear-gradient(rgba(14, 6, 16, 0.65), rgba(14, 6, 16, 0.82)), url("japan_bg.jpg") center center / cover no-repeat fixed #0e0610;
             color: #e0e6f0;
             min-height: 100vh;
             overflow-x: hidden;
@@ -39,6 +39,7 @@
         }
 
         .cyber-horizon-glow {
+            display: none !important;
             position: fixed;
             top: 42%; left: 0; right: 0; height: 3px;
             background: linear-gradient(90deg, transparent 0%, #00f0ff 25%, #ff00e5 50%, #00ff88 75%, transparent 100%);
@@ -53,6 +54,7 @@
         }
 
         .cyber-pillar {
+            display: none !important;
             position: fixed; top: 0; bottom: 0; width: 60px;
             pointer-events: none; z-index: -2; opacity: 0.7;
             display: flex; flex-direction: column; justify-content: space-around; align-items: center;
@@ -90,6 +92,7 @@
         }
 
         .hex-overlay {
+            display: none !important;
             position: fixed; inset: 0; z-index: -3; pointer-events: none;
             background-image:
                 radial-gradient(rgba(0, 240, 255, 0.14) 1px, transparent 0),
@@ -99,6 +102,7 @@
         }
 
         .cyber-grid-container {
+            display: none !important;
             position: fixed; inset: 0; z-index: -4; pointer-events: none; overflow: hidden;
             perspective: 600px;
         }
@@ -907,7 +911,7 @@
         /* ── Sakura Canvas (Falling Petals) ────────────────────────────── */
         #sakuraCanvas {
             position: fixed; inset: 0; pointer-events: none; z-index: -2;
-            opacity: 0; transition: opacity 0.8s ease;
+            opacity: 0.9; transition: opacity 0.8s ease;
         }
 
         /* ── Japanese Sanctuary Theme Styles ───────────────────────────── */
@@ -1541,12 +1545,339 @@
                 text-align: center !important;
             }
         }
+    
+        /* ═══════════════════════════════════════════════════════════════════ */
+        /* ── JAPANESE WAR THEME & DECORATIONS (Balões e Lanternas) ──────── */
+        /* ═══════════════════════════════════════════════════════════════════ */
+        :root {
+            --jp-crimson:     #c9171e;
+            --jp-vermilion:   #e60033;
+            --jp-gold:        #ffd700;
+            --jp-gold-amber:  #ffaa00;
+            --jp-dark-lacquer: rgba(14, 7, 14, 0.92);
+            --jp-border-red:  rgba(230, 0, 51, 0.45);
+            --jp-border-gold: rgba(255, 215, 0, 0.4);
+        }
+
+        /* Canvas for Floating Sky Lanterns / Festival Balloons (天灯) */
+        #skyLanternsCanvas {
+            position: fixed; inset: 0; pointer-events: none; z-index: -2;
+            transition: opacity 0.8s ease;
+        }
+
+        /* ── Japanese Lanterns Hanging Garland (提灯) ────────────────────── */
+        .jp-lanterns-row {
+            position: relative;
+            width: 100%;
+            max-width: 1080px;
+            margin: -5px auto 18px;
+            height: 120px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            pointer-events: none;
+            z-index: 25;
+            padding: 0 10px;
+        }
+        .jp-lantern-rope {
+            position: absolute;
+            top: 8px;
+            left: 1%;
+            right: 1%;
+            height: 34px;
+            border-bottom: 2px solid rgba(212, 160, 23, 0.75);
+            border-radius: 50% / 22px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 180, 0, 0.35);
+        }
+        .jp-lantern {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform-origin: top center;
+            animation: lantern-sway 4.5s ease-in-out infinite alternate;
+        }
+        .jp-lantern.jp-l-1 { animation-delay: 0s; }
+        .jp-lantern.jp-l-2 { animation-delay: 0.7s; margin-top: 8px; }
+        .jp-lantern.jp-l-3 { animation-delay: 1.4s; margin-top: 16px; }
+        .jp-lantern.jp-l-4 { animation-delay: 0.3s; margin-top: 20px; }
+        .jp-lantern.jp-l-5 { animation-delay: 1.8s; margin-top: 16px; }
+        .jp-lantern.jp-l-6 { animation-delay: 1.0s; margin-top: 8px; }
+        .jp-lantern.jp-l-7 { animation-delay: 0.4s; }
+
+        @keyframes lantern-sway {
+            0%   { transform: rotate(-5deg); }
+            100% { transform: rotate(5deg); }
+        }
+
+        .jp-lantern-knot {
+            width: 8px;
+            height: 12px;
+            background: #110505;
+            border: 1px solid #ffd700;
+            border-radius: 2px;
+        }
+        .jp-lantern-cap-top {
+            width: 32px;
+            height: 6px;
+            background: linear-gradient(180deg, #2b1111, #080202);
+            border: 1px solid #d4a017;
+            border-radius: 3px 3px 0 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+        }
+        .jp-lantern-core {
+            position: relative;
+            width: 44px;
+            height: 52px;
+            background: radial-gradient(ellipse at 50% 50%, #ff4d2e 0%, #d81515 50%, #7a0000 95%);
+            border-radius: 20px / 26px;
+            border: 1px solid #ff7a59;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(255, 40, 20, 0.75), 0 0 45px rgba(255, 120, 0, 0.45), inset 0 0 12px rgba(255, 230, 150, 0.5);
+            overflow: hidden;
+            animation: lantern-glow-pulse 2.8s ease-in-out infinite alternate;
+        }
+        .jp-lantern-core.gold-crest {
+            width: 50px;
+            height: 58px;
+            background: radial-gradient(ellipse at 50% 50%, #ff8800 0%, #d92600 55%, #660000 95%);
+            box-shadow: 0 0 28px rgba(255, 120, 0, 0.9), 0 0 60px rgba(255, 60, 0, 0.55), inset 0 0 16px rgba(255, 250, 180, 0.7);
+        }
+        @keyframes lantern-glow-pulse {
+            0%   { filter: brightness(0.92) drop-shadow(0 0 10px rgba(255,50,20,0.5)); }
+            100% { filter: brightness(1.15) drop-shadow(0 0 24px rgba(255,100,20,0.85)); }
+        }
+        .jp-lantern-ribs {
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(180deg, transparent, transparent 7px, rgba(0,0,0,0.35) 7px, rgba(0,0,0,0.35) 9px);
+            pointer-events: none;
+            border-radius: inherit;
+        }
+        .jp-lantern-kanji {
+            font-family: 'Shippori Mincho', 'Noto Serif JP', 'Cinzel', serif;
+            font-weight: 900;
+            font-size: 1.35rem;
+            color: #fffae0;
+            text-shadow: 0 0 8px #ffd700, 0 0 15px #ff4500, 1px 1px 2px #000;
+            z-index: 2;
+            line-height: 1;
+        }
+        .jp-lantern-cap-bottom {
+            width: 30px;
+            height: 6px;
+            background: linear-gradient(180deg, #080202, #2b1111);
+            border: 1px solid #d4a017;
+            border-radius: 0 0 3px 3px;
+        }
+        .jp-lantern-tassel {
+            width: 4px;
+            height: 26px;
+            background: linear-gradient(180deg, #d4a017 0%, #c9171e 35%, #800000 100%);
+            box-shadow: 0 0 8px rgba(212, 160, 23, 0.6);
+            border-radius: 2px;
+            margin-top: 1px;
+        }
+
+        /* ── Japanese Ornaments for Hero Section ────────────────────────── */
+        .hero {
+            position: relative;
+            padding: 25px 20px 20px;
+            text-align: center;
+        }
+        .hero-badge-wrap {
+            position: relative; width: 135px; height: 135px; margin: 0 auto 15px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .ring-orbit-1 {
+            inset: -10px;
+            border: 2px solid rgba(255, 215, 0, 0.7);
+            box-shadow: 0 0 25px rgba(255, 180, 0, 0.5), inset 0 0 15px rgba(230, 0, 51, 0.4);
+            background: radial-gradient(circle, rgba(230,0,51,0.18) 0%, transparent 70%);
+            animation: spin-cw 30s linear infinite;
+        }
+        .ring-orbit-2 {
+            inset: -18px;
+            border: 1px dashed rgba(230, 0, 51, 0.65);
+            animation: spin-ccw 40s linear infinite;
+        }
+        .hero-badge {
+            width: 110px; height: 110px; border-radius: 50%;
+            border: 3px solid #ffd700;
+            box-shadow: 0 0 35px rgba(255, 180, 0, 0.65), 0 0 70px rgba(230, 0, 51, 0.45);
+        }
+        .hero h1 {
+            font-family: 'Cinzel', 'Shippori Mincho', 'Noto Serif JP', serif !important;
+            font-size: clamp(2.3rem, 6.5vw, 4rem) !important;
+            font-weight: 900 !important;
+            background: linear-gradient(180deg, #fff7d1 0%, #ffd700 45%, #ff8800 80%, #c9171e 100%) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            letter-spacing: 6px !important;
+            margin-bottom: 8px !important;
+            filter: drop-shadow(0 0 25px rgba(255, 180, 0, 0.55)) !important;
+        }
+        .hero .subtitle {
+            font-family: 'Cinzel', 'Shippori Mincho', serif !important;
+            font-size: 0.95rem !important;
+            color: #ffd700 !important;
+            letter-spacing: 3px !important;
+            text-shadow: 0 0 12px rgba(230, 0, 51, 0.75) !important;
+        }
+
+        /* ── Japanese Ornaments for Season Banner (Pavilhão Jinmaku) ───── */
+        .season-banner {
+            background: rgba(18, 9, 16, 0.90) !important;
+            border: 1px solid rgba(230, 0, 51, 0.45) !important;
+            border-radius: 16px !important;
+            padding: 26px !important;
+            margin: 25px 0 35px !important;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.75), 0 0 30px rgba(230, 0, 51, 0.22), inset 0 0 25px rgba(255, 180, 0, 0.08) !important;
+        }
+        .season-title {
+            font-family: 'Cinzel', 'Shippori Mincho', serif !important;
+            font-size: 1.35rem !important;
+            font-weight: 900 !important;
+            color: #ffd700 !important;
+            letter-spacing: 2px !important;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.6) !important;
+        }
+        .season-desc {
+            color: #f0e6e8 !important;
+            line-height: 1.7 !important;
+        }
+        .chip {
+            background: rgba(28, 12, 22, 0.92) !important;
+            border: 1px solid rgba(255, 215, 0, 0.35) !important;
+            color: #fffae8 !important;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.4) !important;
+        }
+        .chip:hover {
+            border-color: #ffd700 !important;
+            box-shadow: 0 0 16px rgba(255, 215, 0, 0.4) !important;
+        }
+        .season-countdown-box {
+            border-top: 1px solid rgba(230, 0, 51, 0.35) !important;
+        }
+        .season-countdown-title {
+            font-family: 'Cinzel', 'Shippori Mincho', serif !important;
+            color: #ffd700 !important;
+            letter-spacing: 3px !important;
+            text-shadow: 0 0 12px rgba(255, 180, 0, 0.6) !important;
+        }
+        .season-cd-item {
+            background: rgba(26, 11, 20, 0.95) !important;
+            border: 1px solid rgba(230, 0, 51, 0.45) !important;
+            border-radius: 12px !important;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.65), inset 0 0 14px rgba(255, 180, 0, 0.1) !important;
+        }
+        .season-cd-item .num {
+            font-family: 'Cinzel', serif !important;
+            color: #ffd700 !important;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8) !important;
+        }
+        .season-cd-item .lbl {
+            color: rgba(255, 220, 200, 0.7) !important;
+        }
+
+        /* ── Japanese Ornaments for Corner Brackets ─────────────────────── */
+        .hud-bracket::before, .hud-bracket::after {
+            border-color: rgba(255, 215, 0, 0.75) !important;
+            box-shadow: 0 0 10px rgba(230, 0, 51, 0.5) !important;
+        }
+        .hud-bracket:hover::before, .hud-bracket:hover::after {
+            border-color: #ff3344 !important;
+            box-shadow: 0 0 18px rgba(255, 50, 70, 0.9) !important;
+        }
+
+        /* ── Japanese Section Titles ────────────────────────────────────── */
+        .section-title {
+            font-family: 'Cinzel', 'Shippori Mincho', serif !important;
+            letter-spacing: 2px !important;
+            color: #fff !important;
+            text-shadow: 0 0 12px rgba(255, 180, 0, 0.5) !important;
+        }
+        .section-title::before {
+            content: '⛩️' !important;
+            font-size: 1.1rem !important;
+            animation: none !important;
+        }
+        .section-title::after {
+            background: linear-gradient(90deg, rgba(255, 215, 0, 0.8), rgba(230, 0, 51, 0.5), transparent) !important;
+        }
+
+        /* ── Japanese Prize Cards (Santuários de Honra) ─────────────────── */
+        .prize-card {
+            background: rgba(18, 9, 16, 0.92) !important;
+            border-radius: 16px !important;
+            backdrop-filter: blur(14px) !important;
+        }
+        .prize-card.gold {
+            border: 1px solid rgba(255, 215, 0, 0.65) !important;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.7), 0 0 30px rgba(255, 215, 0, 0.25), inset 0 0 20px rgba(255, 215, 0, 0.1) !important;
+        }
+        .prize-card.silver {
+            border: 1px solid rgba(210, 215, 230, 0.55) !important;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.7), 0 0 25px rgba(200, 220, 255, 0.18) !important;
+        }
+        .prize-card.bronze {
+            border: 1px solid rgba(205, 127, 50, 0.55) !important;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.7), 0 0 25px rgba(205, 127, 50, 0.2) !important;
+        }
+        .prize-rank {
+            font-family: 'Cinzel', 'Shippori Mincho', serif !important;
+            font-weight: 800 !important;
+        }
+
+        /* ── Japanese Martial Table (武芸帳 Bugeichō) ─────────────────────── */
+        .members-table-wrap {
+            background: rgba(16, 8, 15, 0.94) !important;
+            border: 1px solid rgba(230, 0, 51, 0.45) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.8), 0 0 30px rgba(230, 0, 51, 0.15) !important;
+        }
+        .members-table-wrap::after {
+            display: none !important;
+        }
+        table thead th {
+            font-family: 'Cinzel', 'Shippori Mincho', serif !important;
+            font-size: 0.76rem !important;
+            font-weight: 700 !important;
+            letter-spacing: 1.5px !important;
+            color: #ffd700 !important;
+            background: rgba(201, 23, 30, 0.35) !important;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.4) !important;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5) !important;
+        }
+        tbody tr:hover {
+            background: rgba(230, 0, 51, 0.12) !important;
+            box-shadow: inset 0 0 20px rgba(255, 215, 0, 0.08) !important;
+        }
+
+        /* ── Japanese Tab Switcher ─────────────────────────────────────── */
+        .tab-nav-wrapper {
+            background: rgba(18, 9, 16, 0.92) !important;
+            border: 1px solid rgba(230, 0, 51, 0.5) !important;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.75), 0 0 25px rgba(230, 0, 51, 0.25) !important;
+        }
+        .tab-btn {
+            font-family: 'Cinzel', 'Shippori Mincho', serif !important;
+        }
+        .tab-btn.active {
+            background: linear-gradient(135deg, rgba(230, 0, 51, 0.38), rgba(255, 180, 0, 0.22)) !important;
+            border-color: #e60033 !important;
+            color: #ffd700 !important;
+            box-shadow: 0 0 25px rgba(230, 0, 51, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.2) !important;
+        }
+
     </style>
 </head>
 <body>
 
 <!-- Japanese Temple Background Overlay -->
-<div class="japan-bg-overlay" id="japanBgOverlay"></div>
+<div class="japan-bg-overlay active" id="japanBgOverlay"></div>
 
 <!-- Dark Fantasy Anime Cinematic Intro Overlay -->
 <div class="intro-overlay" id="introOverlay">
@@ -1604,6 +1935,7 @@
 
 <!-- Futuristic Interactive Canvas, Cursor Glow & 3D Grid Background -->
 <canvas id="bgConstellationCanvas"></canvas>
+<canvas id="skyLanternsCanvas"></canvas>
 <canvas id="sakuraCanvas"></canvas>
 <div class="cursor-glow" id="cursorGlow"></div>
 <div class="hex-overlay"></div>
@@ -1657,6 +1989,82 @@
     <!-- ═══════════════════════════════════════════════════════════════════ -->
     <div id="viewWar" class="tab-view active">
 
+    <!-- ─── JAPANESE HANGING LANTERNS (提灯 GARLAND) ────────────────── -->
+    <div class="jp-lanterns-row">
+        <div class="jp-lantern-rope"></div>
+        <div class="jp-lantern jp-l-1">
+            <div class="jp-lantern-knot"></div>
+            <div class="jp-lantern-cap-top"></div>
+            <div class="jp-lantern-core">
+                <span class="jp-lantern-kanji">戦</span>
+                <div class="jp-lantern-ribs"></div>
+            </div>
+            <div class="jp-lantern-cap-bottom"></div>
+            <div class="jp-lantern-tassel"></div>
+        </div>
+        <div class="jp-lantern jp-l-2">
+            <div class="jp-lantern-knot"></div>
+            <div class="jp-lantern-cap-top"></div>
+            <div class="jp-lantern-core">
+                <span class="jp-lantern-kanji">武</span>
+                <div class="jp-lantern-ribs"></div>
+            </div>
+            <div class="jp-lantern-cap-bottom"></div>
+            <div class="jp-lantern-tassel"></div>
+        </div>
+        <div class="jp-lantern jp-l-3">
+            <div class="jp-lantern-knot"></div>
+            <div class="jp-lantern-cap-top"></div>
+            <div class="jp-lantern-core">
+                <span class="jp-lantern-kanji">勝</span>
+                <div class="jp-lantern-ribs"></div>
+            </div>
+            <div class="jp-lantern-cap-bottom"></div>
+            <div class="jp-lantern-tassel"></div>
+        </div>
+        <div class="jp-lantern jp-l-4">
+            <div class="jp-lantern-knot"></div>
+            <div class="jp-lantern-cap-top"></div>
+            <div class="jp-lantern-core gold-crest">
+                <span class="jp-lantern-kanji">覇</span>
+                <div class="jp-lantern-ribs"></div>
+            </div>
+            <div class="jp-lantern-cap-bottom"></div>
+            <div class="jp-lantern-tassel"></div>
+        </div>
+        <div class="jp-lantern jp-l-5">
+            <div class="jp-lantern-knot"></div>
+            <div class="jp-lantern-cap-top"></div>
+            <div class="jp-lantern-core">
+                <span class="jp-lantern-kanji">龍</span>
+                <div class="jp-lantern-ribs"></div>
+            </div>
+            <div class="jp-lantern-cap-bottom"></div>
+            <div class="jp-lantern-tassel"></div>
+        </div>
+        <div class="jp-lantern jp-l-6">
+            <div class="jp-lantern-knot"></div>
+            <div class="jp-lantern-cap-top"></div>
+            <div class="jp-lantern-core">
+                <span class="jp-lantern-kanji">誉</span>
+                <div class="jp-lantern-ribs"></div>
+            </div>
+            <div class="jp-lantern-cap-bottom"></div>
+            <div class="jp-lantern-tassel"></div>
+        </div>
+        <div class="jp-lantern jp-l-7">
+            <div class="jp-lantern-knot"></div>
+            <div class="jp-lantern-cap-top"></div>
+            <div class="jp-lantern-core">
+                <span class="jp-lantern-kanji">神</span>
+                <div class="jp-lantern-ribs"></div>
+            </div>
+            <div class="jp-lantern-cap-bottom"></div>
+            <div class="jp-lantern-tassel"></div>
+        </div>
+    </div>
+
+
     <!-- ─── HERO ──────────────────────────────────────────────────────── -->
     <div class="hero">
         <div class="hero-badge-wrap">
@@ -1699,40 +2107,46 @@
         <span class="status-text" id="statusText">⚔️ BATALHA EM ANDAMENTO</span>
     </div>
 
-    <!-- ─── CURRENT WAR VS SCOREBOARD ───────────────────────────────── -->
-    <div id="currentWarCard" style="background:rgba(10,16,28,0.85);backdrop-filter:blur(12px);border:1px solid rgba(0,240,255,0.35);border-radius:14px;padding:16px 20px;margin:20px 0 30px;box-shadow:0 8px 32px rgba(0,0,0,0.6),inset 0 0 15px rgba(0,240,255,0.1);width:100%;box-sizing:border-box;">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.1);">
+    <!-- ─── CURRENT WAR VS SCOREBOARD (ESTILO JAPONÊS 陣中対決) ───────── -->
+    <div id="currentWarCard" style="background:rgba(18,9,18,0.92);backdrop-filter:blur(14px);border:1px solid rgba(230,0,51,0.5);border-radius:16px;padding:18px 22px;margin:20px 0 32px;box-shadow:0 12px 35px rgba(0,0,0,0.75),0 0 25px rgba(230,0,51,0.22),inset 0 0 20px rgba(255,215,0,0.06);width:100%;box-sizing:border-box;">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,215,0,0.25);">
+            <div style="display:flex;align-items:center;gap:10px;">
+                <span style="font-size:1.15rem;">⛩️</span>
+                <span style="font-family:'Cinzel','Shippori Mincho',serif;font-size:0.95rem;letter-spacing:2px;color:#ffd700;font-weight:800;text-shadow:0 0 10px rgba(255,215,0,0.5);">陣中対決 • CONFRONTO DA GUERRA ATUAL</span>
+            </div>
             <div class="status-dot"></div>
-            <span style="font-family:'Orbitron',sans-serif;font-size:0.9rem;letter-spacing:2px;color:#00f0ff;font-weight:700;">⚔️ CONFRONTO DA GUERRA ATUAL</span>
         </div>
         <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:16px;width:100%;">
             <!-- Our Clan (GOD OF WAR) -->
-            <div style="display:flex;flex-direction:row;align-items:center;gap:12px;flex:1;">
-                <img id="usBadge" src="" alt="GOD OF WAR" style="width:60px;height:60px;min-width:60px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(0,240,255,0.4));flex-shrink:0;">
+            <div style="display:flex;flex-direction:row;align-items:center;gap:14px;flex:1;">
+                <img id="usBadge" src="" alt="GOD OF WAR" style="width:64px;height:64px;min-width:64px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(255,180,0,0.5));flex-shrink:0;">
                 <div style="display:flex;flex-direction:column;">
-                    <div id="usName" style="font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:900;color:#fff;margin-bottom:2px;">GOD OF WAR</div>
-                    <div style="font-family:'Share Tech Mono',monospace;font-size:1.1rem;color:#ffd700;font-weight:700;display:flex;align-items:center;gap:4px;">
-                        <span id="usStars" style="font-size:1.3rem;font-weight:900;">0</span> ⭐
-                        <span id="usDest" style="font-size:0.85rem;color:rgba(255,255,255,0.75);">(0.0%)</span>
+                    <div id="usName" style="font-family:'Cinzel','Shippori Mincho',serif;font-size:1.05rem;font-weight:900;color:#fff;margin-bottom:3px;letter-spacing:1px;">GOD OF WAR</div>
+                    <div style="font-family:'Share Tech Mono',monospace;font-size:1.15rem;color:#ffd700;font-weight:700;display:flex;align-items:center;gap:5px;">
+                        <span id="usStars" style="font-size:1.35rem;font-weight:900;text-shadow:0 0 10px rgba(255,215,0,0.7);">0</span> ⭐
+                        <span id="usDest" style="font-size:0.88rem;color:rgba(255,255,255,0.85);">(0.0%)</span>
                     </div>
-                    <div style="font-family:'Share Tech Mono',monospace;font-size:0.78rem;color:rgba(0,240,255,0.8);"><span id="usAtks">0</span> ataques realizados</div>
+                    <div style="font-family:'Share Tech Mono',monospace;font-size:0.8rem;color:rgba(255,220,180,0.8);"><span id="usAtks">0</span> ataques realizados</div>
                 </div>
             </div>
 
-            <!-- VS Badge -->
-            <div style="font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:900;color:#ff2a6d;padding:8px 14px;background:rgba(255,42,109,0.15);border:1px solid rgba(255,42,109,0.5);border-radius:8px;box-shadow:0 0 15px rgba(255,42,109,0.3);letter-spacing:2px;flex-shrink:0;">VS</div>
+            <!-- VS Badge (Samurai Seal 対決) -->
+            <div style="display:flex;flex-direction:column;align-items:center;gap:2px;flex-shrink:0;">
+                <div style="font-family:'Cinzel','Shippori Mincho',serif;font-size:1.05rem;font-weight:900;color:#fff;padding:8px 16px;background:linear-gradient(135deg,rgba(230,0,51,0.4),rgba(180,0,30,0.6));border:2px solid #ffd700;border-radius:10px;box-shadow:0 0 18px rgba(230,0,51,0.55),inset 0 0 10px rgba(255,215,0,0.25);letter-spacing:2px;">VS</div>
+                <span style="font-family:'Shippori Mincho',serif;font-size:0.68rem;color:#ffd700;letter-spacing:2px;opacity:0.85;">対決</span>
+            </div>
 
             <!-- Opponent Clan -->
-            <div style="display:flex;flex-direction:row;align-items:center;gap:12px;flex:1;justify-content:flex-end;">
+            <div style="display:flex;flex-direction:row;align-items:center;gap:14px;flex:1;justify-content:flex-end;">
                 <div style="display:flex;flex-direction:column;align-items:flex-end;text-align:right;">
-                    <div id="themName" style="font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:900;color:#fff;margin-bottom:2px;">Adversário</div>
-                    <div style="font-family:'Share Tech Mono',monospace;font-size:1.1rem;color:#ffd700;font-weight:700;display:flex;align-items:center;gap:4px;">
-                        <span id="themDest" style="font-size:0.85rem;color:rgba(255,255,255,0.75);">(0.0%)</span>
-                        <span id="themStars" style="font-size:1.3rem;font-weight:900;">0</span> ⭐
+                    <div id="themName" style="font-family:'Cinzel','Shippori Mincho',serif;font-size:1.05rem;font-weight:900;color:#fff;margin-bottom:3px;letter-spacing:1px;">Adversário</div>
+                    <div style="font-family:'Share Tech Mono',monospace;font-size:1.15rem;color:#ffd700;font-weight:700;display:flex;align-items:center;gap:5px;">
+                        <span id="themDest" style="font-size:0.88rem;color:rgba(255,255,255,0.85);">(0.0%)</span>
+                        <span id="themStars" style="font-size:1.35rem;font-weight:900;text-shadow:0 0 10px rgba(255,215,0,0.7);">0</span> ⭐
                     </div>
-                    <div style="font-family:'Share Tech Mono',monospace;font-size:0.78rem;color:rgba(0,240,255,0.8);"><span id="themAtks">0</span> ataques realizados</div>
+                    <div style="font-family:'Share Tech Mono',monospace;font-size:0.8rem;color:rgba(255,220,180,0.8);"><span id="themAtks">0</span> ataques realizados</div>
                 </div>
-                <img id="themBadge" src="" alt="Adversário" style="width:60px;height:60px;min-width:60px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(0,240,255,0.4));flex-shrink:0;">
+                <img id="themBadge" src="" alt="Adversário" style="width:64px;height:64px;min-width:64px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(255,180,0,0.5));flex-shrink:0;">
             </div>
         </div>
     </div>
@@ -4929,6 +5343,42 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-09-04"
   },
   {
+    "tag": "#UJUUJRLY",
+    "name": "Jefferson morae",
+    "role": "admin",
+    "townHallLevel": 13,
+    "expLevel": 166,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000012,
+      "name": "Wizard League 12",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+      }
+    },
+    "trophies": 80,
+    "builderBaseTrophies": 2145,
+    "clanRank": 14,
+    "previousClanRank": 19,
+    "donations": 948,
+    "donationsReceived": 1049,
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "warStars": 741,
+    "daysInClan": 1,
+    "joinedDate": "2026-09-21"
+  },
+  {
     "tag": "#80C2V90Q",
     "name": "♤Home Simpson♧",
     "role": "member",
@@ -4952,7 +5402,7 @@ const CLAN_MEMBERS = [
     },
     "trophies": 40,
     "builderBaseTrophies": 1400,
-    "clanRank": 14,
+    "clanRank": 15,
     "previousClanRank": 20,
     "donations": 1203,
     "donationsReceived": 1515,
@@ -5008,7 +5458,7 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 1975,
-    "clanRank": 15,
+    "clanRank": 16,
     "previousClanRank": 14,
     "donations": 45,
     "donationsReceived": 0,
@@ -5064,7 +5514,7 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 1290,
-    "clanRank": 16,
+    "clanRank": 17,
     "previousClanRank": 15,
     "donations": 85,
     "donationsReceived": 0,
@@ -5100,7 +5550,7 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 2594,
-    "clanRank": 17,
+    "clanRank": 18,
     "previousClanRank": 16,
     "donations": 0,
     "donationsReceived": 248,
@@ -5156,7 +5606,7 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 2573,
-    "clanRank": 18,
+    "clanRank": 19,
     "previousClanRank": 17,
     "donations": 22,
     "donationsReceived": 655,
@@ -5212,7 +5662,7 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 2442,
-    "clanRank": 19,
+    "clanRank": 20,
     "previousClanRank": 18,
     "donations": 0,
     "donationsReceived": 0,
@@ -5243,42 +5693,6 @@ const CLAN_MEMBERS = [
     "warStars": 136,
     "daysInClan": 140,
     "joinedDate": "2026-05-04"
-  },
-  {
-    "tag": "#UJUUJRLY",
-    "name": "Jefferson morae",
-    "role": "admin",
-    "townHallLevel": 13,
-    "expLevel": 166,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000012,
-      "name": "Wizard League 12",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 2145,
-    "clanRank": 20,
-    "previousClanRank": 19,
-    "donations": 948,
-    "donationsReceived": 1049,
-    "builderBaseLeague": {
-      "id": 44000020,
-      "name": "Brass League III"
-    },
-    "warStars": 741,
-    "daysInClan": 1,
-    "joinedDate": "2026-09-21"
   },
   {
     "tag": "#90YCRLUY0",
@@ -6684,18 +7098,21 @@ function switchTab(tabName) {
             viewWar.style.opacity = '1';
         }
 
-        // Restore ALL cyber elements and hide Japanese background
-        if (sakuraCanvas) sakuraCanvas.style.opacity = '0';
-        if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '1';
-        if (cyberGrid) cyberGrid.style.display = '';
-        if (cyberPillars) cyberPillars.forEach(p => { if (p) p.style.display = ''; });
-        if (cyberHorizon) cyberHorizon.style.display = '';
-        if (particlesEl) particlesEl.style.display = '';
-        if (cursorGlow) cursorGlow.style.display = '';
+        // Apply Japanese Festival theme to War view (with sky lanterns and sakura)
+        const skyCanvas = document.getElementById('skyLanternsCanvas');
+        if (skyCanvas) skyCanvas.style.opacity = '1';
+        if (sakuraCanvas) sakuraCanvas.style.opacity = '0.9';
+        if (japanBgOverlay) japanBgOverlay.classList.add('active');
 
-        if (japanBgOverlay) japanBgOverlay.classList.remove('active');
+        // Keep cyber artifacts hidden
+        if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '0';
+        if (cyberGrid) cyberGrid.style.display = 'none';
+        if (cyberPillars) cyberPillars.forEach(p => { if (p) p.style.display = 'none'; });
+        if (cyberHorizon) cyberHorizon.style.display = 'none';
+        if (particlesEl) particlesEl.style.display = 'none';
+        if (cursorGlow) cursorGlow.style.display = 'none';
 
-        document.body.style.background = 'var(--bg)';
+        document.body.style.background = 'linear-gradient(rgba(14, 6, 16, 0.65), rgba(14, 6, 16, 0.82)), url("japan_bg.jpg") center center / cover no-repeat fixed #0e0610';
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 }
@@ -6721,6 +7138,138 @@ function bindTabListeners() {
         bJapan.onclick = function(e) { if (e) e.preventDefault(); switchTab('japan'); };
     }
 }
+
+
+// ── Floating Sky Lanterns Engine (Balões de Festival Japonês 天灯) ────────
+(function initSkyLanternsEngine() {
+    const canvas = document.getElementById('skyLanternsCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    });
+
+    const lanterns = [];
+    const numLanterns = Math.min(26, Math.max(14, Math.floor(window.innerWidth / 50)));
+
+    for (let i = 0; i < numLanterns; i++) {
+        const depth = Math.random() * 0.7 + 0.35; // 0.35 (small/far) to 1.05 (near)
+        lanterns.push({
+            x: Math.random() * width,
+            y: Math.random() * (height + 200),
+            depth: depth,
+            w: 24 * depth,
+            h: 34 * depth,
+            speedY: (0.45 + Math.random() * 0.55) * depth,
+            swayAmp: (12 + Math.random() * 16) * depth,
+            swaySpeed: 0.008 + Math.random() * 0.008,
+            swayPhase: Math.random() * Math.PI * 2,
+            flickerPhase: Math.random() * Math.PI * 2,
+            flickerSpeed: 0.04 + Math.random() * 0.05,
+            origX: Math.random() * width
+        });
+    }
+
+    function drawLantern(l) {
+        ctx.save();
+        ctx.translate(l.x, l.y);
+
+        // Flicker calculation for warm candlelight
+        const flicker = 0.88 + Math.sin(Date.now() * 0.006 + l.flickerPhase) * 0.12;
+
+        // 1. Ambient Lantern Warm Glow Halo
+        const glowRad = l.w * 2.8 * flicker;
+        const glowGrad = ctx.createRadialGradient(0, l.h * 0.4, 2, 0, l.h * 0.4, glowRad);
+        glowGrad.addColorStop(0, 'rgba(255, 170, 40, ' + (0.45 * l.depth * flicker) + ')');
+        glowGrad.addColorStop(0.5, 'rgba(230, 60, 20, ' + (0.18 * l.depth * flicker) + ')');
+        glowGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+        ctx.fillStyle = glowGrad;
+        ctx.beginPath();
+        ctx.arc(0, l.h * 0.4, glowRad, 0, Math.PI * 2);
+        ctx.fill();
+
+        // 2. Paper Balloon Body (Tōrō silhouette)
+        const rad = l.w * 0.4;
+        ctx.beginPath();
+        // Top dome
+        ctx.moveTo(-l.w * 0.45, -l.h * 0.35);
+        ctx.bezierCurveTo(-l.w * 0.5, -l.h * 0.55, l.w * 0.5, -l.h * 0.55, l.w * 0.45, -l.h * 0.35);
+        // Right side tapering down to bottom frame
+        ctx.bezierCurveTo(l.w * 0.52, 0, l.w * 0.38, l.h * 0.42, l.w * 0.28, l.h * 0.48);
+        // Bottom frame
+        ctx.lineTo(-l.w * 0.28, l.h * 0.48);
+        // Left side tapering up
+        ctx.bezierCurveTo(-l.w * 0.38, l.h * 0.42, -l.w * 0.52, 0, -l.w * 0.45, -l.h * 0.35);
+        ctx.closePath();
+
+        // Lantern Paper Gradient (Warm amber, vermilion, orange)
+        const bodyGrad = ctx.createLinearGradient(0, -l.h * 0.5, 0, l.h * 0.5);
+        bodyGrad.addColorStop(0, 'rgba(235, 70, 30, ' + (0.75 * l.depth) + ')');
+        bodyGrad.addColorStop(0.4, 'rgba(255, 140, 25, ' + (0.85 * l.depth) + ')');
+        bodyGrad.addColorStop(0.85, 'rgba(255, 210, 80, ' + (0.92 * l.depth * flicker) + ')');
+        bodyGrad.addColorStop(1, 'rgba(255, 100, 20, ' + (0.8 * l.depth) + ')');
+        ctx.fillStyle = bodyGrad;
+        ctx.fill();
+
+        // 3. Bamboo Ribs (Horizontal rings)
+        ctx.strokeStyle = 'rgba(160, 40, 10, ' + (0.4 * l.depth) + ')';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(-l.w * 0.4, -l.h * 0.1);
+        ctx.lineTo(l.w * 0.4, -l.h * 0.1);
+        ctx.moveTo(-l.w * 0.35, l.h * 0.18);
+        ctx.lineTo(l.w * 0.35, l.h * 0.18);
+        ctx.stroke();
+
+        // 4. Intense Flame Core at Base
+        const flameRad = l.w * 0.32 * flicker;
+        const flameGrad = ctx.createRadialGradient(0, l.h * 0.38, 1, 0, l.h * 0.38, flameRad);
+        flameGrad.addColorStop(0, 'rgba(255, 255, 220, ' + (0.98 * l.depth) + ')');
+        flameGrad.addColorStop(0.4, 'rgba(255, 200, 50, ' + (0.85 * l.depth) + ')');
+        flameGrad.addColorStop(1, 'rgba(255, 80, 0, 0)');
+        ctx.fillStyle = flameGrad;
+        ctx.beginPath();
+        ctx.arc(0, l.h * 0.38, flameRad, 0, Math.PI * 2);
+        ctx.fill();
+
+        // 5. Wooden base rim
+        ctx.strokeStyle = 'rgba(60, 20, 10, ' + (0.8 * l.depth) + ')';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(-l.w * 0.28, l.h * 0.48);
+        ctx.lineTo(l.w * 0.28, l.h * 0.48);
+        ctx.stroke();
+
+        ctx.restore();
+    }
+
+    function animateSky() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < lanterns.length; i++) {
+            const l = lanterns[i];
+            l.y -= l.speedY;
+            l.x = l.origX + Math.sin(Date.now() * l.swaySpeed * 0.05 + l.swayPhase) * l.swayAmp;
+
+            // When floating above the screen, respawn at bottom
+            if (l.y < -60) {
+                l.y = height + 40 + Math.random() * 80;
+                l.origX = Math.random() * width;
+                l.x = l.origX;
+            }
+
+            drawLantern(l);
+        }
+
+        requestAnimationFrame(animateSky);
+    }
+    animateSky();
+})();
 
 // ── Sakura Falling Petals Engine ──────────────────────────────────────────
 (function initSakuraEngine() {
