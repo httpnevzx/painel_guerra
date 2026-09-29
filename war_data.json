@@ -640,7 +640,15 @@
             "duration": 114
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#QJ20J29G8",
+          "defenderTag": "#GCY8PR02J",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 58,
+          "duration": 150
+        },
         "donations": 407,
         "role": "admin"
       },
@@ -707,9 +715,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/ojRgnfNEJq1R9mfxcivjfpAl_fP1nspFza1emAh_314.png"
     },
     "clanLevel": 10,
-    "attacks": 24,
-    "stars": 53,
-    "destructionPercentage": 72.0,
+    "attacks": 25,
+    "stars": 56,
+    "destructionPercentage": 76.0,
     "members": [
       {
         "tag": "#VYGQL0RU",
@@ -1250,6 +1258,16 @@
         "name": "kampeng",
         "townhallLevel": 13,
         "mapPosition": 7,
+        "attacks": [
+          {
+            "attackerTag": "#QJ20J29G8",
+            "defenderTag": "#GCY8PR02J",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 58,
+            "duration": 150
+          }
+        ],
         "opponentAttacks": 2,
         "bestOpponentAttack": {
           "attackerTag": "#GGQPRRURV",
