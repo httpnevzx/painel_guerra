@@ -1084,7 +1084,7 @@
     "name": "king renan",
     "role": "admin",
     "townHallLevel": 13,
-    "expLevel": 125,
+    "expLevel": 126,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1105,7 +1105,7 @@
     "builderBaseTrophies": 2450,
     "clanRank": 21,
     "previousClanRank": 21,
-    "donations": 779,
+    "donations": 809,
     "donationsReceived": 339,
     "playerHouse": {
       "elements": [
@@ -1508,6 +1508,62 @@
     "joinedDate": "2026-06-30"
   },
   {
+    "tag": "#82CQY0Q8V",
+    "name": "Bart simpson",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 131,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000009,
+      "name": "Archer League 9",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
+      }
+    },
+    "trophies": 49,
+    "builderBaseTrophies": 852,
+    "clanRank": 29,
+    "previousClanRank": 32,
+    "donations": 11,
+    "donationsReceived": 517,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000017
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000008,
+      "name": "Clay League II"
+    },
+    "warStars": 1071,
+    "daysInClan": 1,
+    "joinedDate": "2026-09-24"
+  },
+  {
     "tag": "#LQV2QRVJR",
     "name": "Rosa₪Floresida₪",
     "role": "member",
@@ -1531,7 +1587,7 @@
     },
     "trophies": 29,
     "builderBaseTrophies": 2491,
-    "clanRank": 29,
+    "clanRank": 30,
     "previousClanRank": 30,
     "donations": 43,
     "donationsReceived": 186,
@@ -1587,7 +1643,7 @@
     },
     "trophies": 18,
     "builderBaseTrophies": 1790,
-    "clanRank": 30,
+    "clanRank": 31,
     "previousClanRank": 29,
     "donations": 0,
     "donationsReceived": 0,
@@ -1618,62 +1674,6 @@
     "warStars": 53,
     "daysInClan": 42,
     "joinedDate": "2026-08-10"
-  },
-  {
-    "tag": "#82CQY0Q8V",
-    "name": "Bart simpson",
-    "role": "member",
-    "townHallLevel": 12,
-    "expLevel": 131,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000009,
-      "name": "Archer League 9",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
-      }
-    },
-    "trophies": 18,
-    "builderBaseTrophies": 852,
-    "clanRank": 31,
-    "previousClanRank": 32,
-    "donations": 11,
-    "donationsReceived": 517,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000000
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000017
-        },
-        {
-          "type": "decoration",
-          "id": 82000058
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000008,
-      "name": "Clay League II"
-    },
-    "warStars": 1071,
-    "daysInClan": 1,
-    "joinedDate": "2026-09-24"
   },
   {
     "tag": "#Y2VVRCUL9",
@@ -1790,11 +1790,11 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2076,
+    "builderBaseTrophies": 2069,
     "clanRank": 34,
     "previousClanRank": 33,
     "donations": 40,
-    "donationsReceived": 357,
+    "donationsReceived": 387,
     "playerHouse": {
       "elements": [
         {
@@ -2105,7 +2105,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/x1c7byHQmOHQVKGxAn1sqOW2XOCzTYW-e6OKjq-FBco.png"
       }
     },
-    "trophies": 12,
+    "trophies": 28,
     "builderBaseTrophies": 1916,
     "clanRank": 40,
     "previousClanRank": 38,
