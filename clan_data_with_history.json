@@ -934,7 +934,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2594,
+    "builderBaseTrophies": 2626,
     "clanRank": 18,
     "previousClanRank": 16,
     "donations": 0,
@@ -960,8 +960,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000022,
-      "name": "Brass League I"
+      "id": 44000023,
+      "name": "Iron League III"
     },
     "warStars": 112,
     "daysInClan": 1,
@@ -2198,7 +2198,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2193,
+    "builderBaseTrophies": 2238,
     "clanRank": 42,
     "previousClanRank": 40,
     "donations": 47,
@@ -2224,8 +2224,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000020,
-      "name": "Brass League III"
+      "id": 44000021,
+      "name": "Brass League II"
     },
     "warStars": 60,
     "daysInClan": 1,
