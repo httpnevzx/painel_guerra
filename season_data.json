@@ -440,9 +440,9 @@
       "role": "admin",
       "townHallLevel": 13,
       "townhallLevel": 13,
-      "totalStars": 12,
-      "totalAttacks": 5,
-      "totalDestruction": 474.0,
+      "totalStars": 15,
+      "totalAttacks": 6,
+      "totalDestruction": 574.0,
       "warCount": 3,
       "donations": 1020
     },
@@ -1223,9 +1223,9 @@
         "name": "Jefferson morae",
         "role": "admin",
         "townHallLevel": 13,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       },
       "#9UYPCVPLL": {
         "name": "LINKIN PARK",
