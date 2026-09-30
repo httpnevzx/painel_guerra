@@ -344,8 +344,8 @@
       "role": "member",
       "townHallLevel": 12,
       "totalStars": 4,
-      "totalAttacks": 5,
-      "totalDestruction": 243.0,
+      "totalAttacks": 6,
+      "totalDestruction": 276.0,
       "warCount": 4,
       "donations": 2,
       "townhallLevel": 12
@@ -1304,8 +1304,8 @@
         "role": "member",
         "townHallLevel": 12,
         "stars": 0,
-        "attacks": 1,
-        "destruction": 37
+        "attacks": 2,
+        "destruction": 70
       },
       "#YGLLU0UU9": {
         "name": "ÉOBRABOXX",
