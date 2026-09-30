@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 5,
-    "stars": 13,
-    "destructionPercentage": 18.4,
+    "attacks": 6,
+    "stars": 14,
+    "destructionPercentage": 20.88,
     "members": [
       {
         "tag": "#UJQYQY9U",
@@ -291,6 +291,16 @@
         "name": "qpdjcisoq",
         "townhallLevel": 12,
         "mapPosition": 23,
+        "attacks": [
+          {
+            "attackerTag": "#GQ2L8L9JY",
+            "defenderTag": "#R92QJ2JQ2",
+            "stars": 1,
+            "destructionPercentage": 62,
+            "order": 12,
+            "duration": 88
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#QYY88CL9G",
@@ -544,7 +554,15 @@
         "name": "zull",
         "townhallLevel": 12,
         "mapPosition": 23,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GQ2L8L9JY",
+          "defenderTag": "#R92QJ2JQ2",
+          "stars": 1,
+          "destructionPercentage": 62,
+          "order": 12,
+          "duration": 88
+        }
       },
       {
         "tag": "#R8GQGGLYQ",
