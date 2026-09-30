@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 7,
-    "stars": 16,
-    "destructionPercentage": 23.28,
+    "attacks": 8,
+    "stars": 19,
+    "destructionPercentage": 27.28,
     "members": [
       {
         "tag": "#UJQYQY9U",
@@ -183,6 +183,16 @@
         "name": "Jefferson morae",
         "townhallLevel": 13,
         "mapPosition": 8,
+        "attacks": [
+          {
+            "attackerTag": "#UJUUJRLY",
+            "defenderTag": "#P0QVVVJ9U",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 14,
+            "duration": 151
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#Q0RUJRRY9",
@@ -513,7 +523,15 @@
         "name": "rezababo",
         "townhallLevel": 13,
         "mapPosition": 8,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#UJUUJRLY",
+          "defenderTag": "#P0QVVVJ9U",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 14,
+          "duration": 151
+        }
       },
       {
         "tag": "#GCQY8CRC8",
