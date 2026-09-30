@@ -15,7 +15,7 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 11,
+    "attacks": 12,
     "stars": 24,
     "destructionPercentage": 36.48,
     "members": [
@@ -419,6 +419,16 @@
         "name": "kayky2005",
         "townhallLevel": 12,
         "mapPosition": 19,
+        "attacks": [
+          {
+            "attackerTag": "#GYU8QLLVJ",
+            "defenderTag": "#R92QJ2JQ2",
+            "stars": 1,
+            "destructionPercentage": 37,
+            "order": 24,
+            "duration": 66
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#YCJVCV22Y",
@@ -724,7 +734,7 @@
         "name": "zull",
         "townhallLevel": 12,
         "mapPosition": 23,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
           "attackerTag": "#GQ2L8L9JY",
           "defenderTag": "#R92QJ2JQ2",
