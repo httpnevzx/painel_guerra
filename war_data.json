@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 8,
-    "stars": 19,
-    "destructionPercentage": 27.28,
+    "attacks": 9,
+    "stars": 20,
+    "destructionPercentage": 30.88,
     "members": [
       {
         "tag": "#UJQYQY9U",
@@ -120,6 +120,16 @@
         "name": "Rosa₪Floresida₪",
         "townhallLevel": 12,
         "mapPosition": 20,
+        "attacks": [
+          {
+            "attackerTag": "#LQV2QRVJR",
+            "defenderTag": "#GYQLJRYL",
+            "stars": 1,
+            "destructionPercentage": 90,
+            "order": 17,
+            "duration": 97
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 104,
         "role": "member"
@@ -182,7 +192,15 @@
         "name": "PITBULL.E",
         "townhallLevel": 12,
         "mapPosition": 14,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#YCJVCV22Y",
+          "defenderTag": "#PUQGPV8PC",
+          "stars": 1,
+          "destructionPercentage": 89,
+          "order": 18,
+          "duration": 150
+        },
         "donations": 22,
         "role": "member"
       },
@@ -393,9 +411,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/4aCG4mOuE1eZCZZdRqpYg0QjLPj_paGoJZFaZlevq5c.png"
     },
     "clanLevel": 9,
-    "attacks": 8,
-    "stars": 20,
-    "destructionPercentage": 29.48,
+    "attacks": 9,
+    "stars": 21,
+    "destructionPercentage": 33.04,
     "members": [
       {
         "tag": "#QU8YVPC0Y",
@@ -532,7 +550,15 @@
         "name": "AJ#12",
         "townhallLevel": 12,
         "mapPosition": 21,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#LQV2QRVJR",
+          "defenderTag": "#GYQLJRYL",
+          "stars": 1,
+          "destructionPercentage": 90,
+          "order": 17,
+          "duration": 97
+        }
       },
       {
         "tag": "#P0QVVVJ9U",
@@ -578,6 +604,16 @@
         "name": "psykopat",
         "townhallLevel": 12,
         "mapPosition": 15,
+        "attacks": [
+          {
+            "attackerTag": "#YCJVCV22Y",
+            "defenderTag": "#PUQGPV8PC",
+            "stars": 1,
+            "destructionPercentage": 89,
+            "order": 18,
+            "duration": 150
+          }
+        ],
         "opponentAttacks": 0
       },
       {
