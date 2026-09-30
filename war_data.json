@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 25,
   "attacksPerMember": 2,
   "battleModifier": "none",
@@ -15,16 +15,24 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 0,
-    "stars": 0,
-    "destructionPercentage": 0.0,
+    "attacks": 5,
+    "stars": 13,
+    "destructionPercentage": 18.4,
     "members": [
       {
         "tag": "#UJQYQY9U",
         "name": "jj",
         "townhallLevel": 12,
         "mapPosition": 24,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#QYY88CL9G",
+          "defenderTag": "#UJQYQY9U",
+          "stars": 2,
+          "destructionPercentage": 84,
+          "order": 1,
+          "duration": 115
+        },
         "donations": 0,
         "role": "member"
       },
@@ -33,7 +41,15 @@
         "name": "Marcello Palha",
         "townhallLevel": 12,
         "mapPosition": 13,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#89Q900VPJ",
+          "defenderTag": "#9VRQRUR20",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 10,
+          "duration": 128
+        },
         "donations": 30,
         "role": "member"
       },
@@ -51,8 +67,26 @@
         "name": "JP Chavoso",
         "townhallLevel": 14,
         "mapPosition": 3,
+        "attacks": [
+          {
+            "attackerTag": "#GYP00G8PR",
+            "defenderTag": "#RP0PGPVGP",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 5,
+            "duration": 123
+          },
+          {
+            "attackerTag": "#GYP00G8PR",
+            "defenderTag": "#GURV2JYC8",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 6,
+            "duration": 139
+          }
+        ],
         "opponentAttacks": 0,
-        "donations": 516,
+        "donations": 588,
         "role": "coLeader"
       },
       {
@@ -70,7 +104,7 @@
         "townhallLevel": 13,
         "mapPosition": 5,
         "opponentAttacks": 0,
-        "donations": 4618,
+        "donations": 4693,
         "role": "leader"
       },
       {
@@ -79,7 +113,7 @@
         "townhallLevel": 12,
         "mapPosition": 20,
         "opponentAttacks": 0,
-        "donations": 70,
+        "donations": 104,
         "role": "member"
       },
       {
@@ -114,7 +148,15 @@
         "name": "Igorzin",
         "townhallLevel": 13,
         "mapPosition": 12,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#89Q900VPJ",
+          "defenderTag": "#GJCGJU8JL",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 11,
+          "duration": 145
+        },
         "donations": 0,
         "role": "member"
       },
@@ -141,7 +183,15 @@
         "name": "Jefferson morae",
         "townhallLevel": 13,
         "mapPosition": 8,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#Q0RUJRRY9",
+          "defenderTag": "#UJUUJRLY",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 4,
+          "duration": 140
+        },
         "donations": 948,
         "role": "admin"
       },
@@ -151,7 +201,7 @@
         "townhallLevel": 15,
         "mapPosition": 1,
         "opponentAttacks": 0,
-        "donations": 1038,
+        "donations": 1068,
         "role": "coLeader"
       },
       {
@@ -169,7 +219,7 @@
         "townhallLevel": 13,
         "mapPosition": 9,
         "opponentAttacks": 0,
-        "donations": 854,
+        "donations": 884,
         "role": "admin"
       },
       {
@@ -177,6 +227,24 @@
         "name": "deka",
         "townhallLevel": 11,
         "mapPosition": 25,
+        "attacks": [
+          {
+            "attackerTag": "#R9PV90U00",
+            "defenderTag": "#QU8YVPC0Y",
+            "stars": 2,
+            "destructionPercentage": 69,
+            "order": 8,
+            "duration": 113
+          },
+          {
+            "attackerTag": "#R9PV90U00",
+            "defenderTag": "#R2QRGV08C",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 9,
+            "duration": 109
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 172,
         "role": "admin"
@@ -187,13 +255,13 @@
         "townhallLevel": 12,
         "mapPosition": 16,
         "opponentAttacks": 0,
-        "donations": 260,
+        "donations": 261,
         "role": "admin"
       },
       {
         "tag": "#GVUPL0Y2L",
         "name": "marmela",
-        "townhallLevel": 12,
+        "townhallLevel": 13,
         "mapPosition": 17,
         "opponentAttacks": 0,
         "donations": 144,
@@ -204,6 +272,16 @@
         "name": "After",
         "townhallLevel": 12,
         "mapPosition": 18,
+        "attacks": [
+          {
+            "attackerTag": "#GU82Q92JP",
+            "defenderTag": "#Q8Q9J08V2",
+            "stars": 2,
+            "destructionPercentage": 91,
+            "order": 7,
+            "duration": 180
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 273,
         "role": "admin"
@@ -213,7 +291,15 @@
         "name": "qpdjcisoq",
         "townhallLevel": 12,
         "mapPosition": 23,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#QYY88CL9G",
+          "defenderTag": "#GQ2L8L9JY",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 3,
+          "duration": 129
+        },
         "donations": 0,
         "role": "member"
       },
@@ -222,7 +308,15 @@
         "name": "johnpork",
         "townhallLevel": 13,
         "mapPosition": 6,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#Q0RUJRRY9",
+          "defenderTag": "#GCY8PR02J",
+          "stars": 1,
+          "destructionPercentage": 63,
+          "order": 2,
+          "duration": 94
+        },
         "donations": 562,
         "role": "admin"
       },
@@ -241,7 +335,7 @@
         "townhallLevel": 14,
         "mapPosition": 7,
         "opponentAttacks": 0,
-        "donations": 406,
+        "donations": 421,
         "role": "admin"
       }
     ]
@@ -255,16 +349,24 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/4aCG4mOuE1eZCZZdRqpYg0QjLPj_paGoJZFaZlevq5c.png"
     },
     "clanLevel": 9,
-    "attacks": 0,
-    "stars": 0,
-    "destructionPercentage": 0.0,
+    "attacks": 6,
+    "stars": 15,
+    "destructionPercentage": 21.88,
     "members": [
       {
         "tag": "#QU8YVPC0Y",
         "name": "ILham",
         "townhallLevel": 11,
         "mapPosition": 25,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#R9PV90U00",
+          "defenderTag": "#QU8YVPC0Y",
+          "stars": 2,
+          "destructionPercentage": 69,
+          "order": 8,
+          "duration": 113
+        }
       },
       {
         "tag": "#GQURU2JRP",
@@ -278,6 +380,24 @@
         "name": "INA_Skyxell911",
         "townhallLevel": 13,
         "mapPosition": 5,
+        "attacks": [
+          {
+            "attackerTag": "#Q0RUJRRY9",
+            "defenderTag": "#GCY8PR02J",
+            "stars": 1,
+            "destructionPercentage": 63,
+            "order": 2,
+            "duration": 94
+          },
+          {
+            "attackerTag": "#Q0RUJRRY9",
+            "defenderTag": "#UJUUJRLY",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 4,
+            "duration": 140
+          }
+        ],
         "opponentAttacks": 0
       },
       {
@@ -311,8 +431,26 @@
       {
         "tag": "#89Q900VPJ",
         "name": "capung skj",
-        "townhallLevel": 12,
+        "townhallLevel": 13,
         "mapPosition": 13,
+        "attacks": [
+          {
+            "attackerTag": "#89Q900VPJ",
+            "defenderTag": "#9VRQRUR20",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 10,
+            "duration": 128
+          },
+          {
+            "attackerTag": "#89Q900VPJ",
+            "defenderTag": "#GJCGJU8JL",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 11,
+            "duration": 145
+          }
+        ],
         "opponentAttacks": 0
       },
       {
@@ -327,7 +465,15 @@
         "name": "ramsey",
         "townhallLevel": 12,
         "mapPosition": 24,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#R9PV90U00",
+          "defenderTag": "#R2QRGV08C",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 9,
+          "duration": 109
+        }
       },
       {
         "tag": "#GYQLJRYL",
@@ -369,7 +515,15 @@
         "name": "Ricc",
         "townhallLevel": 12,
         "mapPosition": 18,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GU82Q92JP",
+          "defenderTag": "#Q8Q9J08V2",
+          "stars": 2,
+          "destructionPercentage": 91,
+          "order": 7,
+          "duration": 180
+        }
       },
       {
         "tag": "#G0VY82L9Y",
@@ -411,7 +565,15 @@
         "name": "raja gopal",
         "townhallLevel": 15,
         "mapPosition": 4,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GYP00G8PR",
+          "defenderTag": "#RP0PGPVGP",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 5,
+          "duration": 123
+        }
       },
       {
         "tag": "#R9LLYL2CU",
@@ -425,13 +587,39 @@
         "name": "RAHHSTECUU",
         "townhallLevel": 13,
         "mapPosition": 6,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GYP00G8PR",
+          "defenderTag": "#GURV2JYC8",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 6,
+          "duration": 139
+        }
       },
       {
         "tag": "#QYY88CL9G",
         "name": "Maulana Yusup",
         "townhallLevel": 12,
         "mapPosition": 16,
+        "attacks": [
+          {
+            "attackerTag": "#QYY88CL9G",
+            "defenderTag": "#UJQYQY9U",
+            "stars": 2,
+            "destructionPercentage": 84,
+            "order": 1,
+            "duration": 115
+          },
+          {
+            "attackerTag": "#QYY88CL9G",
+            "defenderTag": "#GQ2L8L9JY",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 3,
+            "duration": 129
+          }
+        ],
         "opponentAttacks": 0
       }
     ]
