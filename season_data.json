@@ -500,9 +500,9 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 0,
-      "totalAttacks": 0,
-      "totalDestruction": 0.0,
+      "totalStars": 1,
+      "totalAttacks": 1,
+      "totalDestruction": 62.0,
       "warCount": 1,
       "donations": 0
     }
@@ -1287,9 +1287,9 @@
         "name": "qpdjcisoq",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 1,
+        "attacks": 1,
+        "destruction": 62
       },
       "#GCY8PR02J": {
         "name": "johnpork",
