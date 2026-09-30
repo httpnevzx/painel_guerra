@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 10,
-    "stars": 21,
-    "destructionPercentage": 32.48,
+    "attacks": 11,
+    "stars": 24,
+    "destructionPercentage": 36.48,
     "members": [
       {
         "tag": "#UJQYQY9U",
@@ -225,6 +225,14 @@
             "destructionPercentage": 100,
             "order": 14,
             "duration": 151
+          },
+          {
+            "attackerTag": "#UJUUJRLY",
+            "defenderTag": "#G0VY82L9Y",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 21,
+            "duration": 139
           }
         ],
         "opponentAttacks": 1,
@@ -660,7 +668,15 @@
         "name": "SILITs GLOWING",
         "townhallLevel": 13,
         "mapPosition": 7,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#UJUUJRLY",
+          "defenderTag": "#G0VY82L9Y",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 21,
+          "duration": 139
+        }
       },
       {
         "tag": "#R9982GRJ8",
