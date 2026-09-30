@@ -754,7 +754,7 @@
     "clanRank": 14,
     "previousClanRank": 14,
     "donations": 1020,
-    "donationsReceived": 1286,
+    "donationsReceived": 1333,
     "builderBaseLeague": {
       "id": 44000020,
       "name": "Brass League III"
@@ -1642,10 +1642,10 @@
       }
     },
     "trophies": 57,
-    "builderBaseTrophies": 2256,
+    "builderBaseTrophies": 2308,
     "clanRank": 31,
     "previousClanRank": 30,
-    "donations": 104,
+    "donations": 151,
     "donationsReceived": 258,
     "playerHouse": {
       "elements": [
