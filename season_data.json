@@ -139,9 +139,9 @@
       "name": "Rosa₪Floresida₪",
       "role": "member",
       "townHallLevel": 12,
-      "totalStars": 11,
-      "totalAttacks": 7,
-      "totalDestruction": 671.0,
+      "totalStars": 12,
+      "totalAttacks": 8,
+      "totalDestruction": 771.0,
       "warCount": 4,
       "donations": 104,
       "townhallLevel": 12
@@ -1167,9 +1167,9 @@
         "name": "Rosa₪Floresida₪",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 1,
-        "attacks": 1,
-        "destruction": 90
+        "stars": 2,
+        "attacks": 2,
+        "destruction": 190
       },
       "#Q0YGRQLCQ": {
         "name": "mestre",
