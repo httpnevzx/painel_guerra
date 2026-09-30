@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 6,
-    "stars": 14,
-    "destructionPercentage": 20.88,
+    "attacks": 7,
+    "stars": 16,
+    "destructionPercentage": 23.28,
     "members": [
       {
         "tag": "#UJQYQY9U",
@@ -299,6 +299,14 @@
             "destructionPercentage": 62,
             "order": 12,
             "duration": 88
+          },
+          {
+            "attackerTag": "#GQ2L8L9JY",
+            "defenderTag": "#QJV8CR9JV",
+            "stars": 2,
+            "destructionPercentage": 60,
+            "order": 13,
+            "duration": 108
           }
         ],
         "opponentAttacks": 1,
@@ -436,7 +444,15 @@
         "name": "boyyyy",
         "townhallLevel": 12,
         "mapPosition": 22,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GQ2L8L9JY",
+          "defenderTag": "#QJV8CR9JV",
+          "stars": 2,
+          "destructionPercentage": 60,
+          "order": 13,
+          "duration": 108
+        }
       },
       {
         "tag": "#89Q900VPJ",
