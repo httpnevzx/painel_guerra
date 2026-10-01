@@ -462,7 +462,15 @@
             "duration": 149
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#R9982GRJ8",
+          "defenderTag": "#GU82Q92JP",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 46,
+          "duration": 102
+        },
         "donations": 320,
         "role": "admin"
       },
@@ -609,9 +617,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/4aCG4mOuE1eZCZZdRqpYg0QjLPj_paGoJZFaZlevq5c.png"
     },
     "clanLevel": 9,
-    "attacks": 21,
-    "stars": 47,
-    "destructionPercentage": 66.16,
+    "attacks": 22,
+    "stars": 50,
+    "destructionPercentage": 70.16,
     "members": [
       {
         "tag": "#QU8YVPC0Y",
@@ -997,6 +1005,16 @@
         "name": "fayranaufal",
         "townhallLevel": 12,
         "mapPosition": 19,
+        "attacks": [
+          {
+            "attackerTag": "#R9982GRJ8",
+            "defenderTag": "#GU82Q92JP",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 46,
+            "duration": 102
+          }
+        ],
         "opponentAttacks": 0
       },
       {
