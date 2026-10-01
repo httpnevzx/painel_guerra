@@ -314,7 +314,15 @@
             "duration": 152
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#G0LUYVRCY",
+          "defenderTag": "#9UYPCVPLL",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 40,
+          "duration": 111
+        },
         "donations": 1116,
         "role": "coLeader"
       },
@@ -585,9 +593,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/4aCG4mOuE1eZCZZdRqpYg0QjLPj_paGoJZFaZlevq5c.png"
     },
     "clanLevel": 9,
-    "attacks": 15,
-    "stars": 35,
-    "destructionPercentage": 53.04,
+    "attacks": 16,
+    "stars": 38,
+    "destructionPercentage": 57.04,
     "members": [
       {
         "tag": "#QU8YVPC0Y",
@@ -865,6 +873,16 @@
         "name": "New zull",
         "townhallLevel": 17,
         "mapPosition": 1,
+        "attacks": [
+          {
+            "attackerTag": "#G0LUYVRCY",
+            "defenderTag": "#9UYPCVPLL",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 40,
+            "duration": 111
+          }
+        ],
         "opponentAttacks": 0
       },
       {
