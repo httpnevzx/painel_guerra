@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 15,
-    "stars": 29,
-    "destructionPercentage": 42.0,
+    "attacks": 22,
+    "stars": 47,
+    "destructionPercentage": 65.56,
     "members": [
       {
         "tag": "#UJQYQY9U",
@@ -94,6 +94,16 @@
         "name": "Robson",
         "townhallLevel": 13,
         "mapPosition": 11,
+        "attacks": [
+          {
+            "attackerTag": "#GJLC89UG8",
+            "defenderTag": "#GQURU2JRP",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 36,
+            "duration": 129
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#QUVYJC8LQ",
@@ -120,7 +130,7 @@
           "order": 16,
           "duration": 177
         },
-        "donations": 4785,
+        "donations": 5157,
         "role": "leader"
       },
       {
@@ -147,7 +157,7 @@
           }
         ],
         "opponentAttacks": 0,
-        "donations": 151,
+        "donations": 184,
         "role": "member"
       },
       {
@@ -224,14 +234,14 @@
         "name": "PITBULL.E",
         "townhallLevel": 12,
         "mapPosition": 14,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#YCJVCV22Y",
+          "attackerTag": "#GG99RLUJR",
           "defenderTag": "#PUQGPV8PC",
-          "stars": 1,
-          "destructionPercentage": 89,
-          "order": 18,
-          "duration": 150
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 30,
+          "duration": 102
         },
         "donations": 22,
         "role": "member"
@@ -268,7 +278,7 @@
           "order": 4,
           "duration": 140
         },
-        "donations": 1020,
+        "donations": 1092,
         "role": "admin"
       },
       {
@@ -276,6 +286,16 @@
         "name": "LINKIN PARK",
         "townhallLevel": 15,
         "mapPosition": 1,
+        "attacks": [
+          {
+            "attackerTag": "#9UYPCVPLL",
+            "defenderTag": "#R9LLYL2CU",
+            "stars": 1,
+            "destructionPercentage": 79,
+            "order": 37,
+            "duration": 121
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 1116,
         "role": "coLeader"
@@ -390,6 +410,14 @@
             "destructionPercentage": 91,
             "order": 7,
             "duration": 180
+          },
+          {
+            "attackerTag": "#GU82Q92JP",
+            "defenderTag": "#GYQLJRYL",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 31,
+            "duration": 149
           }
         ],
         "opponentAttacks": 0,
@@ -436,6 +464,24 @@
         "name": "johnpork",
         "townhallLevel": 13,
         "mapPosition": 6,
+        "attacks": [
+          {
+            "attackerTag": "#GCY8PR02J",
+            "defenderTag": "#R8GQGGLYQ",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 34,
+            "duration": 79
+          },
+          {
+            "attackerTag": "#GCY8PR02J",
+            "defenderTag": "#89Q900VPJ",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 35,
+            "duration": 72
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#Q0RUJRRY9",
@@ -488,6 +534,24 @@
         "name": "ÉOBRABOXX",
         "townhallLevel": 14,
         "mapPosition": 7,
+        "attacks": [
+          {
+            "attackerTag": "#YGLLU0UU9",
+            "defenderTag": "#Q0RUJRRY9",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 32,
+            "duration": 164
+          },
+          {
+            "attackerTag": "#YGLLU0UU9",
+            "defenderTag": "#QUVYJC8LQ",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 33,
+            "duration": 120
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 423,
         "role": "admin"
@@ -503,9 +567,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/4aCG4mOuE1eZCZZdRqpYg0QjLPj_paGoJZFaZlevq5c.png"
     },
     "clanLevel": 9,
-    "attacks": 14,
-    "stars": 33,
-    "destructionPercentage": 52.6,
+    "attacks": 15,
+    "stars": 35,
+    "destructionPercentage": 53.04,
     "members": [
       {
         "tag": "#QU8YVPC0Y",
@@ -545,7 +609,15 @@
         "name": "hhhhnnnnn",
         "townhallLevel": 12,
         "mapPosition": 20,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GJLC89UG8",
+          "defenderTag": "#GQURU2JRP",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 36,
+          "duration": 129
+        }
       },
       {
         "tag": "#Q0RUJRRY9",
@@ -570,13 +642,31 @@
             "duration": 140
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#YGLLU0UU9",
+          "defenderTag": "#Q0RUJRRY9",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 32,
+          "duration": 164
+        }
       },
       {
         "tag": "#GG99RLUJR",
         "name": "arfan aja",
         "townhallLevel": 12,
         "mapPosition": 14,
+        "attacks": [
+          {
+            "attackerTag": "#GG99RLUJR",
+            "defenderTag": "#PUQGPV8PC",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 30,
+            "duration": 102
+          }
+        ],
         "opponentAttacks": 0
       },
       {
@@ -602,7 +692,15 @@
             "duration": 114
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#YGLLU0UU9",
+          "defenderTag": "#QUVYJC8LQ",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 33,
+          "duration": 120
+        }
       },
       {
         "tag": "#R2J2899JC",
@@ -657,7 +755,15 @@
             "duration": 145
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GCY8PR02J",
+          "defenderTag": "#89Q900VPJ",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 35,
+          "duration": 72
+        }
       },
       {
         "tag": "#GCG2PRY9P",
@@ -686,14 +792,14 @@
         "name": "AJ#12",
         "townhallLevel": 12,
         "mapPosition": 21,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#LQV2QRVJR",
+          "attackerTag": "#GU82Q92JP",
           "defenderTag": "#GYQLJRYL",
-          "stars": 1,
-          "destructionPercentage": 90,
-          "order": 17,
-          "duration": 97
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 31,
+          "duration": 149
         }
       },
       {
@@ -817,7 +923,15 @@
         "name": "edoy1508",
         "townhallLevel": 13,
         "mapPosition": 11,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GCY8PR02J",
+          "defenderTag": "#R8GQGGLYQ",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 34,
+          "duration": 79
+        }
       },
       {
         "tag": "#G0JGUV9Q0",
@@ -846,7 +960,15 @@
         "name": "jagal sengon",
         "townhallLevel": 15,
         "mapPosition": 3,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#9UYPCVPLL",
+          "defenderTag": "#R9LLYL2CU",
+          "stars": 1,
+          "destructionPercentage": 79,
+          "order": 37,
+          "duration": 121
+        }
       },
       {
         "tag": "#GURV2JYC8",
