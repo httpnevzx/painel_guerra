@@ -259,9 +259,9 @@
       "name": "#BAD BOY#",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 15,
-      "totalAttacks": 5,
-      "totalDestruction": 500.0,
+      "totalStars": 17,
+      "totalAttacks": 6,
+      "totalDestruction": 600.0,
       "warCount": 4,
       "donations": 261,
       "townhallLevel": 12
@@ -1263,9 +1263,9 @@
         "name": "#BAD BOY#",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 5,
+        "attacks": 2,
+        "destruction": 200
       },
       "#GVUPL0Y2L": {
         "name": "marmela",
