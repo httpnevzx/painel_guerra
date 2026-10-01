@@ -24,14 +24,14 @@
         "name": "jj",
         "townhallLevel": 12,
         "mapPosition": 24,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#QYY88CL9G",
+          "attackerTag": "#R2QRGV08C",
           "defenderTag": "#UJQYQY9U",
-          "stars": 2,
-          "destructionPercentage": 84,
-          "order": 1,
-          "duration": 115
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 44,
+          "duration": 62
         },
         "donations": 0,
         "role": "member"
@@ -609,9 +609,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/4aCG4mOuE1eZCZZdRqpYg0QjLPj_paGoJZFaZlevq5c.png"
     },
     "clanLevel": 9,
-    "attacks": 19,
-    "stars": 45,
-    "destructionPercentage": 65.12,
+    "attacks": 20,
+    "stars": 46,
+    "destructionPercentage": 65.76,
     "members": [
       {
         "tag": "#QU8YVPC0Y",
@@ -837,6 +837,16 @@
         "name": "ramsey",
         "townhallLevel": 12,
         "mapPosition": 24,
+        "attacks": [
+          {
+            "attackerTag": "#R2QRGV08C",
+            "defenderTag": "#UJQYQY9U",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 44,
+            "duration": 62
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#R9PV90U00",
