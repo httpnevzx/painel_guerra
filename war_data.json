@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 22,
-    "stars": 47,
-    "destructionPercentage": 65.56,
+    "attacks": 23,
+    "stars": 49,
+    "destructionPercentage": 68.84,
     "members": [
       {
         "tag": "#UJQYQY9U",
@@ -294,6 +294,14 @@
             "destructionPercentage": 79,
             "order": 37,
             "duration": 121
+          },
+          {
+            "attackerTag": "#9UYPCVPLL",
+            "defenderTag": "#GCG2PRY9P",
+            "stars": 2,
+            "destructionPercentage": 82,
+            "order": 38,
+            "duration": 152
           }
         ],
         "opponentAttacks": 0,
@@ -770,7 +778,15 @@
         "name": "Orcs Goblin,",
         "townhallLevel": 15,
         "mapPosition": 2,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#9UYPCVPLL",
+          "defenderTag": "#GCG2PRY9P",
+          "stars": 2,
+          "destructionPercentage": 82,
+          "order": 38,
+          "duration": 152
+        }
       },
       {
         "tag": "#R2QRGV08C",
