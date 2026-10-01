@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 25,
-    "stars": 53,
-    "destructionPercentage": 76.16,
+    "attacks": 26,
+    "stars": 54,
+    "destructionPercentage": 79.96,
     "members": [
       {
         "tag": "#UJQYQY9U",
@@ -137,6 +137,16 @@
         "name": "Nevzx 躾⛩️",
         "townhallLevel": 13,
         "mapPosition": 5,
+        "attacks": [
+          {
+            "attackerTag": "#292YJJ02V",
+            "defenderTag": "#GCQY8CRC8",
+            "stars": 1,
+            "destructionPercentage": 95,
+            "order": 50,
+            "duration": 166
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#GURV2JYC8",
@@ -944,7 +954,15 @@
             "duration": 150
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#292YJJ02V",
+          "defenderTag": "#GCQY8CRC8",
+          "stars": 1,
+          "destructionPercentage": 95,
+          "order": 50,
+          "duration": 166
+        }
       },
       {
         "tag": "#G0LUYVRCY",
