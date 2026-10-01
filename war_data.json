@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 13,
-    "stars": 24,
-    "destructionPercentage": 36.48,
+    "attacks": 14,
+    "stars": 27,
+    "destructionPercentage": 40.48,
     "members": [
       {
         "tag": "#UJQYQY9U",
@@ -94,7 +94,15 @@
         "name": "Robson",
         "townhallLevel": 13,
         "mapPosition": 11,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#QUVYJC8LQ",
+          "defenderTag": "#GJLC89UG8",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 28,
+          "duration": 114
+        },
         "donations": 153,
         "role": "member"
       },
@@ -286,6 +294,16 @@
         "name": "king renan",
         "townhallLevel": 13,
         "mapPosition": 9,
+        "attacks": [
+          {
+            "attackerTag": "#90YCRLUY0",
+            "defenderTag": "#R2J2899JC",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 27,
+            "duration": 99
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 1033,
         "role": "admin"
@@ -477,9 +495,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/4aCG4mOuE1eZCZZdRqpYg0QjLPj_paGoJZFaZlevq5c.png"
     },
     "clanLevel": 9,
-    "attacks": 13,
-    "stars": 30,
-    "destructionPercentage": 48.6,
+    "attacks": 14,
+    "stars": 33,
+    "destructionPercentage": 52.6,
     "members": [
       {
         "tag": "#QU8YVPC0Y",
@@ -566,6 +584,14 @@
             "destructionPercentage": 91,
             "order": 26,
             "duration": 136
+          },
+          {
+            "attackerTag": "#QUVYJC8LQ",
+            "defenderTag": "#GJLC89UG8",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 28,
+            "duration": 114
           }
         ],
         "opponentAttacks": 0
@@ -575,7 +601,15 @@
         "name": "Sanderlala 02",
         "townhallLevel": 14,
         "mapPosition": 9,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#90YCRLUY0",
+          "defenderTag": "#R2J2899JC",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 27,
+          "duration": 99
+        }
       },
       {
         "tag": "#QJV8CR9JV",
