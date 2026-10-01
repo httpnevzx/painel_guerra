@@ -464,9 +464,9 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 6,
-      "totalAttacks": 3,
-      "totalDestruction": 240.0,
+      "totalStars": 9,
+      "totalAttacks": 4,
+      "totalDestruction": 340.0,
       "warCount": 2,
       "donations": 11
     },
@@ -1239,9 +1239,9 @@
         "name": "Bart simpson",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 3,
-        "attacks": 1,
-        "destruction": 100
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       },
       "#90YCRLUY0": {
         "name": "king renan",
