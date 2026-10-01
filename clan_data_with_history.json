@@ -82,7 +82,7 @@
     "clanRank": 2,
     "previousClanRank": 2,
     "donations": 1116,
-    "donationsReceived": 922,
+    "donationsReceived": 1086,
     "playerHouse": {
       "elements": [
         {
@@ -172,7 +172,7 @@
     "name": "Nevzx 躾⛩️",
     "role": "leader",
     "townHallLevel": 13,
-    "expLevel": 163,
+    "expLevel": 164,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -193,7 +193,7 @@
     "builderBaseTrophies": 2292,
     "clanRank": 4,
     "previousClanRank": 4,
-    "donations": 4785,
+    "donations": 5157,
     "donationsReceived": 1119,
     "playerHouse": {
       "elements": [
@@ -474,7 +474,7 @@
     "clanRank": 9,
     "previousClanRank": 9,
     "donations": 677,
-    "donationsReceived": 653,
+    "donationsReceived": 730,
     "playerHouse": {
       "elements": [
         {
@@ -582,11 +582,11 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2485,
+    "builderBaseTrophies": 2536,
     "clanRank": 11,
     "previousClanRank": 11,
     "donations": 423,
-    "donationsReceived": 104,
+    "donationsReceived": 156,
     "playerHouse": {
       "elements": [
         {
@@ -753,8 +753,8 @@
     "builderBaseTrophies": 2185,
     "clanRank": 14,
     "previousClanRank": 14,
-    "donations": 1020,
-    "donationsReceived": 1380,
+    "donations": 1092,
+    "donationsReceived": 1425,
     "builderBaseLeague": {
       "id": 44000020,
       "name": "Brass League III"
@@ -1456,7 +1456,7 @@
     "name": "deka",
     "role": "admin",
     "townHallLevel": 11,
-    "expLevel": 89,
+    "expLevel": 90,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1642,10 +1642,10 @@
       }
     },
     "trophies": 57,
-    "builderBaseTrophies": 2342,
+    "builderBaseTrophies": 2419,
     "clanRank": 31,
     "previousClanRank": 30,
-    "donations": 151,
+    "donations": 184,
     "donationsReceived": 258,
     "playerHouse": {
       "elements": [
@@ -1668,8 +1668,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
+      "id": 44000022,
+      "name": "Brass League I"
     },
     "warStars": 179,
     "daysInClan": 1,
@@ -1733,12 +1733,12 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
       }
     },
-    "trophies": 40,
+    "trophies": 80,
     "builderBaseTrophies": 2069,
     "clanRank": 33,
     "previousClanRank": 34,
-    "donations": 40,
-    "donationsReceived": 759,
+    "donations": 85,
+    "donationsReceived": 873,
     "playerHouse": {
       "elements": [
         {
@@ -2073,7 +2073,7 @@
     "builderBaseTrophies": 1213,
     "clanRank": 39,
     "previousClanRank": 39,
-    "donations": 232,
+    "donations": 234,
     "donationsReceived": 35,
     "builderBaseLeague": {
       "id": 44000012,
@@ -2518,7 +2518,7 @@
     "clanRank": 48,
     "previousClanRank": 48,
     "donations": 320,
-    "donationsReceived": 956,
+    "donationsReceived": 1028,
     "builderBaseLeague": {
       "id": 44000000,
       "name": "Wood League V"
