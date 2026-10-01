@@ -404,9 +404,9 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 2,
-      "totalAttacks": 2,
-      "totalDestruction": 161.0,
+      "totalStars": 3,
+      "totalAttacks": 3,
+      "totalDestruction": 244.0,
       "warCount": 3,
       "donations": 87
     },
@@ -1207,9 +1207,9 @@
         "name": "Bruxo",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 1,
+        "attacks": 1,
+        "destruction": 83
       },
       "#PUQGPV8PC": {
         "name": "PITBULL.E",
