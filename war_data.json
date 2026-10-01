@@ -85,7 +85,15 @@
             "duration": 139
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#R9LLYL2CU",
+          "defenderTag": "#GYP00G8PR",
+          "stars": 2,
+          "destructionPercentage": 77,
+          "order": 47,
+          "duration": 114
+        },
         "donations": 588,
         "role": "coLeader"
       },
@@ -617,9 +625,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/4aCG4mOuE1eZCZZdRqpYg0QjLPj_paGoJZFaZlevq5c.png"
     },
     "clanLevel": 9,
-    "attacks": 22,
-    "stars": 50,
-    "destructionPercentage": 70.16,
+    "attacks": 23,
+    "stars": 52,
+    "destructionPercentage": 73.24,
     "members": [
       {
         "tag": "#QU8YVPC0Y",
@@ -1092,6 +1100,16 @@
         "name": "jagal sengon",
         "townhallLevel": 15,
         "mapPosition": 3,
+        "attacks": [
+          {
+            "attackerTag": "#R9LLYL2CU",
+            "defenderTag": "#GYP00G8PR",
+            "stars": 2,
+            "destructionPercentage": 77,
+            "order": 47,
+            "duration": 114
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#9UYPCVPLL",
