@@ -452,9 +452,9 @@
       "role": "admin",
       "townHallLevel": 13,
       "townhallLevel": 13,
-      "totalStars": 6,
-      "totalAttacks": 4,
-      "totalDestruction": 336.0,
+      "totalStars": 9,
+      "totalAttacks": 5,
+      "totalDestruction": 436.0,
       "warCount": 3,
       "donations": 1033
     },
@@ -1247,9 +1247,9 @@
         "name": "king renan",
         "role": "admin",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#R9PV90U00": {
         "name": "deka",
