@@ -10,7 +10,7 @@
     "#9UYPCVPLL": 1116,
     "#GGQPRRURV": 570,
     "#GYP00G8PR": 588,
-    "#292YJJ02V": 4785,
+    "#292YJJ02V": 5157,
     "#YJVRGUGVJ": 653,
     "#R8R22C08Y": 673,
     "#QGYU9GYC": 2500,
@@ -31,11 +31,11 @@
     "#YCY2YYYUP": 0,
     "#Y2VVRCUL9": 260,
     "#90YCRLUY0": 1033,
-    "#LQV2QRVJR": 151,
+    "#LQV2QRVJR": 184,
     "#Y8PLPVJJ0": 1,
     "#Q8QQC2QR9": 3,
     "#GU82Q92JP": 320,
-    "#GUQ822R8Q": 232,
+    "#GUQ822R8Q": 234,
     "#QRQCP2Q0P": 0,
     "#Y2LP8RV9J": 245,
     "#9JUJVPVUQ": 0,
@@ -50,7 +50,7 @@
     "#GJCGJU8JL": 0,
     "#PUQGPV8PC": 22,
     "#9VRQRUR20": 30,
-    "#L90Y8VJ09": 40,
+    "#L90Y8VJ09": 85,
     "#GQ2L8L9JY": 0,
     "#R08PU9VP0": 47,
     "#GLQJVVVR9": 0,
@@ -115,9 +115,9 @@
       "name": "Robson",
       "role": "member",
       "townHallLevel": 13,
-      "totalStars": 12,
-      "totalAttacks": 4,
-      "totalDestruction": 400.0,
+      "totalStars": 15,
+      "totalAttacks": 5,
+      "totalDestruction": 500.0,
       "warCount": 4,
       "donations": 153,
       "townhallLevel": 13
@@ -131,7 +131,7 @@
       "totalAttacks": 5,
       "totalDestruction": 494.0,
       "warCount": 4,
-      "donations": 4785,
+      "donations": 5157,
       "townhallLevel": 13
     },
     "#LQV2QRVJR": {
@@ -143,7 +143,7 @@
       "totalAttacks": 8,
       "totalDestruction": 771.0,
       "warCount": 4,
-      "donations": 151,
+      "donations": 184,
       "townhallLevel": 12
     },
     "#Q0YGRQLCQ": {
@@ -223,9 +223,9 @@
       "name": "LINKIN PARK",
       "role": "coLeader",
       "townHallLevel": 15,
-      "totalStars": 10,
-      "totalAttacks": 6,
-      "totalDestruction": 477.0,
+      "totalStars": 11,
+      "totalAttacks": 7,
+      "totalDestruction": 556.0,
       "warCount": 4,
       "donations": 1116,
       "townhallLevel": 15
@@ -307,9 +307,9 @@
       "name": "After",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 16,
-      "totalAttacks": 6,
-      "totalDestruction": 591.0,
+      "totalStars": 18,
+      "totalAttacks": 7,
+      "totalDestruction": 691.0,
       "warCount": 4,
       "donations": 320,
       "townhallLevel": 12
@@ -323,7 +323,7 @@
       "totalAttacks": 4,
       "totalDestruction": 400.0,
       "warCount": 2,
-      "donations": 232,
+      "donations": 234,
       "townhallLevel": 11
     },
     "#GCY8PR02J": {
@@ -331,9 +331,9 @@
       "name": "johnpork",
       "role": "admin",
       "townHallLevel": 13,
-      "totalStars": 7,
-      "totalAttacks": 4,
-      "totalDestruction": 365.0,
+      "totalStars": 13,
+      "totalAttacks": 6,
+      "totalDestruction": 565.0,
       "warCount": 4,
       "donations": 677,
       "townhallLevel": 13
@@ -355,9 +355,9 @@
       "name": "ÉOBRABOXX",
       "role": "admin",
       "townHallLevel": 14,
-      "totalStars": 17,
-      "totalAttacks": 6,
-      "totalDestruction": 585.0,
+      "totalStars": 23,
+      "totalAttacks": 8,
+      "totalDestruction": 785.0,
       "warCount": 4,
       "donations": 423,
       "townhallLevel": 14
@@ -1151,9 +1151,9 @@
         "name": "Robson",
         "role": "member",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#292YJJ02V": {
         "name": "Nevzx 躾⛩️",
@@ -1231,9 +1231,9 @@
         "name": "LINKIN PARK",
         "role": "coLeader",
         "townHallLevel": 15,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 1,
+        "attacks": 1,
+        "destruction": 79
       },
       "#82CQY0Q8V": {
         "name": "Bart simpson",
@@ -1279,9 +1279,9 @@
         "name": "After",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 2,
-        "attacks": 1,
-        "destruction": 91
+        "stars": 4,
+        "attacks": 2,
+        "destruction": 191
       },
       "#GQ2L8L9JY": {
         "name": "qpdjcisoq",
@@ -1295,9 +1295,9 @@
         "name": "johnpork",
         "role": "admin",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       },
       "#GYU8QLLVJ": {
         "name": "kayky2005",
@@ -1311,9 +1311,9 @@
         "name": "ÉOBRABOXX",
         "role": "admin",
         "townHallLevel": 14,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 6,
+        "attacks": 2,
+        "destruction": 200
       }
     }
   }
