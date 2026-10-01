@@ -15,9 +15,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 23,
-    "stars": 49,
-    "destructionPercentage": 68.84,
+    "attacks": 24,
+    "stars": 50,
+    "destructionPercentage": 72.16,
     "members": [
       {
         "tag": "#UJQYQY9U",
@@ -225,6 +225,16 @@
         "name": "Bruxo",
         "townhallLevel": 12,
         "mapPosition": 15,
+        "attacks": [
+          {
+            "attackerTag": "#GVRPCCLUL",
+            "defenderTag": "#YCJVCV22Y",
+            "stars": 1,
+            "destructionPercentage": 83,
+            "order": 39,
+            "duration": 115
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 87,
         "role": "member"
@@ -880,7 +890,15 @@
             "duration": 180
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GVRPCCLUL",
+          "defenderTag": "#YCJVCV22Y",
+          "stars": 1,
+          "destructionPercentage": 83,
+          "order": 39,
+          "duration": 115
+        }
       },
       {
         "tag": "#Q8Q9J08V2",
