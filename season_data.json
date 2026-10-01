@@ -223,9 +223,9 @@
       "name": "LINKIN PARK",
       "role": "coLeader",
       "townHallLevel": 15,
-      "totalStars": 11,
-      "totalAttacks": 7,
-      "totalDestruction": 556.0,
+      "totalStars": 13,
+      "totalAttacks": 8,
+      "totalDestruction": 638.0,
       "warCount": 4,
       "donations": 1116,
       "townhallLevel": 15
@@ -1231,9 +1231,9 @@
         "name": "LINKIN PARK",
         "role": "coLeader",
         "townHallLevel": 15,
-        "stars": 1,
-        "attacks": 1,
-        "destruction": 79
+        "stars": 3,
+        "attacks": 2,
+        "destruction": 161
       },
       "#82CQY0Q8V": {
         "name": "Bart simpson",
