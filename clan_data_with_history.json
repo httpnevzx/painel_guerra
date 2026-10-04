@@ -394,7 +394,7 @@
   {
     "tag": "#QGYU9GYC",
     "name": "BadBoy Xavier",
-    "role": "admin",
+    "role": "coLeader",
     "townHallLevel": 14,
     "expLevel": 179,
     "league": {
@@ -506,7 +506,7 @@
   {
     "tag": "#R8R22C08Y",
     "name": "Megatron",
-    "role": "coLeader",
+    "role": "admin",
     "townHallLevel": 14,
     "expLevel": 128,
     "league": {
@@ -730,7 +730,7 @@
   {
     "tag": "#80C2V90Q",
     "name": "♤Home Simpson♧",
-    "role": "member",
+    "role": "admin",
     "townHallLevel": 13,
     "expLevel": 140,
     "league": {
@@ -2178,7 +2178,7 @@
   {
     "tag": "#Y882VUVGJ",
     "name": "Guilherme ✌♣",
-    "role": "admin",
+    "role": "member",
     "townHallLevel": 12,
     "expLevel": 123,
     "league": {
