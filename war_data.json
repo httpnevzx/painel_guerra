@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 13,
-    "stars": 30,
-    "destructionPercentage": 37.7,
+    "attacks": 15,
+    "stars": 34,
+    "destructionPercentage": 42.86666666666667,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -194,6 +194,16 @@
         "name": "Princip3",
         "townhallLevel": 12,
         "mapPosition": 28,
+        "attacks": [
+          {
+            "attackerTag": "#GR982GPU",
+            "defenderTag": "#QL2YL0R8L",
+            "stars": 1,
+            "destructionPercentage": 55,
+            "order": 27,
+            "duration": 69
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 0,
         "role": "member"
@@ -394,6 +404,16 @@
         "name": "lucax",
         "townhallLevel": 12,
         "mapPosition": 24,
+        "attacks": [
+          {
+            "attackerTag": "#GYYCGVV2C",
+            "defenderTag": "#R2Q0GGGJG",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 26,
+            "duration": 103
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 0,
         "role": "member"
@@ -565,7 +585,15 @@
         "name": "Haydeeer.",
         "townhallLevel": 12,
         "mapPosition": 26,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GR982GPU",
+          "defenderTag": "#QL2YL0R8L",
+          "stars": 1,
+          "destructionPercentage": 55,
+          "order": 27,
+          "duration": 69
+        }
       },
       {
         "tag": "#QJJ2RR82R",
@@ -779,7 +807,15 @@
         "name": "Founder Segar",
         "townhallLevel": 13,
         "mapPosition": 29,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GYYCGVV2C",
+          "defenderTag": "#R2Q0GGGJG",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 26,
+          "duration": 103
+        }
       },
       {
         "tag": "#GY2JGPRG2",
