@@ -51,7 +51,7 @@
       "id": 44000023,
       "name": "Iron League III"
     },
-    "warStars": 300,
+    "warStars": 303,
     "daysInClan": 315,
     "joinedDate": "2023-11-10",
     "offlineDays": 0,
@@ -198,7 +198,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
       }
     },
-    "trophies": 54,
+    "trophies": 82,
     "builderBaseTrophies": 2385,
     "clanRank": 4,
     "previousClanRank": 4,
@@ -594,7 +594,7 @@
     "name": "ÉOBRABOXX",
     "role": "admin",
     "townHallLevel": 14,
-    "expLevel": 104,
+    "expLevel": 105,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -847,7 +847,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 163,
+    "trophies": 177,
     "builderBaseTrophies": 2408,
     "clanRank": 15,
     "previousClanRank": 15,
@@ -2321,7 +2321,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2650,
+    "builderBaseTrophies": 2743,
     "clanRank": 42,
     "previousClanRank": 42,
     "donations": 143,
