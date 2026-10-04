@@ -312,7 +312,15 @@
             "duration": 76
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#PGCJRLCGL",
+          "defenderTag": "#9UYPCVPLL",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 28,
+          "duration": 72
+        },
         "donations": 1245,
         "role": "coLeader"
       },
@@ -544,9 +552,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/zsWKRuPqQqr53PPYq-7xOrX-fgFX2JP5_JPNyKrooDQ.png"
     },
     "clanLevel": 12,
-    "attacks": 12,
-    "stars": 31,
-    "destructionPercentage": 38.766666666666666,
+    "attacks": 13,
+    "stars": 34,
+    "destructionPercentage": 42.1,
     "members": [
       {
         "tag": "#G9JJJ809J",
@@ -900,6 +908,16 @@
         "name": "odading",
         "townhallLevel": 18,
         "mapPosition": 1,
+        "attacks": [
+          {
+            "attackerTag": "#PGCJRLCGL",
+            "defenderTag": "#9UYPCVPLL",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 28,
+            "duration": 72
+          }
+        ],
         "opponentAttacks": 0
       },
       {
