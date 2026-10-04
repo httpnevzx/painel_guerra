@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 11,
-    "stars": 27,
-    "destructionPercentage": 32.5,
+    "attacks": 12,
+    "stars": 28,
+    "destructionPercentage": 35.6,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -58,6 +58,16 @@
         "name": "Robson",
         "townhallLevel": 13,
         "mapPosition": 15,
+        "attacks": [
+          {
+            "attackerTag": "#GJLC89UG8",
+            "defenderTag": "#LQPYL028P",
+            "stars": 1,
+            "destructionPercentage": 93,
+            "order": 23,
+            "duration": 157
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#LQPYL028P",
@@ -680,7 +690,15 @@
             "duration": 175
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GJLC89UG8",
+          "defenderTag": "#LQPYL028P",
+          "stars": 1,
+          "destructionPercentage": 93,
+          "order": 23,
+          "duration": 157
+        }
       },
       {
         "tag": "#R09JC8ULP",
