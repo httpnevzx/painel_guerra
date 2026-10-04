@@ -1214,8 +1214,8 @@
     "warStars": 133,
     "daysInClan": 54,
     "joinedDate": "2026-07-29",
-    "offlineDays": 0,
-    "idleCount": 0,
+    "offlineDays": 1,
+    "idleCount": 1,
     "isIdle": false
   },
   {
@@ -1587,9 +1587,9 @@
     "warStars": 53,
     "daysInClan": 42,
     "joinedDate": "2026-08-10",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 3,
+    "isIdle": true
   },
   {
     "tag": "#L90Y8VJ09",
