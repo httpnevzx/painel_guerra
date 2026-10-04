@@ -190,7 +190,7 @@
       }
     },
     "trophies": 54,
-    "builderBaseTrophies": 2384,
+    "builderBaseTrophies": 2385,
     "clanRank": 4,
     "previousClanRank": 4,
     "donations": 5940,
@@ -1839,7 +1839,7 @@
       "id": 44000020,
       "name": "Brass League III"
     },
-    "warStars": 60,
+    "warStars": 62,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
