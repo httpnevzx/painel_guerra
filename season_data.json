@@ -248,7 +248,7 @@
     "#R8R22C08Y": {
       "tag": "#R8R22C08Y",
       "name": "Megatron",
-      "role": "coLeader",
+      "role": "admin",
       "townHallLevel": 14,
       "totalStars": 9,
       "totalAttacks": 3,
@@ -1780,7 +1780,7 @@
       },
       "#R8R22C08Y": {
         "name": "Megatron",
-        "role": "coLeader",
+        "role": "admin",
         "townHallLevel": 14,
         "stars": 0,
         "attacks": 0,
