@@ -788,7 +788,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 416,
+    "trophies": 445,
     "builderBaseTrophies": 1400,
     "clanRank": 14,
     "previousClanRank": 14,
@@ -848,7 +848,7 @@
       }
     },
     "trophies": 163,
-    "builderBaseTrophies": 2430,
+    "builderBaseTrophies": 2408,
     "clanRank": 15,
     "previousClanRank": 15,
     "donations": 0,
@@ -2448,7 +2448,7 @@
       "id": 44000018,
       "name": "Copper League II"
     },
-    "warStars": 44,
+    "warStars": 47,
     "daysInClan": 1,
     "joinedDate": "2026-10-02",
     "offlineDays": 0,
