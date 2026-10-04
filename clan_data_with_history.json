@@ -22,7 +22,7 @@
       }
     },
     "trophies": 86,
-    "builderBaseTrophies": 2765,
+    "builderBaseTrophies": 2815,
     "clanRank": 1,
     "previousClanRank": 1,
     "donations": 1327,
@@ -48,8 +48,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000023,
-      "name": "Iron League III"
+      "id": 44000024,
+      "name": "Iron League II"
     },
     "warStars": 303,
     "daysInClan": 315,
@@ -439,7 +439,7 @@
     "clanRank": 8,
     "previousClanRank": 8,
     "donations": 3002,
-    "donationsReceived": 2046,
+    "donationsReceived": 2049,
     "playerHouse": {
       "elements": [
         {
@@ -1126,7 +1126,7 @@
     "builderBaseTrophies": 1699,
     "clanRank": 20,
     "previousClanRank": 20,
-    "donations": 264,
+    "donations": 267,
     "donationsReceived": 2276,
     "playerHouse": {
       "elements": [
@@ -1437,7 +1437,7 @@
       }
     },
     "trophies": 405,
-    "builderBaseTrophies": 2383,
+    "builderBaseTrophies": 2402,
     "clanRank": 26,
     "previousClanRank": 26,
     "donations": 187,
@@ -1463,8 +1463,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
+      "id": 44000022,
+      "name": "Brass League I"
     },
     "warStars": 199,
     "daysInClan": 1,
