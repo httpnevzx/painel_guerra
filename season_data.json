@@ -226,9 +226,9 @@
       "name": "LINKIN PARK",
       "role": "coLeader",
       "townHallLevel": 15,
-      "totalStars": 13,
-      "totalAttacks": 8,
-      "totalDestruction": 638.0,
+      "totalStars": 15,
+      "totalAttacks": 9,
+      "totalDestruction": 701.0,
       "warCount": 7,
       "donations": 1215,
       "townhallLevel": 15
@@ -1766,9 +1766,9 @@
         "name": "LINKIN PARK",
         "role": "coLeader",
         "townHallLevel": 15,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 2,
+        "attacks": 1,
+        "destruction": 63
       },
       "#90YCRLUY0": {
         "name": "king renan",
