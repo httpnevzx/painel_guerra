@@ -1846,6 +1846,19 @@
             border-radius: 6px;
             vertical-align: middle;
         }
+        .j-warn-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 2px 6px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.70rem;
+            color: #ffcc00 !important;
+            background: rgba(255, 204, 0, 0.12) !important;
+            border: 1px solid rgba(255, 204, 0, 0.35) !important;
+            border-radius: 6px;
+            vertical-align: middle;
+        }
         .j-filter-btn.idle-btn.active, .j-filter-btn.idle-btn:hover {
             border-color: #ff9900 !important;
             color: #ffaa00 !important;
@@ -2257,12 +2270,27 @@
                 <div class="kanji-seal">武士</div>
             </div>
 
-            <!-- Controles: Busca e Filtros -->
-            <div class="japan-controls-bar">
-                <div class="japan-search-box">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="japanSearchInput" placeholder="Buscar por guerreiro ou Centro de Vila..." oninput="filterJapanMembers()">
+            <!-- Controles: Busca, Filtros e Ordenação -->
+            <div class="japan-controls-bar" style="display:flex; flex-wrap:wrap; align-items:center; gap:12px; justify-content:space-between;">
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; flex:1;">
+                    <div class="japan-search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="japanSearchInput" placeholder="Buscar por guerreiro ou Centro de Vila..." oninput="filterJapanMembers()">
+                    </div>
+
+                    <div class="japan-sort-box" style="display:flex; align-items:center; gap:6px;">
+                        <span style="font-family:'Share Tech Mono'; font-size:0.85rem; color:#ffd700;">↕️ Ordenar:</span>
+                        <select id="japanSortSelect" onchange="changeJapanSort(this.value)" style="background:rgba(18,9,16,0.95); color:#ffd700; border:1px solid rgba(255,215,0,0.5); padding:6px 12px; border-radius:8px; font-family:'Rajdhani',sans-serif; font-weight:700; cursor:pointer; box-shadow:0 0 10px rgba(255,215,0,0.2);">
+                            <option value="stars-desc" selected>⭐ Estrelas Guerra (Maior → Menor)</option>
+                            <option value="donations-desc">📦 Doações (Maior → Menor)</option>
+                            <option value="trophies-desc">🏆 Troféus (Maior → Menor)</option>
+                            <option value="th-desc">🏰 Centro de Vila (Maior → Menor)</option>
+                            <option value="idle-desc">😴 Ociosidade (Mais Ociosos Primeiro)</option>
+                            <option value="rank-asc">📜 Honra / Posição Clã</option>
+                        </select>
+                    </div>
                 </div>
+
                 <div class="japan-filter-buttons">
                     <button class="j-filter-btn active" id="jBtnAll" onclick="setJapanFilter('all', this)">Todos (<span id="countAll">34</span>)</button>
                     <button class="j-filter-btn" id="jBtnAdmin" onclick="setJapanFilter('admin', this)">Anciãos (<span id="countAdmin">12</span>)</button>
@@ -2276,14 +2304,14 @@
                 <table class="japan-table">
                     <thead>
                         <tr>
-                            <th>Honra</th>
-                            <th>Guerreiro</th>
+                            <th onclick="changeJapanSort('rank-asc')" style="cursor:pointer;" title="Clique para ordenar por Posição">Honra</th>
+                            <th onclick="changeJapanSort('name-asc')" style="cursor:pointer;" title="Clique para ordenar por Nome">Guerreiro</th>
                             <th>Patente</th>
-                            <th>Centro de Vila</th>
+                            <th onclick="changeJapanSort('th-desc')" style="cursor:pointer;" title="Clique para ordenar por Centro de Vila">Centro de Vila</th>
                             <th>Nível XP</th>
-                            <th>Troféus</th>
-                            <th>Doações</th>
-                            <th>Estrelas Guerra</th>
+                            <th onclick="changeJapanSort('trophies-desc')" style="cursor:pointer;" title="Clique para ordenar por Troféus (Maior → Menor)">Troféus</th>
+                            <th onclick="changeJapanSort('donations-desc')" style="cursor:pointer; color:#00ff88;" title="Clique para ordenar por Doações (Maior → Menor)">Doações 📦</th>
+                            <th onclick="changeJapanSort('stars-desc')" style="cursor:pointer; color:#ffd700;" title="Clique para ordenar por Estrelas de Guerra (Maior → Menor)">Estrelas Guerra ⭐</th>
                         </tr>
                     </thead>
                     <tbody id="japanGeneralMembersTbody"></tbody>
@@ -6764,8 +6792,8 @@ const CLAN_MEMBERS = [
     "warStars": 133,
     "daysInClan": 54,
     "joinedDate": "2026-07-29",
-    "offlineDays": 0,
-    "idleCount": 0,
+    "offlineDays": 1,
+    "idleCount": 1,
     "isIdle": false
   },
   {
@@ -7137,9 +7165,9 @@ const CLAN_MEMBERS = [
     "warStars": 53,
     "daysInClan": 42,
     "joinedDate": "2026-08-10",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 3,
+    "isIdle": true
   },
   {
     "tag": "#L90Y8VJ09",
@@ -8603,6 +8631,51 @@ function initJapanTab() {
     renderGeneralMembers(generalMembers);
 }
 
+let currentSortKey = 'stars-desc';
+
+function changeJapanSort(val) {
+    currentSortKey = val;
+    const selectEl = document.getElementById('japanSortSelect');
+    if (selectEl && selectEl.value !== val) {
+        selectEl.value = val;
+    }
+    filterJapanMembers();
+}
+
+function sortMemberList(list, sortKey) {
+    const parts = (sortKey || 'stars-desc').split('-');
+    const field = parts[0];
+    const dir = parts[1] || 'desc';
+    const multiplier = (dir === 'asc') ? 1 : -1;
+
+    return list.slice().sort((a, b) => {
+        let valA = 0, valB = 0;
+        if (field === 'stars') {
+            valA = a.warStars || 0;
+            valB = b.warStars || 0;
+        } else if (field === 'donations') {
+            valA = a.donations || 0;
+            valB = b.donations || 0;
+        } else if (field === 'trophies') {
+            valA = a.trophies || 0;
+            valB = b.trophies || 0;
+        } else if (field === 'th') {
+            valA = a.townHallLevel || a.townhallLevel || 0;
+            valB = b.townHallLevel || b.townhallLevel || 0;
+        } else if (field === 'idle') {
+            valA = a.offlineDays || 0;
+            valB = b.offlineDays || 0;
+        } else if (field === 'name') {
+            return (a.name || '').localeCompare(b.name || '') * multiplier;
+        } else {
+            valA = a.clanRank || 99;
+            valB = b.clanRank || 99;
+            return (valA - valB) * (dir === 'desc' ? -1 : 1);
+        }
+        return (valA - valB) * multiplier;
+    });
+}
+
 function renderGeneralMembers(list) {
     const tableBody = document.getElementById('japanGeneralMembersTbody');
     if (!tableBody) return;
@@ -8619,9 +8692,12 @@ function renderGeneralMembers(list) {
             : `<span class="j-role-pill member">⚔️ Samurai (Membro)</span>`;
 
         const isIdle = m.isIdle || (m.offlineDays && m.offlineDays >= 2);
-        const idleBadge = isIdle
-            ? `<span class="j-idle-badge" title="Saldo: ${m.idleCount || 2}x ocioso (consecutivos)">😴 Jogador Ocioso (${m.offlineDays || 2}d off)</span>`
-            : `<span class="j-active-badge">🟢 Ativo</span>`;
+        let idleBadge = `<span class="j-active-badge">🟢 Ativo</span>`;
+        if (isIdle) {
+            idleBadge = `<span class="j-idle-badge" title="Saldo: ${m.idleCount || 2}x ocioso (consecutivos)">😴 Jogador Ocioso (${m.offlineDays || 2}d off)</span>`;
+        } else if (m.offlineDays === 1) {
+            idleBadge = `<span class="j-warn-badge" title="Offline há 1 dia">⏳ 1d off</span>`;
+        }
 
         const donColor = m.donations >= 100 ? '#00ff88' : '#e0e6f0';
 
@@ -8667,12 +8743,13 @@ function filterJapanMembers() {
         return nameMatch || tagMatch || thMatch;
     });
 
-    filtered.sort((a, b) => (a.clanRank || 99) - (b.clanRank || 99));
-    renderGeneralMembers(filtered);
+    const sorted = sortMemberList(filtered, currentSortKey);
+    renderGeneralMembers(sorted);
 
     const japanMemberCountEl = document.getElementById('japanMemberCount');
-    if (japanMemberCountEl) japanMemberCountEl.textContent = filtered.length;
+    if (japanMemberCountEl) japanMemberCountEl.textContent = sorted.length;
 }
+
 
 
 
