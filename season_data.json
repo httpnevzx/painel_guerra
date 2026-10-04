@@ -140,7 +140,7 @@
     "#LQV2QRVJR": {
       "tag": "#LQV2QRVJR",
       "name": "Rosa₪Floresida₪",
-      "role": "member",
+      "role": "admin",
       "townHallLevel": 12,
       "totalStars": 17,
       "totalAttacks": 10,
@@ -1668,7 +1668,7 @@
       },
       "#LQV2QRVJR": {
         "name": "Rosa₪Floresida₪",
-        "role": "member",
+        "role": "admin",
         "townHallLevel": 12,
         "stars": 3,
         "attacks": 1,
