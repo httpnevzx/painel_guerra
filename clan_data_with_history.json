@@ -53,7 +53,10 @@
     },
     "warStars": 300,
     "daysInClan": 315,
-    "joinedDate": "2023-11-10"
+    "joinedDate": "2023-11-10",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#9UYPCVPLL",
@@ -107,9 +110,12 @@
       "id": 44000023,
       "name": "Iron League III"
     },
-    "warStars": 219,
+    "warStars": 221,
     "daysInClan": 135,
-    "joinedDate": "2026-05-09"
+    "joinedDate": "2026-05-09",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GYP00G8PR",
@@ -165,7 +171,10 @@
     },
     "warStars": 542,
     "daysInClan": 245,
-    "joinedDate": "2024-01-19"
+    "joinedDate": "2024-01-19",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#292YJJ02V",
@@ -221,7 +230,10 @@
     },
     "warStars": 1003,
     "daysInClan": 420,
-    "joinedDate": "2023-07-28"
+    "joinedDate": "2023-07-28",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GGQPRRURV",
@@ -277,7 +289,10 @@
     },
     "warStars": 276,
     "daysInClan": 290,
-    "joinedDate": "2023-12-05"
+    "joinedDate": "2023-12-05",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Q0URR9VC9",
@@ -333,7 +348,10 @@
     },
     "warStars": 412,
     "daysInClan": 1,
-    "joinedDate": "2026-09-24"
+    "joinedDate": "2026-09-24",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#YJVRGUGVJ",
@@ -389,7 +407,10 @@
     },
     "warStars": 479,
     "daysInClan": 19,
-    "joinedDate": "2026-09-02"
+    "joinedDate": "2026-09-02",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#QGYU9GYC",
@@ -445,7 +466,10 @@
     },
     "warStars": 955,
     "daysInClan": 162,
-    "joinedDate": "2026-04-12"
+    "joinedDate": "2026-04-12",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GCY8PR02J",
@@ -501,7 +525,10 @@
     },
     "warStars": 131,
     "daysInClan": 93,
-    "joinedDate": "2026-06-20"
+    "joinedDate": "2026-06-20",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#R8R22C08Y",
@@ -557,7 +584,10 @@
     },
     "warStars": 233,
     "daysInClan": 17,
-    "joinedDate": "2026-09-04"
+    "joinedDate": "2026-09-04",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#YGLLU0UU9",
@@ -613,7 +643,10 @@
     },
     "warStars": 101,
     "daysInClan": 59,
-    "joinedDate": "2026-07-24"
+    "joinedDate": "2026-07-24",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GJLC89UG8",
@@ -669,7 +702,10 @@
     },
     "warStars": 179,
     "daysInClan": 66,
-    "joinedDate": "2026-07-17"
+    "joinedDate": "2026-07-17",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GVUPL0Y2L",
@@ -725,7 +761,10 @@
     },
     "warStars": 146,
     "daysInClan": 17,
-    "joinedDate": "2026-09-04"
+    "joinedDate": "2026-09-04",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#80C2V90Q",
@@ -781,7 +820,10 @@
     },
     "warStars": 960,
     "daysInClan": 45,
-    "joinedDate": "2026-08-07"
+    "joinedDate": "2026-08-07",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GJCGJU8JL",
@@ -837,7 +879,10 @@
     },
     "warStars": 124,
     "daysInClan": 1,
-    "joinedDate": "2026-09-22"
+    "joinedDate": "2026-09-22",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#PUQGPV8PC",
@@ -893,7 +938,10 @@
     },
     "warStars": 212,
     "daysInClan": 1,
-    "joinedDate": "2026-09-22"
+    "joinedDate": "2026-09-22",
+    "offlineDays": 2,
+    "idleCount": 2,
+    "isIdle": true
   },
   {
     "tag": "#L9JULURCP",
@@ -949,7 +997,10 @@
     },
     "warStars": 62,
     "daysInClan": 36,
-    "joinedDate": "2026-08-16"
+    "joinedDate": "2026-08-16",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#G9ULQQJP2",
@@ -985,7 +1036,10 @@
     },
     "warStars": 113,
     "daysInClan": 102,
-    "joinedDate": "2026-06-11"
+    "joinedDate": "2026-06-11",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#90YCRLUY0",
@@ -1041,7 +1095,10 @@
     },
     "warStars": 110,
     "daysInClan": 1,
-    "joinedDate": "2026-09-21"
+    "joinedDate": "2026-09-21",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#2LGUVVC99",
@@ -1097,7 +1154,10 @@
     },
     "warStars": 924,
     "daysInClan": 140,
-    "joinedDate": "2026-05-04"
+    "joinedDate": "2026-05-04",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Y8PLPVJJ0",
@@ -1153,7 +1213,10 @@
     },
     "warStars": 133,
     "daysInClan": 54,
-    "joinedDate": "2026-07-29"
+    "joinedDate": "2026-07-29",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Q0YGRQLCQ",
@@ -1189,7 +1252,10 @@
     },
     "warStars": 96,
     "daysInClan": 64,
-    "joinedDate": "2026-07-19"
+    "joinedDate": "2026-07-19",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Y2VVRCUL9",
@@ -1225,7 +1291,10 @@
     },
     "warStars": 190,
     "daysInClan": 142,
-    "joinedDate": "2026-05-02"
+    "joinedDate": "2026-05-02",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#28UVGLLQP",
@@ -1281,7 +1350,10 @@
     },
     "warStars": 142,
     "daysInClan": 35,
-    "joinedDate": "2026-08-17"
+    "joinedDate": "2026-08-17",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#R9PV90U00",
@@ -1337,7 +1409,10 @@
     },
     "warStars": 32,
     "daysInClan": 83,
-    "joinedDate": "2026-06-30"
+    "joinedDate": "2026-06-30",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#LQV2QRVJR",
@@ -1393,7 +1468,10 @@
     },
     "warStars": 199,
     "daysInClan": 1,
-    "joinedDate": "2026-09-21"
+    "joinedDate": "2026-09-21",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#82CQY0Q8V",
@@ -1449,7 +1527,10 @@
     },
     "warStars": 1080,
     "daysInClan": 1,
-    "joinedDate": "2026-09-24"
+    "joinedDate": "2026-09-24",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#QGLRQRQLJ",
@@ -1505,7 +1586,10 @@
     },
     "warStars": 53,
     "daysInClan": 42,
-    "joinedDate": "2026-08-10"
+    "joinedDate": "2026-08-10",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#L90Y8VJ09",
@@ -1561,7 +1645,10 @@
     },
     "warStars": 192,
     "daysInClan": 1,
-    "joinedDate": "2026-09-22"
+    "joinedDate": "2026-09-22",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Q8QQC2QR9",
@@ -1617,7 +1704,10 @@
     },
     "warStars": 114,
     "daysInClan": 23,
-    "joinedDate": "2026-08-29"
+    "joinedDate": "2026-08-29",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#UJQYQY9U",
@@ -1673,7 +1763,10 @@
     },
     "warStars": 332,
     "daysInClan": 1,
-    "joinedDate": "2026-09-28"
+    "joinedDate": "2026-09-28",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#9JUJVPVUQ",
@@ -1729,7 +1822,10 @@
     },
     "warStars": 741,
     "daysInClan": 60,
-    "joinedDate": "2026-07-23"
+    "joinedDate": "2026-07-23",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GR982GPU",
@@ -1785,7 +1881,10 @@
     },
     "warStars": 154,
     "daysInClan": 1,
-    "joinedDate": "2026-09-28"
+    "joinedDate": "2026-09-28",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GQ2L8L9JY",
@@ -1841,7 +1940,10 @@
     },
     "warStars": 62,
     "daysInClan": 1,
-    "joinedDate": "2026-09-22"
+    "joinedDate": "2026-09-22",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GUQ822R8Q",
@@ -1877,7 +1979,10 @@
     },
     "warStars": 24,
     "daysInClan": 80,
-    "joinedDate": "2026-07-03"
+    "joinedDate": "2026-07-03",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Y2LP8RV9J",
@@ -1933,7 +2038,10 @@
     },
     "warStars": 91,
     "daysInClan": 23,
-    "joinedDate": "2026-08-29"
+    "joinedDate": "2026-08-29",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#QRQCP2Q0P",
@@ -1969,7 +2077,10 @@
     },
     "warStars": 28,
     "daysInClan": 49,
-    "joinedDate": "2026-08-03"
+    "joinedDate": "2026-08-03",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#YJUYLQGQJ",
@@ -2005,7 +2116,10 @@
     },
     "warStars": 0,
     "daysInClan": 1,
-    "joinedDate": "2026-10-02"
+    "joinedDate": "2026-10-02",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#R08PU9VP0",
@@ -2061,7 +2175,10 @@
     },
     "warStars": 60,
     "daysInClan": 1,
-    "joinedDate": "2026-09-22"
+    "joinedDate": "2026-09-22",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#G8QY89CY0",
@@ -2117,7 +2234,10 @@
     },
     "warStars": 19,
     "daysInClan": 1,
-    "joinedDate": "2026-09-28"
+    "joinedDate": "2026-09-28",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#G0JUG29CG",
@@ -2173,7 +2293,10 @@
     },
     "warStars": 31,
     "daysInClan": 52,
-    "joinedDate": "2026-07-31"
+    "joinedDate": "2026-07-31",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Y882VUVGJ",
@@ -2209,7 +2332,10 @@
     },
     "warStars": 3,
     "daysInClan": 85,
-    "joinedDate": "2026-06-28"
+    "joinedDate": "2026-06-28",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#LVYP8RVGR",
@@ -2265,7 +2391,10 @@
     },
     "warStars": 26,
     "daysInClan": 71,
-    "joinedDate": "2026-07-12"
+    "joinedDate": "2026-07-12",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GYYCGVV2C",
@@ -2321,7 +2450,10 @@
     },
     "warStars": 44,
     "daysInClan": 1,
-    "joinedDate": "2026-10-02"
+    "joinedDate": "2026-10-02",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#PCR0GRPR8",
@@ -2377,7 +2509,10 @@
     },
     "warStars": 217,
     "daysInClan": 1,
-    "joinedDate": "2026-10-02"
+    "joinedDate": "2026-10-02",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GU82Q92JP",
@@ -2413,7 +2548,10 @@
     },
     "warStars": 119,
     "daysInClan": 141,
-    "joinedDate": "2026-05-03"
+    "joinedDate": "2026-05-03",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GYU8QLLVJ",
@@ -2469,6 +2607,9 @@
     },
     "warStars": 8,
     "daysInClan": 1,
-    "joinedDate": "2026-09-21"
+    "joinedDate": "2026-09-21",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   }
 ]
