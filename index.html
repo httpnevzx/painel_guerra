@@ -1817,6 +1817,47 @@
             box-shadow: 0 0 25px rgba(230, 0, 51, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.2) !important;
         }
 
+        /* ── Idle Member Badges & Filters ──────────────────────────────── */
+        .j-idle-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 7px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #ff9900 !important;
+            background: rgba(255, 153, 0, 0.16) !important;
+            border: 1px solid rgba(255, 153, 0, 0.55) !important;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(255, 153, 0, 0.25);
+            vertical-align: middle;
+        }
+        .j-active-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 2px 6px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.70rem;
+            color: #00ff88 !important;
+            background: rgba(0, 255, 136, 0.08) !important;
+            border: 1px solid rgba(0, 255, 136, 0.25) !important;
+            border-radius: 6px;
+            vertical-align: middle;
+        }
+        .j-filter-btn.idle-btn.active, .j-filter-btn.idle-btn:hover {
+            border-color: #ff9900 !important;
+            color: #ffaa00 !important;
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.4) !important;
+        }
+        .council-role-badge.idle-badge {
+            background: rgba(255, 153, 0, 0.22) !important;
+            border: 1px solid #ff9900 !important;
+            color: #ffaa00 !important;
+            box-shadow: 0 0 12px rgba(255, 153, 0, 0.4) !important;
+            margin-top: 4px;
+        }
     </style>
 </head>
 <body>
@@ -2226,6 +2267,7 @@
                     <button class="j-filter-btn active" id="jBtnAll" onclick="setJapanFilter('all', this)">Todos (<span id="countAll">34</span>)</button>
                     <button class="j-filter-btn" id="jBtnAdmin" onclick="setJapanFilter('admin', this)">Anciãos (<span id="countAdmin">12</span>)</button>
                     <button class="j-filter-btn" id="jBtnMember" onclick="setJapanFilter('member', this)">Samurais (<span id="countMember">22</span>)</button>
+                    <button class="j-filter-btn idle-btn" id="jBtnIdle" onclick="setJapanFilter('idle', this)">😴 Ociosos (<span id="countIdle">0</span>)</button>
                 </div>
             </div>
 
@@ -5561,7 +5603,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 300,
     "daysInClan": 315,
-    "joinedDate": "2023-11-10"
+    "joinedDate": "2023-11-10",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#9UYPCVPLL",
@@ -5615,9 +5660,12 @@ const CLAN_MEMBERS = [
       "id": 44000023,
       "name": "Iron League III"
     },
-    "warStars": 219,
+    "warStars": 221,
     "daysInClan": 135,
-    "joinedDate": "2026-05-09"
+    "joinedDate": "2026-05-09",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GYP00G8PR",
@@ -5673,7 +5721,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 542,
     "daysInClan": 245,
-    "joinedDate": "2024-01-19"
+    "joinedDate": "2024-01-19",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#292YJJ02V",
@@ -5729,7 +5780,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 1003,
     "daysInClan": 420,
-    "joinedDate": "2023-07-28"
+    "joinedDate": "2023-07-28",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GGQPRRURV",
@@ -5785,7 +5839,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 276,
     "daysInClan": 290,
-    "joinedDate": "2023-12-05"
+    "joinedDate": "2023-12-05",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Q0URR9VC9",
@@ -5841,7 +5898,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 412,
     "daysInClan": 1,
-    "joinedDate": "2026-09-24"
+    "joinedDate": "2026-09-24",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#YJVRGUGVJ",
@@ -5897,7 +5957,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 479,
     "daysInClan": 19,
-    "joinedDate": "2026-09-02"
+    "joinedDate": "2026-09-02",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#QGYU9GYC",
@@ -5953,7 +6016,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 955,
     "daysInClan": 162,
-    "joinedDate": "2026-04-12"
+    "joinedDate": "2026-04-12",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GCY8PR02J",
@@ -6009,7 +6075,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 131,
     "daysInClan": 93,
-    "joinedDate": "2026-06-20"
+    "joinedDate": "2026-06-20",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#R8R22C08Y",
@@ -6065,7 +6134,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 233,
     "daysInClan": 17,
-    "joinedDate": "2026-09-04"
+    "joinedDate": "2026-09-04",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#YGLLU0UU9",
@@ -6121,7 +6193,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 101,
     "daysInClan": 59,
-    "joinedDate": "2026-07-24"
+    "joinedDate": "2026-07-24",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GJLC89UG8",
@@ -6177,7 +6252,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 179,
     "daysInClan": 66,
-    "joinedDate": "2026-07-17"
+    "joinedDate": "2026-07-17",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GVUPL0Y2L",
@@ -6233,7 +6311,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 146,
     "daysInClan": 17,
-    "joinedDate": "2026-09-04"
+    "joinedDate": "2026-09-04",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#80C2V90Q",
@@ -6289,7 +6370,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 960,
     "daysInClan": 45,
-    "joinedDate": "2026-08-07"
+    "joinedDate": "2026-08-07",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GJCGJU8JL",
@@ -6345,7 +6429,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 124,
     "daysInClan": 1,
-    "joinedDate": "2026-09-22"
+    "joinedDate": "2026-09-22",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#PUQGPV8PC",
@@ -6401,7 +6488,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 212,
     "daysInClan": 1,
-    "joinedDate": "2026-09-22"
+    "joinedDate": "2026-09-22",
+    "offlineDays": 2,
+    "idleCount": 2,
+    "isIdle": true
   },
   {
     "tag": "#L9JULURCP",
@@ -6457,7 +6547,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 62,
     "daysInClan": 36,
-    "joinedDate": "2026-08-16"
+    "joinedDate": "2026-08-16",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#G9ULQQJP2",
@@ -6493,7 +6586,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 113,
     "daysInClan": 102,
-    "joinedDate": "2026-06-11"
+    "joinedDate": "2026-06-11",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#90YCRLUY0",
@@ -6549,7 +6645,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 110,
     "daysInClan": 1,
-    "joinedDate": "2026-09-21"
+    "joinedDate": "2026-09-21",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#2LGUVVC99",
@@ -6605,7 +6704,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 924,
     "daysInClan": 140,
-    "joinedDate": "2026-05-04"
+    "joinedDate": "2026-05-04",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Y8PLPVJJ0",
@@ -6661,7 +6763,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 133,
     "daysInClan": 54,
-    "joinedDate": "2026-07-29"
+    "joinedDate": "2026-07-29",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Q0YGRQLCQ",
@@ -6697,7 +6802,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 96,
     "daysInClan": 64,
-    "joinedDate": "2026-07-19"
+    "joinedDate": "2026-07-19",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Y2VVRCUL9",
@@ -6733,7 +6841,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 190,
     "daysInClan": 142,
-    "joinedDate": "2026-05-02"
+    "joinedDate": "2026-05-02",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#28UVGLLQP",
@@ -6789,7 +6900,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 142,
     "daysInClan": 35,
-    "joinedDate": "2026-08-17"
+    "joinedDate": "2026-08-17",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#R9PV90U00",
@@ -6845,7 +6959,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 32,
     "daysInClan": 83,
-    "joinedDate": "2026-06-30"
+    "joinedDate": "2026-06-30",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#LQV2QRVJR",
@@ -6901,7 +7018,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 199,
     "daysInClan": 1,
-    "joinedDate": "2026-09-21"
+    "joinedDate": "2026-09-21",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#82CQY0Q8V",
@@ -6957,7 +7077,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 1080,
     "daysInClan": 1,
-    "joinedDate": "2026-09-24"
+    "joinedDate": "2026-09-24",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#QGLRQRQLJ",
@@ -7013,7 +7136,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 53,
     "daysInClan": 42,
-    "joinedDate": "2026-08-10"
+    "joinedDate": "2026-08-10",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#L90Y8VJ09",
@@ -7069,7 +7195,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 192,
     "daysInClan": 1,
-    "joinedDate": "2026-09-22"
+    "joinedDate": "2026-09-22",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Q8QQC2QR9",
@@ -7125,7 +7254,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 114,
     "daysInClan": 23,
-    "joinedDate": "2026-08-29"
+    "joinedDate": "2026-08-29",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#UJQYQY9U",
@@ -7181,7 +7313,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 332,
     "daysInClan": 1,
-    "joinedDate": "2026-09-28"
+    "joinedDate": "2026-09-28",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#9JUJVPVUQ",
@@ -7237,7 +7372,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 741,
     "daysInClan": 60,
-    "joinedDate": "2026-07-23"
+    "joinedDate": "2026-07-23",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GR982GPU",
@@ -7293,7 +7431,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 154,
     "daysInClan": 1,
-    "joinedDate": "2026-09-28"
+    "joinedDate": "2026-09-28",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GQ2L8L9JY",
@@ -7349,7 +7490,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 62,
     "daysInClan": 1,
-    "joinedDate": "2026-09-22"
+    "joinedDate": "2026-09-22",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GUQ822R8Q",
@@ -7385,7 +7529,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 24,
     "daysInClan": 80,
-    "joinedDate": "2026-07-03"
+    "joinedDate": "2026-07-03",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Y2LP8RV9J",
@@ -7441,7 +7588,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 91,
     "daysInClan": 23,
-    "joinedDate": "2026-08-29"
+    "joinedDate": "2026-08-29",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#QRQCP2Q0P",
@@ -7477,7 +7627,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 28,
     "daysInClan": 49,
-    "joinedDate": "2026-08-03"
+    "joinedDate": "2026-08-03",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#YJUYLQGQJ",
@@ -7513,7 +7666,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 0,
     "daysInClan": 1,
-    "joinedDate": "2026-10-02"
+    "joinedDate": "2026-10-02",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#R08PU9VP0",
@@ -7569,7 +7725,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 60,
     "daysInClan": 1,
-    "joinedDate": "2026-09-22"
+    "joinedDate": "2026-09-22",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#G8QY89CY0",
@@ -7625,7 +7784,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 19,
     "daysInClan": 1,
-    "joinedDate": "2026-09-28"
+    "joinedDate": "2026-09-28",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#G0JUG29CG",
@@ -7681,7 +7843,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 31,
     "daysInClan": 52,
-    "joinedDate": "2026-07-31"
+    "joinedDate": "2026-07-31",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#Y882VUVGJ",
@@ -7717,7 +7882,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 3,
     "daysInClan": 85,
-    "joinedDate": "2026-06-28"
+    "joinedDate": "2026-06-28",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#LVYP8RVGR",
@@ -7773,7 +7941,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 26,
     "daysInClan": 71,
-    "joinedDate": "2026-07-12"
+    "joinedDate": "2026-07-12",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GYYCGVV2C",
@@ -7829,7 +8000,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 44,
     "daysInClan": 1,
-    "joinedDate": "2026-10-02"
+    "joinedDate": "2026-10-02",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#PCR0GRPR8",
@@ -7885,7 +8059,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 217,
     "daysInClan": 1,
-    "joinedDate": "2026-10-02"
+    "joinedDate": "2026-10-02",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GU82Q92JP",
@@ -7921,7 +8098,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 119,
     "daysInClan": 141,
-    "joinedDate": "2026-05-03"
+    "joinedDate": "2026-05-03",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   },
   {
     "tag": "#GYU8QLLVJ",
@@ -7977,7 +8157,10 @@ const CLAN_MEMBERS = [
     },
     "warStars": 8,
     "daysInClan": 1,
-    "joinedDate": "2026-09-21"
+    "joinedDate": "2026-09-21",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
   }
 ];
 
@@ -8348,6 +8531,8 @@ function initJapanTab() {
         const isLeader = m.role === 'leader';
         const cardClass = isLeader ? 'council-card shogun' : 'council-card daimyo';
         const crownTag = isLeader ? '<div class="shogun-crown">👑 XÓGUM SUPREMO • LÍDER GERAL</div>' : '';
+        const isIdle = m.isIdle || (m.offlineDays && m.offlineDays >= 2);
+        const idleCouncilTag = isIdle ? `<div class="council-role-badge idle-badge">😴 JOGADOR OCIOSO (${m.offlineDays || 2}d off)</div>` : '';
         const rolePill = isLeader
             ? '<div class="council-role-badge shogun-badge">⚔️ 征夷大将軍 • LÍDER SUPREMO</div>'
             : '<div class="council-role-badge daimyo-badge">⛩️ 大名 • CO-LÍDER DO CONSELHO</div>';
@@ -8364,7 +8549,8 @@ function initJapanTab() {
                     </div>
                     <div class="council-name-block">
                         ${rolePill}
-                        <div class="council-name">${m.name}</div>
+                        ${idleCouncilTag}
+                        <div class="council-name" style="margin-top:4px;">${m.name}</div>
                         <div class="j-member-tag" style="font-family:'Share Tech Mono'; font-size:0.8rem; color:rgba(255,215,0,0.6);">${m.tag}</div>
                     </div>
                 </div>
@@ -8398,16 +8584,19 @@ function initJapanTab() {
     // Update Counts
     const adminCount = generalMembers.filter(m => m.role === 'admin').length;
     const regularCount = generalMembers.filter(m => m.role === 'member').length;
+    const totalIdleCount = CLAN_MEMBERS.filter(m => m.isIdle || (m.offlineDays && m.offlineDays >= 2)).length;
     const totalGeneral = generalMembers.length;
 
     const countAllEl = document.getElementById('countAll');
     const countAdminEl = document.getElementById('countAdmin');
     const countMemberEl = document.getElementById('countMember');
+    const countIdleEl = document.getElementById('countIdle');
     const japanMemberCountEl = document.getElementById('japanMemberCount');
 
     if (countAllEl) countAllEl.textContent = totalGeneral;
     if (countAdminEl) countAdminEl.textContent = adminCount;
     if (countMemberEl) countMemberEl.textContent = regularCount;
+    if (countIdleEl) countIdleEl.textContent = totalIdleCount;
     if (japanMemberCountEl) japanMemberCountEl.textContent = totalGeneral;
 
     // Render General Members Table
@@ -8429,13 +8618,21 @@ function renderGeneralMembers(list) {
             ? `<span class="j-role-pill admin">⛩️ Ancião (Hatamoto)</span>`
             : `<span class="j-role-pill member">⚔️ Samurai (Membro)</span>`;
 
+        const isIdle = m.isIdle || (m.offlineDays && m.offlineDays >= 2);
+        const idleBadge = isIdle
+            ? `<span class="j-idle-badge" title="Saldo: ${m.idleCount || 2}x ocioso (consecutivos)">😴 Jogador Ocioso (${m.offlineDays || 2}d off)</span>`
+            : `<span class="j-active-badge">🟢 Ativo</span>`;
+
         const donColor = m.donations >= 100 ? '#00ff88' : '#e0e6f0';
 
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${rankBadge}</td>
             <td>
-                <div class="j-member-name">${m.name}</div>
+                <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                    <span class="j-member-name">${m.name}</span>
+                    ${idleBadge}
+                </div>
                 <div style="font-family:'Share Tech Mono'; font-size:0.75rem; color:rgba(255,255,255,0.4);">${m.tag}</div>
             </td>
             <td>${rolePill}</td>
@@ -8456,7 +8653,12 @@ function filterJapanMembers() {
     const generalMembers = CLAN_MEMBERS.filter(m => m.role !== 'leader' && m.role !== 'coLeader');
 
     const filtered = generalMembers.filter(m => {
-        if (activeJapanFilter !== 'all' && m.role !== activeJapanFilter) return false;
+        if (activeJapanFilter === 'idle') {
+            if (!m.isIdle && (!m.offlineDays || m.offlineDays < 2)) return false;
+        } else if (activeJapanFilter !== 'all' && m.role !== activeJapanFilter) {
+            return false;
+        }
+
         if (!term) return true;
 
         const nameMatch = m.name.toLowerCase().includes(term);
@@ -8471,6 +8673,8 @@ function filterJapanMembers() {
     const japanMemberCountEl = document.getElementById('japanMemberCount');
     if (japanMemberCountEl) japanMemberCountEl.textContent = filtered.length;
 }
+
+
 
 function setJapanFilter(role, btn) {
     activeJapanFilter = role;
