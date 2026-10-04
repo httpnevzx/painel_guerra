@@ -51,7 +51,7 @@
       "id": 44000023,
       "name": "Iron League III"
     },
-    "warStars": 284,
+    "warStars": 300,
     "daysInClan": 315,
     "joinedDate": "2023-11-10"
   },
@@ -107,7 +107,7 @@
       "id": 44000023,
       "name": "Iron League III"
     },
-    "warStars": 210,
+    "warStars": 219,
     "daysInClan": 135,
     "joinedDate": "2026-05-09"
   },
@@ -163,7 +163,7 @@
       "id": 44000002,
       "name": "Wood League III"
     },
-    "warStars": 523,
+    "warStars": 542,
     "daysInClan": 245,
     "joinedDate": "2024-01-19"
   },
@@ -219,7 +219,7 @@
       "id": 44000021,
       "name": "Brass League II"
     },
-    "warStars": 989,
+    "warStars": 1000,
     "daysInClan": 420,
     "joinedDate": "2023-07-28"
   },
@@ -275,7 +275,7 @@
       "id": 44000023,
       "name": "Iron League III"
     },
-    "warStars": 267,
+    "warStars": 276,
     "daysInClan": 290,
     "joinedDate": "2023-12-05"
   },
@@ -331,7 +331,7 @@
       "id": 44000023,
       "name": "Iron League III"
     },
-    "warStars": 410,
+    "warStars": 412,
     "daysInClan": 1,
     "joinedDate": "2026-09-24"
   },
@@ -387,7 +387,7 @@
       "id": 44000020,
       "name": "Brass League III"
     },
-    "warStars": 475,
+    "warStars": 479,
     "daysInClan": 19,
     "joinedDate": "2026-09-02"
   },
@@ -499,7 +499,7 @@
       "id": 44000021,
       "name": "Brass League II"
     },
-    "warStars": 119,
+    "warStars": 131,
     "daysInClan": 93,
     "joinedDate": "2026-06-20"
   },
@@ -555,7 +555,7 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 230,
+    "warStars": 233,
     "daysInClan": 17,
     "joinedDate": "2026-09-04"
   },
@@ -611,7 +611,7 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 83,
+    "warStars": 101,
     "daysInClan": 59,
     "joinedDate": "2026-07-24"
   },
@@ -667,7 +667,7 @@
       "id": 44000021,
       "name": "Brass League II"
     },
-    "warStars": 141,
+    "warStars": 146,
     "daysInClan": 17,
     "joinedDate": "2026-09-04"
   },
@@ -723,7 +723,7 @@
       "id": 44000020,
       "name": "Brass League III"
     },
-    "warStars": 167,
+    "warStars": 178,
     "daysInClan": 66,
     "joinedDate": "2026-07-17"
   },
@@ -835,7 +835,7 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 112,
+    "warStars": 124,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
@@ -891,7 +891,7 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 203,
+    "warStars": 212,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
@@ -983,7 +983,7 @@
       "id": 44000012,
       "name": "Stone League III"
     },
-    "warStars": 97,
+    "warStars": 113,
     "daysInClan": 102,
     "joinedDate": "2026-06-11"
   },
@@ -1039,7 +1039,7 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 93,
+    "warStars": 110,
     "daysInClan": 1,
     "joinedDate": "2026-09-21"
   },
@@ -1095,7 +1095,7 @@
       "id": 44000016,
       "name": "Copper League IV"
     },
-    "warStars": 900,
+    "warStars": 924,
     "daysInClan": 140,
     "joinedDate": "2026-05-04"
   },
@@ -1187,7 +1187,7 @@
       "id": 44000021,
       "name": "Brass League II"
     },
-    "warStars": 90,
+    "warStars": 96,
     "daysInClan": 64,
     "joinedDate": "2026-07-19"
   },
@@ -1279,7 +1279,7 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 137,
+    "warStars": 142,
     "daysInClan": 35,
     "joinedDate": "2026-08-17"
   },
@@ -1335,7 +1335,7 @@
       "id": 44000021,
       "name": "Brass League II"
     },
-    "warStars": 22,
+    "warStars": 32,
     "daysInClan": 83,
     "joinedDate": "2026-06-30"
   },
@@ -1362,7 +1362,7 @@
       }
     },
     "trophies": 405,
-    "builderBaseTrophies": 2424,
+    "builderBaseTrophies": 2383,
     "clanRank": 26,
     "previousClanRank": 26,
     "donations": 187,
@@ -1388,10 +1388,10 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000022,
-      "name": "Brass League I"
+      "id": 44000021,
+      "name": "Brass League II"
     },
-    "warStars": 179,
+    "warStars": 199,
     "daysInClan": 1,
     "joinedDate": "2026-09-21"
   },
@@ -1447,7 +1447,7 @@
       "id": 44000008,
       "name": "Clay League II"
     },
-    "warStars": 1071,
+    "warStars": 1080,
     "daysInClan": 1,
     "joinedDate": "2026-09-24"
   },
@@ -1727,7 +1727,7 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 740,
+    "warStars": 741,
     "daysInClan": 60,
     "joinedDate": "2026-07-23"
   },
@@ -1839,7 +1839,7 @@
       "id": 44000020,
       "name": "Brass League III"
     },
-    "warStars": 56,
+    "warStars": 60,
     "daysInClan": 1,
     "joinedDate": "2026-09-22"
   },
@@ -1875,7 +1875,7 @@
       "id": 44000012,
       "name": "Stone League III"
     },
-    "warStars": 18,
+    "warStars": 24,
     "daysInClan": 80,
     "joinedDate": "2026-07-03"
   },
@@ -2411,7 +2411,7 @@
       "id": 44000000,
       "name": "Wood League V"
     },
-    "warStars": 102,
+    "warStars": 119,
     "daysInClan": 141,
     "joinedDate": "2026-05-03"
   },
@@ -2467,7 +2467,7 @@
       "id": 44000017,
       "name": "Copper League III"
     },
-    "warStars": 5,
+    "warStars": 8,
     "daysInClan": 1,
     "joinedDate": "2026-09-21"
   }
