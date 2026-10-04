@@ -536,14 +536,14 @@
         "name": "kayky2005",
         "townhallLevel": 12,
         "mapPosition": 22,
-        "opponentAttacks": 1,
+        "opponentAttacks": 2,
         "bestOpponentAttack": {
-          "attackerTag": "#GCGPLR0P8",
+          "attackerTag": "#QV22RVJ22",
           "defenderTag": "#GYU8QLLVJ",
           "stars": 1,
-          "destructionPercentage": 83,
-          "order": 9,
-          "duration": 154
+          "destructionPercentage": 95,
+          "order": 32,
+          "duration": 146
         },
         "donations": 2,
         "role": "member"
@@ -576,9 +576,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/zsWKRuPqQqr53PPYq-7xOrX-fgFX2JP5_JPNyKrooDQ.png"
     },
     "clanLevel": 12,
-    "attacks": 16,
+    "attacks": 17,
     "stars": 41,
-    "destructionPercentage": 51.63333333333333,
+    "destructionPercentage": 52.03333333333333,
     "members": [
       {
         "tag": "#G9JJJ809J",
@@ -938,6 +938,16 @@
         "name": "ardiansah",
         "townhallLevel": 13,
         "mapPosition": 14,
+        "attacks": [
+          {
+            "attackerTag": "#QV22RVJ22",
+            "defenderTag": "#GYU8QLLVJ",
+            "stars": 1,
+            "destructionPercentage": 95,
+            "order": 32,
+            "duration": 146
+          }
+        ],
         "opponentAttacks": 0
       },
       {
