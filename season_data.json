@@ -166,9 +166,9 @@
       "name": "Jonas",
       "role": "coLeader",
       "townHallLevel": 15,
-      "totalStars": 15,
-      "totalAttacks": 7,
-      "totalDestruction": 674.0,
+      "totalStars": 18,
+      "totalAttacks": 8,
+      "totalDestruction": 774.0,
       "warCount": 7,
       "donations": 1327,
       "townhallLevel": 15
@@ -1686,9 +1686,9 @@
         "name": "Jonas",
         "role": "coLeader",
         "townHallLevel": 15,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#9JUJVPVUQ": {
         "name": "Targaryen",
