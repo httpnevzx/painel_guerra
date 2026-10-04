@@ -515,9 +515,9 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 0,
-      "totalAttacks": 0,
-      "totalDestruction": 0.0,
+      "totalStars": 1,
+      "totalAttacks": 1,
+      "totalDestruction": 55.0,
       "warCount": 3,
       "donations": 0
     },
@@ -551,9 +551,9 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 0,
-      "totalAttacks": 1,
-      "totalDestruction": 42.0,
+      "totalStars": 3,
+      "totalAttacks": 2,
+      "totalDestruction": 142.0,
       "warCount": 3,
       "donations": 0
     },
@@ -1718,9 +1718,9 @@
         "name": "Princip3",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 1,
+        "attacks": 1,
+        "destruction": 55
       },
       "#GVRPCCLUL": {
         "name": "Bruxo",
@@ -1814,9 +1814,9 @@
         "name": "lucax",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#PCR0GRPR8": {
         "name": "BR4BØX",
