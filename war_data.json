@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 12,
-    "stars": 28,
-    "destructionPercentage": 35.6,
+    "attacks": 13,
+    "stars": 30,
+    "destructionPercentage": 37.7,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -284,6 +284,16 @@
         "name": "LINKIN PARK",
         "townhallLevel": 15,
         "mapPosition": 1,
+        "attacks": [
+          {
+            "attackerTag": "#9UYPCVPLL",
+            "defenderTag": "#LPV028C8P",
+            "stars": 2,
+            "destructionPercentage": 63,
+            "order": 24,
+            "duration": 76
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 1215,
         "role": "coLeader"
@@ -868,7 +878,15 @@
         "name": "#Shensey",
         "townhallLevel": 16,
         "mapPosition": 3,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#9UYPCVPLL",
+          "defenderTag": "#LPV028C8P",
+          "stars": 2,
+          "destructionPercentage": 63,
+          "order": 24,
+          "duration": 76
+        }
       },
       {
         "tag": "#GC88YQU0R",
