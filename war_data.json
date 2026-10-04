@@ -339,7 +339,15 @@
             "duration": 88
           }
         ],
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GCP8VQJLC",
+          "defenderTag": "#90YCRLUY0",
+          "stars": 1,
+          "destructionPercentage": 86,
+          "order": 30,
+          "duration": 117
+        },
         "donations": 1277,
         "role": "admin"
       },
@@ -560,9 +568,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/zsWKRuPqQqr53PPYq-7xOrX-fgFX2JP5_JPNyKrooDQ.png"
     },
     "clanLevel": 12,
-    "attacks": 14,
-    "stars": 37,
-    "destructionPercentage": 45.43333333333333,
+    "attacks": 15,
+    "stars": 38,
+    "destructionPercentage": 48.3,
     "members": [
       {
         "tag": "#G9JJJ809J",
@@ -747,6 +755,16 @@
         "name": "mutia aceh",
         "townhallLevel": 13,
         "mapPosition": 15,
+        "attacks": [
+          {
+            "attackerTag": "#GCP8VQJLC",
+            "defenderTag": "#90YCRLUY0",
+            "stars": 1,
+            "destructionPercentage": 86,
+            "order": 30,
+            "duration": 117
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#90YCRLUY0",
