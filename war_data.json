@@ -329,7 +329,15 @@
         "name": "deka",
         "townhallLevel": 11,
         "mapPosition": 30,
-        "opponentAttacks": 0,
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GRRY0JJ0G",
+          "defenderTag": "#R9PV90U00",
+          "stars": 0,
+          "destructionPercentage": 18,
+          "order": 20,
+          "duration": 32
+        },
         "donations": 0,
         "role": "admin"
       },
@@ -484,15 +492,25 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/pkMtjECINiYwpSHjNGwn0mV5ZWzHFPLwQfdTQWc3cqg.png"
     },
     "clanLevel": 12,
-    "attacks": 2,
+    "attacks": 3,
     "stars": 5,
-    "destructionPercentage": 6.166666666666667,
+    "destructionPercentage": 6.766666666666667,
     "members": [
       {
         "tag": "#GRRY0JJ0G",
         "name": "مالك الظلال",
         "townhallLevel": 8,
         "mapPosition": 14,
+        "attacks": [
+          {
+            "attackerTag": "#GRRY0JJ0G",
+            "defenderTag": "#R9PV90U00",
+            "stars": 0,
+            "destructionPercentage": 18,
+            "order": 20,
+            "duration": 32
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#GYYCGVV2C",
