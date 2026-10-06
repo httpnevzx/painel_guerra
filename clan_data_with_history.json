@@ -21,7 +21,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png"
       }
     },
-    "trophies": 0,
+    "trophies": 27,
     "builderBaseTrophies": 2774,
     "clanRank": 1,
     "previousClanRank": 1,
@@ -202,7 +202,7 @@
     "builderBaseTrophies": 2385,
     "clanRank": 4,
     "previousClanRank": 4,
-    "donations": 202,
+    "donations": 303,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -675,7 +675,7 @@
     "clanRank": 12,
     "previousClanRank": 12,
     "donations": 81,
-    "donationsReceived": 31,
+    "donationsReceived": 62,
     "playerHouse": {
       "elements": [
         {
@@ -1441,7 +1441,7 @@
     "clanRank": 26,
     "previousClanRank": 26,
     "donations": 160,
-    "donationsReceived": 125,
+    "donationsReceived": 196,
     "playerHouse": {
       "elements": [
         {
@@ -1850,7 +1850,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2203,
+    "builderBaseTrophies": 2163,
     "clanRank": 33,
     "previousClanRank": 34,
     "donations": 2,
@@ -1876,8 +1876,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
+      "id": 44000020,
+      "name": "Brass League III"
     },
     "warStars": 91,
     "daysInClan": 23,
@@ -2540,7 +2540,7 @@
     "builderBaseTrophies": 40,
     "clanRank": 46,
     "previousClanRank": 46,
-    "donations": 3,
+    "donations": 4,
     "donationsReceived": 40,
     "builderBaseLeague": {
       "id": 44000000,
