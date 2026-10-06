@@ -562,9 +562,9 @@
       "role": "coLeader",
       "townHallLevel": 13,
       "townhallLevel": 13,
-      "totalStars": 6,
-      "totalAttacks": 3,
-      "totalDestruction": 212.0,
+      "totalStars": 9,
+      "totalAttacks": 4,
+      "totalDestruction": 312.0,
       "warCount": 5,
       "donations": 790
     },
@@ -2253,9 +2253,9 @@
         "name": "Cibele❤️",
         "role": "coLeader",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#PUQGPV8PC": {
         "name": "PITBULL.E",
