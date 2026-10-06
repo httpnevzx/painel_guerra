@@ -153,9 +153,9 @@
       "name": "Robson",
       "role": "member",
       "townHallLevel": 13,
-      "totalStars": 18,
-      "totalAttacks": 7,
-      "totalDestruction": 689.0,
+      "totalStars": 21,
+      "totalAttacks": 8,
+      "totalDestruction": 789.0,
       "warCount": 9,
       "donations": 188,
       "townhallLevel": 13
@@ -2173,9 +2173,9 @@
         "name": "Robson",
         "role": "member",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#292YJJ02V": {
         "name": "Nevzx 躾⛩️",
