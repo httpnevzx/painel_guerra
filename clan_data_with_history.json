@@ -228,7 +228,7 @@
       "id": 44000021,
       "name": "Brass League II"
     },
-    "warStars": 1004,
+    "warStars": 1007,
     "daysInClan": 420,
     "joinedDate": "2023-07-28",
     "offlineDays": 0,
@@ -1258,6 +1258,65 @@
     "isIdle": false
   },
   {
+    "tag": "#R9PV90U00",
+    "name": "deka",
+    "role": "admin",
+    "townHallLevel": 11,
+    "expLevel": 92,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000011,
+      "name": "Wizard League 11",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+      }
+    },
+    "trophies": 9,
+    "builderBaseTrophies": 2307,
+    "clanRank": 23,
+    "previousClanRank": 25,
+    "donations": 0,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000154
+        },
+        {
+          "type": "walls",
+          "id": 82000155
+        },
+        {
+          "type": "roof",
+          "id": 82000157
+        },
+        {
+          "type": "decoration",
+          "id": 82000156
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 35,
+    "daysInClan": 83,
+    "joinedDate": "2026-06-30",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
+  },
+  {
     "tag": "#Y8PLPVJJ0",
     "name": "Danielsrabelo",
     "role": "member",
@@ -1281,7 +1340,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2529,
-    "clanRank": 23,
+    "clanRank": 24,
     "previousClanRank": 21,
     "donations": 0,
     "donationsReceived": 0,
@@ -1340,7 +1399,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 1831,
-    "clanRank": 24,
+    "clanRank": 25,
     "previousClanRank": 23,
     "donations": 0,
     "donationsReceived": 0,
@@ -1351,65 +1410,6 @@
     "warStars": 190,
     "daysInClan": 142,
     "joinedDate": "2026-05-02",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
-  },
-  {
-    "tag": "#R9PV90U00",
-    "name": "deka",
-    "role": "admin",
-    "townHallLevel": 11,
-    "expLevel": 92,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000011,
-      "name": "Wizard League 11",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 2307,
-    "clanRank": 25,
-    "previousClanRank": 25,
-    "donations": 0,
-    "donationsReceived": 0,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000154
-        },
-        {
-          "type": "walls",
-          "id": 82000155
-        },
-        {
-          "type": "roof",
-          "id": 82000157
-        },
-        {
-          "type": "decoration",
-          "id": 82000156
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
-    },
-    "warStars": 35,
-    "daysInClan": 83,
-    "joinedDate": "2026-06-30",
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false
@@ -1554,7 +1554,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
       }
     },
-    "trophies": 15,
+    "trophies": 44,
     "builderBaseTrophies": 2069,
     "clanRank": 28,
     "previousClanRank": 29,
@@ -2046,7 +2046,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2362,
+    "builderBaseTrophies": 2313,
     "clanRank": 37,
     "previousClanRank": 38,
     "donations": 0,
