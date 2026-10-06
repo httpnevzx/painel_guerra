@@ -393,9 +393,9 @@
       "name": "ÉOBRABOXX",
       "role": "admin",
       "townHallLevel": 14,
-      "totalStars": 30,
-      "totalAttacks": 11,
-      "totalDestruction": 1074.0,
+      "totalStars": 33,
+      "totalAttacks": 12,
+      "totalDestruction": 1174.0,
       "warCount": 9,
       "donations": 638,
       "townhallLevel": 14
@@ -2389,9 +2389,9 @@
         "name": "ÉOBRABOXX",
         "role": "admin",
         "townHallLevel": 14,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       }
     },
     "20261005T201052.000Z": {
