@@ -143,7 +143,7 @@
     "builderBaseTrophies": 220,
     "clanRank": 3,
     "previousClanRank": 3,
-    "donations": 15,
+    "donations": 60,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -380,7 +380,7 @@
     "clanRank": 7,
     "previousClanRank": 8,
     "donations": 284,
-    "donationsReceived": 118,
+    "donationsReceived": 133,
     "playerHouse": {
       "elements": [
         {
@@ -700,7 +700,7 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 107,
+    "warStars": 110,
     "daysInClan": 59,
     "joinedDate": "2026-07-24",
     "offlineDays": 0,
@@ -1559,7 +1559,7 @@
     "clanRank": 28,
     "previousClanRank": 29,
     "donations": 40,
-    "donationsReceived": 42,
+    "donationsReceived": 72,
     "playerHouse": {
       "elements": [
         {
