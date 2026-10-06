@@ -877,7 +877,7 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 128,
+    "warStars": 131,
     "daysInClan": 1,
     "joinedDate": "2026-09-22",
     "offlineDays": 0,
@@ -1160,45 +1160,6 @@
     "isIdle": false
   },
   {
-    "tag": "#Q0YGRQLCQ",
-    "name": "mestre",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 124,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000011,
-      "name": "Wizard League 11",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
-      }
-    },
-    "trophies": 137,
-    "builderBaseTrophies": 2279,
-    "clanRank": 21,
-    "previousClanRank": 22,
-    "donations": 0,
-    "donationsReceived": 75,
-    "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
-    },
-    "warStars": 99,
-    "daysInClan": 64,
-    "joinedDate": "2026-07-19",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
-  },
-  {
     "tag": "#28UVGLLQP",
     "name": "Carlos123wx",
     "role": "member",
@@ -1220,9 +1181,9 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
       }
     },
-    "trophies": 120,
+    "trophies": 186,
     "builderBaseTrophies": 2499,
-    "clanRank": 22,
+    "clanRank": 21,
     "previousClanRank": 24,
     "donations": 0,
     "donationsReceived": 47,
@@ -1253,6 +1214,45 @@
     "warStars": 145,
     "daysInClan": 35,
     "joinedDate": "2026-08-17",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
+  },
+  {
+    "tag": "#Q0YGRQLCQ",
+    "name": "mestre",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 124,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000011,
+      "name": "Wizard League 11",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+      }
+    },
+    "trophies": 137,
+    "builderBaseTrophies": 2279,
+    "clanRank": 22,
+    "previousClanRank": 22,
+    "donations": 0,
+    "donationsReceived": 75,
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 99,
+    "daysInClan": 64,
+    "joinedDate": "2026-07-19",
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false
@@ -2448,7 +2448,7 @@
       "id": 44000018,
       "name": "Copper League II"
     },
-    "warStars": 47,
+    "warStars": 50,
     "daysInClan": 1,
     "joinedDate": "2026-10-02",
     "offlineDays": 1,
