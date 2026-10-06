@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 9,
-    "stars": 27,
-    "destructionPercentage": 30.0,
+    "attacks": 10,
+    "stars": 30,
+    "destructionPercentage": 33.333333333333336,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -188,6 +188,16 @@
         "name": "Cibele❤️",
         "townhallLevel": 13,
         "mapPosition": 9,
+        "attacks": [
+          {
+            "attackerTag": "#YJVRGUGVJ",
+            "defenderTag": "#GJLQUVPPP",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 11,
+            "duration": 50
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 0,
         "role": "coLeader"
@@ -419,7 +429,15 @@
         "name": "ليث",
         "townhallLevel": 9,
         "mapPosition": 13,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#YJVRGUGVJ",
+          "defenderTag": "#GJLQUVPPP",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 11,
+          "duration": 50
+        }
       },
       {
         "tag": "#GPJGVUYPJ",
