@@ -430,9 +430,9 @@
       "role": "member",
       "townHallLevel": 13,
       "townhallLevel": 13,
-      "totalStars": 8,
-      "totalAttacks": 5,
-      "totalDestruction": 444.0,
+      "totalStars": 11,
+      "totalAttacks": 6,
+      "totalDestruction": 544.0,
       "warCount": 8,
       "donations": 0
     },
@@ -586,9 +586,9 @@
       "role": "member",
       "townHallLevel": 12,
       "townhallLevel": 12,
-      "totalStars": 3,
-      "totalAttacks": 2,
-      "totalDestruction": 142.0,
+      "totalStars": 6,
+      "totalAttacks": 3,
+      "totalDestruction": 242.0,
       "warCount": 5,
       "donations": 0
     },
@@ -2229,9 +2229,9 @@
         "name": "Igorzin",
         "role": "member",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#GR982GPU": {
         "name": "Princip3",
@@ -2333,9 +2333,9 @@
         "name": "lucax",
         "role": "member",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#PCR0GRPR8": {
         "name": "BR4BØX",
