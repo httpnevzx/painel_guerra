@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 12,
-    "stars": 36,
-    "destructionPercentage": 40.0,
+    "attacks": 13,
+    "stars": 39,
+    "destructionPercentage": 43.333333333333336,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -300,6 +300,16 @@
         "name": "#BAD BOY#",
         "townhallLevel": 12,
         "mapPosition": 18,
+        "attacks": [
+          {
+            "attackerTag": "#2LGUVVC99",
+            "defenderTag": "#GVL2VRRPL",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 14,
+            "duration": 80
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 41,
         "role": "admin"
@@ -664,7 +674,15 @@
         "name": "建业晓曼",
         "townhallLevel": 7,
         "mapPosition": 29,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#2LGUVVC99",
+          "defenderTag": "#GVL2VRRPL",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 14,
+          "duration": 80
+        }
       },
       {
         "tag": "#G02Q8QGCJ",
