@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 16,
-    "stars": 48,
-    "destructionPercentage": 53.333333333333336,
+    "attacks": 17,
+    "stars": 51,
+    "destructionPercentage": 56.666666666666664,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -60,6 +60,16 @@
         "name": "Robson",
         "townhallLevel": 13,
         "mapPosition": 14,
+        "attacks": [
+          {
+            "attackerTag": "#GJLC89UG8",
+            "defenderTag": "#R288VLYGP",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 19,
+            "duration": 62
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 0,
         "role": "member"
@@ -576,7 +586,15 @@
         "name": "البارون",
         "townhallLevel": 8,
         "mapPosition": 18,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GJLC89UG8",
+          "defenderTag": "#R288VLYGP",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 19,
+          "duration": 62
+        }
       },
       {
         "tag": "#GRGCV0VPV",
