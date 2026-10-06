@@ -202,7 +202,7 @@
     "builderBaseTrophies": 2385,
     "clanRank": 4,
     "previousClanRank": 4,
-    "donations": 157,
+    "donations": 199,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -1152,7 +1152,7 @@
       "id": 44000016,
       "name": "Copper League IV"
     },
-    "warStars": 925,
+    "warStars": 928,
     "daysInClan": 140,
     "joinedDate": "2026-05-04",
     "offlineDays": 0,
@@ -1436,12 +1436,12 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
       }
     },
-    "trophies": 226,
+    "trophies": 297,
     "builderBaseTrophies": 2487,
     "clanRank": 26,
     "previousClanRank": 26,
     "donations": 160,
-    "donationsReceived": 83,
+    "donationsReceived": 125,
     "playerHouse": {
       "elements": [
         {
@@ -1596,7 +1596,7 @@
     "name": "@artur__mendes",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 102,
+    "expLevel": 103,
     "league": {
       "id": 29000000,
       "name": "Unranked",
