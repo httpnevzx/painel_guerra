@@ -54,7 +54,7 @@
     "warStars": 306,
     "daysInClan": 315,
     "joinedDate": "2023-11-10",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -113,7 +113,7 @@
     "warStars": 223,
     "daysInClan": 135,
     "joinedDate": "2026-05-09",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -172,7 +172,7 @@
     "warStars": 548,
     "daysInClan": 245,
     "joinedDate": "2024-01-19",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -231,7 +231,7 @@
     "warStars": 1007,
     "daysInClan": 420,
     "joinedDate": "2023-07-28",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -290,7 +290,7 @@
     "warStars": 282,
     "daysInClan": 290,
     "joinedDate": "2023-12-05",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -349,7 +349,7 @@
     "warStars": 412,
     "daysInClan": 1,
     "joinedDate": "2026-09-24",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -408,7 +408,7 @@
     "warStars": 955,
     "daysInClan": 162,
     "joinedDate": "2026-04-12",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -467,7 +467,7 @@
     "warStars": 484,
     "daysInClan": 19,
     "joinedDate": "2026-09-02",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -526,7 +526,7 @@
     "warStars": 239,
     "daysInClan": 17,
     "joinedDate": "2026-09-04",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -585,7 +585,7 @@
     "warStars": 134,
     "daysInClan": 93,
     "joinedDate": "2026-06-20",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -641,10 +641,10 @@
       "id": 44000020,
       "name": "Brass League III"
     },
-    "warStars": 179,
+    "warStars": 182,
     "daysInClan": 66,
     "joinedDate": "2026-07-17",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -703,7 +703,7 @@
     "warStars": 110,
     "daysInClan": 59,
     "joinedDate": "2026-07-24",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -762,7 +762,7 @@
     "warStars": 131,
     "daysInClan": 1,
     "joinedDate": "2026-09-22",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -821,7 +821,7 @@
     "warStars": 960,
     "daysInClan": 45,
     "joinedDate": "2026-08-07",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -880,7 +880,7 @@
     "warStars": 146,
     "daysInClan": 17,
     "joinedDate": "2026-09-04",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -939,7 +939,7 @@
     "warStars": 62,
     "daysInClan": 36,
     "joinedDate": "2026-08-16",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -965,7 +965,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 52,
+    "trophies": 66,
     "builderBaseTrophies": 2377,
     "clanRank": 17,
     "previousClanRank": 19,
@@ -1003,104 +1003,6 @@
     "isIdle": false
   },
   {
-    "tag": "#G9ULQQJP2",
-    "name": "Hedris",
-    "role": "admin",
-    "townHallLevel": 12,
-    "expLevel": 100,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000012,
-      "name": "Wizard League 12",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
-      }
-    },
-    "trophies": 9,
-    "builderBaseTrophies": 1290,
-    "clanRank": 18,
-    "previousClanRank": 17,
-    "donations": 0,
-    "donationsReceived": 0,
-    "builderBaseLeague": {
-      "id": 44000012,
-      "name": "Stone League III"
-    },
-    "warStars": 117,
-    "daysInClan": 102,
-    "joinedDate": "2026-06-11",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
-  },
-  {
-    "tag": "#PUQGPV8PC",
-    "name": "PITBULL.E",
-    "role": "member",
-    "townHallLevel": 12,
-    "expLevel": 138,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000012,
-      "name": "Wizard League 12",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 2573,
-    "clanRank": 19,
-    "previousClanRank": 18,
-    "donations": 0,
-    "donationsReceived": 40,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000002
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000017
-        },
-        {
-          "type": "decoration",
-          "id": 82000060
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000022,
-      "name": "Brass League I"
-    },
-    "warStars": 212,
-    "daysInClan": 1,
-    "joinedDate": "2026-09-22",
-    "offlineDays": 0,
-    "idleCount": 3,
-    "isIdle": false
-  },
-  {
     "tag": "#2LGUVVC99",
     "name": "#BAD BOY#",
     "role": "admin",
@@ -1122,9 +1024,9 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 0,
+    "trophies": 28,
     "builderBaseTrophies": 1699,
-    "clanRank": 20,
+    "clanRank": 18,
     "previousClanRank": 20,
     "donations": 41,
     "donationsReceived": 0,
@@ -1155,8 +1057,106 @@
     "warStars": 928,
     "daysInClan": 140,
     "joinedDate": "2026-05-04",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
+    "isIdle": false
+  },
+  {
+    "tag": "#G9ULQQJP2",
+    "name": "Hedris",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 100,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000012,
+      "name": "Wizard League 12",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+      }
+    },
+    "trophies": 9,
+    "builderBaseTrophies": 1290,
+    "clanRank": 19,
+    "previousClanRank": 17,
+    "donations": 0,
+    "donationsReceived": 0,
+    "builderBaseLeague": {
+      "id": 44000012,
+      "name": "Stone League III"
+    },
+    "warStars": 117,
+    "daysInClan": 102,
+    "joinedDate": "2026-06-11",
+    "offlineDays": 1,
+    "idleCount": 0,
+    "isIdle": false
+  },
+  {
+    "tag": "#PUQGPV8PC",
+    "name": "PITBULL.E",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 138,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000012,
+      "name": "Wizard League 12",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2573,
+    "clanRank": 20,
+    "previousClanRank": 18,
+    "donations": 0,
+    "donationsReceived": 40,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000017
+        },
+        {
+          "type": "decoration",
+          "id": 82000060
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "warStars": 212,
+    "daysInClan": 1,
+    "joinedDate": "2026-09-22",
+    "offlineDays": 1,
+    "idleCount": 3,
     "isIdle": false
   },
   {
@@ -1214,7 +1214,7 @@
     "warStars": 145,
     "daysInClan": 35,
     "joinedDate": "2026-08-17",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -1253,7 +1253,7 @@
     "warStars": 99,
     "daysInClan": 64,
     "joinedDate": "2026-07-19",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -1312,7 +1312,7 @@
     "warStars": 35,
     "daysInClan": 83,
     "joinedDate": "2026-06-30",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -1371,7 +1371,7 @@
     "warStars": 133,
     "daysInClan": 54,
     "joinedDate": "2026-07-29",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -1410,7 +1410,7 @@
     "warStars": 190,
     "daysInClan": 142,
     "joinedDate": "2026-05-02",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -1469,7 +1469,7 @@
     "warStars": 204,
     "daysInClan": 1,
     "joinedDate": "2026-09-21",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -1528,7 +1528,7 @@
     "warStars": 1080,
     "daysInClan": 1,
     "joinedDate": "2026-09-24",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -1587,7 +1587,7 @@
     "warStars": 192,
     "daysInClan": 1,
     "joinedDate": "2026-09-22",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -1646,7 +1646,7 @@
     "warStars": 53,
     "daysInClan": 42,
     "joinedDate": "2026-08-10",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 1,
     "isIdle": false
   },
@@ -1705,7 +1705,7 @@
     "warStars": 160,
     "daysInClan": 1,
     "joinedDate": "2026-09-28",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -1764,9 +1764,9 @@
     "warStars": 332,
     "daysInClan": 1,
     "joinedDate": "2026-09-28",
-    "offlineDays": 1,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true
   },
   {
     "tag": "#9JUJVPVUQ",
@@ -1823,9 +1823,9 @@
     "warStars": 742,
     "daysInClan": 60,
     "joinedDate": "2026-07-23",
-    "offlineDays": 1,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true
   },
   {
     "tag": "#Y2LP8RV9J",
@@ -1882,7 +1882,7 @@
     "warStars": 91,
     "daysInClan": 23,
     "joinedDate": "2026-08-29",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -1941,9 +1941,9 @@
     "warStars": 62,
     "daysInClan": 1,
     "joinedDate": "2026-09-22",
-    "offlineDays": 1,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true
   },
   {
     "tag": "#GUQ822R8Q",
@@ -1980,7 +1980,7 @@
     "warStars": 24,
     "daysInClan": 80,
     "joinedDate": "2026-07-03",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -2019,7 +2019,7 @@
     "warStars": 0,
     "daysInClan": 1,
     "joinedDate": "2026-10-02",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -2058,9 +2058,9 @@
     "warStars": 28,
     "daysInClan": 49,
     "joinedDate": "2026-08-03",
-    "offlineDays": 1,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true
   },
   {
     "tag": "#8GY0Q9JVY",
@@ -2117,7 +2117,7 @@
     "warStars": 120,
     "daysInClan": 1,
     "joinedDate": "2026-10-05",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -2176,7 +2176,7 @@
     "warStars": 60,
     "daysInClan": 1,
     "joinedDate": "2026-09-22",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -2235,9 +2235,9 @@
     "warStars": 19,
     "daysInClan": 1,
     "joinedDate": "2026-09-28",
-    "offlineDays": 1,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true
   },
   {
     "tag": "#G0JUG29CG",
@@ -2294,9 +2294,9 @@
     "warStars": 31,
     "daysInClan": 52,
     "joinedDate": "2026-07-31",
-    "offlineDays": 1,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true
   },
   {
     "tag": "#Y882VUVGJ",
@@ -2333,7 +2333,7 @@
     "warStars": 3,
     "daysInClan": 85,
     "joinedDate": "2026-06-28",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -2392,9 +2392,9 @@
     "warStars": 26,
     "daysInClan": 71,
     "joinedDate": "2026-07-12",
-    "offlineDays": 1,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true
   },
   {
     "tag": "#GYYCGVV2C",
@@ -2451,9 +2451,9 @@
     "warStars": 50,
     "daysInClan": 1,
     "joinedDate": "2026-10-02",
-    "offlineDays": 1,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true
   },
   {
     "tag": "#PCR0GRPR8",
@@ -2510,9 +2510,9 @@
     "warStars": 217,
     "daysInClan": 1,
     "joinedDate": "2026-10-02",
-    "offlineDays": 1,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true
   },
   {
     "tag": "#GU82Q92JP",
@@ -2549,7 +2549,7 @@
     "warStars": 122,
     "daysInClan": 141,
     "joinedDate": "2026-05-03",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   },
@@ -2608,7 +2608,7 @@
     "warStars": 10,
     "daysInClan": 1,
     "joinedDate": "2026-09-21",
-    "offlineDays": 0,
+    "offlineDays": 1,
     "idleCount": 0,
     "isIdle": false
   }
