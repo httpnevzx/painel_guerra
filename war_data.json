@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 10,
-    "stars": 30,
-    "destructionPercentage": 33.333333333333336,
+    "attacks": 12,
+    "stars": 36,
+    "destructionPercentage": 40.0,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -151,6 +151,16 @@
         "name": "Igorzin",
         "townhallLevel": 13,
         "mapPosition": 16,
+        "attacks": [
+          {
+            "attackerTag": "#GJCGJU8JL",
+            "defenderTag": "#GUCY9QUVG",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 12,
+            "duration": 29
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 0,
         "role": "member"
@@ -308,6 +318,16 @@
         "name": "lucax",
         "townhallLevel": 12,
         "mapPosition": 25,
+        "attacks": [
+          {
+            "attackerTag": "#GYYCGVV2C",
+            "defenderTag": "#GRRY0JJ0G",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 13,
+            "duration": 53
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 0,
         "role": "member"
@@ -415,7 +435,15 @@
         "name": "مالك الظلال",
         "townhallLevel": 8,
         "mapPosition": 14,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GYYCGVV2C",
+          "defenderTag": "#GRRY0JJ0G",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 13,
+          "duration": 53
+        }
       },
       {
         "tag": "#GY2J02PVL",
@@ -621,7 +649,15 @@
         "name": "修筠怡璐",
         "townhallLevel": 8,
         "mapPosition": 21,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GJCGJU8JL",
+          "defenderTag": "#GUCY9QUVG",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 12,
+          "duration": 29
+        }
       },
       {
         "tag": "#GVL2VRRPL",
