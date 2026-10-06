@@ -202,7 +202,7 @@
     "builderBaseTrophies": 2385,
     "clanRank": 4,
     "previousClanRank": 4,
-    "donations": 303,
+    "donations": 345,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -1533,6 +1533,65 @@
     "isIdle": false
   },
   {
+    "tag": "#L90Y8VJ09",
+    "name": "@artur__mendes",
+    "role": "member",
+    "townHallLevel": 12,
+    "expLevel": 103,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000009,
+      "name": "Archer League 9",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
+      }
+    },
+    "trophies": 15,
+    "builderBaseTrophies": 2069,
+    "clanRank": 28,
+    "previousClanRank": 29,
+    "donations": 40,
+    "donationsReceived": 42,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "warStars": 192,
+    "daysInClan": 1,
+    "joinedDate": "2026-09-22",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false
+  },
+  {
     "tag": "#QGLRQRQLJ",
     "name": "F4NT4SM4",
     "role": "member",
@@ -1556,7 +1615,7 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 1790,
-    "clanRank": 28,
+    "clanRank": 29,
     "previousClanRank": 28,
     "donations": 0,
     "donationsReceived": 0,
@@ -1589,65 +1648,6 @@
     "joinedDate": "2026-08-10",
     "offlineDays": 0,
     "idleCount": 1,
-    "isIdle": false
-  },
-  {
-    "tag": "#L90Y8VJ09",
-    "name": "@artur__mendes",
-    "role": "member",
-    "townHallLevel": 12,
-    "expLevel": 103,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000009,
-      "name": "Archer League 9",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 2069,
-    "clanRank": 29,
-    "previousClanRank": 29,
-    "donations": 40,
-    "donationsReceived": 0,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000001
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000010
-        },
-        {
-          "type": "decoration",
-          "id": 82000058
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000020,
-      "name": "Brass League III"
-    },
-    "warStars": 192,
-    "daysInClan": 1,
-    "joinedDate": "2026-09-22",
-    "offlineDays": 0,
-    "idleCount": 0,
     "isIdle": false
   },
   {
