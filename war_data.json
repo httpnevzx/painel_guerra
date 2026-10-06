@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 15,
-    "stars": 45,
-    "destructionPercentage": 50.0,
+    "attacks": 16,
+    "stars": 48,
+    "destructionPercentage": 53.333333333333336,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -69,6 +69,16 @@
         "name": "Nevzx 躾⛩️",
         "townhallLevel": 14,
         "mapPosition": 5,
+        "attacks": [
+          {
+            "attackerTag": "#292YJJ02V",
+            "defenderTag": "#GGLQYPC8Y",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 18,
+            "duration": 91
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 345,
         "role": "leader"
@@ -816,7 +826,15 @@
         "name": "محبس الجن",
         "townhallLevel": 8,
         "mapPosition": 15,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#292YJJ02V",
+          "defenderTag": "#GGLQYPC8Y",
+          "stars": 3,
+          "destructionPercentage": 100,
+          "order": 18,
+          "duration": 91
+        }
       }
     ]
   },
