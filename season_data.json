@@ -573,9 +573,9 @@
       "role": "member",
       "townHallLevel": 13,
       "townhallLevel": 13,
-      "totalStars": 5,
-      "totalAttacks": 2,
-      "totalDestruction": 185.0,
+      "totalStars": 8,
+      "totalAttacks": 3,
+      "totalDestruction": 285.0,
       "warCount": 5,
       "donations": 341
     },
@@ -2276,9 +2276,9 @@
         "name": "Carlos123wx",
         "role": "member",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#9UYPCVPLL": {
         "name": "LINKIN PARK",
