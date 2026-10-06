@@ -297,9 +297,9 @@
       "name": "#BAD BOY#",
       "role": "admin",
       "townHallLevel": 12,
-      "totalStars": 24,
-      "totalAttacks": 9,
-      "totalDestruction": 871.0,
+      "totalStars": 27,
+      "totalAttacks": 10,
+      "totalDestruction": 971.0,
       "warCount": 9,
       "donations": 308,
       "townhallLevel": 12
@@ -2317,9 +2317,9 @@
         "name": "#BAD BOY#",
         "role": "admin",
         "townHallLevel": 12,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 3,
+        "attacks": 1,
+        "destruction": 100
       },
       "#LVYP8RVGR": {
         "name": "IGOR_SILVA",
