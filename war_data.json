@@ -171,7 +171,7 @@
           }
         ],
         "opponentAttacks": 0,
-        "donations": 40,
+        "donations": 78,
         "role": "member"
       },
       {
@@ -372,7 +372,7 @@
         "townhallLevel": 14,
         "mapPosition": 10,
         "opponentAttacks": 1,
-        "donations": 72,
+        "donations": 81,
         "role": "admin"
       }
     ]
