@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 14,
-    "stars": 28,
-    "destructionPercentage": 35.233333333333334,
+    "attacks": 15,
+    "stars": 30,
+    "destructionPercentage": 38.233333333333334,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -430,6 +430,16 @@
         "name": "#BAD BOY#",
         "townhallLevel": 12,
         "mapPosition": 18,
+        "attacks": [
+          {
+            "attackerTag": "#2LGUVVC99",
+            "defenderTag": "#Y0U9G9CCQ",
+            "stars": 2,
+            "destructionPercentage": 90,
+            "order": 38,
+            "duration": 127
+          }
+        ],
         "opponentAttacks": 0,
         "donations": 48,
         "role": "admin"
@@ -1169,7 +1179,15 @@
         "name": "бос_молокосос",
         "townhallLevel": 13,
         "mapPosition": 18,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#2LGUVVC99",
+          "defenderTag": "#Y0U9G9CCQ",
+          "stars": 2,
+          "destructionPercentage": 90,
+          "order": 38,
+          "duration": 127
+        }
       },
       {
         "tag": "#YPRJGJRVV",
