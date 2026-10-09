@@ -670,7 +670,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
       }
     },
-    "trophies": 190,
+    "trophies": 199,
     "builderBaseTrophies": 2224,
     "clanRank": 12,
     "previousClanRank": 11,
@@ -729,7 +729,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
       }
     },
-    "trophies": 405,
+    "trophies": 416,
     "builderBaseTrophies": 2284,
     "clanRank": 13,
     "previousClanRank": 13,
@@ -1024,7 +1024,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 231,
+    "trophies": 254,
     "builderBaseTrophies": 1978,
     "clanRank": 18,
     "previousClanRank": 18,
@@ -1437,7 +1437,7 @@
       }
     },
     "trophies": 364,
-    "builderBaseTrophies": 2264,
+    "builderBaseTrophies": 2354,
     "clanRank": 26,
     "previousClanRank": 26,
     "donations": 441,
@@ -2126,7 +2126,7 @@
     "name": "bielx2.0",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 108,
+    "expLevel": 109,
     "league": {
       "id": 29000000,
       "name": "Unranked",
