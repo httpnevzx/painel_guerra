@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 13,
-    "stars": 27,
-    "destructionPercentage": 32.833333333333336,
+    "attacks": 14,
+    "stars": 28,
+    "destructionPercentage": 35.233333333333334,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -526,6 +526,16 @@
         "name": "johnpork",
         "townhallLevel": 13,
         "mapPosition": 8,
+        "attacks": [
+          {
+            "attackerTag": "#GCY8PR02J",
+            "defenderTag": "#LGGJ0PGRV",
+            "stars": 1,
+            "destructionPercentage": 72,
+            "order": 36,
+            "duration": 60
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#LGGJ0PGRV",
@@ -1109,7 +1119,15 @@
             "duration": 167
           }
         ],
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GCY8PR02J",
+          "defenderTag": "#LGGJ0PGRV",
+          "stars": 1,
+          "destructionPercentage": 72,
+          "order": 36,
+          "duration": 60
+        }
       },
       {
         "tag": "#PP22Y20P",
