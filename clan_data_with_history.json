@@ -674,7 +674,7 @@
     "builderBaseTrophies": 2224,
     "clanRank": 12,
     "previousClanRank": 11,
-    "donations": 479,
+    "donations": 519,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -2244,7 +2244,7 @@
     "name": "Guilherme ✌♣",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 123,
+    "expLevel": 124,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -2266,7 +2266,7 @@
     "clanRank": 41,
     "previousClanRank": 41,
     "donations": 76,
-    "donationsReceived": 0,
+    "donationsReceived": 40,
     "builderBaseLeague": {
       "id": 44000023,
       "name": "Iron League III"
@@ -2360,7 +2360,7 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 1915,
+    "builderBaseTrophies": 1925,
     "clanRank": 43,
     "previousClanRank": 43,
     "donations": 0,
