@@ -369,9 +369,9 @@
       "name": "johnpork",
       "role": "admin",
       "townHallLevel": 13,
-      "totalStars": 22,
-      "totalAttacks": 9,
-      "totalDestruction": 865.0,
+      "totalStars": 23,
+      "totalAttacks": 10,
+      "totalDestruction": 937.0,
       "warCount": 11,
       "donations": 1268,
       "townhallLevel": 13
@@ -3091,9 +3091,9 @@
         "name": "johnpork",
         "role": "admin",
         "townHallLevel": 13,
-        "stars": 0,
-        "attacks": 0,
-        "destruction": 0
+        "stars": 1,
+        "attacks": 1,
+        "destruction": 72
       },
       "#YJUYLQGQJ": {
         "name": "ALAZANHA II",
