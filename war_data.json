@@ -13,9 +13,9 @@
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 12,
-    "stars": 25,
-    "destructionPercentage": 30.766666666666666,
+    "attacks": 13,
+    "stars": 27,
+    "destructionPercentage": 32.833333333333336,
     "members": [
       {
         "tag": "#GGQPRRURV",
@@ -49,6 +49,16 @@
         "name": "JP Chavoso",
         "townhallLevel": 14,
         "mapPosition": 3,
+        "attacks": [
+          {
+            "attackerTag": "#GYP00G8PR",
+            "defenderTag": "#GU29CG8QV",
+            "stars": 2,
+            "destructionPercentage": 62,
+            "order": 35,
+            "duration": 121
+          }
+        ],
         "opponentAttacks": 1,
         "bestOpponentAttack": {
           "attackerTag": "#R2RVJ8YP8",
@@ -1057,7 +1067,15 @@
         "name": "garo tyrkmen",
         "townhallLevel": 13,
         "mapPosition": 33,
-        "opponentAttacks": 0
+        "opponentAttacks": 1,
+        "bestOpponentAttack": {
+          "attackerTag": "#GYP00G8PR",
+          "defenderTag": "#GU29CG8QV",
+          "stars": 2,
+          "destructionPercentage": 62,
+          "order": 35,
+          "duration": 121
+        }
       },
       {
         "tag": "#G2VRYYJ2U",
