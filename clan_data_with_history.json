@@ -203,7 +203,7 @@
     "clanRank": 4,
     "previousClanRank": 4,
     "donations": 763,
-    "donationsReceived": 0,
+    "donationsReceived": 46,
     "playerHouse": {
       "elements": [
         {
@@ -1437,10 +1437,10 @@
       }
     },
     "trophies": 391,
-    "builderBaseTrophies": 2363,
+    "builderBaseTrophies": 2348,
     "clanRank": 26,
     "previousClanRank": 26,
-    "donations": 441,
+    "donations": 487,
     "donationsReceived": 646,
     "playerHouse": {
       "elements": [
