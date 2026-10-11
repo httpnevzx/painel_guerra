@@ -61,7 +61,8 @@
     "warTotalWars": 11,
     "warTotalAttacks": 12,
     "warTotalMissed": 3,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#QRL2CJG9",
@@ -125,7 +126,8 @@
     "warTotalWars": 12,
     "warTotalAttacks": 12,
     "warTotalMissed": 3,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#GYP00G8PR",
@@ -189,7 +191,8 @@
     "warTotalWars": 11,
     "warTotalAttacks": 14,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#292YJJ02V",
@@ -253,7 +256,8 @@
     "warTotalWars": 12,
     "warTotalAttacks": 13,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#GGQPRRURV",
@@ -317,7 +321,8 @@
     "warTotalWars": 12,
     "warTotalAttacks": 12,
     "warTotalMissed": 3,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#Q0URR9VC9",
@@ -381,7 +386,8 @@
     "warTotalWars": 2,
     "warTotalAttacks": 1,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#QGYU9GYC",
@@ -445,7 +451,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#YJVRGUGVJ",
@@ -509,7 +516,8 @@
     "warTotalWars": 8,
     "warTotalAttacks": 6,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#R8R22C08Y",
@@ -573,7 +581,8 @@
     "warTotalWars": 8,
     "warTotalAttacks": 8,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#GJLC89UG8",
@@ -637,7 +646,8 @@
     "warTotalWars": 12,
     "warTotalAttacks": 10,
     "warTotalMissed": 4,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#YGLLU0UU9",
@@ -701,7 +711,8 @@
     "warTotalWars": 12,
     "warTotalAttacks": 15,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#GCY8PR02J",
@@ -765,7 +776,8 @@
     "warTotalWars": 12,
     "warTotalAttacks": 10,
     "warTotalMissed": 4,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#G2Y9RG2UY",
@@ -829,7 +841,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#80C2V90Q",
@@ -893,7 +906,8 @@
     "warTotalWars": 1,
     "warTotalAttacks": 0,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#GVUPL0Y2L",
@@ -957,7 +971,8 @@
     "warTotalWars": 5,
     "warTotalAttacks": 4,
     "warTotalMissed": 3,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#GJCGJU8JL",
@@ -1021,7 +1036,8 @@
     "warTotalWars": 10,
     "warTotalAttacks": 6,
     "warTotalMissed": 5,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#90YCRLUY0",
@@ -1085,7 +1101,8 @@
     "warTotalWars": 11,
     "warTotalAttacks": 13,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#2LGUVVC99",
@@ -1149,7 +1166,8 @@
     "warTotalWars": 11,
     "warTotalAttacks": 13,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#L9JULURCP",
@@ -1213,7 +1231,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#G9ULQQJP2",
@@ -1257,7 +1276,8 @@
     "warTotalWars": 12,
     "warTotalAttacks": 12,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#PUQGPV8PC",
@@ -1321,7 +1341,8 @@
     "warTotalWars": 10,
     "warTotalAttacks": 4,
     "warTotalMissed": 6,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#Q0YGRQLCQ",
@@ -1365,7 +1386,8 @@
     "warTotalWars": 11,
     "warTotalAttacks": 4,
     "warTotalMissed": 8,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#28UVGLLQP",
@@ -1429,7 +1451,8 @@
     "warTotalWars": 7,
     "warTotalAttacks": 4,
     "warTotalMissed": 3,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#R9PV90U00",
@@ -1493,7 +1516,8 @@
     "warTotalWars": 8,
     "warTotalAttacks": 9,
     "warTotalMissed": 0,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#YLJ2R9QJ9",
@@ -1557,7 +1581,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#Y8PLPVJJ0",
@@ -1621,7 +1646,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#Y2VVRCUL9",
@@ -1665,7 +1691,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#82CQY0Q8V",
@@ -1729,7 +1756,8 @@
     "warTotalWars": 2,
     "warTotalAttacks": 4,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#LQV2QRVJR",
@@ -1793,7 +1821,8 @@
     "warTotalWars": 12,
     "warTotalAttacks": 15,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#GR982GPU",
@@ -1857,7 +1886,8 @@
     "warTotalWars": 8,
     "warTotalAttacks": 3,
     "warTotalMissed": 5,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#Q0VYUYYQ9",
@@ -1921,7 +1951,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#G8QY89CY0",
@@ -1985,7 +2016,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#Y2LP8RV9J",
@@ -2049,7 +2081,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#GUQ822R8Q",
@@ -2093,7 +2126,8 @@
     "warTotalWars": 3,
     "warTotalAttacks": 4,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#QRQCP2Q0P",
@@ -2137,7 +2171,8 @@
     "warTotalWars": 1,
     "warTotalAttacks": 0,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#8GY0Q9JVY",
@@ -2201,7 +2236,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#R08PU9VP0",
@@ -2265,7 +2301,8 @@
     "warTotalWars": 2,
     "warTotalAttacks": 0,
     "warTotalMissed": 2,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#Y882VUVGJ",
@@ -2309,7 +2346,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#GYYCGVV2C",
@@ -2373,7 +2411,8 @@
     "warTotalWars": 7,
     "warTotalAttacks": 5,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#GU82Q92JP",
@@ -2417,6 +2456,7 @@
     "warTotalWars": 12,
     "warTotalAttacks": 13,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   }
 ]
