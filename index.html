@@ -1989,6 +1989,22 @@
             box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
             vertical-align: middle;
         }
+        .capital-active-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 7px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #ffd700 !important;
+            background: rgba(255, 215, 0, 0.12) !important;
+            border: 1px solid rgba(255, 215, 0, 0.45) !important;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.25);
+            vertical-align: middle;
+        }
+        .duty-card.capital-duty::before { background: linear-gradient(90deg, #ffd700, #ff007f); }
         .war-miss-tag {
             display: inline-flex;
             align-items: center;
@@ -2024,6 +2040,7 @@
         .table-row-missed:hover {
             background: rgba(255, 51, 85, 0.12) !important;
         }
+
     </style>
 </head>
 <body>
@@ -2503,7 +2520,7 @@
                     <span style="font-size: 1.5rem;">👑</span>
                     <div>
                         <div class="j-metric-val">CONSELHO</div>
-                        <div class="j-metric-lbl">3 Atribuições Ativas</div>
+                        <div class="j-metric-lbl">4 Atribuições Ativas</div>
                     </div>
                 </div>
                 <div class="j-metric-item">
@@ -2609,6 +2626,35 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Card 4: Upgrades na Capital do Clã -->
+                <div class="duty-card capital-duty">
+                    <div class="duty-header">
+                        <div class="duty-icon">🏛️</div>
+                        <div>
+                            <div class="duty-title">UPGRADES NA CAPITAL DO CLÃ</div>
+                            <div class="duty-sub">Gestão de Distritos &amp; Ouro da Capital</div>
+                        </div>
+                    </div>
+                    <div style="font-size:0.85rem; color:rgba(255,255,255,0.75); line-height:1.45;">
+                        <strong>Distritos Prioritários:</strong> Pedreira do Golem, Penhasco dos Dragões, Lagoa dos Balões e Oficina do Construtor.<br>
+                        <strong>Missão:</strong> Marcar tag de prioridade em estruturas nível 1 e cobrar/incentivar as contribuições de ouro dos membros.
+                    </div>
+                    <div class="duty-members">
+                        <div class="duty-member-pill">
+                            <span class="duty-member-name">🏛️ BadBoy Xavier</span>
+                            <span class="duty-member-role">CO-LÍDER • COORDENADOR</span>
+                        </div>
+                        <div class="duty-member-pill">
+                            <span class="duty-member-name">⚡ Jonas</span>
+                            <span class="duty-member-role">CO-LÍDER • FISCAL</span>
+                        </div>
+                        <div class="duty-member-pill">
+                            <span class="duty-member-name">⚡ JP Chavoso</span>
+                            <span class="duty-member-role">CO-LÍDER • FISCAL</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -2626,6 +2672,7 @@
                     <button class="j-filter-btn" id="boardFilterIn" onclick="setBoardFilter('in')" style="border-color:#00ff88 !important; color:#00ff88 !important;">🟢 Quero lutar (<span id="countBoardIn">0</span>)</button>
                     <button class="j-filter-btn idle-btn" id="boardFilterOut" onclick="setBoardFilter('out')" style="border-color:#ff3355 !important; color:#ff3355 !important;">🔴 Não quero lutar (<span id="countBoardOut">0</span>)</button>
                     <button class="j-filter-btn" id="boardFilterCwl" onclick="setBoardFilter('cwl')">💠 Destaques CWL</button>
+                    <button class="j-filter-btn" id="boardFilterCapital" onclick="setBoardFilter('capital')" style="border-color:#ffd700 !important; color:#ffd700 !important;">🏛️ Ativo na Capital</button>
                 </div>
             </div>
 
@@ -2641,6 +2688,7 @@
                             <th>Troféus</th>
                             <th>Estrelas de Guerra ⭐</th>
                             <th>Destaque CWL</th>
+                            <th>Atividade na Capital</th>
                         </tr>
                     </thead>
                     <tbody id="boardWarriorsTbody"></tbody>
@@ -6437,7 +6485,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 11,
     "warTotalAttacks": 12,
     "warTotalMissed": 3,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#QRL2CJG9",
@@ -6501,7 +6550,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 12,
     "warTotalAttacks": 12,
     "warTotalMissed": 3,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#GYP00G8PR",
@@ -6565,7 +6615,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 11,
     "warTotalAttacks": 14,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#292YJJ02V",
@@ -6629,7 +6680,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 12,
     "warTotalAttacks": 13,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#GGQPRRURV",
@@ -6693,7 +6745,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 12,
     "warTotalAttacks": 12,
     "warTotalMissed": 3,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#Q0URR9VC9",
@@ -6757,7 +6810,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 2,
     "warTotalAttacks": 1,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#QGYU9GYC",
@@ -6821,7 +6875,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#YJVRGUGVJ",
@@ -6885,7 +6940,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 8,
     "warTotalAttacks": 6,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#R8R22C08Y",
@@ -6949,7 +7005,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 8,
     "warTotalAttacks": 8,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#GJLC89UG8",
@@ -7013,7 +7070,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 12,
     "warTotalAttacks": 10,
     "warTotalMissed": 4,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#YGLLU0UU9",
@@ -7077,7 +7135,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 12,
     "warTotalAttacks": 15,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#GCY8PR02J",
@@ -7141,7 +7200,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 12,
     "warTotalAttacks": 10,
     "warTotalMissed": 4,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#G2Y9RG2UY",
@@ -7205,7 +7265,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#80C2V90Q",
@@ -7269,7 +7330,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 1,
     "warTotalAttacks": 0,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#GVUPL0Y2L",
@@ -7333,7 +7395,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 5,
     "warTotalAttacks": 4,
     "warTotalMissed": 3,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#GJCGJU8JL",
@@ -7397,7 +7460,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 10,
     "warTotalAttacks": 6,
     "warTotalMissed": 5,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#90YCRLUY0",
@@ -7461,7 +7525,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 11,
     "warTotalAttacks": 13,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#2LGUVVC99",
@@ -7525,7 +7590,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 11,
     "warTotalAttacks": 13,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#L9JULURCP",
@@ -7589,7 +7655,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#G9ULQQJP2",
@@ -7633,7 +7700,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 12,
     "warTotalAttacks": 12,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#PUQGPV8PC",
@@ -7697,7 +7765,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 10,
     "warTotalAttacks": 4,
     "warTotalMissed": 6,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#Q0YGRQLCQ",
@@ -7741,7 +7810,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 11,
     "warTotalAttacks": 4,
     "warTotalMissed": 8,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#28UVGLLQP",
@@ -7805,7 +7875,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 7,
     "warTotalAttacks": 4,
     "warTotalMissed": 3,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#R9PV90U00",
@@ -7869,7 +7940,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 8,
     "warTotalAttacks": 9,
     "warTotalMissed": 0,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#YLJ2R9QJ9",
@@ -7933,7 +8005,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#Y8PLPVJJ0",
@@ -7997,7 +8070,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#Y2VVRCUL9",
@@ -8041,7 +8115,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#82CQY0Q8V",
@@ -8105,7 +8180,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 2,
     "warTotalAttacks": 4,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#LQV2QRVJR",
@@ -8169,7 +8245,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 12,
     "warTotalAttacks": 15,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#GR982GPU",
@@ -8233,7 +8310,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 8,
     "warTotalAttacks": 3,
     "warTotalMissed": 5,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#Q0VYUYYQ9",
@@ -8297,7 +8375,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#G8QY89CY0",
@@ -8361,7 +8440,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#Y2LP8RV9J",
@@ -8425,7 +8505,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#GUQ822R8Q",
@@ -8469,7 +8550,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 3,
     "warTotalAttacks": 4,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#QRQCP2Q0P",
@@ -8513,7 +8595,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 1,
     "warTotalAttacks": 0,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#8GY0Q9JVY",
@@ -8577,7 +8660,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#R08PU9VP0",
@@ -8641,7 +8725,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 2,
     "warTotalAttacks": 0,
     "warTotalMissed": 2,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#Y882VUVGJ",
@@ -8685,7 +8770,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#GYYCGVV2C",
@@ -8749,7 +8835,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 7,
     "warTotalAttacks": 5,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#GU82Q92JP",
@@ -8793,7 +8880,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 12,
     "warTotalAttacks": 13,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "capitalActive": false
   }
 ];
 
@@ -9301,6 +9389,7 @@ function renderGeneralMembers(list) {
         }
 
         const cwlTag = m.cwlActive ? `<span class="cwl-active-tag" title="Titular que atacou ativamente na Liga de Guerras">💠 Ativo CWL</span>` : '';
+        const capitalTag = m.capitalActive ? `<span class="capital-active-tag" title="Sempre ativo nos Raides da Capital do Clã">🏛️ Ativo Capital</span>` : '';
 
         const donColor = m.donations >= 100 ? '#00ff88' : '#e0e6f0';
 
@@ -9312,6 +9401,7 @@ function renderGeneralMembers(list) {
                     <span class="j-member-name">${m.name}</span>
                     ${idleBadge}
                     ${cwlTag}
+                    ${capitalTag}
                 </div>
                 <div style="font-family:'Share Tech Mono'; font-size:0.75rem; color:rgba(255,255,255,0.4);">${m.tag}</div>
             </td>
@@ -9753,13 +9843,11 @@ setInterval(updateSeasonCountdown, 1000);
 
 
 
-// ── ABA 3: QUADRO DE AVISOS & ESCALAÇÃO CONTROLLER ─────────────────────
-// ── ABA 3: QUADRO DE AVISOS & ESCALAÇÃO CONTROLLER ─────────────────────
 let activeBoardFilter = 'all';
 
 function setBoardFilter(filterName) {
     activeBoardFilter = filterName;
-    ['All', 'In', 'Out', 'Cwl'].forEach(f => {
+    ['All', 'In', 'Out', 'Cwl', 'Capital'].forEach(f => {
         const btn = document.getElementById('boardFilter' + f);
         if (btn) btn.classList.remove('active');
     });
@@ -9771,6 +9859,8 @@ function setBoardFilter(filterName) {
         const b = document.getElementById('boardFilterOut'); if (b) b.classList.add('active');
     } else if (filterName === 'cwl') {
         const b = document.getElementById('boardFilterCwl'); if (b) b.classList.add('active');
+    } else if (filterName === 'capital') {
+        const b = document.getElementById('boardFilterCapital'); if (b) b.classList.add('active');
     }
     renderBoardWarriors();
 }
@@ -9814,9 +9904,11 @@ function renderBoardWarriors() {
     let filtered = list.filter(m => {
         const pref = (m.warPreference || 'out').toLowerCase();
         const cwl = !!m.cwlActive;
+        const cap = !!m.capitalActive;
         if (activeBoardFilter === 'in') return pref === 'in';
         if (activeBoardFilter === 'out') return pref !== 'in';
         if (activeBoardFilter === 'cwl') return cwl;
+        if (activeBoardFilter === 'capital') return cap;
         return true;
     });
 
@@ -9837,6 +9929,7 @@ function renderBoardWarriors() {
         const pref = (m.warPreference || 'out').toLowerCase();
         const wantsWar = (pref === 'in');
         const isCwlActive = !!m.cwlActive;
+        const isCapitalActive = !!m.capitalActive;
 
         // Botões oficiais estilo Clash of Clans: Verde "Quero lutar" e Vermelho "Não quero lutar"
         const statusBadge = wantsWar
@@ -9844,7 +9937,11 @@ function renderBoardWarriors() {
             : '<span class="war-miss-tag" style="background:rgba(255,51,85,0.18) !important; border:1px solid #ff3355 !important; color:#ff3355 !important; font-weight:700; padding:4px 9px; border-radius:6px; box-shadow:0 0 10px rgba(255,51,85,0.25);">🔴 Não quero lutar</span>';
 
         const cwlBadge = isCwlActive 
-            ? '<span class="cwl-active-tag">💠 Titular Ativo CWL</span>' 
+            ? '<span class="cwl-active-tag">💠 Titular CWL</span>' 
+            : '<span style="color:rgba(255,255,255,0.3); font-size:0.75rem;">—</span>';
+
+        const capBadge = isCapitalActive
+            ? '<span class="capital-active-tag">🏛️ Ativo na Capital</span>'
             : '<span style="color:rgba(255,255,255,0.3); font-size:0.75rem;">—</span>';
 
         const roleText = m.role === 'leader' ? '👑 Líder' : (m.role === 'coLeader' ? '⚡ Co-Líder' : (m.role === 'admin' ? '⛩️ Ancião' : '⚔️ Membro'));
@@ -9864,6 +9961,7 @@ function renderBoardWarriors() {
             <td><span style="font-family:'Share Tech Mono'; color:#ffd700; font-weight:700;">🏆 ${m.trophies || 0}</span></td>
             <td><span style="font-family:'Share Tech Mono'; color:#ffcc00; font-weight:700;">⭐ ${m.warStars || 0}</span></td>
             <td>${cwlBadge}</td>
+            <td>${capBadge}</td>
         `;
         tbody.appendChild(tr);
     });
