@@ -60,7 +60,8 @@
     "warTotalWars": 11,
     "warTotalAttacks": 12,
     "warTotalMissed": 3,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#QRL2CJG9",
@@ -120,10 +121,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 12,
-    "warTotalMissed": 2,
-    "cwlActive": true
+    "warTotalMissed": 3,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#GYP00G8PR",
@@ -186,7 +188,8 @@
     "warTotalWars": 11,
     "warTotalAttacks": 14,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#292YJJ02V",
@@ -246,10 +249,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 13,
-    "warTotalMissed": 1,
-    "cwlActive": true
+    "warTotalMissed": 2,
+    "cwlActive": true,
+    "warPreference": "out"
   },
   {
     "tag": "#GGQPRRURV",
@@ -309,10 +313,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 12,
-    "warTotalMissed": 2,
-    "cwlActive": true
+    "warTotalMissed": 3,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#Q0URR9VC9",
@@ -375,7 +380,8 @@
     "warTotalWars": 2,
     "warTotalAttacks": 1,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#QGYU9GYC",
@@ -438,7 +444,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#YJVRGUGVJ",
@@ -498,10 +505,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 7,
+    "warTotalWars": 8,
     "warTotalAttacks": 6,
-    "warTotalMissed": 1,
-    "cwlActive": true
+    "warTotalMissed": 2,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#R8R22C08Y",
@@ -564,7 +572,8 @@
     "warTotalWars": 8,
     "warTotalAttacks": 8,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#GJLC89UG8",
@@ -624,10 +633,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 10,
-    "warTotalMissed": 3,
-    "cwlActive": true
+    "warTotalMissed": 4,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#YGLLU0UU9",
@@ -687,10 +697,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 15,
-    "warTotalMissed": 0,
-    "cwlActive": true
+    "warTotalMissed": 1,
+    "cwlActive": true,
+    "warPreference": "out"
   },
   {
     "tag": "#GCY8PR02J",
@@ -750,10 +761,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 10,
-    "warTotalMissed": 3,
-    "cwlActive": false
+    "warTotalMissed": 4,
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#G2Y9RG2UY",
@@ -816,7 +828,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#80C2V90Q",
@@ -876,10 +889,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 0,
+    "warTotalWars": 1,
     "warTotalAttacks": 0,
-    "warTotalMissed": 0,
-    "cwlActive": false
+    "warTotalMissed": 1,
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#GVUPL0Y2L",
@@ -939,10 +953,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 4,
+    "warTotalWars": 5,
     "warTotalAttacks": 4,
-    "warTotalMissed": 2,
-    "cwlActive": false
+    "warTotalMissed": 3,
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#GJCGJU8JL",
@@ -1005,7 +1020,8 @@
     "warTotalWars": 10,
     "warTotalAttacks": 6,
     "warTotalMissed": 5,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#90YCRLUY0",
@@ -1065,10 +1081,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 10,
+    "warTotalWars": 11,
     "warTotalAttacks": 13,
-    "warTotalMissed": 0,
-    "cwlActive": true
+    "warTotalMissed": 1,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#2LGUVVC99",
@@ -1131,7 +1148,8 @@
     "warTotalWars": 11,
     "warTotalAttacks": 13,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "warPreference": "out"
   },
   {
     "tag": "#L9JULURCP",
@@ -1194,7 +1212,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#G9ULQQJP2",
@@ -1234,10 +1253,11 @@
     "offlineDays": 2,
     "idleCount": 1,
     "isIdle": true,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 12,
-    "warTotalMissed": 1,
-    "cwlActive": true
+    "warTotalMissed": 2,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#PUQGPV8PC",
@@ -1300,7 +1320,8 @@
     "warTotalWars": 10,
     "warTotalAttacks": 4,
     "warTotalMissed": 6,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#Q0YGRQLCQ",
@@ -1343,7 +1364,8 @@
     "warTotalWars": 11,
     "warTotalAttacks": 4,
     "warTotalMissed": 8,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#28UVGLLQP",
@@ -1406,7 +1428,8 @@
     "warTotalWars": 7,
     "warTotalAttacks": 4,
     "warTotalMissed": 3,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#R9PV90U00",
@@ -1469,7 +1492,8 @@
     "warTotalWars": 8,
     "warTotalAttacks": 9,
     "warTotalMissed": 0,
-    "cwlActive": true
+    "cwlActive": true,
+    "warPreference": "out"
   },
   {
     "tag": "#YLJ2R9QJ9",
@@ -1532,7 +1556,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#Y8PLPVJJ0",
@@ -1595,7 +1620,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#Y2VVRCUL9",
@@ -1638,7 +1664,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#82CQY0Q8V",
@@ -1701,7 +1728,8 @@
     "warTotalWars": 2,
     "warTotalAttacks": 4,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#LQV2QRVJR",
@@ -1761,10 +1789,11 @@
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 15,
-    "warTotalMissed": 0,
-    "cwlActive": true
+    "warTotalMissed": 1,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#GR982GPU",
@@ -1824,10 +1853,11 @@
     "offlineDays": 2,
     "idleCount": 1,
     "isIdle": true,
-    "warTotalWars": 7,
+    "warTotalWars": 8,
     "warTotalAttacks": 3,
-    "warTotalMissed": 4,
-    "cwlActive": false
+    "warTotalMissed": 5,
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#Q0VYUYYQ9",
@@ -1890,7 +1920,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#G8QY89CY0",
@@ -1953,7 +1984,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#Y2LP8RV9J",
@@ -2016,7 +2048,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#GUQ822R8Q",
@@ -2056,10 +2089,11 @@
     "offlineDays": 6,
     "idleCount": 1,
     "isIdle": true,
-    "warTotalWars": 2,
+    "warTotalWars": 3,
     "warTotalAttacks": 4,
-    "warTotalMissed": 0,
-    "cwlActive": false
+    "warTotalMissed": 1,
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#QRQCP2Q0P",
@@ -2102,7 +2136,8 @@
     "warTotalWars": 1,
     "warTotalAttacks": 0,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#8GY0Q9JVY",
@@ -2165,7 +2200,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#R08PU9VP0",
@@ -2228,7 +2264,8 @@
     "warTotalWars": 2,
     "warTotalAttacks": 0,
     "warTotalMissed": 2,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#Y882VUVGJ",
@@ -2271,7 +2308,8 @@
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#GYYCGVV2C",
@@ -2334,7 +2372,8 @@
     "warTotalWars": 7,
     "warTotalAttacks": 5,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#GU82Q92JP",
@@ -2374,9 +2413,10 @@
     "offlineDays": 2,
     "idleCount": 1,
     "isIdle": true,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 13,
-    "warTotalMissed": 1,
-    "cwlActive": true
+    "warTotalMissed": 2,
+    "cwlActive": true,
+    "warPreference": "in"
   }
 ]
