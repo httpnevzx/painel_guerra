@@ -2495,7 +2495,7 @@
         <div class="japan-sanctuary-hero" style="background: linear-gradient(180deg, rgba(255, 65, 108, 0.12) 0%, rgba(14, 6, 16, 0.4) 100%);">
             <div class="japan-torii-header">📜</div>
             <h1>QUADRO DE AVISOS &amp; ESCALAÇÃO</h1>
-            <div class="japan-sub">ORDEM SUPREMA • ATRIBUIÇÕES DA LIDERANÇA &amp; FREQUÊNCIA DE GUERRA</div>
+            <div class="japan-sub">ORDEM SUPREMA • ATRIBUIÇÕES DA LIDERANÇA &amp; STATUS DE GUERRA DO JOGO</div>
 
             <!-- Métricas Resumo -->
             <div class="japan-metrics-bar">
@@ -2507,17 +2507,17 @@
                     </div>
                 </div>
                 <div class="j-metric-item">
-                    <span style="font-size: 1.5rem;">⚔️</span>
+                    <span style="font-size: 1.5rem;">🟢</span>
                     <div>
-                        <div class="j-metric-val" id="boardActiveWarriorsCount">0</div>
-                        <div class="j-metric-lbl">Guerreiros Sempre Ativos</div>
+                        <div class="j-metric-val" id="boardInWarriorsCount" style="color:#00ff88;">0</div>
+                        <div class="j-metric-lbl">Querem Lutar (Verde)</div>
                     </div>
                 </div>
                 <div class="j-metric-item">
-                    <span style="font-size: 1.5rem;">⚠️</span>
+                    <span style="font-size: 1.5rem;">🔴</span>
                     <div>
-                        <div class="j-metric-val" id="boardMissedWarriorsCount" style="color:#ff3355;">0</div>
-                        <div class="j-metric-lbl">Guerreiros com Faltas</div>
+                        <div class="j-metric-val" id="boardOutWarriorsCount" style="color:#ff3355;">0</div>
+                        <div class="j-metric-lbl">Não Querem Lutar (Vermelho)</div>
                     </div>
                 </div>
                 <div class="j-metric-item">
@@ -2548,7 +2548,7 @@
                         </div>
                     </div>
                     <div style="font-size:0.85rem; color:rgba(255,255,255,0.7); line-height:1.4;">
-                        Responsáveis por montar a lista de guerra priorizando quem sempre ataca e deixando de fora quem faltou.
+                        Responsáveis por montar a lista de guerra priorizando quem marcou 'Quero lutar' (verde) e deixando de fora quem marcou 'Não quero lutar' (vermelho) ou está ocioso.
                     </div>
                     <div class="duty-members">
                         <div class="duty-member-pill">
@@ -2615,16 +2615,16 @@
         <!-- Seção 2: Tabela de Escalação de Guerra -->
         <div style="margin-top: 25px;">
             <div class="japan-section-title">
-                <h2>🎯 GUIA DE ESCALAÇÃO PARA A PRÓXIMA GUERRA</h2>
-                <div class="j-title-sub">VERIFIQUE QUEM NUNCA FALHA E QUEM NÃO ATACA (MARCADOS EM VERMELHO)</div>
+                <h2>🎯 STATUS DE GUERRA DOS MEMBROS (FILTRO DO JOGO)</h2>
+                <div class="j-title-sub">PREFERÊNCIA DEFINIDA NO JOGO: BOTÃO VERDE (QUERO LUTAR) OU BOTÃO VERMELHO (NÃO QUERO LUTAR)</div>
             </div>
 
             <!-- Filtros Rápidos da Escalação -->
             <div class="japan-controls-bar" style="margin-bottom: 15px;">
                 <div class="j-filter-group">
-                    <button class="j-filter-btn active" id="boardFilterAll" onclick="setBoardFilter('all')">Todos os Guerreiros</button>
-                    <button class="j-filter-btn" id="boardFilterActive" onclick="setBoardFilter('clean')">🟢 Sempre Atacam (Sem Faltas)</button>
-                    <button class="j-filter-btn idle-btn" id="boardFilterMissed" onclick="setBoardFilter('missed')" style="border-color:#ff3355 !important; color:#ff3355 !important;">🔴 Não Atacam / Faltaram</button>
+                    <button class="j-filter-btn active" id="boardFilterAll" onclick="setBoardFilter('all')">Todos os Membros (<span id="countBoardAll">0</span>)</button>
+                    <button class="j-filter-btn" id="boardFilterIn" onclick="setBoardFilter('in')" style="border-color:#00ff88 !important; color:#00ff88 !important;">🟢 Quero lutar (<span id="countBoardIn">0</span>)</button>
+                    <button class="j-filter-btn idle-btn" id="boardFilterOut" onclick="setBoardFilter('out')" style="border-color:#ff3355 !important; color:#ff3355 !important;">🔴 Não quero lutar (<span id="countBoardOut">0</span>)</button>
                     <button class="j-filter-btn" id="boardFilterCwl" onclick="setBoardFilter('cwl')">💠 Destaques CWL</button>
                 </div>
             </div>
@@ -2634,12 +2634,12 @@
                 <table class="japan-table">
                     <thead>
                         <tr>
-                            <th>Status Escalação</th>
+                            <th>Status no Jogo</th>
                             <th>Membro / Guerreiro</th>
                             <th>Cargo</th>
                             <th>Centro de Vila</th>
-                            <th>Ataques Realizados</th>
-                            <th>Faltas em Guerra</th>
+                            <th>Troféus</th>
+                            <th>Estrelas de Guerra ⭐</th>
                             <th>Destaque CWL</th>
                         </tr>
                     </thead>
@@ -6436,7 +6436,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 11,
     "warTotalAttacks": 12,
     "warTotalMissed": 3,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#QRL2CJG9",
@@ -6496,10 +6497,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 12,
-    "warTotalMissed": 2,
-    "cwlActive": true
+    "warTotalMissed": 3,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#GYP00G8PR",
@@ -6562,7 +6564,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 11,
     "warTotalAttacks": 14,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#292YJJ02V",
@@ -6622,10 +6625,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 13,
-    "warTotalMissed": 1,
-    "cwlActive": true
+    "warTotalMissed": 2,
+    "cwlActive": true,
+    "warPreference": "out"
   },
   {
     "tag": "#GGQPRRURV",
@@ -6685,10 +6689,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 12,
-    "warTotalMissed": 2,
-    "cwlActive": true
+    "warTotalMissed": 3,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#Q0URR9VC9",
@@ -6751,7 +6756,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 2,
     "warTotalAttacks": 1,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#QGYU9GYC",
@@ -6814,7 +6820,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#YJVRGUGVJ",
@@ -6874,10 +6881,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 7,
+    "warTotalWars": 8,
     "warTotalAttacks": 6,
-    "warTotalMissed": 1,
-    "cwlActive": true
+    "warTotalMissed": 2,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#R8R22C08Y",
@@ -6940,7 +6948,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 8,
     "warTotalAttacks": 8,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#GJLC89UG8",
@@ -7000,10 +7009,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 10,
-    "warTotalMissed": 3,
-    "cwlActive": true
+    "warTotalMissed": 4,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#YGLLU0UU9",
@@ -7063,10 +7073,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 15,
-    "warTotalMissed": 0,
-    "cwlActive": true
+    "warTotalMissed": 1,
+    "cwlActive": true,
+    "warPreference": "out"
   },
   {
     "tag": "#GCY8PR02J",
@@ -7126,10 +7137,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 10,
-    "warTotalMissed": 3,
-    "cwlActive": false
+    "warTotalMissed": 4,
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#G2Y9RG2UY",
@@ -7192,7 +7204,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#80C2V90Q",
@@ -7252,10 +7265,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 0,
+    "warTotalWars": 1,
     "warTotalAttacks": 0,
-    "warTotalMissed": 0,
-    "cwlActive": false
+    "warTotalMissed": 1,
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#GVUPL0Y2L",
@@ -7315,10 +7329,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 4,
+    "warTotalWars": 5,
     "warTotalAttacks": 4,
-    "warTotalMissed": 2,
-    "cwlActive": false
+    "warTotalMissed": 3,
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#GJCGJU8JL",
@@ -7381,7 +7396,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 10,
     "warTotalAttacks": 6,
     "warTotalMissed": 5,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#90YCRLUY0",
@@ -7441,10 +7457,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 10,
+    "warTotalWars": 11,
     "warTotalAttacks": 13,
-    "warTotalMissed": 0,
-    "cwlActive": true
+    "warTotalMissed": 1,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#2LGUVVC99",
@@ -7507,7 +7524,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 11,
     "warTotalAttacks": 13,
     "warTotalMissed": 1,
-    "cwlActive": true
+    "cwlActive": true,
+    "warPreference": "out"
   },
   {
     "tag": "#L9JULURCP",
@@ -7570,7 +7588,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#G9ULQQJP2",
@@ -7610,10 +7629,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 2,
     "idleCount": 1,
     "isIdle": true,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 12,
-    "warTotalMissed": 1,
-    "cwlActive": true
+    "warTotalMissed": 2,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#PUQGPV8PC",
@@ -7676,7 +7696,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 10,
     "warTotalAttacks": 4,
     "warTotalMissed": 6,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#Q0YGRQLCQ",
@@ -7719,7 +7740,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 11,
     "warTotalAttacks": 4,
     "warTotalMissed": 8,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#28UVGLLQP",
@@ -7782,7 +7804,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 7,
     "warTotalAttacks": 4,
     "warTotalMissed": 3,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#R9PV90U00",
@@ -7845,7 +7868,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 8,
     "warTotalAttacks": 9,
     "warTotalMissed": 0,
-    "cwlActive": true
+    "cwlActive": true,
+    "warPreference": "out"
   },
   {
     "tag": "#YLJ2R9QJ9",
@@ -7908,7 +7932,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#Y8PLPVJJ0",
@@ -7971,7 +7996,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#Y2VVRCUL9",
@@ -8014,7 +8040,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#82CQY0Q8V",
@@ -8077,7 +8104,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 2,
     "warTotalAttacks": 4,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#LQV2QRVJR",
@@ -8137,10 +8165,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 15,
-    "warTotalMissed": 0,
-    "cwlActive": true
+    "warTotalMissed": 1,
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#GR982GPU",
@@ -8200,10 +8229,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 2,
     "idleCount": 1,
     "isIdle": true,
-    "warTotalWars": 7,
+    "warTotalWars": 8,
     "warTotalAttacks": 3,
-    "warTotalMissed": 4,
-    "cwlActive": false
+    "warTotalMissed": 5,
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#Q0VYUYYQ9",
@@ -8266,7 +8296,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#G8QY89CY0",
@@ -8329,7 +8360,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#Y2LP8RV9J",
@@ -8392,7 +8424,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#GUQ822R8Q",
@@ -8432,10 +8465,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 6,
     "idleCount": 1,
     "isIdle": true,
-    "warTotalWars": 2,
+    "warTotalWars": 3,
     "warTotalAttacks": 4,
-    "warTotalMissed": 0,
-    "cwlActive": false
+    "warTotalMissed": 1,
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#QRQCP2Q0P",
@@ -8478,7 +8512,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 1,
     "warTotalAttacks": 0,
     "warTotalMissed": 1,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#8GY0Q9JVY",
@@ -8541,7 +8576,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#R08PU9VP0",
@@ -8604,7 +8640,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 2,
     "warTotalAttacks": 0,
     "warTotalMissed": 2,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "in"
   },
   {
     "tag": "#Y882VUVGJ",
@@ -8647,7 +8684,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
-    "cwlActive": false
+    "cwlActive": false,
+    "warPreference": "out"
   },
   {
     "tag": "#GYYCGVV2C",
@@ -8710,7 +8748,8 @@ const CLAN_MEMBERS = [
     "warTotalWars": 7,
     "warTotalAttacks": 5,
     "warTotalMissed": 2,
-    "cwlActive": true
+    "cwlActive": true,
+    "warPreference": "in"
   },
   {
     "tag": "#GU82Q92JP",
@@ -8750,10 +8789,11 @@ const CLAN_MEMBERS = [
     "offlineDays": 2,
     "idleCount": 1,
     "isIdle": true,
-    "warTotalWars": 11,
+    "warTotalWars": 12,
     "warTotalAttacks": 13,
-    "warTotalMissed": 1,
-    "cwlActive": true
+    "warTotalMissed": 2,
+    "cwlActive": true,
+    "warPreference": "in"
   }
 ];
 
@@ -8816,11 +8856,12 @@ function switchTab(tabName) {
 
         try { initBoardTab(); } catch(e) {}
 
-        if (sakuraCanvas) sakuraCanvas.style.opacity = '0.5';
+        // Sem animação de pétalas nem lanternas no Quadro de Avisos
+        if (sakuraCanvas) sakuraCanvas.style.opacity = '0';
         const skyCanvasBoard = document.getElementById('skyLanternsCanvas');
-        if (skyCanvasBoard) skyCanvasBoard.style.opacity = '0.7';
+        if (skyCanvasBoard) skyCanvasBoard.style.opacity = '0';
 
-        document.body.style.background = 'linear-gradient(rgba(14, 6, 16, 0.72), rgba(14, 6, 16, 0.88)), url("japan_bg.jpg") center center / cover no-repeat fixed #0e0610';
+        document.body.style.background = 'linear-gradient(rgba(14, 6, 16, 0.85), rgba(14, 6, 16, 0.95)), url("japan_bg.jpg") center center / cover no-repeat fixed #0e0610';
         window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
         if (btnWar) btnWar.classList.add('active');
@@ -9713,20 +9754,21 @@ setInterval(updateSeasonCountdown, 1000);
 
 
 // ── ABA 3: QUADRO DE AVISOS & ESCALAÇÃO CONTROLLER ─────────────────────
+// ── ABA 3: QUADRO DE AVISOS & ESCALAÇÃO CONTROLLER ─────────────────────
 let activeBoardFilter = 'all';
 
 function setBoardFilter(filterName) {
     activeBoardFilter = filterName;
-    ['All', 'Active', 'Missed', 'Cwl'].forEach(f => {
+    ['All', 'In', 'Out', 'Cwl'].forEach(f => {
         const btn = document.getElementById('boardFilter' + f);
         if (btn) btn.classList.remove('active');
     });
     if (filterName === 'all') {
         const b = document.getElementById('boardFilterAll'); if (b) b.classList.add('active');
-    } else if (filterName === 'clean') {
-        const b = document.getElementById('boardFilterActive'); if (b) b.classList.add('active');
-    } else if (filterName === 'missed') {
-        const b = document.getElementById('boardFilterMissed'); if (b) b.classList.add('active');
+    } else if (filterName === 'in') {
+        const b = document.getElementById('boardFilterIn'); if (b) b.classList.add('active');
+    } else if (filterName === 'out') {
+        const b = document.getElementById('boardFilterOut'); if (b) b.classList.add('active');
     } else if (filterName === 'cwl') {
         const b = document.getElementById('boardFilterCwl'); if (b) b.classList.add('active');
     }
@@ -9741,68 +9783,65 @@ function renderBoardWarriors() {
     const tbody = document.getElementById('boardWarriorsTbody');
     if (!tbody || typeof CLAN_MEMBERS === 'undefined') return;
 
-    // Calcular estatísticas da temporada e CWL
-    let cleanCount = 0;
-    let missedCount = 0;
+    let inCount = 0;
+    let outCount = 0;
 
     const list = CLAN_MEMBERS.slice();
 
-    // Contadores gerais
+    // Contadores gerais pelo warPreference oficial do jogo
     list.forEach(m => {
-        const missed = m.warTotalMissed || 0;
-        const wars = m.warTotalWars || 0;
-        if (wars > 0 && missed === 0) {
-            cleanCount++;
-        } else if (missed > 0) {
-            missedCount++;
+        const pref = (m.warPreference || 'out').toLowerCase();
+        if (pref === 'in') {
+            inCount++;
+        } else {
+            outCount++;
         }
     });
 
-    const activeEl = document.getElementById('boardActiveWarriorsCount');
-    if (activeEl) activeEl.innerText = cleanCount;
-    const missEl = document.getElementById('boardMissedWarriorsCount');
-    if (missEl) missEl.innerText = missedCount;
+    const inEl = document.getElementById('boardInWarriorsCount');
+    if (inEl) inEl.innerText = inCount;
+    const outEl = document.getElementById('boardOutWarriorsCount');
+    if (outEl) outEl.innerText = outCount;
+
+    const countAllEl = document.getElementById('countBoardAll');
+    if (countAllEl) countAllEl.innerText = list.length;
+    const countInEl = document.getElementById('countBoardIn');
+    if (countInEl) countInEl.innerText = inCount;
+    const countOutEl = document.getElementById('countBoardOut');
+    if (countOutEl) countOutEl.innerText = outCount;
 
     // Filtragem
     let filtered = list.filter(m => {
-        const missed = m.warTotalMissed || 0;
-        const wars = m.warTotalWars || 0;
+        const pref = (m.warPreference || 'out').toLowerCase();
         const cwl = !!m.cwlActive;
-        if (activeBoardFilter === 'clean') return wars > 0 && missed === 0;
-        if (activeBoardFilter === 'missed') return missed > 0;
+        if (activeBoardFilter === 'in') return pref === 'in';
+        if (activeBoardFilter === 'out') return pref !== 'in';
         if (activeBoardFilter === 'cwl') return cwl;
         return true;
     });
 
-    // Ordenação: 
-    // Se filtro 'missed', os que mais faltaram no topo
-    // Caso contrário, quem mais atacou e tem menos faltas no topo
+    // Ordenação padrão: 'in' (quero lutar) no topo, depois por Centro de Vila e Troféus
     filtered.sort((a, b) => {
-        if (activeBoardFilter === 'missed') {
-            return (b.warTotalMissed || 0) - (a.warTotalMissed || 0);
-        }
-        const diffMiss = (a.warTotalMissed || 0) - (b.warTotalMissed || 0);
-        if (diffMiss !== 0) return diffMiss;
-        return (b.warTotalAttacks || 0) - (a.warTotalAttacks || 0);
+        const prefA = (a.warPreference || 'out').toLowerCase() === 'in' ? 1 : 0;
+        const prefB = (b.warPreference || 'out').toLowerCase() === 'in' ? 1 : 0;
+        if (prefA !== prefB) return prefB - prefA;
+        const thA = a.townHallLevel || a.townhallLevel || 0;
+        const thB = b.townHallLevel || b.townhallLevel || 0;
+        if (thA !== thB) return thB - thA;
+        return (b.trophies || 0) - (a.trophies || 0);
     });
 
     tbody.innerHTML = '';
 
     filtered.forEach((m, idx) => {
-        const wars = m.warTotalWars || 0;
-        const attacks = m.warTotalAttacks || 0;
-        const missed = m.warTotalMissed || 0;
+        const pref = (m.warPreference || 'out').toLowerCase();
+        const wantsWar = (pref === 'in');
         const isCwlActive = !!m.cwlActive;
-        const hasMissed = missed > 0;
 
-        let statusBadge = '';
-        if (wars === 0) {
-            statusBadge = '<span class="war-miss-tag" style="background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.2); color:#ccc !important;">⚪ Reserva / Sem Guerras</span>';
-        } else if (hasMissed) {
-            statusBadge = `<span class="war-miss-tag">🔴 NÃO ATACA (${missed}x Falta)</span>`;
-        } else {
-            statusBadge = `<span class="war-clean-tag">🟢 100% Presente (${attacks} atks)</span>`;
-        }
+        // Botões oficiais estilo Clash of Clans: Verde "Quero lutar" e Vermelho "Não quero lutar"
+        const statusBadge = wantsWar
+            ? '<span class="war-clean-tag" style="background:rgba(0,255,136,0.18) !important; border:1px solid #00ff88 !important; color:#00ff88 !important; font-weight:700; padding:4px 9px; border-radius:6px; box-shadow:0 0 10px rgba(0,255,136,0.25);">🟢 Quero lutar</span>'
+            : '<span class="war-miss-tag" style="background:rgba(255,51,85,0.18) !important; border:1px solid #ff3355 !important; color:#ff3355 !important; font-weight:700; padding:4px 9px; border-radius:6px; box-shadow:0 0 10px rgba(255,51,85,0.25);">🔴 Não quero lutar</span>';
 
         const cwlBadge = isCwlActive 
             ? '<span class="cwl-active-tag">💠 Titular Ativo CWL</span>' 
@@ -9811,22 +9850,19 @@ function renderBoardWarriors() {
         const roleText = m.role === 'leader' ? '👑 Líder' : (m.role === 'coLeader' ? '⚡ Co-Líder' : (m.role === 'admin' ? '⛩️ Ancião' : '⚔️ Membro'));
 
         const tr = document.createElement('tr');
-        if (hasMissed) tr.className = 'table-row-missed';
 
         tr.innerHTML = `
             <td>${statusBadge}</td>
             <td>
-                <div style="font-weight:700; color:${hasMissed ? '#ff4d6d' : '#fff'}; font-size:0.95rem;">
+                <div style="font-weight:700; color:#fff; font-size:0.95rem;">
                     ${m.name}
                 </div>
                 <div style="font-family:'Share Tech Mono'; font-size:0.75rem; color:rgba(255,255,255,0.4);">${m.tag}</div>
             </td>
             <td><span style="font-family:'Share Tech Mono'; font-size:0.8rem; color:#ffd700;">${roleText}</span></td>
             <td><span class="th-seal">CV ${m.townHallLevel || m.townhallLevel || 12}</span></td>
-            <td><span style="font-family:'Share Tech Mono'; color:#00ff88; font-weight:700;">⚔️ ${attacks} ataques</span></td>
-            <td><span style="font-family:'Share Tech Mono'; font-weight:700; color:${hasMissed ? '#ff3355' : 'rgba(255,255,255,0.5)'};">
-                ${missed > 0 ? `⚠️ ${missed} falta(s)` : '✅ 0 faltas'}
-            </span></td>
+            <td><span style="font-family:'Share Tech Mono'; color:#ffd700; font-weight:700;">🏆 ${m.trophies || 0}</span></td>
+            <td><span style="font-family:'Share Tech Mono'; color:#ffcc00; font-weight:700;">⭐ ${m.warStars || 0}</span></td>
             <td>${cwlBadge}</td>
         `;
         tbody.appendChild(tr);
