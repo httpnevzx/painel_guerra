@@ -1871,6 +1871,159 @@
             box-shadow: 0 0 12px rgba(255, 153, 0, 0.4) !important;
             margin-top: 4px;
         }
+
+        /* ── ABA 3: QUADRO DE AVISOS & ESCALAÇÃO ─────────────────── */
+        .tab-btn.board-btn.active {
+            background: linear-gradient(135deg, rgba(255, 75, 43, 0.25), rgba(255, 65, 108, 0.15)) !important;
+            border-color: #ff416c !important;
+            color: #fff !important;
+            box-shadow: 0 0 25px rgba(255, 65, 108, 0.45) !important;
+        }
+        .duty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+        .duty-card {
+            background: rgba(18, 10, 26, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 22px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        .duty-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 183, 197, 0.4);
+            box-shadow: 0 14px 40px rgba(255, 65, 108, 0.25);
+        }
+        .duty-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+        }
+        .duty-card.war-duty::before { background: linear-gradient(90deg, #ff416c, #ff4b2b); }
+        .duty-card.don-duty::before { background: linear-gradient(90deg, #00ff88, #00b4d8); }
+        .duty-card.raid-duty::before { background: linear-gradient(90deg, #ffd700, #ff8c00); }
+        
+        .duty-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+        .duty-icon {
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .duty-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        .duty-sub {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .duty-members {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .duty-member-pill {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 10px 14px;
+        }
+        .duty-member-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .duty-member-role {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.72rem;
+            color: #ffd700;
+            background: rgba(255, 215, 0, 0.1);
+            padding: 3px 8px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 215, 0, 0.25);
+        }
+
+        /* ── BADGES DE GUERRA & CWL ──────────────────────────────── */
+        .cwl-active-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 7px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #00f0ff !important;
+            background: rgba(0, 240, 255, 0.12) !important;
+            border: 1px solid rgba(0, 240, 255, 0.45) !important;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+            vertical-align: middle;
+        }
+        .war-miss-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 2px 7px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #ff3355 !important;
+            background: rgba(255, 51, 85, 0.16) !important;
+            border: 1px solid rgba(255, 51, 85, 0.5) !important;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(255, 51, 85, 0.35);
+            vertical-align: middle;
+        }
+        .war-clean-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 2px 7px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #00ff88 !important;
+            background: rgba(0, 255, 136, 0.12) !important;
+            border: 1px solid rgba(0, 255, 136, 0.35) !important;
+            border-radius: 6px;
+            vertical-align: middle;
+        }
+        .table-row-missed {
+            background: rgba(255, 51, 85, 0.06) !important;
+        }
+        .table-row-missed:hover {
+            background: rgba(255, 51, 85, 0.12) !important;
+        }
     </style>
 </head>
 <body>
@@ -1979,6 +2132,13 @@
             <span class="tab-text-wrap">
                 <span class="tab-title">TEMPLO DOS MEMBROS</span>
                 <span class="tab-sub">Cúpula &amp; Clã Completo</span>
+            </span>
+        </button>
+        <button class="tab-btn board-btn" id="tabBtnBoard" onclick="switchTab('board')">
+            <span class="tab-icon">📜</span>
+            <span class="tab-text-wrap">
+                <span class="tab-title">QUADRO DE AVISOS</span>
+                <span class="tab-sub">Escalação &amp; Atribuições</span>
             </span>
         </button>
     </div>
@@ -2324,17 +2484,188 @@
         </div>
 
     </div>
+    <!-- ─── FIM DA ABA 2: TEMPLO DOS MEMBROS ────────────────────────────── -->
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- ─── ABA 3: QUADRO DE AVISOS & ESCALAÇÃO (LIDERANÇA & GUERRAS) ──── -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <div id="viewBoard" class="tab-view" style="display:none; opacity:0;">
+
+        <!-- Hero do Quadro de Avisos -->
+        <div class="japan-sanctuary-hero" style="background: linear-gradient(180deg, rgba(255, 65, 108, 0.12) 0%, rgba(14, 6, 16, 0.4) 100%);">
+            <div class="japan-torii-header">📜</div>
+            <h1>QUADRO DE AVISOS &amp; ESCALAÇÃO</h1>
+            <div class="japan-sub">ORDEM SUPREMA • ATRIBUIÇÕES DA LIDERANÇA &amp; FREQUÊNCIA DE GUERRA</div>
+
+            <!-- Métricas Resumo -->
+            <div class="japan-metrics-bar">
+                <div class="j-metric-item">
+                    <span style="font-size: 1.5rem;">👑</span>
+                    <div>
+                        <div class="j-metric-val">CONSELHO</div>
+                        <div class="j-metric-lbl">3 Atribuições Ativas</div>
+                    </div>
+                </div>
+                <div class="j-metric-item">
+                    <span style="font-size: 1.5rem;">⚔️</span>
+                    <div>
+                        <div class="j-metric-val" id="boardActiveWarriorsCount">0</div>
+                        <div class="j-metric-lbl">Guerreiros Sempre Ativos</div>
+                    </div>
+                </div>
+                <div class="j-metric-item">
+                    <span style="font-size: 1.5rem;">⚠️</span>
+                    <div>
+                        <div class="j-metric-val" id="boardMissedWarriorsCount" style="color:#ff3355;">0</div>
+                        <div class="j-metric-lbl">Guerreiros com Faltas</div>
+                    </div>
+                </div>
+                <div class="j-metric-item">
+                    <span style="font-size: 1.5rem;">🛡️</span>
+                    <div>
+                        <div class="j-metric-val" style="color:#00f0ff;">SEXTA 16/10</div>
+                        <div class="j-metric-lbl">Próximo Raide de Fds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 1: Atribuições dos Co-Líderes -->
+        <div style="margin-top: 30px;">
+            <div class="japan-section-title">
+                <h2>👑 ATRIBUIÇÕES OFICIAIS DOS CO-LÍDERES</h2>
+                <div class="j-title-sub">DELEGAÇÃO DE COMANDO PARA A PRÓXIMA GUERRA E EVENTOS DO CLÃ</div>
+            </div>
+
+            <div class="duty-grid">
+                <!-- Card 1: Definir Guerra -->
+                <div class="duty-card war-duty">
+                    <div class="duty-header">
+                        <div class="duty-icon">⚔️</div>
+                        <div>
+                            <div class="duty-title">DEFINIR PRÓXIMA GUERRA</div>
+                            <div class="duty-sub">Montar lineup &amp; Iniciar busca</div>
+                        </div>
+                    </div>
+                    <div style="font-size:0.85rem; color:rgba(255,255,255,0.7); line-height:1.4;">
+                        Responsáveis por montar a lista de guerra priorizando quem sempre ataca e deixando de fora quem faltou.
+                    </div>
+                    <div class="duty-members">
+                        <div class="duty-member-pill">
+                            <span class="duty-member-name">⚡ Jonas</span>
+                            <span class="duty-member-role">CO-LÍDER • CV 15</span>
+                        </div>
+                        <div class="duty-member-pill">
+                            <span class="duty-member-name">⚡ JP Chavoso</span>
+                            <span class="duty-member-role">CO-LÍDER • CV 14</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Doações de Guerra -->
+                <div class="duty-card don-duty">
+                    <div class="duty-header">
+                        <div class="duty-icon">📦</div>
+                        <div>
+                            <div class="duty-title">DOAÇÕES &amp; CASTELOS DE DEFESA</div>
+                            <div class="duty-sub">Tropas Meta de Guerra</div>
+                        </div>
+                    </div>
+                    <div style="font-size:0.85rem; color:rgba(255,255,255,0.7); line-height:1.4;">
+                        Responsáveis por abastecer os castelos de guerra defensivos e garantir reforços máximos aos membros.
+                    </div>
+                    <div class="duty-members">
+                        <div class="duty-member-pill">
+                            <span class="duty-member-name">📦 BadBoy Xavier</span>
+                            <span class="duty-member-role">CO-LÍDER • 688+ DOADOS</span>
+                        </div>
+                        <div class="duty-member-pill">
+                            <span class="duty-member-name">📦 Jonas</span>
+                            <span class="duty-member-role">CO-LÍDER • CV 15 FULL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Iniciar Raide -->
+                <div class="duty-card raid-duty">
+                    <div class="duty-header">
+                        <div class="duty-icon">🛡️</div>
+                        <div>
+                            <div class="duty-title">INICIAR RAIDE DE FIM DE SEMANA</div>
+                            <div class="duty-sub">Capital do Clã • Sexta 16/10</div>
+                        </div>
+                    </div>
+                    <div style="font-size:0.85rem; color:rgba(255,255,255,0.7); line-height:1.4;">
+                        Responsável por abrir pontualmente os portões do Raide na sexta-feira dia 16/10 para todos atacarem.
+                    </div>
+                    <div class="duty-members">
+                        <div class="duty-member-pill">
+                            <span class="duty-member-name">🌸 Cibele❤️</span>
+                            <span class="duty-member-role">CO-LÍDER • TITULAR</span>
+                        </div>
+                        <div class="duty-member-pill" style="opacity:0.65;">
+                            <span class="duty-member-name">⚡ JP Chavoso</span>
+                            <span class="duty-member-role">CO-LÍDER • APOIO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 2: Tabela de Escalação de Guerra -->
+        <div style="margin-top: 25px;">
+            <div class="japan-section-title">
+                <h2>🎯 GUIA DE ESCALAÇÃO PARA A PRÓXIMA GUERRA</h2>
+                <div class="j-title-sub">VERIFIQUE QUEM NUNCA FALHA E QUEM NÃO ATACA (MARCADOS EM VERMELHO)</div>
+            </div>
+
+            <!-- Filtros Rápidos da Escalação -->
+            <div class="japan-controls-bar" style="margin-bottom: 15px;">
+                <div class="j-filter-group">
+                    <button class="j-filter-btn active" id="boardFilterAll" onclick="setBoardFilter('all')">Todos os Guerreiros</button>
+                    <button class="j-filter-btn" id="boardFilterActive" onclick="setBoardFilter('clean')">🟢 Sempre Atacam (Sem Faltas)</button>
+                    <button class="j-filter-btn idle-btn" id="boardFilterMissed" onclick="setBoardFilter('missed')" style="border-color:#ff3355 !important; color:#ff3355 !important;">🔴 Não Atacam / Faltaram</button>
+                    <button class="j-filter-btn" id="boardFilterCwl" onclick="setBoardFilter('cwl')">💠 Destaques CWL</button>
+                </div>
+            </div>
+
+            <!-- Tabela de Escalação -->
+            <div class="japan-table-card">
+                <table class="japan-table">
+                    <thead>
+                        <tr>
+                            <th>Status Escalação</th>
+                            <th>Membro / Guerreiro</th>
+                            <th>Cargo</th>
+                            <th>Centro de Vila</th>
+                            <th>Ataques Realizados</th>
+                            <th>Faltas em Guerra</th>
+                            <th>Destaque CWL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="boardWarriorsTbody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer" style="color: #ffb7c5; opacity: 0.5;">
+            GOD OF WAR — COMANDO SUPREMO &amp; ESCALAÇÃO DE GUERRA
+        </div>
+
+    </div>
 
 </div>
 
 <script>
 // ── War Data Placeholder (Will be replaced by update_dashboard.py) ──
 const WAR_DATA = {
-  "state": "warEnded",
-  "teamSize": 30,
-  "preparationStartTime": "20261007T203106.000Z",
-  "startTime": "20261008T203104.000Z",
-  "endTime": "20261009T203104.000Z",
+  "state": "preparation",
+  "teamSize": 15,
+  "attacksPerMember": 2,
+  "battleModifier": "none",
+  "preparationStartTime": "20261011T162128.000Z",
+  "startTime": "20261012T152128.000Z",
+  "endTime": "20261013T152128.000Z",
   "clan": {
     "tag": "#2JLQUR2CV",
     "name": "GÓD OF War",
@@ -2344,1210 +2675,267 @@ const WAR_DATA = {
       "medium": "https://api-assets.clashofclans.com/badges/200/h8t1spUGHZDBXquncnFH85IO06tigkQ22M-6U_GNrmM.png"
     },
     "clanLevel": 9,
-    "attacks": 16,
-    "stars": 33,
-    "destructionPercentage": 41.56666666666667,
+    "attacks": 0,
+    "stars": 0,
+    "destructionPercentage": 0.0,
     "members": [
       {
         "tag": "#GGQPRRURV",
         "name": "namtugal",
         "townhallLevel": 13,
-        "mapPosition": 6,
-        "attacks": [
-          {
-            "attackerTag": "#GGQPRRURV",
-            "defenderTag": "#880G0YVGR",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 18,
-            "duration": 122
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#G2VRYYJ2U",
-          "defenderTag": "#GGQPRRURV",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 5,
-          "duration": 101
-        },
-        "donations": 288,
-        "role": "admin"
-      },
-      {
-        "tag": "#GYP00G8PR",
-        "name": "JP Chavoso",
-        "townhallLevel": 14,
         "mapPosition": 3,
-        "attacks": [
-          {
-            "attackerTag": "#GYP00G8PR",
-            "defenderTag": "#GU29CG8QV",
-            "stars": 2,
-            "destructionPercentage": 62,
-            "order": 35,
-            "duration": 121
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#R2RVJ8YP8",
-          "defenderTag": "#GYP00G8PR",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 24,
-          "duration": 78
-        },
-        "donations": 112,
-        "role": "coLeader"
+        "opponentAttacks": 0,
+        "donations": 318,
+        "role": "admin"
       },
       {
         "tag": "#GJLC89UG8",
         "name": "Robson",
         "townhallLevel": 13,
-        "mapPosition": 14,
-        "attacks": [
-          {
-            "attackerTag": "#GJLC89UG8",
-            "defenderTag": "#GGQVLPCQ2",
-            "stars": 2,
-            "destructionPercentage": 71,
-            "order": 11,
-            "duration": 109
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GGQVLPCQ2",
-          "defenderTag": "#GJLC89UG8",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 12,
-          "duration": 87
-        },
-        "donations": 0,
+        "mapPosition": 10,
+        "opponentAttacks": 0,
+        "donations": 74,
         "role": "member"
       },
       {
         "tag": "#292YJJ02V",
         "name": "Nevzx 躾⛩️",
         "townhallLevel": 14,
-        "mapPosition": 5,
-        "attacks": [
-          {
-            "attackerTag": "#292YJJ02V",
-            "defenderTag": "#YCLG0LQG2",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 39,
-            "duration": 124
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GVRYC00L2",
-          "defenderTag": "#292YJJ02V",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 26,
-          "duration": 105
-        },
-        "donations": 763,
+        "mapPosition": 2,
+        "opponentAttacks": 0,
+        "donations": 813,
         "role": "leader"
       },
       {
         "tag": "#LQV2QRVJR",
         "name": "Rosa₪Floresida₪",
         "townhallLevel": 12,
-        "mapPosition": 20,
-        "attacks": [
-          {
-            "attackerTag": "#LQV2QRVJR",
-            "defenderTag": "#L8RGG0YCL",
-            "stars": 2,
-            "destructionPercentage": 92,
-            "order": 3,
-            "duration": 169
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#G9P8R9LV0",
-          "defenderTag": "#LQV2QRVJR",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 32,
-          "duration": 129
-        },
-        "donations": 487,
+        "mapPosition": 11,
+        "opponentAttacks": 0,
+        "donations": 517,
         "role": "admin"
-      },
-      {
-        "tag": "#Q0YGRQLCQ",
-        "name": "mestre",
-        "townhallLevel": 13,
-        "mapPosition": 12,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#880G0YVGR",
-          "defenderTag": "#Q0YGRQLCQ",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 17,
-          "duration": 117
-        },
-        "donations": 192,
-        "role": "member"
       },
       {
         "tag": "#QRL2CJG9",
         "name": "Jonas",
         "townhallLevel": 15,
-        "mapPosition": 2,
-        "attacks": [
-          {
-            "attackerTag": "#QRL2CJG9",
-            "defenderTag": "#YGPYP0UG8",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 27,
-            "duration": 132
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#YGPYP0UG8",
-          "defenderTag": "#QRL2CJG9",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 6,
-          "duration": 107
-        },
-        "donations": 338,
+        "mapPosition": 1,
+        "opponentAttacks": 0,
+        "donations": 500,
         "role": "coLeader"
-      },
-      {
-        "tag": "#9JUJVPVUQ",
-        "name": "Targaryen",
-        "townhallLevel": 12,
-        "mapPosition": 23,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#YC8JC8VPC",
-          "defenderTag": "#9JUJVPVUQ",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 34,
-          "duration": 85
-        },
-        "donations": 0,
-        "role": "member"
       },
       {
         "tag": "#G9ULQQJP2",
         "name": "Hedris",
         "townhallLevel": 12,
-        "mapPosition": 26,
-        "attacks": [
-          {
-            "attackerTag": "#G9ULQQJP2",
-            "defenderTag": "#R00CPV8YU",
-            "stars": 2,
-            "destructionPercentage": 60,
-            "order": 7,
-            "duration": 87
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#R00CPV8YU",
-          "defenderTag": "#G9ULQQJP2",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 29,
-          "duration": 149
-        },
+        "mapPosition": 13,
+        "opponentAttacks": 0,
         "donations": 152,
         "role": "admin"
-      },
-      {
-        "tag": "#GJCGJU8JL",
-        "name": "Igorzin",
-        "townhallLevel": 13,
-        "mapPosition": 16,
-        "opponentAttacks": 0,
-        "donations": 0,
-        "role": "member"
       },
       {
         "tag": "#GR982GPU",
         "name": "Princip3",
         "townhallLevel": 12,
-        "mapPosition": 28,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#YCLG0LQG2",
-          "defenderTag": "#GR982GPU",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 25,
-          "duration": 83
-        },
-        "donations": 78,
-        "role": "member"
-      },
-      {
-        "tag": "#GVRPCCLUL",
-        "name": "Bruxo",
-        "townhallLevel": 12,
-        "mapPosition": 19,
+        "mapPosition": 14,
         "opponentAttacks": 0,
-        "donations": 0,
+        "donations": 78,
         "role": "member"
       },
       {
         "tag": "#YJVRGUGVJ",
         "name": "Cibele❤️",
         "townhallLevel": 13,
-        "mapPosition": 9,
-        "attacks": [
-          {
-            "attackerTag": "#YJVRGUGVJ",
-            "defenderTag": "#GP8C00CCY",
-            "stars": 2,
-            "destructionPercentage": 63,
-            "order": 9,
-            "duration": 86
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GP8C00CCY",
-          "defenderTag": "#YJVRGUGVJ",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 8,
-          "duration": 136
-        },
+        "mapPosition": 6,
+        "opponentAttacks": 0,
         "donations": 75,
         "role": "coLeader"
-      },
-      {
-        "tag": "#PUQGPV8PC",
-        "name": "PITBULL.E",
-        "townhallLevel": 12,
-        "mapPosition": 17,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#LGULC20LC",
-          "defenderTag": "#PUQGPV8PC",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 4,
-          "duration": 111
-        },
-        "donations": 0,
-        "role": "member"
-      },
-      {
-        "tag": "#G0JUG29CG",
-        "name": "loren_ghost",
-        "townhallLevel": 13,
-        "mapPosition": 15,
-        "opponentAttacks": 0,
-        "donations": 0,
-        "role": "member"
-      },
-      {
-        "tag": "#28UVGLLQP",
-        "name": "Carlos123wx",
-        "townhallLevel": 13,
-        "mapPosition": 7,
-        "attacks": [
-          {
-            "attackerTag": "#28UVGLLQP",
-            "defenderTag": "#GP9CQ0YQC",
-            "stars": 1,
-            "destructionPercentage": 64,
-            "order": 20,
-            "duration": 87
-          }
-        ],
-        "opponentAttacks": 0,
-        "donations": 0,
-        "role": "member"
-      },
-      {
-        "tag": "#9UYPCVPLL",
-        "name": "LINKIN PARK",
-        "townhallLevel": 15,
-        "mapPosition": 1,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#9YGRCJPVY",
-          "defenderTag": "#9UYPCVPLL",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 16,
-          "duration": 83
-        },
-        "donations": 111,
-        "role": "admin"
       },
       {
         "tag": "#90YCRLUY0",
         "name": "king renan",
         "townhallLevel": 13,
-        "mapPosition": 13,
-        "attacks": [
-          {
-            "attackerTag": "#90YCRLUY0",
-            "defenderTag": "#82LUQ902R",
-            "stars": 2,
-            "destructionPercentage": 81,
-            "order": 15,
-            "duration": 130
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#82LUQ902R",
-          "defenderTag": "#90YCRLUY0",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 22,
-          "duration": 134
-        },
-        "donations": 392,
-        "role": "admin"
-      },
-      {
-        "tag": "#R8R22C08Y",
-        "name": "Megatron",
-        "townhallLevel": 14,
-        "mapPosition": 4,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#Y0JP0UVG8",
-          "defenderTag": "#R8R22C08Y",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 19,
-          "duration": 106
-        },
-        "donations": 34,
-        "role": "admin"
-      },
-      {
-        "tag": "#R9PV90U00",
-        "name": "deka",
-        "townhallLevel": 11,
-        "mapPosition": 30,
-        "attacks": [
-          {
-            "attackerTag": "#R9PV90U00",
-            "defenderTag": "#GQUPPGU0P",
-            "stars": 2,
-            "destructionPercentage": 84,
-            "order": 10,
-            "duration": 154
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#2UJ0LJQV0",
-          "defenderTag": "#R9PV90U00",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 37,
-          "duration": 83
-        },
-        "donations": 33,
-        "role": "admin"
-      },
-      {
-        "tag": "#2LGUVVC99",
-        "name": "#BAD BOY#",
-        "townhallLevel": 12,
-        "mapPosition": 18,
-        "attacks": [
-          {
-            "attackerTag": "#2LGUVVC99",
-            "defenderTag": "#Y0U9G9CCQ",
-            "stars": 2,
-            "destructionPercentage": 90,
-            "order": 38,
-            "duration": 127
-          }
-        ],
+        "mapPosition": 7,
         "opponentAttacks": 0,
-        "donations": 48,
+        "donations": 395,
         "role": "admin"
       },
       {
-        "tag": "#LVYP8RVGR",
-        "name": "IGOR_SILVA",
+        "tag": "#GVUPL0Y2L",
+        "name": "marmela",
         "townhallLevel": 13,
-        "mapPosition": 11,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#LU0Y0PJ8J",
-          "defenderTag": "#LVYP8RVGR",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 30,
-          "duration": 92
-        },
-        "donations": 0,
-        "role": "member"
-      },
-      {
-        "tag": "#GYYCGVV2C",
-        "name": "lucax",
-        "townhallLevel": 12,
-        "mapPosition": 24,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#PP22Y20P",
-          "defenderTag": "#GYYCGVV2C",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 14,
-          "duration": 83
-        },
-        "donations": 0,
-        "role": "member"
-      },
-      {
-        "tag": "#PCR0GRPR8",
-        "name": "BR4BØX",
-        "townhallLevel": 12,
-        "mapPosition": 25,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GLGR0VCJJ",
-          "defenderTag": "#PCR0GRPR8",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 23,
-          "duration": 127
-        },
-        "donations": 0,
+        "mapPosition": 8,
+        "opponentAttacks": 0,
+        "donations": 62,
         "role": "member"
       },
       {
         "tag": "#GU82Q92JP",
         "name": "After",
         "townhallLevel": 12,
-        "mapPosition": 21,
-        "attacks": [
-          {
-            "attackerTag": "#GU82Q92JP",
-            "defenderTag": "#Y89VP82RG",
-            "stars": 1,
-            "destructionPercentage": 55,
-            "order": 21,
-            "duration": 90
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#Y89VP82RG",
-          "defenderTag": "#GU82Q92JP",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 31,
-          "duration": 138
-        },
+        "mapPosition": 12,
+        "opponentAttacks": 0,
         "donations": 71,
         "role": "admin"
       },
       {
-        "tag": "#GQ2L8L9JY",
-        "name": "qpdjcisoq",
-        "townhallLevel": 12,
-        "mapPosition": 27,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#L8RGG0YCL",
-          "defenderTag": "#GQ2L8L9JY",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 2,
-          "duration": 96
-        },
-        "donations": 0,
-        "role": "member"
+        "tag": "#GUQ822R8Q",
+        "name": "YArdorius",
+        "townhallLevel": 11,
+        "mapPosition": 15,
+        "opponentAttacks": 0,
+        "donations": 8,
+        "role": "admin"
       },
       {
         "tag": "#GCY8PR02J",
         "name": "johnpork",
         "townhallLevel": 13,
-        "mapPosition": 8,
-        "attacks": [
-          {
-            "attackerTag": "#GCY8PR02J",
-            "defenderTag": "#LGGJ0PGRV",
-            "stars": 1,
-            "destructionPercentage": 72,
-            "order": 36,
-            "duration": 60
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#LGGJ0PGRV",
-          "defenderTag": "#GCY8PR02J",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 28,
-          "duration": 167
-        },
+        "mapPosition": 4,
+        "opponentAttacks": 0,
         "donations": 519,
         "role": "admin"
       },
       {
-        "tag": "#YJUYLQGQJ",
-        "name": "ALAZANHA II",
-        "townhallLevel": 12,
-        "mapPosition": 29,
+        "tag": "#80C2V90Q",
+        "name": "♤Home Simpson♧",
+        "townhallLevel": 13,
+        "mapPosition": 9,
         "opponentAttacks": 0,
-        "donations": 0,
-        "role": "member"
-      },
-      {
-        "tag": "#GYU8QLLVJ",
-        "name": "kayky2005",
-        "townhallLevel": 12,
-        "mapPosition": 22,
-        "attacks": [
-          {
-            "attackerTag": "#GYU8QLLVJ",
-            "defenderTag": "#22C2QLG9R",
-            "stars": 2,
-            "destructionPercentage": 53,
-            "order": 13,
-            "duration": 118
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#22C2QLG9R",
-          "defenderTag": "#GYU8QLLVJ",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 1,
-          "duration": 92
-        },
-        "donations": 0,
-        "role": "member"
+        "donations": 178,
+        "role": "admin"
       },
       {
         "tag": "#YGLLU0UU9",
         "name": "ÉOBRABOXX",
         "townhallLevel": 14,
-        "mapPosition": 10,
-        "attacks": [
-          {
-            "attackerTag": "#YGLLU0UU9",
-            "defenderTag": "#Y0JP0UVG8",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 33,
-            "duration": 150
-          }
-        ],
+        "mapPosition": 5,
         "opponentAttacks": 0,
-        "donations": 249,
+        "donations": 299,
         "role": "member"
       }
     ]
   },
   "opponent": {
-    "tag": "#2JJV92VLQ",
-    "name": "CLAN LIDERS",
+    "tag": "#JGU8G8LQ",
+    "name": "Death Crusaders",
     "badgeUrls": {
-      "small": "https://api-assets.clashofclans.com/badges/70/sNTN_KuyChkkLepASyk2oiG5PFz4FxhR8fttqbwUvHs.png",
-      "large": "https://api-assets.clashofclans.com/badges/512/sNTN_KuyChkkLepASyk2oiG5PFz4FxhR8fttqbwUvHs.png",
-      "medium": "https://api-assets.clashofclans.com/badges/200/sNTN_KuyChkkLepASyk2oiG5PFz4FxhR8fttqbwUvHs.png"
+      "small": "https://api-assets.clashofclans.com/badges/70/lFgwxXv51fWLGI09Iaef4BIyoTfenq1_GsA34jzFnAo.png",
+      "large": "https://api-assets.clashofclans.com/badges/512/lFgwxXv51fWLGI09Iaef4BIyoTfenq1_GsA34jzFnAo.png",
+      "medium": "https://api-assets.clashofclans.com/badges/200/lFgwxXv51fWLGI09Iaef4BIyoTfenq1_GsA34jzFnAo.png"
     },
-    "clanLevel": 11,
-    "attacks": 23,
-    "stars": 69,
-    "destructionPercentage": 76.66666666666667,
+    "clanLevel": 10,
+    "attacks": 0,
+    "stars": 0,
+    "destructionPercentage": 0.0,
     "members": [
       {
-        "tag": "#880G0YVGR",
-        "name": "Артемиий",
-        "townhallLevel": 14,
-        "mapPosition": 12,
-        "attacks": [
-          {
-            "attackerTag": "#880G0YVGR",
-            "defenderTag": "#Q0YGRQLCQ",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 17,
-            "duration": 117
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GGQPRRURV",
-          "defenderTag": "#880G0YVGR",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 18,
-          "duration": 122
-        }
-      },
-      {
-        "tag": "#Y0JP0UVG8",
-        "name": "Happy default",
-        "townhallLevel": 14,
-        "mapPosition": 4,
-        "attacks": [
-          {
-            "attackerTag": "#Y0JP0UVG8",
-            "defenderTag": "#R8R22C08Y",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 19,
-            "duration": 106
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#YGLLU0UU9",
-          "defenderTag": "#Y0JP0UVG8",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 33,
-          "duration": 150
-        }
-      },
-      {
-        "tag": "#LGULC20LC",
-        "name": "ден 33",
+        "tag": "#P0GJQQ09",
+        "name": "TK786",
         "townhallLevel": 13,
-        "mapPosition": 17,
-        "attacks": [
-          {
-            "attackerTag": "#LGULC20LC",
-            "defenderTag": "#PUQGPV8PC",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 4,
-            "duration": 111
-          }
-        ],
+        "mapPosition": 6,
         "opponentAttacks": 0
       },
       {
-        "tag": "#9YGRCJPVY",
-        "name": "епта",
-        "townhallLevel": 17,
-        "mapPosition": 1,
-        "attacks": [
-          {
-            "attackerTag": "#9YGRCJPVY",
-            "defenderTag": "#9UYPCVPLL",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 16,
-            "duration": 83
-          }
-        ],
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#LU0Y0PJ8J",
-        "name": "SyLTaN",
-        "townhallLevel": 14,
+        "tag": "#L0RUQ92J",
+        "name": "cliffjumper",
+        "townhallLevel": 13,
         "mapPosition": 11,
-        "attacks": [
-          {
-            "attackerTag": "#LU0Y0PJ8J",
-            "defenderTag": "#LVYP8RVGR",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 30,
-            "duration": 92
-          }
-        ],
         "opponentAttacks": 0
       },
       {
-        "tag": "#GP9CQ0YQC",
-        "name": "легион",
-        "townhallLevel": 15,
-        "mapPosition": 7,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#28UVGLLQP",
-          "defenderTag": "#GP9CQ0YQC",
-          "stars": 1,
-          "destructionPercentage": 64,
-          "order": 20,
-          "duration": 87
-        }
+        "tag": "#R0UUUYU0Y",
+        "name": "black rose",
+        "townhallLevel": 11,
+        "mapPosition": 15,
+        "opponentAttacks": 0
       },
       {
-        "tag": "#YQ9VPU0JL",
-        "name": "вова",
+        "tag": "#QQR8YGPQU",
+        "name": "REBEL",
+        "townhallLevel": 13,
+        "mapPosition": 7,
+        "opponentAttacks": 0
+      },
+      {
+        "tag": "#GPC98GY02",
+        "name": "MD AZAD HOSSAIN",
+        "townhallLevel": 14,
+        "mapPosition": 9,
+        "opponentAttacks": 0
+      },
+      {
+        "tag": "#LYV99RQV8",
+        "name": "blue guy",
+        "townhallLevel": 14,
+        "mapPosition": 2,
+        "opponentAttacks": 0
+      },
+      {
+        "tag": "#LUJJULGUP",
+        "name": "Nafry 2",
+        "townhallLevel": 12,
+        "mapPosition": 14,
+        "opponentAttacks": 0
+      },
+      {
+        "tag": "#9QG8YJPYR",
+        "name": "Crlewis",
         "townhallLevel": 14,
         "mapPosition": 10,
         "opponentAttacks": 0
       },
       {
-        "tag": "#R00CPV8YU",
-        "name": "лилу",
-        "townhallLevel": 13,
-        "mapPosition": 27,
-        "attacks": [
-          {
-            "attackerTag": "#R00CPV8YU",
-            "defenderTag": "#G9ULQQJP2",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 29,
-            "duration": 149
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#G9ULQQJP2",
-          "defenderTag": "#R00CPV8YU",
-          "stars": 2,
-          "destructionPercentage": 60,
-          "order": 7,
-          "duration": 87
-        }
-      },
-      {
-        "tag": "#YC8JC8VPC",
-        "name": "ll_m.r.x_ll",
-        "townhallLevel": 13,
-        "mapPosition": 23,
-        "attacks": [
-          {
-            "attackerTag": "#YC8JC8VPC",
-            "defenderTag": "#9JUJVPVUQ",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 34,
-            "duration": 85
-          }
-        ],
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#Y89VP82RG",
-        "name": "Qubura",
-        "townhallLevel": 13,
-        "mapPosition": 21,
-        "attacks": [
-          {
-            "attackerTag": "#Y89VP82RG",
-            "defenderTag": "#GU82Q92JP",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 31,
-            "duration": 138
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GU82Q92JP",
-          "defenderTag": "#Y89VP82RG",
-          "stars": 1,
-          "destructionPercentage": 55,
-          "order": 21,
-          "duration": 90
-        }
-      },
-      {
-        "tag": "#YCLG0LQG2",
-        "name": "фартовый чел",
-        "townhallLevel": 13,
-        "mapPosition": 29,
-        "attacks": [
-          {
-            "attackerTag": "#YCLG0LQG2",
-            "defenderTag": "#GR982GPU",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 25,
-            "duration": 83
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#292YJJ02V",
-          "defenderTag": "#YCLG0LQG2",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 39,
-          "duration": 124
-        }
-      },
-      {
-        "tag": "#2UJ0LJQV0",
-        "name": "Mr_Shadow",
-        "townhallLevel": 13,
-        "mapPosition": 16,
-        "attacks": [
-          {
-            "attackerTag": "#2UJ0LJQV0",
-            "defenderTag": "#R9PV90U00",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 37,
-            "duration": 83
-          }
-        ],
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#GVRYC00L2",
-        "name": "B U N Y O D",
-        "townhallLevel": 14,
-        "mapPosition": 5,
-        "attacks": [
-          {
-            "attackerTag": "#GVRYC00L2",
-            "defenderTag": "#292YJJ02V",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 26,
-            "duration": 105
-          }
-        ],
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#GP8C00CCY",
-        "name": "MiHyNcHiK",
-        "townhallLevel": 14,
-        "mapPosition": 9,
-        "attacks": [
-          {
-            "attackerTag": "#GP8C00CCY",
-            "defenderTag": "#YJVRGUGVJ",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 8,
-            "duration": 136
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#YJVRGUGVJ",
-          "defenderTag": "#GP8C00CCY",
-          "stars": 2,
-          "destructionPercentage": 63,
-          "order": 9,
-          "duration": 86
-        }
-      },
-      {
-        "tag": "#GGQPR88Q2",
-        "name": "hashirqFULL",
-        "townhallLevel": 14,
-        "mapPosition": 15,
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#82LUQ902R",
-        "name": "Vanya519",
-        "townhallLevel": 14,
+        "tag": "#GUY8RQC80",
+        "name": "emre",
+        "townhallLevel": 12,
         "mapPosition": 13,
-        "attacks": [
-          {
-            "attackerTag": "#82LUQ902R",
-            "defenderTag": "#90YCRLUY0",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 22,
-            "duration": 134
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#90YCRLUY0",
-          "defenderTag": "#82LUQ902R",
-          "stars": 2,
-          "destructionPercentage": 81,
-          "order": 15,
-          "duration": 130
-        }
-      },
-      {
-        "tag": "#GGQVLPCQ2",
-        "name": "Golstep",
-        "townhallLevel": 14,
-        "mapPosition": 14,
-        "attacks": [
-          {
-            "attackerTag": "#GGQVLPCQ2",
-            "defenderTag": "#GJLC89UG8",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 12,
-            "duration": 87
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GJLC89UG8",
-          "defenderTag": "#GGQVLPCQ2",
-          "stars": 2,
-          "destructionPercentage": 71,
-          "order": 11,
-          "duration": 109
-        }
-      },
-      {
-        "tag": "#22C2QLG9R",
-        "name": "safwerk2",
-        "townhallLevel": 13,
-        "mapPosition": 22,
-        "attacks": [
-          {
-            "attackerTag": "#22C2QLG9R",
-            "defenderTag": "#GYU8QLLVJ",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 1,
-            "duration": 92
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GYU8QLLVJ",
-          "defenderTag": "#22C2QLG9R",
-          "stars": 2,
-          "destructionPercentage": 53,
-          "order": 13,
-          "duration": 118
-        }
-      },
-      {
-        "tag": "#L8RGG0YCL",
-        "name": "OVV丨Spasik",
-        "townhallLevel": 13,
-        "mapPosition": 28,
-        "attacks": [
-          {
-            "attackerTag": "#L8RGG0YCL",
-            "defenderTag": "#GQ2L8L9JY",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 2,
-            "duration": 96
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#LQV2QRVJR",
-          "defenderTag": "#L8RGG0YCL",
-          "stars": 2,
-          "destructionPercentage": 92,
-          "order": 3,
-          "duration": 169
-        }
-      },
-      {
-        "tag": "#GQUPPGU0P",
-        "name": "ROGNAR",
-        "townhallLevel": 13,
-        "mapPosition": 30,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#R9PV90U00",
-          "defenderTag": "#GQUPPGU0P",
-          "stars": 2,
-          "destructionPercentage": 84,
-          "order": 10,
-          "duration": 154
-        }
-      },
-      {
-        "tag": "#GLGR0VCJJ",
-        "name": "бодрый",
-        "townhallLevel": 13,
-        "mapPosition": 26,
-        "attacks": [
-          {
-            "attackerTag": "#GLGR0VCJJ",
-            "defenderTag": "#PCR0GRPR8",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 23,
-            "duration": 127
-          }
-        ],
         "opponentAttacks": 0
       },
       {
-        "tag": "#R2RVJ8YP8",
-        "name": "Шейх",
-        "townhallLevel": 15,
+        "tag": "#YGGP82GVV",
+        "name": "MAHESH HIRO 2",
+        "townhallLevel": 14,
         "mapPosition": 3,
-        "attacks": [
-          {
-            "attackerTag": "#R2RVJ8YP8",
-            "defenderTag": "#GYP00G8PR",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 24,
-            "duration": 78
-          }
-        ],
         "opponentAttacks": 0
       },
       {
-        "tag": "#YGPYP0UG8",
-        "name": "PABLO",
-        "townhallLevel": 16,
-        "mapPosition": 2,
-        "attacks": [
-          {
-            "attackerTag": "#YGPYP0UG8",
-            "defenderTag": "#QRL2CJG9",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 6,
-            "duration": 107
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#QRL2CJG9",
-          "defenderTag": "#YGPYP0UG8",
-          "stars": 3,
-          "destructionPercentage": 100,
-          "order": 27,
-          "duration": 132
-        }
+        "tag": "#PC2RUGYYG",
+        "name": "winterfell",
+        "townhallLevel": 12,
+        "mapPosition": 12,
+        "opponentAttacks": 0
       },
       {
-        "tag": "#G9P8R9LV0",
-        "name": "_Cmetaniche_",
+        "tag": "#QQ0P9Q2Y9",
+        "name": "jojo",
+        "townhallLevel": 15,
+        "mapPosition": 1,
+        "opponentAttacks": 0
+      },
+      {
+        "tag": "#Q2CQC02R0",
+        "name": "apádseszeret",
         "townhallLevel": 13,
-        "mapPosition": 20,
-        "attacks": [
-          {
-            "attackerTag": "#G9P8R9LV0",
-            "defenderTag": "#LQV2QRVJR",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 32,
-            "duration": 129
-          }
-        ],
+        "mapPosition": 5,
         "opponentAttacks": 0
       },
       {
-        "tag": "#GU29CG8QV",
-        "name": "garo tyrkmen",
+        "tag": "#YVGQR02LU",
+        "name": "Neel",
         "townhallLevel": 13,
-        "mapPosition": 33,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GYP00G8PR",
-          "defenderTag": "#GU29CG8QV",
-          "stars": 2,
-          "destructionPercentage": 62,
-          "order": 35,
-          "duration": 121
-        }
-      },
-      {
-        "tag": "#G2VRYYJ2U",
-        "name": "Wehttam",
-        "townhallLevel": 14,
-        "mapPosition": 6,
-        "attacks": [
-          {
-            "attackerTag": "#G2VRYYJ2U",
-            "defenderTag": "#GGQPRRURV",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 5,
-            "duration": 101
-          }
-        ],
+        "mapPosition": 4,
         "opponentAttacks": 0
       },
       {
-        "tag": "#LGGJ0PGRV",
-        "name": "Aуakodji",
-        "townhallLevel": 14,
+        "tag": "#YG8PJRU2L",
+        "name": "LiL Cxsta YT",
+        "townhallLevel": 13,
         "mapPosition": 8,
-        "attacks": [
-          {
-            "attackerTag": "#LGGJ0PGRV",
-            "defenderTag": "#GCY8PR02J",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 28,
-            "duration": 167
-          }
-        ],
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#GCY8PR02J",
-          "defenderTag": "#LGGJ0PGRV",
-          "stars": 1,
-          "destructionPercentage": 72,
-          "order": 36,
-          "duration": 60
-        }
-      },
-      {
-        "tag": "#PP22Y20P",
-        "name": "*:* G@RAAA *:*",
-        "townhallLevel": 13,
-        "mapPosition": 24,
-        "attacks": [
-          {
-            "attackerTag": "#PP22Y20P",
-            "defenderTag": "#GYYCGVV2C",
-            "stars": 3,
-            "destructionPercentage": 100,
-            "order": 14,
-            "duration": 83
-          }
-        ],
-        "opponentAttacks": 0
-      },
-      {
-        "tag": "#Y0U9G9CCQ",
-        "name": "бос_молокосос",
-        "townhallLevel": 13,
-        "mapPosition": 18,
-        "opponentAttacks": 1,
-        "bestOpponentAttack": {
-          "attackerTag": "#2LGUVVC99",
-          "defenderTag": "#Y0U9G9CCQ",
-          "stars": 2,
-          "destructionPercentage": 90,
-          "order": 38,
-          "duration": 127
-        }
-      },
-      {
-        "tag": "#YPRJGJRVV",
-        "name": "YT YAZI",
-        "townhallLevel": 13,
-        "mapPosition": 19,
         "opponentAttacks": 0
       }
     ]
-  },
-  "warStartTime": "20261008T203104.000Z"
+  }
 };
 
 // ── Populate Basic Data ──────────────────────────────────────────────────
@@ -3615,38 +3003,38 @@ const SEASON_DATA = {
     "#GYU8QLLVJ": 2
   },
   "lastSeenDonations": {
-    "#QRL2CJG9": 338,
-    "#9UYPCVPLL": 111,
-    "#GGQPRRURV": 288,
-    "#GYP00G8PR": 112,
-    "#292YJJ02V": 763,
+    "#QRL2CJG9": 500,
+    "#9UYPCVPLL": 156,
+    "#GGQPRRURV": 318,
+    "#GYP00G8PR": 179,
+    "#292YJJ02V": 813,
     "#YJVRGUGVJ": 75,
     "#R8R22C08Y": 34,
-    "#QGYU9GYC": 688,
+    "#QGYU9GYC": 773,
     "#GCY8PR02J": 519,
-    "#GVUPL0Y2L": 60,
+    "#GVUPL0Y2L": 62,
     "#LGG9RJ8PC": 0,
-    "#L9JULURCP": 47,
-    "#GJLC89UG8": 0,
+    "#L9JULURCP": 49,
+    "#GJLC89UG8": 74,
     "#G9ULQQJP2": 152,
-    "#80C2V90Q": 1,
+    "#80C2V90Q": 178,
     "#28UVGLLQP": 0,
     "#QLYUCRG9U": 0,
     "#P2UJGG22P": 0,
-    "#2LGUVVC99": 48,
+    "#2LGUVVC99": 80,
     "#Q0YGRQLCQ": 192,
     "#R9PV90U00": 33,
     "#QGLRQRQLJ": 0,
     "#YCY2YYYUP": 0,
     "#Y2VVRCUL9": 75,
-    "#90YCRLUY0": 392,
-    "#LQV2QRVJR": 487,
+    "#90YCRLUY0": 395,
+    "#LQV2QRVJR": 517,
     "#Y8PLPVJJ0": 0,
     "#Q8QQC2QR9": 3,
     "#GU82Q92JP": 71,
     "#GUQ822R8Q": 8,
     "#QRQCP2Q0P": 0,
-    "#Y2LP8RV9J": 56,
+    "#Y2LP8RV9J": 109,
     "#9JUJVPVUQ": 0,
     "#GVRPCCLUL": 87,
     "#G0JUG29CG": 0,
@@ -3655,7 +3043,7 @@ const SEASON_DATA = {
     "#LVYP8RVGR": 0,
     "#GG2JUVG2P": 0,
     "#GYU8QLLVJ": 46,
-    "#YGLLU0UU9": 249,
+    "#YGLLU0UU9": 299,
     "#GJCGJU8JL": 0,
     "#PUQGPV8PC": 0,
     "#9VRQRUR20": 30,
@@ -3664,7 +3052,7 @@ const SEASON_DATA = {
     "#R08PU9VP0": 0,
     "#GLQJVVVR9": 0,
     "#Q0URR9VC9": 0,
-    "#82CQY0Q8V": 0,
+    "#82CQY0Q8V": 2,
     "#GR982GPU": 78,
     "#UJQYQY9U": 0,
     "#G8QY89CY0": 0,
@@ -3672,7 +3060,10 @@ const SEASON_DATA = {
     "#YJUYLQGQJ": 0,
     "#GYYCGVV2C": 0,
     "#PCR0GRPR8": 0,
-    "#8GY0Q9JVY": 12
+    "#8GY0Q9JVY": 12,
+    "#G2Y9RG2UY": 30,
+    "#YLJ2R9QJ9": 0,
+    "#Q0VYUYYQ9": 0
   },
   "seasonMembers": {
     "#QGLRQRQLJ": {
@@ -3695,8 +3086,8 @@ const SEASON_DATA = {
       "totalStars": 22,
       "totalAttacks": 12,
       "totalDestruction": 1133.0,
-      "warCount": 11,
-      "donations": 930,
+      "warCount": 12,
+      "donations": 960,
       "townhallLevel": 13
     },
     "#YCY2YYYUP": {
@@ -3720,7 +3111,7 @@ const SEASON_DATA = {
       "totalAttacks": 14,
       "totalDestruction": 1289.0,
       "warCount": 11,
-      "donations": 842,
+      "donations": 909,
       "townhallLevel": 14
     },
     "#GJLC89UG8": {
@@ -3731,8 +3122,8 @@ const SEASON_DATA = {
       "totalStars": 25,
       "totalAttacks": 10,
       "totalDestruction": 924.0,
-      "warCount": 11,
-      "donations": 188,
+      "warCount": 12,
+      "donations": 262,
       "townhallLevel": 13
     },
     "#292YJJ02V": {
@@ -3743,8 +3134,8 @@ const SEASON_DATA = {
       "totalStars": 28,
       "totalAttacks": 13,
       "totalDestruction": 1221.0,
-      "warCount": 11,
-      "donations": 6788,
+      "warCount": 12,
+      "donations": 6838,
       "townhallLevel": 14
     },
     "#LQV2QRVJR": {
@@ -3755,8 +3146,8 @@ const SEASON_DATA = {
       "totalStars": 29,
       "totalAttacks": 15,
       "totalDestruction": 1415.0,
-      "warCount": 11,
-      "donations": 674,
+      "warCount": 12,
+      "donations": 704,
       "townhallLevel": 12
     },
     "#Q0YGRQLCQ": {
@@ -3779,8 +3170,8 @@ const SEASON_DATA = {
       "totalStars": 29,
       "totalAttacks": 12,
       "totalDestruction": 1172.0,
-      "warCount": 11,
-      "donations": 1710,
+      "warCount": 12,
+      "donations": 1872,
       "townhallLevel": 15
     },
     "#9JUJVPVUQ": {
@@ -3803,7 +3194,7 @@ const SEASON_DATA = {
       "totalStars": 29,
       "totalAttacks": 12,
       "totalDestruction": 1031.0,
-      "warCount": 11,
+      "warCount": 12,
       "donations": 237,
       "townhallLevel": 12
     },
@@ -3840,7 +3231,7 @@ const SEASON_DATA = {
       "totalAttacks": 12,
       "totalDestruction": 913.0,
       "warCount": 11,
-      "donations": 1356,
+      "donations": 1401,
       "townhallLevel": 15
     },
     "#QRQCP2Q0P": {
@@ -3876,7 +3267,7 @@ const SEASON_DATA = {
       "totalAttacks": 13,
       "totalDestruction": 1189.0,
       "warCount": 11,
-      "donations": 315,
+      "donations": 347,
       "townhallLevel": 12
     },
     "#LVYP8RVGR": {
@@ -3899,8 +3290,8 @@ const SEASON_DATA = {
       "totalStars": 3,
       "totalAttacks": 4,
       "totalDestruction": 289.0,
-      "warCount": 4,
-      "donations": 204,
+      "warCount": 5,
+      "donations": 206,
       "townhallLevel": 13
     },
     "#GG2JUVG2P": {
@@ -3923,7 +3314,7 @@ const SEASON_DATA = {
       "totalStars": 30,
       "totalAttacks": 13,
       "totalDestruction": 1186.0,
-      "warCount": 11,
+      "warCount": 12,
       "donations": 518,
       "townhallLevel": 12
     },
@@ -3935,7 +3326,7 @@ const SEASON_DATA = {
       "totalStars": 12,
       "totalAttacks": 4,
       "totalDestruction": 400.0,
-      "warCount": 2,
+      "warCount": 3,
       "donations": 242,
       "townhallLevel": 11
     },
@@ -3947,7 +3338,7 @@ const SEASON_DATA = {
       "totalStars": 23,
       "totalAttacks": 10,
       "totalDestruction": 937.0,
-      "warCount": 11,
+      "warCount": 12,
       "donations": 1268,
       "townhallLevel": 13
     },
@@ -3971,8 +3362,8 @@ const SEASON_DATA = {
       "totalStars": 41,
       "totalAttacks": 15,
       "totalDestruction": 1437.0,
-      "warCount": 11,
-      "donations": 806,
+      "warCount": 12,
+      "donations": 856,
       "townhallLevel": 14
     },
     "#9VRQRUR20": {
@@ -4068,8 +3459,8 @@ const SEASON_DATA = {
       "totalStars": 26,
       "totalAttacks": 13,
       "totalDestruction": 1140.0,
-      "warCount": 10,
-      "donations": 1669
+      "warCount": 11,
+      "donations": 1672
     },
     "#82CQY0Q8V": {
       "tag": "#82CQY0Q8V",
@@ -4081,7 +3472,7 @@ const SEASON_DATA = {
       "totalAttacks": 4,
       "totalDestruction": 340.0,
       "warCount": 2,
-      "donations": 15
+      "donations": 17
     },
     "#UJQYQY9U": {
       "tag": "#UJQYQY9U",
@@ -4128,7 +3519,7 @@ const SEASON_DATA = {
       "totalStars": 6,
       "totalAttacks": 3,
       "totalDestruction": 233.0,
-      "warCount": 7,
+      "warCount": 8,
       "donations": 78
     },
     "#YJVRGUGVJ": {
@@ -4140,7 +3531,7 @@ const SEASON_DATA = {
       "totalStars": 13,
       "totalAttacks": 6,
       "totalDestruction": 470.0,
-      "warCount": 7,
+      "warCount": 8,
       "donations": 865
     },
     "#28UVGLLQP": {
@@ -4190,6 +3581,18 @@ const SEASON_DATA = {
       "totalDestruction": 0.0,
       "warCount": 7,
       "donations": 0
+    },
+    "#80C2V90Q": {
+      "tag": "#80C2V90Q",
+      "name": "♤Home Simpson♧",
+      "role": "admin",
+      "townHallLevel": 13,
+      "townhallLevel": 13,
+      "totalStars": 0,
+      "totalAttacks": 0,
+      "totalDestruction": 0.0,
+      "warCount": 1,
+      "donations": 1568
     }
   },
   "warHistory": {
@@ -6694,6 +6097,128 @@ const SEASON_DATA = {
         "attacks": 1,
         "destruction": 100
       }
+    },
+    "20261011T162128.000Z": {
+      "#GGQPRRURV": {
+        "name": "namtugal",
+        "role": "admin",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GJLC89UG8": {
+        "name": "Robson",
+        "role": "member",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#292YJJ02V": {
+        "name": "Nevzx 躾⛩️",
+        "role": "leader",
+        "townHallLevel": 14,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#LQV2QRVJR": {
+        "name": "Rosa₪Floresida₪",
+        "role": "admin",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#QRL2CJG9": {
+        "name": "Jonas",
+        "role": "coLeader",
+        "townHallLevel": 15,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#G9ULQQJP2": {
+        "name": "Hedris",
+        "role": "admin",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GR982GPU": {
+        "name": "Princip3",
+        "role": "member",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#YJVRGUGVJ": {
+        "name": "Cibele❤️",
+        "role": "coLeader",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#90YCRLUY0": {
+        "name": "king renan",
+        "role": "admin",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GVUPL0Y2L": {
+        "name": "marmela",
+        "role": "member",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GU82Q92JP": {
+        "name": "After",
+        "role": "admin",
+        "townHallLevel": 12,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GUQ822R8Q": {
+        "name": "YArdorius",
+        "role": "admin",
+        "townHallLevel": 11,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#GCY8PR02J": {
+        "name": "johnpork",
+        "role": "admin",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#80C2V90Q": {
+        "name": "♤Home Simpson♧",
+        "role": "admin",
+        "townHallLevel": 13,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      },
+      "#YGLLU0UU9": {
+        "name": "ÉOBRABOXX",
+        "role": "member",
+        "townHallLevel": 14,
+        "stars": 0,
+        "attacks": 0,
+        "destruction": 0
+      }
     }
   }
 };
@@ -6851,11 +6376,11 @@ document.querySelectorAll('.members-table-wrap').forEach(el => holoObserver.obse
 // ═══════════════════════════════════════════════════════════════════════════
 const CLAN_MEMBERS = [
   {
-    "tag": "#QRL2CJG9",
-    "name": "Jonas",
-    "role": "coLeader",
+    "tag": "#9UYPCVPLL",
+    "name": "LINKIN PARK",
+    "role": "admin",
     "townHallLevel": 15,
-    "expLevel": 137,
+    "expLevel": 173,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -6872,11 +6397,74 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png"
       }
     },
-    "trophies": 72,
-    "builderBaseTrophies": 2799,
+    "trophies": 117,
+    "builderBaseTrophies": 2826,
     "clanRank": 1,
+    "previousClanRank": 2,
+    "donations": 156,
+    "donationsReceived": 83,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000011
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000024,
+      "name": "Iron League II"
+    },
+    "warStars": 227,
+    "daysInClan": 135,
+    "joinedDate": "2026-05-09",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 12,
+    "warTotalMissed": 3,
+    "cwlActive": false
+  },
+  {
+    "tag": "#QRL2CJG9",
+    "name": "Jonas",
+    "role": "coLeader",
+    "townHallLevel": 15,
+    "expLevel": 138,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000021,
+      "name": "Golem League 21",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png"
+      }
+    },
+    "trophies": 100,
+    "builderBaseTrophies": 2799,
+    "clanRank": 2,
     "previousClanRank": 1,
-    "donations": 338,
+    "donations": 500,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -6907,72 +6495,17 @@ const CLAN_MEMBERS = [
     "joinedDate": "2023-11-10",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
-  },
-  {
-    "tag": "#9UYPCVPLL",
-    "name": "LINKIN PARK",
-    "role": "admin",
-    "townHallLevel": 15,
-    "expLevel": 173,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000021,
-      "name": "Golem League 21",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png"
-      }
-    },
-    "trophies": 69,
-    "builderBaseTrophies": 2706,
-    "clanRank": 2,
-    "previousClanRank": 2,
-    "donations": 111,
-    "donationsReceived": 83,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000000
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000011
-        },
-        {
-          "type": "decoration",
-          "id": 82000058
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000023,
-      "name": "Iron League III"
-    },
-    "warStars": 227,
-    "daysInClan": 135,
-    "joinedDate": "2026-05-09",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 12,
+    "warTotalMissed": 2,
+    "cwlActive": true
   },
   {
     "tag": "#GYP00G8PR",
     "name": "JP Chavoso",
     "role": "coLeader",
-    "townHallLevel": 14,
+    "townHallLevel": 15,
     "expLevel": 131,
     "league": {
       "id": 29000000,
@@ -6990,11 +6523,11 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png"
       }
     },
-    "trophies": 8,
+    "trophies": 421,
     "builderBaseTrophies": 220,
     "clanRank": 3,
     "previousClanRank": 3,
-    "donations": 112,
+    "donations": 179,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -7025,14 +6558,18 @@ const CLAN_MEMBERS = [
     "joinedDate": "2024-01-19",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 14,
+    "warTotalMissed": 1,
+    "cwlActive": true
   },
   {
     "tag": "#292YJJ02V",
     "name": "Nevzx 躾⛩️",
     "role": "leader",
     "townHallLevel": 14,
-    "expLevel": 167,
+    "expLevel": 168,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -7049,12 +6586,12 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png"
       }
     },
-    "trophies": 61,
-    "builderBaseTrophies": 2433,
+    "trophies": 72,
+    "builderBaseTrophies": 2460,
     "clanRank": 4,
     "previousClanRank": 4,
-    "donations": 763,
-    "donationsReceived": 46,
+    "donations": 813,
+    "donationsReceived": 124,
     "playerHouse": {
       "elements": [
         {
@@ -7084,7 +6621,11 @@ const CLAN_MEMBERS = [
     "joinedDate": "2023-07-28",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 13,
+    "warTotalMissed": 1,
+    "cwlActive": true
   },
   {
     "tag": "#GGQPRRURV",
@@ -7109,11 +6650,11 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2830,
+    "builderBaseTrophies": 2871,
     "clanRank": 5,
     "previousClanRank": 5,
-    "donations": 288,
-    "donationsReceived": 49,
+    "donations": 318,
+    "donationsReceived": 98,
     "playerHouse": {
       "elements": [
         {
@@ -7143,7 +6684,11 @@ const CLAN_MEMBERS = [
     "joinedDate": "2023-12-05",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 12,
+    "warTotalMissed": 2,
+    "cwlActive": true
   },
   {
     "tag": "#Q0URR9VC9",
@@ -7200,9 +6745,13 @@ const CLAN_MEMBERS = [
     "warStars": 412,
     "daysInClan": 1,
     "joinedDate": "2026-09-24",
-    "offlineDays": 4,
+    "offlineDays": 6,
     "idleCount": 1,
-    "isIdle": true
+    "isIdle": true,
+    "warTotalWars": 2,
+    "warTotalAttacks": 1,
+    "warTotalMissed": 1,
+    "cwlActive": false
   },
   {
     "tag": "#QGYU9GYC",
@@ -7226,12 +6775,12 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/a3zg3PSqri2WrWD8tGzKs0hJ5OrND1Rx1SJ45f5O0gE.png"
       }
     },
-    "trophies": 490,
+    "trophies": 511,
     "builderBaseTrophies": 2510,
     "clanRank": 7,
     "previousClanRank": 7,
-    "donations": 688,
-    "donationsReceived": 294,
+    "donations": 773,
+    "donationsReceived": 416,
     "playerHouse": {
       "elements": [
         {
@@ -7261,7 +6810,11 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-04-12",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#YJVRGUGVJ",
@@ -7285,7 +6838,7 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/a3zg3PSqri2WrWD8tGzKs0hJ5OrND1Rx1SJ45f5O0gE.png"
       }
     },
-    "trophies": 247,
+    "trophies": 268,
     "builderBaseTrophies": 2049,
     "clanRank": 8,
     "previousClanRank": 8,
@@ -7320,7 +6873,11 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-09-02",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 7,
+    "warTotalAttacks": 6,
+    "warTotalMissed": 1,
+    "cwlActive": true
   },
   {
     "tag": "#R8R22C08Y",
@@ -7349,7 +6906,7 @@ const CLAN_MEMBERS = [
     "clanRank": 9,
     "previousClanRank": 9,
     "donations": 34,
-    "donationsReceived": 46,
+    "donationsReceived": 91,
     "playerHouse": {
       "elements": [
         {
@@ -7377,9 +6934,76 @@ const CLAN_MEMBERS = [
     "warStars": 244,
     "daysInClan": 17,
     "joinedDate": "2026-09-04",
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 8,
+    "warTotalAttacks": 8,
+    "warTotalMissed": 1,
+    "cwlActive": true
+  },
+  {
+    "tag": "#GJLC89UG8",
+    "name": "Robson",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 114,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000014,
+      "name": "Valkyrie League 14",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
+      }
+    },
+    "trophies": 352,
+    "builderBaseTrophies": 2074,
+    "clanRank": 10,
+    "previousClanRank": 11,
+    "donations": 74,
+    "donationsReceived": 165,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "warStars": 186,
+    "daysInClan": 66,
+    "joinedDate": "2026-07-17",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 10,
+    "warTotalMissed": 3,
+    "cwlActive": true
   },
   {
     "tag": "#YGLLU0UU9",
@@ -7404,10 +7028,10 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 338,
-    "builderBaseTrophies": 2296,
-    "clanRank": 10,
+    "builderBaseTrophies": 2298,
+    "clanRank": 11,
     "previousClanRank": 10,
-    "donations": 249,
+    "donations": 299,
     "donationsReceived": 231,
     "playerHouse": {
       "elements": [
@@ -7438,66 +7062,11 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-07-24",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
-  },
-  {
-    "tag": "#GJLC89UG8",
-    "name": "Robson",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 113,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000014,
-      "name": "Valkyrie League 14",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
-      }
-    },
-    "trophies": 287,
-    "builderBaseTrophies": 2074,
-    "clanRank": 11,
-    "previousClanRank": 12,
-    "donations": 0,
-    "donationsReceived": 75,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000002
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000010
-        },
-        {
-          "type": "decoration",
-          "id": 82000063
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000020,
-      "name": "Brass League III"
-    },
-    "warStars": 186,
-    "daysInClan": 66,
-    "joinedDate": "2026-07-17",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 15,
+    "warTotalMissed": 0,
+    "cwlActive": true
   },
   {
     "tag": "#GCY8PR02J",
@@ -7521,10 +7090,10 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
       }
     },
-    "trophies": 199,
+    "trophies": 305,
     "builderBaseTrophies": 2224,
     "clanRank": 12,
-    "previousClanRank": 11,
+    "previousClanRank": 12,
     "donations": 519,
     "donationsReceived": 0,
     "playerHouse": {
@@ -7556,14 +7125,18 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-06-20",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 10,
+    "warTotalMissed": 3,
+    "cwlActive": false
   },
   {
-    "tag": "#GVUPL0Y2L",
-    "name": "marmela",
+    "tag": "#G2Y9RG2UY",
+    "name": "ojunin__7",
     "role": "member",
     "townHallLevel": 13,
-    "expLevel": 106,
+    "expLevel": 116,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -7580,49 +7153,53 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
       }
     },
-    "trophies": 416,
-    "builderBaseTrophies": 2284,
+    "trophies": 541,
+    "builderBaseTrophies": 2166,
     "clanRank": 13,
-    "previousClanRank": 13,
-    "donations": 60,
-    "donationsReceived": 72,
+    "previousClanRank": 0,
+    "donations": 30,
+    "donationsReceived": 0,
     "playerHouse": {
       "elements": [
         {
           "type": "ground",
-          "id": 82000002
+          "id": 82000000
         },
         {
           "type": "walls",
-          "id": 82000049
+          "id": 82000048
         },
         {
           "type": "roof",
-          "id": 82000044
+          "id": 82000011
         },
         {
           "type": "decoration",
-          "id": 82000062
+          "id": 82000059
         }
       ]
     },
     "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
+      "id": 44000020,
+      "name": "Brass League III"
     },
-    "warStars": 146,
-    "daysInClan": 17,
-    "joinedDate": "2026-09-04",
+    "warStars": 52,
+    "daysInClan": 1,
+    "joinedDate": "2026-10-11",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#80C2V90Q",
     "name": "♤Home Simpson♧",
     "role": "admin",
     "townHallLevel": 13,
-    "expLevel": 140,
+    "expLevel": 141,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -7639,12 +7216,12 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
       }
     },
-    "trophies": 131,
+    "trophies": 469,
     "builderBaseTrophies": 1400,
     "clanRank": 14,
     "previousClanRank": 14,
-    "donations": 1,
-    "donationsReceived": 114,
+    "donations": 178,
+    "donationsReceived": 159,
     "playerHouse": {
       "elements": [
         {
@@ -7674,7 +7251,74 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-08-07",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
+  },
+  {
+    "tag": "#GVUPL0Y2L",
+    "name": "marmela",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 106,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000013,
+      "name": "Valkyrie League 13",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
+      }
+    },
+    "trophies": 443,
+    "builderBaseTrophies": 2284,
+    "clanRank": 15,
+    "previousClanRank": 13,
+    "donations": 62,
+    "donationsReceived": 74,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000044
+        },
+        {
+          "type": "decoration",
+          "id": 82000062
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 146,
+    "daysInClan": 17,
+    "joinedDate": "2026-09-04",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 4,
+    "warTotalAttacks": 4,
+    "warTotalMissed": 2,
+    "cwlActive": false
   },
   {
     "tag": "#GJCGJU8JL",
@@ -7700,7 +7344,7 @@ const CLAN_MEMBERS = [
     },
     "trophies": 108,
     "builderBaseTrophies": 2563,
-    "clanRank": 15,
+    "clanRank": 16,
     "previousClanRank": 15,
     "donations": 0,
     "donationsReceived": 77,
@@ -7733,7 +7377,11 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-09-22",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 10,
+    "warTotalAttacks": 6,
+    "warTotalMissed": 5,
+    "cwlActive": false
   },
   {
     "tag": "#90YCRLUY0",
@@ -7757,11 +7405,11 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 363,
-    "builderBaseTrophies": 2418,
-    "clanRank": 16,
+    "trophies": 378,
+    "builderBaseTrophies": 2412,
+    "clanRank": 17,
     "previousClanRank": 16,
-    "donations": 392,
+    "donations": 395,
     "donationsReceived": 834,
     "playerHouse": {
       "elements": [
@@ -7792,14 +7440,18 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-09-21",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 10,
+    "warTotalAttacks": 13,
+    "warTotalMissed": 0,
+    "cwlActive": true
   },
   {
     "tag": "#2LGUVVC99",
     "name": "#BAD BOY#",
     "role": "admin",
     "townHallLevel": 12,
-    "expLevel": 145,
+    "expLevel": 146,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -7816,12 +7468,12 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 322,
+    "trophies": 346,
     "builderBaseTrophies": 1699,
-    "clanRank": 17,
+    "clanRank": 18,
     "previousClanRank": 17,
-    "donations": 48,
-    "donationsReceived": 72,
+    "donations": 80,
+    "donationsReceived": 144,
     "playerHouse": {
       "elements": [
         {
@@ -7851,7 +7503,11 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-05-04",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 13,
+    "warTotalMissed": 1,
+    "cwlActive": true
   },
   {
     "tag": "#L9JULURCP",
@@ -7875,11 +7531,11 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 254,
+    "trophies": 269,
     "builderBaseTrophies": 1978,
-    "clanRank": 18,
+    "clanRank": 19,
     "previousClanRank": 18,
-    "donations": 47,
+    "donations": 49,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -7910,7 +7566,11 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-08-16",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#G9ULQQJP2",
@@ -7936,7 +7596,7 @@ const CLAN_MEMBERS = [
     },
     "trophies": 182,
     "builderBaseTrophies": 1290,
-    "clanRank": 19,
+    "clanRank": 20,
     "previousClanRank": 19,
     "donations": 152,
     "donationsReceived": 0,
@@ -7947,9 +7607,13 @@ const CLAN_MEMBERS = [
     "warStars": 123,
     "daysInClan": 102,
     "joinedDate": "2026-06-11",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 11,
+    "warTotalAttacks": 12,
+    "warTotalMissed": 1,
+    "cwlActive": true
   },
   {
     "tag": "#PUQGPV8PC",
@@ -7975,7 +7639,7 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 2634,
-    "clanRank": 20,
+    "clanRank": 21,
     "previousClanRank": 20,
     "donations": 0,
     "donationsReceived": 184,
@@ -8006,16 +7670,20 @@ const CLAN_MEMBERS = [
     "warStars": 213,
     "daysInClan": 1,
     "joinedDate": "2026-09-22",
-    "offlineDays": 4,
+    "offlineDays": 6,
     "idleCount": 4,
-    "isIdle": true
+    "isIdle": true,
+    "warTotalWars": 10,
+    "warTotalAttacks": 4,
+    "warTotalMissed": 6,
+    "cwlActive": false
   },
   {
     "tag": "#Q0YGRQLCQ",
     "name": "mestre",
     "role": "member",
     "townHallLevel": 13,
-    "expLevel": 124,
+    "expLevel": 125,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -8032,9 +7700,9 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
       }
     },
-    "trophies": 376,
+    "trophies": 444,
     "builderBaseTrophies": 2279,
-    "clanRank": 21,
+    "clanRank": 22,
     "previousClanRank": 21,
     "donations": 192,
     "donationsReceived": 152,
@@ -8047,14 +7715,18 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-07-19",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 4,
+    "warTotalMissed": 8,
+    "cwlActive": false
   },
   {
     "tag": "#28UVGLLQP",
     "name": "Carlos123wx",
     "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 137,
+    "townHallLevel": 14,
+    "expLevel": 138,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -8071,9 +7743,9 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
       }
     },
-    "trophies": 358,
-    "builderBaseTrophies": 2499,
-    "clanRank": 22,
+    "trophies": 398,
+    "builderBaseTrophies": 2462,
+    "clanRank": 23,
     "previousClanRank": 22,
     "donations": 0,
     "donationsReceived": 94,
@@ -8106,14 +7778,18 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-08-17",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 7,
+    "warTotalAttacks": 4,
+    "warTotalMissed": 3,
+    "cwlActive": false
   },
   {
     "tag": "#R9PV90U00",
     "name": "deka",
     "role": "admin",
     "townHallLevel": 11,
-    "expLevel": 94,
+    "expLevel": 95,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -8130,9 +7806,9 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
       }
     },
-    "trophies": 185,
-    "builderBaseTrophies": 2393,
-    "clanRank": 23,
+    "trophies": 225,
+    "builderBaseTrophies": 2408,
+    "clanRank": 24,
     "previousClanRank": 23,
     "donations": 33,
     "donationsReceived": 402,
@@ -8157,15 +7833,82 @@ const CLAN_MEMBERS = [
       ]
     },
     "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
+      "id": 44000022,
+      "name": "Brass League I"
     },
     "warStars": 46,
     "daysInClan": 83,
     "joinedDate": "2026-06-30",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 8,
+    "warTotalAttacks": 9,
+    "warTotalMissed": 0,
+    "cwlActive": true
+  },
+  {
+    "tag": "#YLJ2R9QJ9",
+    "name": "Rodrigo Uchiha",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 131,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000011,
+      "name": "Wizard League 11",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2376,
+    "clanRank": 25,
+    "previousClanRank": 0,
+    "donations": 0,
+    "donationsReceived": 84,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000037
+        },
+        {
+          "type": "decoration",
+          "id": 82000060
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 73,
+    "daysInClan": 1,
+    "joinedDate": "2026-10-11",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#Y8PLPVJJ0",
@@ -8190,8 +7933,8 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2521,
-    "clanRank": 24,
+    "builderBaseTrophies": 2522,
+    "clanRank": 26,
     "previousClanRank": 24,
     "donations": 0,
     "donationsReceived": 0,
@@ -8222,16 +7965,20 @@ const CLAN_MEMBERS = [
     "warStars": 133,
     "daysInClan": 54,
     "joinedDate": "2026-07-29",
-    "offlineDays": 4,
+    "offlineDays": 6,
     "idleCount": 1,
-    "isIdle": true
+    "isIdle": true,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#Y2VVRCUL9",
     "name": "-NeoNiizBackJR-",
     "role": "admin",
     "townHallLevel": 13,
-    "expLevel": 125,
+    "expLevel": 126,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -8250,10 +7997,10 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 1831,
-    "clanRank": 25,
+    "clanRank": 27,
     "previousClanRank": 25,
     "donations": 75,
-    "donationsReceived": 186,
+    "donationsReceived": 188,
     "builderBaseLeague": {
       "id": 44000018,
       "name": "Copper League II"
@@ -8261,68 +8008,13 @@ const CLAN_MEMBERS = [
     "warStars": 190,
     "daysInClan": 142,
     "joinedDate": "2026-05-02",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
-  },
-  {
-    "tag": "#LQV2QRVJR",
-    "name": "Rosa₪Floresida₪",
-    "role": "admin",
-    "townHallLevel": 12,
-    "expLevel": 121,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000010,
-      "name": "Wizard League 10",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
-      }
-    },
-    "trophies": 391,
-    "builderBaseTrophies": 2385,
-    "clanRank": 26,
-    "previousClanRank": 26,
-    "donations": 487,
-    "donationsReceived": 646,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000001
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000010
-        },
-        {
-          "type": "decoration",
-          "id": 82000059
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
-    },
-    "warStars": 211,
-    "daysInClan": 1,
-    "joinedDate": "2026-09-21",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#82CQY0Q8V",
@@ -8346,12 +8038,12 @@ const CLAN_MEMBERS = [
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
       }
     },
-    "trophies": 86,
+    "trophies": 443,
     "builderBaseTrophies": 852,
-    "clanRank": 27,
-    "previousClanRank": 27,
-    "donations": 0,
-    "donationsReceived": 0,
+    "clanRank": 28,
+    "previousClanRank": 26,
+    "donations": 2,
+    "donationsReceived": 72,
     "playerHouse": {
       "elements": [
         {
@@ -8381,14 +8073,81 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-09-24",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 2,
+    "warTotalAttacks": 4,
+    "warTotalMissed": 0,
+    "cwlActive": false
+  },
+  {
+    "tag": "#LQV2QRVJR",
+    "name": "Rosa₪Floresida₪",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 122,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000010,
+      "name": "Wizard League 10",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
+      }
+    },
+    "trophies": 419,
+    "builderBaseTrophies": 2575,
+    "clanRank": 29,
+    "previousClanRank": 27,
+    "donations": 517,
+    "donationsReceived": 646,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000059
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "warStars": 211,
+    "daysInClan": 1,
+    "joinedDate": "2026-09-21",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 15,
+    "warTotalMissed": 0,
+    "cwlActive": true
   },
   {
     "tag": "#GR982GPU",
     "name": "Princip3",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 125,
+    "expLevel": 126,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -8406,9 +8165,9 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 351,
-    "builderBaseTrophies": 1785,
-    "clanRank": 28,
-    "previousClanRank": 29,
+    "builderBaseTrophies": 2049,
+    "clanRank": 30,
+    "previousClanRank": 28,
     "donations": 78,
     "donationsReceived": 516,
     "playerHouse": {
@@ -8432,15 +8191,82 @@ const CLAN_MEMBERS = [
       ]
     },
     "builderBaseLeague": {
-      "id": 44000017,
-      "name": "Copper League III"
+      "id": 44000020,
+      "name": "Brass League III"
     },
     "warStars": 160,
     "daysInClan": 1,
     "joinedDate": "2026-09-28",
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 7,
+    "warTotalAttacks": 3,
+    "warTotalMissed": 4,
+    "cwlActive": false
+  },
+  {
+    "tag": "#Q0VYUYYQ9",
+    "name": "Batosay",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 75,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000008,
+      "name": "Archer League 8",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
+      }
+    },
+    "trophies": 124,
+    "builderBaseTrophies": 1908,
+    "clanRank": 31,
+    "previousClanRank": 0,
+    "donations": 0,
+    "donationsReceived": 67,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000011
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000019,
+      "name": "Copper League I"
+    },
+    "warStars": 43,
+    "daysInClan": 1,
+    "joinedDate": "2026-10-11",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#G8QY89CY0",
@@ -8466,8 +8292,8 @@ const CLAN_MEMBERS = [
     },
     "trophies": 80,
     "builderBaseTrophies": 2494,
-    "clanRank": 29,
-    "previousClanRank": 30,
+    "clanRank": 32,
+    "previousClanRank": 29,
     "donations": 0,
     "donationsReceived": 104,
     "playerHouse": {
@@ -8497,16 +8323,20 @@ const CLAN_MEMBERS = [
     "warStars": 19,
     "daysInClan": 1,
     "joinedDate": "2026-09-28",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#Y2LP8RV9J",
     "name": "Liihzinha",
     "role": "admin",
     "townHallLevel": 10,
-    "expLevel": 96,
+    "expLevel": 97,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -8525,9 +8355,9 @@ const CLAN_MEMBERS = [
     },
     "trophies": 44,
     "builderBaseTrophies": 2152,
-    "clanRank": 30,
-    "previousClanRank": 31,
-    "donations": 56,
+    "clanRank": 33,
+    "previousClanRank": 30,
+    "donations": 109,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -8558,7 +8388,11 @@ const CLAN_MEMBERS = [
     "joinedDate": "2026-08-29",
     "offlineDays": 0,
     "idleCount": 0,
-    "isIdle": false
+    "isIdle": false,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#GUQ822R8Q",
@@ -8584,8 +8418,8 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 1213,
-    "clanRank": 31,
-    "previousClanRank": 35,
+    "clanRank": 34,
+    "previousClanRank": 31,
     "donations": 8,
     "donationsReceived": 0,
     "builderBaseLeague": {
@@ -8595,9 +8429,13 @@ const CLAN_MEMBERS = [
     "warStars": 24,
     "daysInClan": 80,
     "joinedDate": "2026-07-03",
-    "offlineDays": 4,
+    "offlineDays": 6,
     "idleCount": 1,
-    "isIdle": true
+    "isIdle": true,
+    "warTotalWars": 2,
+    "warTotalAttacks": 4,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#QRQCP2Q0P",
@@ -8622,11 +8460,11 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2315,
-    "clanRank": 32,
-    "previousClanRank": 37,
+    "builderBaseTrophies": 2329,
+    "clanRank": 35,
+    "previousClanRank": 32,
     "donations": 0,
-    "donationsReceived": 203,
+    "donationsReceived": 369,
     "builderBaseLeague": {
       "id": 44000021,
       "name": "Brass League II"
@@ -8634,16 +8472,20 @@ const CLAN_MEMBERS = [
     "warStars": 28,
     "daysInClan": 49,
     "joinedDate": "2026-08-03",
-    "offlineDays": 5,
+    "offlineDays": 7,
     "idleCount": 1,
-    "isIdle": true
+    "isIdle": true,
+    "warTotalWars": 1,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 1,
+    "cwlActive": false
   },
   {
     "tag": "#8GY0Q9JVY",
     "name": "UrsoTed13",
     "role": "member",
     "townHallLevel": 10,
-    "expLevel": 97,
+    "expLevel": 98,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -8661,9 +8503,9 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 363,
-    "builderBaseTrophies": 1685,
-    "clanRank": 33,
-    "previousClanRank": 38,
+    "builderBaseTrophies": 1907,
+    "clanRank": 36,
+    "previousClanRank": 33,
     "donations": 12,
     "donationsReceived": 0,
     "playerHouse": {
@@ -8687,15 +8529,19 @@ const CLAN_MEMBERS = [
       ]
     },
     "builderBaseLeague": {
-      "id": 44000016,
-      "name": "Copper League IV"
+      "id": 44000019,
+      "name": "Copper League I"
     },
     "warStars": 120,
     "daysInClan": 1,
     "joinedDate": "2026-10-05",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#R08PU9VP0",
@@ -8720,9 +8566,9 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2000,
-    "clanRank": 34,
-    "previousClanRank": 39,
+    "builderBaseTrophies": 2057,
+    "clanRank": 37,
+    "previousClanRank": 34,
     "donations": 0,
     "donationsReceived": 0,
     "playerHouse": {
@@ -8752,9 +8598,13 @@ const CLAN_MEMBERS = [
     "warStars": 60,
     "daysInClan": 1,
     "joinedDate": "2026-09-22",
-    "offlineDays": 4,
+    "offlineDays": 6,
     "idleCount": 1,
-    "isIdle": true
+    "isIdle": true,
+    "warTotalWars": 2,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 2,
+    "cwlActive": false
   },
   {
     "tag": "#Y882VUVGJ",
@@ -8780,8 +8630,8 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 2746,
-    "clanRank": 35,
-    "previousClanRank": 41,
+    "clanRank": 38,
+    "previousClanRank": 35,
     "donations": 76,
     "donationsReceived": 72,
     "builderBaseLeague": {
@@ -8791,9 +8641,13 @@ const CLAN_MEMBERS = [
     "warStars": 3,
     "daysInClan": 85,
     "joinedDate": "2026-06-28",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false
   },
   {
     "tag": "#GYYCGVV2C",
@@ -8818,9 +8672,9 @@ const CLAN_MEMBERS = [
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 1925,
-    "clanRank": 36,
-    "previousClanRank": 43,
+    "builderBaseTrophies": 1851,
+    "clanRank": 39,
+    "previousClanRank": 36,
     "donations": 0,
     "donationsReceived": 72,
     "playerHouse": {
@@ -8844,15 +8698,19 @@ const CLAN_MEMBERS = [
       ]
     },
     "builderBaseLeague": {
-      "id": 44000019,
-      "name": "Copper League I"
+      "id": 44000018,
+      "name": "Copper League II"
     },
     "warStars": 54,
     "daysInClan": 1,
     "joinedDate": "2026-10-02",
-    "offlineDays": 5,
+    "offlineDays": 7,
     "idleCount": 1,
-    "isIdle": true
+    "isIdle": true,
+    "warTotalWars": 7,
+    "warTotalAttacks": 5,
+    "warTotalMissed": 2,
+    "cwlActive": true
   },
   {
     "tag": "#GU82Q92JP",
@@ -8878,8 +8736,8 @@ const CLAN_MEMBERS = [
     },
     "trophies": 0,
     "builderBaseTrophies": 40,
-    "clanRank": 37,
-    "previousClanRank": 45,
+    "clanRank": 40,
+    "previousClanRank": 37,
     "donations": 71,
     "donationsReceived": 256,
     "builderBaseLeague": {
@@ -8889,9 +8747,13 @@ const CLAN_MEMBERS = [
     "warStars": 128,
     "daysInClan": 141,
     "joinedDate": "2026-05-03",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 11,
+    "warTotalAttacks": 13,
+    "warTotalMissed": 1,
+    "cwlActive": true
   }
 ];
 
@@ -8903,8 +8765,10 @@ function switchTab(tabName) {
 
     const btnWar = document.getElementById('tabBtnWar');
     const btnJapan = document.getElementById('tabBtnJapan');
+    const btnBoard = document.getElementById('tabBtnBoard');
     const viewWar = document.getElementById('viewWar');
     const viewJapan = document.getElementById('viewJapan');
+    const viewBoard = document.getElementById('viewBoard');
     const sakuraCanvas = document.getElementById('sakuraCanvas');
     const bgConstellationCanvas = document.getElementById('bgConstellationCanvas');
     const cyberGrid = document.querySelector('.cyber-grid-container');
@@ -8915,67 +8779,56 @@ function switchTab(tabName) {
     const cursorGlow = document.getElementById('cursorGlow');
     const japanBgOverlay = document.getElementById('japanBgOverlay');
 
+    // Reset button states
+    if (btnWar) btnWar.classList.remove('active');
+    if (btnJapan) btnJapan.classList.remove('active');
+    if (btnBoard) btnBoard.classList.remove('active');
+
+    // Reset view states
+    if (viewWar) { viewWar.classList.remove('active'); viewWar.style.display = 'none'; viewWar.style.opacity = '0'; }
+    if (viewJapan) { viewJapan.classList.remove('active'); viewJapan.style.display = 'none'; viewJapan.style.opacity = '0'; }
+    if (viewBoard) { viewBoard.classList.remove('active'); viewBoard.style.display = 'none'; viewBoard.style.opacity = '0'; }
+
+    // Keep cyber artifacts hidden in all tabs
+    if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '0';
+    if (cyberGrid) cyberGrid.style.display = 'none';
+    if (cyberPillars) cyberPillars.forEach(p => { if (p) p.style.display = 'none'; });
+    if (cyberHorizon) cyberHorizon.style.display = 'none';
+    if (particlesEl) particlesEl.style.display = 'none';
+    if (cursorGlow) cursorGlow.style.display = 'none';
+    if (japanBgOverlay) japanBgOverlay.classList.add('active');
+
     if (tabName === 'japan') {
-        if (btnWar) btnWar.classList.remove('active');
         if (btnJapan) btnJapan.classList.add('active');
+        if (viewJapan) { viewJapan.classList.add('active'); viewJapan.style.display = 'block'; viewJapan.style.opacity = '1'; }
 
-        if (viewWar) {
-            viewWar.classList.remove('active');
-            viewWar.style.display = 'none';
-            viewWar.style.opacity = '0';
-        }
-        if (viewJapan) {
-            viewJapan.classList.add('active');
-            viewJapan.style.display = 'block';
-            viewJapan.style.opacity = '1';
-        }
-
-        // Populate/re-render Cúpula & Members
         try { initJapanTab(); } catch(e) {}
 
-        // Completely hide ALL cyber elements and show Japanese background
-        if (sakuraCanvas) sakuraCanvas.style.opacity = '1'; // Japan tab: only sakura petals
+        if (sakuraCanvas) sakuraCanvas.style.opacity = '1';
         const skyCanvasJP = document.getElementById('skyLanternsCanvas');
-        if (skyCanvasJP) skyCanvasJP.style.opacity = '0'; // Hide sky lanterns on Japan tab
-        if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '0';
-        if (cyberGrid) cyberGrid.style.display = 'none';
-        if (cyberPillars) cyberPillars.forEach(p => { if (p) p.style.display = 'none'; });
-        if (cyberHorizon) cyberHorizon.style.display = 'none';
-        if (particlesEl) particlesEl.style.display = 'none';
-        if (cursorGlow) cursorGlow.style.display = 'none';
-
-        if (japanBgOverlay) japanBgOverlay.classList.add('active');
+        if (skyCanvasJP) skyCanvasJP.style.opacity = '0';
 
         document.body.style.background = 'linear-gradient(rgba(14, 6, 16, 0.65), rgba(14, 6, 16, 0.80)), url("japan_bg.jpg") center center / cover no-repeat fixed #0e0610';
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (tabName === 'board') {
+        if (btnBoard) btnBoard.classList.add('active');
+        if (viewBoard) { viewBoard.classList.add('active'); viewBoard.style.display = 'block'; viewBoard.style.opacity = '1'; }
+
+        try { initBoardTab(); } catch(e) {}
+
+        if (sakuraCanvas) sakuraCanvas.style.opacity = '0.5';
+        const skyCanvasBoard = document.getElementById('skyLanternsCanvas');
+        if (skyCanvasBoard) skyCanvasBoard.style.opacity = '0.7';
+
+        document.body.style.background = 'linear-gradient(rgba(14, 6, 16, 0.72), rgba(14, 6, 16, 0.88)), url("japan_bg.jpg") center center / cover no-repeat fixed #0e0610';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-        if (btnJapan) btnJapan.classList.remove('active');
         if (btnWar) btnWar.classList.add('active');
+        if (viewWar) { viewWar.classList.add('active'); viewWar.style.display = 'block'; viewWar.style.opacity = '1'; }
 
-        if (viewJapan) {
-            viewJapan.classList.remove('active');
-            viewJapan.style.display = 'none';
-            viewJapan.style.opacity = '0';
-        }
-        if (viewWar) {
-            viewWar.classList.add('active');
-            viewWar.style.display = 'block';
-            viewWar.style.opacity = '1';
-        }
-
-        // Apply Japanese Festival theme to War view (with sky lanterns and sakura)
         const skyCanvas = document.getElementById('skyLanternsCanvas');
         if (skyCanvas) skyCanvas.style.opacity = '1';
-        if (sakuraCanvas) sakuraCanvas.style.opacity = '0'; // War tab: no sakura, only sky lanterns
-        if (japanBgOverlay) japanBgOverlay.classList.add('active');
-
-        // Keep cyber artifacts hidden
-        if (bgConstellationCanvas) bgConstellationCanvas.style.opacity = '0';
-        if (cyberGrid) cyberGrid.style.display = 'none';
-        if (cyberPillars) cyberPillars.forEach(p => { if (p) p.style.display = 'none'; });
-        if (cyberHorizon) cyberHorizon.style.display = 'none';
-        if (particlesEl) particlesEl.style.display = 'none';
-        if (cursorGlow) cursorGlow.style.display = 'none';
+        if (sakuraCanvas) sakuraCanvas.style.opacity = '0';
 
         document.body.style.background = 'linear-gradient(rgba(14, 6, 16, 0.65), rgba(14, 6, 16, 0.82)), url("japan_bg.jpg") center center / cover no-repeat fixed #0e0610';
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -8999,7 +8852,6 @@ if (document.readyState === 'loading') {
 }
 window.addEventListener('load', bindTabListeners);
 window.addEventListener('load', function() {
-    // Force war tab active and scroll to top on load
     try { switchTab('war'); } catch(e) {}
     window.scrollTo(0, 0);
 });
@@ -9007,13 +8859,18 @@ window.addEventListener('load', function() {
 function bindTabListeners() {
     const bWar = document.getElementById('tabBtnWar');
     const bJapan = document.getElementById('tabBtnJapan');
+    const bBoard = document.getElementById('tabBtnBoard');
     if (bWar) {
         bWar.onclick = function(e) { if (e) e.preventDefault(); switchTab('war'); };
     }
     if (bJapan) {
         bJapan.onclick = function(e) { if (e) e.preventDefault(); switchTab('japan'); };
     }
+    if (bBoard) {
+        bBoard.onclick = function(e) { if (e) e.preventDefault(); switchTab('board'); };
+    }
 }
+
 
 
 // ── Floating Sky Lanterns Engine (Balões de Festival Japonês 天灯) ────────
@@ -9402,6 +9259,8 @@ function renderGeneralMembers(list) {
             idleBadge = `<span class="j-warn-badge" title="Offline há 1 dia">⏳ 1d off</span>`;
         }
 
+        const cwlTag = m.cwlActive ? `<span class="cwl-active-tag" title="Titular que atacou ativamente na Liga de Guerras">💠 Ativo CWL</span>` : '';
+
         const donColor = m.donations >= 100 ? '#00ff88' : '#e0e6f0';
 
         const tr = document.createElement('tr');
@@ -9411,6 +9270,7 @@ function renderGeneralMembers(list) {
                 <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
                     <span class="j-member-name">${m.name}</span>
                     ${idleBadge}
+                    ${cwlTag}
                 </div>
                 <div style="font-family:'Share Tech Mono'; font-size:0.75rem; color:rgba(255,255,255,0.4);">${m.tag}</div>
             </td>
@@ -9851,6 +9711,127 @@ setInterval(updateSeasonCountdown, 1000);
 })();
 
 
+
+// ── ABA 3: QUADRO DE AVISOS & ESCALAÇÃO CONTROLLER ─────────────────────
+let activeBoardFilter = 'all';
+
+function setBoardFilter(filterName) {
+    activeBoardFilter = filterName;
+    ['All', 'Active', 'Missed', 'Cwl'].forEach(f => {
+        const btn = document.getElementById('boardFilter' + f);
+        if (btn) btn.classList.remove('active');
+    });
+    if (filterName === 'all') {
+        const b = document.getElementById('boardFilterAll'); if (b) b.classList.add('active');
+    } else if (filterName === 'clean') {
+        const b = document.getElementById('boardFilterActive'); if (b) b.classList.add('active');
+    } else if (filterName === 'missed') {
+        const b = document.getElementById('boardFilterMissed'); if (b) b.classList.add('active');
+    } else if (filterName === 'cwl') {
+        const b = document.getElementById('boardFilterCwl'); if (b) b.classList.add('active');
+    }
+    renderBoardWarriors();
+}
+
+function initBoardTab() {
+    renderBoardWarriors();
+}
+
+function renderBoardWarriors() {
+    const tbody = document.getElementById('boardWarriorsTbody');
+    if (!tbody || typeof CLAN_MEMBERS === 'undefined') return;
+
+    // Calcular estatísticas da temporada e CWL
+    let cleanCount = 0;
+    let missedCount = 0;
+
+    const list = CLAN_MEMBERS.slice();
+
+    // Contadores gerais
+    list.forEach(m => {
+        const missed = m.warTotalMissed || 0;
+        const wars = m.warTotalWars || 0;
+        if (wars > 0 && missed === 0) {
+            cleanCount++;
+        } else if (missed > 0) {
+            missedCount++;
+        }
+    });
+
+    const activeEl = document.getElementById('boardActiveWarriorsCount');
+    if (activeEl) activeEl.innerText = cleanCount;
+    const missEl = document.getElementById('boardMissedWarriorsCount');
+    if (missEl) missEl.innerText = missedCount;
+
+    // Filtragem
+    let filtered = list.filter(m => {
+        const missed = m.warTotalMissed || 0;
+        const wars = m.warTotalWars || 0;
+        const cwl = !!m.cwlActive;
+        if (activeBoardFilter === 'clean') return wars > 0 && missed === 0;
+        if (activeBoardFilter === 'missed') return missed > 0;
+        if (activeBoardFilter === 'cwl') return cwl;
+        return true;
+    });
+
+    // Ordenação: 
+    // Se filtro 'missed', os que mais faltaram no topo
+    // Caso contrário, quem mais atacou e tem menos faltas no topo
+    filtered.sort((a, b) => {
+        if (activeBoardFilter === 'missed') {
+            return (b.warTotalMissed || 0) - (a.warTotalMissed || 0);
+        }
+        const diffMiss = (a.warTotalMissed || 0) - (b.warTotalMissed || 0);
+        if (diffMiss !== 0) return diffMiss;
+        return (b.warTotalAttacks || 0) - (a.warTotalAttacks || 0);
+    });
+
+    tbody.innerHTML = '';
+
+    filtered.forEach((m, idx) => {
+        const wars = m.warTotalWars || 0;
+        const attacks = m.warTotalAttacks || 0;
+        const missed = m.warTotalMissed || 0;
+        const isCwlActive = !!m.cwlActive;
+        const hasMissed = missed > 0;
+
+        let statusBadge = '';
+        if (wars === 0) {
+            statusBadge = '<span class="war-miss-tag" style="background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.2); color:#ccc !important;">⚪ Reserva / Sem Guerras</span>';
+        } else if (hasMissed) {
+            statusBadge = `<span class="war-miss-tag">🔴 NÃO ATACA (${missed}x Falta)</span>`;
+        } else {
+            statusBadge = `<span class="war-clean-tag">🟢 100% Presente (${attacks} atks)</span>`;
+        }
+
+        const cwlBadge = isCwlActive 
+            ? '<span class="cwl-active-tag">💠 Titular Ativo CWL</span>' 
+            : '<span style="color:rgba(255,255,255,0.3); font-size:0.75rem;">—</span>';
+
+        const roleText = m.role === 'leader' ? '👑 Líder' : (m.role === 'coLeader' ? '⚡ Co-Líder' : (m.role === 'admin' ? '⛩️ Ancião' : '⚔️ Membro'));
+
+        const tr = document.createElement('tr');
+        if (hasMissed) tr.className = 'table-row-missed';
+
+        tr.innerHTML = `
+            <td>${statusBadge}</td>
+            <td>
+                <div style="font-weight:700; color:${hasMissed ? '#ff4d6d' : '#fff'}; font-size:0.95rem;">
+                    ${m.name}
+                </div>
+                <div style="font-family:'Share Tech Mono'; font-size:0.75rem; color:rgba(255,255,255,0.4);">${m.tag}</div>
+            </td>
+            <td><span style="font-family:'Share Tech Mono'; font-size:0.8rem; color:#ffd700;">${roleText}</span></td>
+            <td><span class="th-seal">CV ${m.townHallLevel || m.townhallLevel || 12}</span></td>
+            <td><span style="font-family:'Share Tech Mono'; color:#00ff88; font-weight:700;">⚔️ ${attacks} ataques</span></td>
+            <td><span style="font-family:'Share Tech Mono'; font-weight:700; color:${hasMissed ? '#ff3355' : 'rgba(255,255,255,0.5)'};">
+                ${missed > 0 ? `⚠️ ${missed} falta(s)` : '✅ 0 faltas'}
+            </span></td>
+            <td>${cwlBadge}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
 
 </script>
 
