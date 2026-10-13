@@ -4,7 +4,7 @@
     "name": "LINKIN PARK",
     "role": "admin",
     "townHallLevel": 15,
-    "expLevel": 173,
+    "expLevel": 174,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -21,12 +21,12 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png"
       }
     },
-    "trophies": 117,
+    "trophies": 401,
     "builderBaseTrophies": 2826,
     "clanRank": 1,
-    "previousClanRank": 2,
-    "donations": 156,
-    "donationsReceived": 83,
+    "previousClanRank": 1,
+    "donations": 462,
+    "donationsReceived": 166,
     "playerHouse": {
       "elements": [
         {
@@ -86,10 +86,10 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png"
       }
     },
-    "trophies": 100,
-    "builderBaseTrophies": 2799,
+    "trophies": 58,
+    "builderBaseTrophies": 2826,
     "clanRank": 2,
-    "previousClanRank": 1,
+    "previousClanRank": 2,
     "donations": 500,
     "donationsReceived": 0,
     "playerHouse": {
@@ -113,10 +113,10 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000023,
-      "name": "Iron League III"
+      "id": 44000024,
+      "name": "Iron League II"
     },
-    "warStars": 314,
+    "warStars": 320,
     "warPreference": "in",
     "daysInClan": 315,
     "joinedDate": "2023-11-10",
@@ -132,7 +132,7 @@
   {
     "tag": "#GYP00G8PR",
     "name": "JP Chavoso",
-    "role": "coLeader",
+    "role": "leader",
     "townHallLevel": 15,
     "expLevel": 131,
     "league": {
@@ -144,18 +144,18 @@
       }
     },
     "leagueTier": {
-      "id": 105000020,
-      "name": "Golem League 20",
+      "id": 105000021,
+      "name": "Golem League 21",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png"
       }
     },
-    "trophies": 421,
+    "trophies": 0,
     "builderBaseTrophies": 220,
     "clanRank": 3,
     "previousClanRank": 3,
-    "donations": 179,
+    "donations": 334,
     "donationsReceived": 0,
     "playerHouse": {
       "elements": [
@@ -192,12 +192,12 @@
     "warTotalAttacks": 14,
     "warTotalMissed": 1,
     "cwlActive": true,
-    "capitalActive": false
+    "capitalActive": true
   },
   {
     "tag": "#292YJJ02V",
     "name": "Nevzx 躾⛩️",
-    "role": "leader",
+    "role": "coLeader",
     "townHallLevel": 14,
     "expLevel": 168,
     "league": {
@@ -209,18 +209,18 @@
       }
     },
     "leagueTier": {
-      "id": 105000019,
-      "name": "Golem League 19",
+      "id": 105000020,
+      "name": "Golem League 20",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png"
       }
     },
-    "trophies": 72,
+    "trophies": 0,
     "builderBaseTrophies": 2460,
     "clanRank": 4,
     "previousClanRank": 4,
-    "donations": 813,
+    "donations": 1113,
     "donationsReceived": 124,
     "playerHouse": {
       "elements": [
@@ -246,7 +246,7 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 1013,
+    "warStars": 1019,
     "warPreference": "out",
     "daysInClan": 420,
     "joinedDate": "2023-07-28",
@@ -256,71 +256,6 @@
     "warTotalWars": 12,
     "warTotalAttacks": 13,
     "warTotalMissed": 2,
-    "cwlActive": true,
-    "capitalActive": true
-  },
-  {
-    "tag": "#GGQPRRURV",
-    "name": "namtugal",
-    "role": "admin",
-    "townHallLevel": 13,
-    "expLevel": 134,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000018,
-      "name": "Witch League 18",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 2871,
-    "clanRank": 5,
-    "previousClanRank": 5,
-    "donations": 318,
-    "donationsReceived": 98,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000001
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000153
-        },
-        {
-          "type": "decoration",
-          "id": 82000062
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000024,
-      "name": "Iron League II"
-    },
-    "warStars": 287,
-    "warPreference": "in",
-    "daysInClan": 290,
-    "joinedDate": "2023-12-05",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false,
-    "warTotalWars": 12,
-    "warTotalAttacks": 12,
-    "warTotalMissed": 3,
     "cwlActive": true,
     "capitalActive": true
   },
@@ -346,9 +281,9 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
       }
     },
-    "trophies": 0,
+    "trophies": 30,
     "builderBaseTrophies": 2718,
-    "clanRank": 6,
+    "clanRank": 5,
     "previousClanRank": 6,
     "donations": 0,
     "donationsReceived": 0,
@@ -380,21 +315,21 @@
     "warPreference": "out",
     "daysInClan": 1,
     "joinedDate": "2026-09-24",
-    "offlineDays": 6,
+    "offlineDays": 0,
     "idleCount": 1,
-    "isIdle": true,
+    "isIdle": false,
     "warTotalWars": 2,
     "warTotalAttacks": 1,
     "warTotalMissed": 1,
     "cwlActive": false,
-    "capitalActive": false
+    "capitalActive": true
   },
   {
-    "tag": "#QGYU9GYC",
-    "name": "BadBoy Xavier",
-    "role": "coLeader",
-    "townHallLevel": 14,
-    "expLevel": 180,
+    "tag": "#GGQPRRURV",
+    "name": "namtugal",
+    "role": "admin",
+    "townHallLevel": 13,
+    "expLevel": 135,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -404,19 +339,84 @@
       }
     },
     "leagueTier": {
-      "id": 105000016,
-      "name": "Witch League 16",
+      "id": 105000018,
+      "name": "Witch League 18",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/a3zg3PSqri2WrWD8tGzKs0hJ5OrND1Rx1SJ45f5O0gE.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/a3zg3PSqri2WrWD8tGzKs0hJ5OrND1Rx1SJ45f5O0gE.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
       }
     },
-    "trophies": 511,
+    "trophies": 0,
+    "builderBaseTrophies": 2912,
+    "clanRank": 6,
+    "previousClanRank": 5,
+    "donations": 363,
+    "donationsReceived": 98,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000153
+        },
+        {
+          "type": "decoration",
+          "id": 82000062
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000024,
+      "name": "Iron League II"
+    },
+    "warStars": 292,
+    "warPreference": "in",
+    "daysInClan": 290,
+    "joinedDate": "2023-12-05",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 12,
+    "warTotalAttacks": 12,
+    "warTotalMissed": 3,
+    "cwlActive": true,
+    "capitalActive": true
+  },
+  {
+    "tag": "#QGYU9GYC",
+    "name": "BadBoy Xavier",
+    "role": "coLeader",
+    "townHallLevel": 14,
+    "expLevel": 181,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000017,
+      "name": "Witch League 17",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3mEMvpajLceJ3EKu7u_JIh_cOEsT7wyh701zum9hqCY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3mEMvpajLceJ3EKu7u_JIh_cOEsT7wyh701zum9hqCY.png"
+      }
+    },
+    "trophies": 293,
     "builderBaseTrophies": 2510,
     "clanRank": 7,
     "previousClanRank": 7,
-    "donations": 773,
-    "donationsReceived": 416,
+    "donations": 936,
+    "donationsReceived": 535,
     "playerHouse": {
       "elements": [
         {
@@ -476,7 +476,7 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/a3zg3PSqri2WrWD8tGzKs0hJ5OrND1Rx1SJ45f5O0gE.png"
       }
     },
-    "trophies": 268,
+    "trophies": 0,
     "builderBaseTrophies": 2049,
     "clanRank": 8,
     "previousClanRank": 8,
@@ -506,7 +506,7 @@
       "id": 44000020,
       "name": "Brass League III"
     },
-    "warStars": 488,
+    "warStars": 490,
     "warPreference": "in",
     "daysInClan": 19,
     "joinedDate": "2026-09-02",
@@ -520,9 +520,139 @@
     "capitalActive": true
   },
   {
+    "tag": "#GJLC89UG8",
+    "name": "Robson",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 114,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000015,
+      "name": "Valkyrie League 15",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png"
+      }
+    },
+    "trophies": 59,
+    "builderBaseTrophies": 2074,
+    "clanRank": 9,
+    "previousClanRank": 9,
+    "donations": 105,
+    "donationsReceived": 330,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000002
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "warStars": 188,
+    "warPreference": "in",
+    "daysInClan": 66,
+    "joinedDate": "2026-07-17",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 12,
+    "warTotalAttacks": 10,
+    "warTotalMissed": 4,
+    "cwlActive": true,
+    "capitalActive": true
+  },
+  {
+    "tag": "#GCY8PR02J",
+    "name": "johnpork",
+    "role": "admin",
+    "townHallLevel": 13,
+    "expLevel": 121,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000015,
+      "name": "Valkyrie League 15",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png"
+      }
+    },
+    "trophies": 36,
+    "builderBaseTrophies": 2224,
+    "clanRank": 10,
+    "previousClanRank": 11,
+    "donations": 519,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000053
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000063
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 144,
+    "warPreference": "in",
+    "daysInClan": 93,
+    "joinedDate": "2026-06-20",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 12,
+    "warTotalAttacks": 10,
+    "warTotalMissed": 4,
+    "cwlActive": false,
+    "capitalActive": true
+  },
+  {
     "tag": "#R8R22C08Y",
     "name": "Megatron",
-    "role": "admin",
+    "role": "coLeader",
     "townHallLevel": 14,
     "expLevel": 129,
     "league": {
@@ -543,10 +673,10 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2562,
-    "clanRank": 9,
-    "previousClanRank": 9,
-    "donations": 34,
-    "donationsReceived": 91,
+    "clanRank": 11,
+    "previousClanRank": 10,
+    "donations": 0,
+    "donationsReceived": 0,
     "playerHouse": {
       "elements": [
         {
@@ -575,77 +705,12 @@
     "warPreference": "in",
     "daysInClan": 17,
     "joinedDate": "2026-09-04",
-    "offlineDays": 2,
+    "offlineDays": 0,
     "idleCount": 1,
-    "isIdle": true,
+    "isIdle": false,
     "warTotalWars": 8,
     "warTotalAttacks": 8,
     "warTotalMissed": 1,
-    "cwlActive": true,
-    "capitalActive": true
-  },
-  {
-    "tag": "#GJLC89UG8",
-    "name": "Robson",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 114,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000014,
-      "name": "Valkyrie League 14",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
-      }
-    },
-    "trophies": 352,
-    "builderBaseTrophies": 2074,
-    "clanRank": 10,
-    "previousClanRank": 11,
-    "donations": 74,
-    "donationsReceived": 165,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000002
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000010
-        },
-        {
-          "type": "decoration",
-          "id": 82000063
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000020,
-      "name": "Brass League III"
-    },
-    "warStars": 186,
-    "warPreference": "in",
-    "daysInClan": 66,
-    "joinedDate": "2026-07-17",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false,
-    "warTotalWars": 12,
-    "warTotalAttacks": 10,
-    "warTotalMissed": 4,
     "cwlActive": true,
     "capitalActive": true
   },
@@ -664,19 +729,19 @@
       }
     },
     "leagueTier": {
-      "id": 105000014,
-      "name": "Valkyrie League 14",
+      "id": 105000015,
+      "name": "Valkyrie League 15",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png"
       }
     },
-    "trophies": 338,
-    "builderBaseTrophies": 2298,
-    "clanRank": 11,
-    "previousClanRank": 10,
+    "trophies": 0,
+    "builderBaseTrophies": 2263,
+    "clanRank": 12,
+    "previousClanRank": 12,
     "donations": 299,
-    "donationsReceived": 231,
+    "donationsReceived": 335,
     "playerHouse": {
       "elements": [
         {
@@ -701,7 +766,7 @@
       "id": 44000021,
       "name": "Brass League II"
     },
-    "warStars": 118,
+    "warStars": 124,
     "warPreference": "out",
     "daysInClan": 59,
     "joinedDate": "2026-07-24",
@@ -715,11 +780,11 @@
     "capitalActive": false
   },
   {
-    "tag": "#GCY8PR02J",
-    "name": "johnpork",
-    "role": "admin",
+    "tag": "#GVUPL0Y2L",
+    "name": "marmela",
+    "role": "member",
     "townHallLevel": 13,
-    "expLevel": 120,
+    "expLevel": 107,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -736,205 +801,10 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
       }
     },
-    "trophies": 305,
-    "builderBaseTrophies": 2224,
-    "clanRank": 12,
-    "previousClanRank": 12,
-    "donations": 519,
-    "donationsReceived": 0,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000001
-        },
-        {
-          "type": "walls",
-          "id": 82000053
-        },
-        {
-          "type": "roof",
-          "id": 82000010
-        },
-        {
-          "type": "decoration",
-          "id": 82000063
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
-    },
-    "warStars": 138,
-    "warPreference": "in",
-    "daysInClan": 93,
-    "joinedDate": "2026-06-20",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false,
-    "warTotalWars": 12,
-    "warTotalAttacks": 10,
-    "warTotalMissed": 4,
-    "cwlActive": false,
-    "capitalActive": false
-  },
-  {
-    "tag": "#G2Y9RG2UY",
-    "name": "ojunin__7",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 116,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000013,
-      "name": "Valkyrie League 13",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
-      }
-    },
-    "trophies": 541,
-    "builderBaseTrophies": 2166,
-    "clanRank": 13,
-    "previousClanRank": 0,
-    "donations": 30,
-    "donationsReceived": 0,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000000
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000011
-        },
-        {
-          "type": "decoration",
-          "id": 82000059
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000020,
-      "name": "Brass League III"
-    },
-    "warStars": 52,
-    "warPreference": "in",
-    "daysInClan": 1,
-    "joinedDate": "2026-10-11",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false,
-    "warTotalWars": 0,
-    "warTotalAttacks": 0,
-    "warTotalMissed": 0,
-    "cwlActive": false,
-    "capitalActive": false
-  },
-  {
-    "tag": "#80C2V90Q",
-    "name": "♤Home Simpson♧",
-    "role": "admin",
-    "townHallLevel": 13,
-    "expLevel": 141,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000013,
-      "name": "Valkyrie League 13",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
-      }
-    },
-    "trophies": 469,
-    "builderBaseTrophies": 1400,
-    "clanRank": 14,
-    "previousClanRank": 14,
-    "donations": 178,
-    "donationsReceived": 159,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000000
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000016
-        },
-        {
-          "type": "decoration",
-          "id": 82000058
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000014,
-      "name": "Stone League I"
-    },
-    "warStars": 960,
-    "warPreference": "in",
-    "daysInClan": 45,
-    "joinedDate": "2026-08-07",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false,
-    "warTotalWars": 1,
-    "warTotalAttacks": 0,
-    "warTotalMissed": 1,
-    "cwlActive": false,
-    "capitalActive": true
-  },
-  {
-    "tag": "#GVUPL0Y2L",
-    "name": "marmela",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 106,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000013,
-      "name": "Valkyrie League 13",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
-      }
-    },
-    "trophies": 443,
+    "trophies": 276,
     "builderBaseTrophies": 2284,
-    "clanRank": 15,
-    "previousClanRank": 13,
+    "clanRank": 13,
+    "previousClanRank": 16,
     "donations": 62,
     "donationsReceived": 74,
     "playerHouse": {
@@ -975,6 +845,71 @@
     "capitalActive": true
   },
   {
+    "tag": "#80C2V90Q",
+    "name": "♤Home Simpson♧",
+    "role": "admin",
+    "townHallLevel": 13,
+    "expLevel": 141,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000014,
+      "name": "Valkyrie League 14",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
+      }
+    },
+    "trophies": 56,
+    "builderBaseTrophies": 1400,
+    "clanRank": 14,
+    "previousClanRank": 17,
+    "donations": 178,
+    "donationsReceived": 390,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000016
+        },
+        {
+          "type": "decoration",
+          "id": 82000058
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000014,
+      "name": "Stone League I"
+    },
+    "warStars": 966,
+    "warPreference": "in",
+    "daysInClan": 45,
+    "joinedDate": "2026-08-07",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 1,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 1,
+    "cwlActive": false,
+    "capitalActive": true
+  },
+  {
     "tag": "#GJCGJU8JL",
     "name": "Igorzin",
     "role": "member",
@@ -989,17 +924,17 @@
       }
     },
     "leagueTier": {
-      "id": 105000013,
-      "name": "Valkyrie League 13",
+      "id": 105000014,
+      "name": "Valkyrie League 14",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
       }
     },
-    "trophies": 108,
-    "builderBaseTrophies": 2563,
-    "clanRank": 16,
-    "previousClanRank": 15,
+    "trophies": 29,
+    "builderBaseTrophies": 2531,
+    "clanRank": 15,
+    "previousClanRank": 13,
     "donations": 0,
     "donationsReceived": 77,
     "playerHouse": {
@@ -1040,6 +975,201 @@
     "capitalActive": false
   },
   {
+    "tag": "#G2Y9RG2UY",
+    "name": "ojunin__7",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 117,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000014,
+      "name": "Valkyrie League 14",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
+      }
+    },
+    "trophies": 21,
+    "builderBaseTrophies": 2166,
+    "clanRank": 16,
+    "previousClanRank": 14,
+    "donations": 30,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000011
+        },
+        {
+          "type": "decoration",
+          "id": 82000059
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000020,
+      "name": "Brass League III"
+    },
+    "warStars": 52,
+    "warPreference": "in",
+    "daysInClan": 1,
+    "joinedDate": "2026-10-11",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false,
+    "capitalActive": false
+  },
+  {
+    "tag": "#G8QY89CY0",
+    "name": "silva022",
+    "role": "member",
+    "townHallLevel": 14,
+    "expLevel": 116,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000014,
+      "name": "Valkyrie League 14",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2509,
+    "clanRank": 17,
+    "previousClanRank": 28,
+    "donations": 0,
+    "donationsReceived": 104,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000001
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000009
+        },
+        {
+          "type": "decoration",
+          "id": 82000061
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "warStars": 19,
+    "warPreference": "out",
+    "daysInClan": 1,
+    "joinedDate": "2026-09-28",
+    "offlineDays": 0,
+    "idleCount": 1,
+    "isIdle": false,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false,
+    "capitalActive": true
+  },
+  {
+    "tag": "#28UVGLLQP",
+    "name": "Carlos123wx",
+    "role": "member",
+    "townHallLevel": 14,
+    "expLevel": 138,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000014,
+      "name": "Valkyrie League 14",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7AbbZbiV6whmfa6CZtqt6Ml4NgFH1B-UqCxc59ziqfk.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2462,
+    "clanRank": 18,
+    "previousClanRank": 15,
+    "donations": 0,
+    "donationsReceived": 94,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000049
+        },
+        {
+          "type": "roof",
+          "id": 82000009
+        },
+        {
+          "type": "decoration",
+          "id": 82000061
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000022,
+      "name": "Brass League I"
+    },
+    "warStars": 146,
+    "warPreference": "out",
+    "daysInClan": 35,
+    "joinedDate": "2026-08-17",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 7,
+    "warTotalAttacks": 4,
+    "warTotalMissed": 3,
+    "cwlActive": false,
+    "capitalActive": true
+  },
+  {
     "tag": "#90YCRLUY0",
     "name": "king renan",
     "role": "admin",
@@ -1054,18 +1184,18 @@
       }
     },
     "leagueTier": {
-      "id": 105000012,
-      "name": "Wizard League 12",
+      "id": 105000013,
+      "name": "Valkyrie League 13",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
       }
     },
-    "trophies": 378,
-    "builderBaseTrophies": 2412,
-    "clanRank": 17,
-    "previousClanRank": 16,
-    "donations": 395,
+    "trophies": 27,
+    "builderBaseTrophies": 2498,
+    "clanRank": 19,
+    "previousClanRank": 19,
+    "donations": 472,
     "donationsReceived": 834,
     "playerHouse": {
       "elements": [
@@ -1091,75 +1221,10 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 120,
+    "warStars": 124,
     "warPreference": "in",
     "daysInClan": 1,
     "joinedDate": "2026-09-21",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false,
-    "warTotalWars": 11,
-    "warTotalAttacks": 13,
-    "warTotalMissed": 1,
-    "cwlActive": true,
-    "capitalActive": true
-  },
-  {
-    "tag": "#2LGUVVC99",
-    "name": "#BAD BOY#",
-    "role": "admin",
-    "townHallLevel": 12,
-    "expLevel": 146,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000012,
-      "name": "Wizard League 12",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
-      }
-    },
-    "trophies": 346,
-    "builderBaseTrophies": 1699,
-    "clanRank": 18,
-    "previousClanRank": 17,
-    "donations": 80,
-    "donationsReceived": 144,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000000
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000015
-        },
-        {
-          "type": "decoration",
-          "id": 82000058
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000016,
-      "name": "Copper League IV"
-    },
-    "warStars": 933,
-    "warPreference": "out",
-    "daysInClan": 140,
-    "joinedDate": "2026-05-04",
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
@@ -1174,7 +1239,7 @@
     "name": "GODBLACK",
     "role": "member",
     "townHallLevel": 13,
-    "expLevel": 118,
+    "expLevel": 119,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1184,16 +1249,16 @@
       }
     },
     "leagueTier": {
-      "id": 105000012,
-      "name": "Wizard League 12",
+      "id": 105000013,
+      "name": "Valkyrie League 13",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
       }
     },
-    "trophies": 269,
+    "trophies": 0,
     "builderBaseTrophies": 1978,
-    "clanRank": 19,
+    "clanRank": 20,
     "previousClanRank": 18,
     "donations": 49,
     "donationsReceived": 0,
@@ -1235,11 +1300,11 @@
     "capitalActive": true
   },
   {
-    "tag": "#G9ULQQJP2",
-    "name": "Hedris",
+    "tag": "#2LGUVVC99",
+    "name": "#BAD BOY#",
     "role": "admin",
     "townHallLevel": 12,
-    "expLevel": 101,
+    "expLevel": 146,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1249,100 +1314,55 @@
       }
     },
     "leagueTier": {
-      "id": 105000012,
-      "name": "Wizard League 12",
+      "id": 105000013,
+      "name": "Valkyrie League 13",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
-      }
-    },
-    "trophies": 182,
-    "builderBaseTrophies": 1290,
-    "clanRank": 20,
-    "previousClanRank": 19,
-    "donations": 152,
-    "donationsReceived": 0,
-    "builderBaseLeague": {
-      "id": 44000012,
-      "name": "Stone League III"
-    },
-    "warStars": 123,
-    "warPreference": "in",
-    "daysInClan": 102,
-    "joinedDate": "2026-06-11",
-    "offlineDays": 2,
-    "idleCount": 1,
-    "isIdle": true,
-    "warTotalWars": 12,
-    "warTotalAttacks": 12,
-    "warTotalMissed": 2,
-    "cwlActive": true,
-    "capitalActive": false
-  },
-  {
-    "tag": "#PUQGPV8PC",
-    "name": "PITBULL.E",
-    "role": "member",
-    "townHallLevel": 12,
-    "expLevel": 139,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000012,
-      "name": "Wizard League 12",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2634,
+    "builderBaseTrophies": 1699,
     "clanRank": 21,
     "previousClanRank": 20,
-    "donations": 0,
-    "donationsReceived": 184,
+    "donations": 80,
+    "donationsReceived": 216,
     "playerHouse": {
       "elements": [
         {
           "type": "ground",
-          "id": 82000002
+          "id": 82000000
         },
         {
           "type": "walls",
-          "id": 82000049
+          "id": 82000048
         },
         {
           "type": "roof",
-          "id": 82000017
+          "id": 82000015
         },
         {
           "type": "decoration",
-          "id": 82000060
+          "id": 82000058
         }
       ]
     },
     "builderBaseLeague": {
-      "id": 44000023,
-      "name": "Iron League III"
+      "id": 44000016,
+      "name": "Copper League IV"
     },
-    "warStars": 213,
-    "warPreference": "in",
-    "daysInClan": 1,
-    "joinedDate": "2026-09-22",
-    "offlineDays": 6,
-    "idleCount": 4,
-    "isIdle": true,
-    "warTotalWars": 10,
-    "warTotalAttacks": 4,
-    "warTotalMissed": 6,
-    "cwlActive": false,
-    "capitalActive": false
+    "warStars": 933,
+    "warPreference": "out",
+    "daysInClan": 140,
+    "joinedDate": "2026-05-04",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 11,
+    "warTotalAttacks": 13,
+    "warTotalMissed": 1,
+    "cwlActive": true,
+    "capitalActive": true
   },
   {
     "tag": "#Q0YGRQLCQ",
@@ -1359,14 +1379,14 @@
       }
     },
     "leagueTier": {
-      "id": 105000011,
-      "name": "Wizard League 11",
+      "id": 105000012,
+      "name": "Wizard League 12",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 444,
+    "trophies": 79,
     "builderBaseTrophies": 2279,
     "clanRank": 22,
     "previousClanRank": 21,
@@ -1390,11 +1410,11 @@
     "capitalActive": true
   },
   {
-    "tag": "#28UVGLLQP",
-    "name": "Carlos123wx",
-    "role": "member",
-    "townHallLevel": 14,
-    "expLevel": 138,
+    "tag": "#G9ULQQJP2",
+    "name": "Hedris",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 101,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1404,62 +1424,42 @@
       }
     },
     "leagueTier": {
-      "id": 105000011,
-      "name": "Wizard League 11",
+      "id": 105000012,
+      "name": "Wizard League 12",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 398,
-    "builderBaseTrophies": 2462,
+    "trophies": 0,
+    "builderBaseTrophies": 1290,
     "clanRank": 23,
     "previousClanRank": 22,
-    "donations": 0,
-    "donationsReceived": 94,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000000
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000009
-        },
-        {
-          "type": "decoration",
-          "id": 82000061
-        }
-      ]
-    },
+    "donations": 152,
+    "donationsReceived": 72,
     "builderBaseLeague": {
-      "id": 44000022,
-      "name": "Brass League I"
+      "id": 44000012,
+      "name": "Stone League III"
     },
-    "warStars": 146,
-    "warPreference": "out",
-    "daysInClan": 35,
-    "joinedDate": "2026-08-17",
+    "warStars": 129,
+    "warPreference": "in",
+    "daysInClan": 102,
+    "joinedDate": "2026-06-11",
     "offlineDays": 0,
-    "idleCount": 0,
+    "idleCount": 1,
     "isIdle": false,
-    "warTotalWars": 7,
-    "warTotalAttacks": 4,
-    "warTotalMissed": 3,
-    "cwlActive": false,
-    "capitalActive": true
+    "warTotalWars": 12,
+    "warTotalAttacks": 12,
+    "warTotalMissed": 2,
+    "cwlActive": true,
+    "capitalActive": false
   },
   {
     "tag": "#R9PV90U00",
     "name": "deka",
     "role": "admin",
     "townHallLevel": 11,
-    "expLevel": 95,
+    "expLevel": 96,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1469,18 +1469,18 @@
       }
     },
     "leagueTier": {
-      "id": 105000011,
-      "name": "Wizard League 11",
+      "id": 105000012,
+      "name": "Wizard League 12",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
       }
     },
-    "trophies": 225,
-    "builderBaseTrophies": 2408,
+    "trophies": 0,
+    "builderBaseTrophies": 2291,
     "clanRank": 24,
-    "previousClanRank": 23,
-    "donations": 33,
+    "previousClanRank": 24,
+    "donations": 35,
     "donationsReceived": 402,
     "playerHouse": {
       "elements": [
@@ -1503,8 +1503,8 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000022,
-      "name": "Brass League I"
+      "id": 44000021,
+      "name": "Brass League II"
     },
     "warStars": 46,
     "warPreference": "out",
@@ -1520,11 +1520,11 @@
     "capitalActive": true
   },
   {
-    "tag": "#YLJ2R9QJ9",
-    "name": "Rodrigo Uchiha",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 131,
+    "tag": "#LQV2QRVJR",
+    "name": "Rosa₪Floresida₪",
+    "role": "admin",
+    "townHallLevel": 12,
+    "expLevel": 123,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1541,77 +1541,12 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
       }
     },
-    "trophies": 0,
-    "builderBaseTrophies": 2376,
+    "trophies": 377,
+    "builderBaseTrophies": 2578,
     "clanRank": 25,
-    "previousClanRank": 0,
-    "donations": 0,
-    "donationsReceived": 84,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000000
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000037
-        },
-        {
-          "type": "decoration",
-          "id": 82000060
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
-    },
-    "warStars": 73,
-    "warPreference": "in",
-    "daysInClan": 1,
-    "joinedDate": "2026-10-11",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false,
-    "warTotalWars": 0,
-    "warTotalAttacks": 0,
-    "warTotalMissed": 0,
-    "cwlActive": false,
-    "capitalActive": false
-  },
-  {
-    "tag": "#Y8PLPVJJ0",
-    "name": "Danielsrabelo",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 117,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000011,
-      "name": "Wizard League 11",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 2522,
-    "clanRank": 26,
-    "previousClanRank": 24,
-    "donations": 0,
-    "donationsReceived": 0,
+    "previousClanRank": 25,
+    "donations": 695,
+    "donationsReceived": 686,
     "playerHouse": {
       "elements": [
         {
@@ -1620,7 +1555,7 @@
         },
         {
           "type": "walls",
-          "id": 82000053
+          "id": 82000049
         },
         {
           "type": "roof",
@@ -1628,7 +1563,7 @@
         },
         {
           "type": "decoration",
-          "id": 82000063
+          "id": 82000059
         }
       ]
     },
@@ -1636,62 +1571,17 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 133,
+    "warStars": 212,
     "warPreference": "out",
-    "daysInClan": 54,
-    "joinedDate": "2026-07-29",
-    "offlineDays": 6,
-    "idleCount": 1,
-    "isIdle": true,
-    "warTotalWars": 0,
-    "warTotalAttacks": 0,
-    "warTotalMissed": 0,
-    "cwlActive": false,
-    "capitalActive": false
-  },
-  {
-    "tag": "#Y2VVRCUL9",
-    "name": "-NeoNiizBackJR-",
-    "role": "admin",
-    "townHallLevel": 13,
-    "expLevel": 126,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000011,
-      "name": "Wizard League 11",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 1831,
-    "clanRank": 27,
-    "previousClanRank": 25,
-    "donations": 75,
-    "donationsReceived": 188,
-    "builderBaseLeague": {
-      "id": 44000018,
-      "name": "Copper League II"
-    },
-    "warStars": 190,
-    "warPreference": "out",
-    "daysInClan": 142,
-    "joinedDate": "2026-05-02",
-    "offlineDays": 2,
-    "idleCount": 1,
-    "isIdle": true,
-    "warTotalWars": 0,
-    "warTotalAttacks": 0,
-    "warTotalMissed": 0,
-    "cwlActive": false,
+    "daysInClan": 1,
+    "joinedDate": "2026-09-21",
+    "offlineDays": 0,
+    "idleCount": 0,
+    "isIdle": false,
+    "warTotalWars": 12,
+    "warTotalAttacks": 15,
+    "warTotalMissed": 1,
+    "cwlActive": true,
     "capitalActive": true
   },
   {
@@ -1709,19 +1599,19 @@
       }
     },
     "leagueTier": {
-      "id": 105000010,
-      "name": "Wizard League 10",
+      "id": 105000011,
+      "name": "Wizard League 11",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
       }
     },
-    "trophies": 443,
+    "trophies": 28,
     "builderBaseTrophies": 852,
-    "clanRank": 28,
-    "previousClanRank": 26,
+    "clanRank": 26,
+    "previousClanRank": 30,
     "donations": 2,
-    "donationsReceived": 72,
+    "donationsReceived": 105,
     "playerHouse": {
       "elements": [
         {
@@ -1760,11 +1650,11 @@
     "capitalActive": true
   },
   {
-    "tag": "#LQV2QRVJR",
-    "name": "Rosa₪Floresida₪",
-    "role": "admin",
-    "townHallLevel": 12,
-    "expLevel": 122,
+    "tag": "#YLJ2R9QJ9",
+    "name": "Rodrigo Uchiha",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 131,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -1774,19 +1664,84 @@
       }
     },
     "leagueTier": {
-      "id": 105000010,
-      "name": "Wizard League 10",
+      "id": 105000011,
+      "name": "Wizard League 11",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
       }
     },
-    "trophies": 419,
-    "builderBaseTrophies": 2575,
-    "clanRank": 29,
+    "trophies": 0,
+    "builderBaseTrophies": 2377,
+    "clanRank": 27,
+    "previousClanRank": 26,
+    "donations": 0,
+    "donationsReceived": 166,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000000
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000037
+        },
+        {
+          "type": "decoration",
+          "id": 82000060
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 73,
+    "warPreference": "in",
+    "daysInClan": 1,
+    "joinedDate": "2026-10-11",
+    "offlineDays": 2,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false,
+    "capitalActive": false
+  },
+  {
+    "tag": "#Y8PLPVJJ0",
+    "name": "Danielsrabelo",
+    "role": "member",
+    "townHallLevel": 13,
+    "expLevel": 118,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000011,
+      "name": "Wizard League 11",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2522,
+    "clanRank": 28,
     "previousClanRank": 27,
-    "donations": 517,
-    "donationsReceived": 646,
+    "donations": 0,
+    "donationsReceived": 0,
     "playerHouse": {
       "elements": [
         {
@@ -1795,7 +1750,7 @@
         },
         {
           "type": "walls",
-          "id": 82000049
+          "id": 82000053
         },
         {
           "type": "roof",
@@ -1803,7 +1758,7 @@
         },
         {
           "type": "decoration",
-          "id": 82000059
+          "id": 82000063
         }
       ]
     },
@@ -1811,18 +1766,128 @@
       "id": 44000022,
       "name": "Brass League I"
     },
-    "warStars": 211,
-    "warPreference": "in",
-    "daysInClan": 1,
-    "joinedDate": "2026-09-21",
+    "warStars": 133,
+    "warPreference": "out",
+    "daysInClan": 54,
+    "joinedDate": "2026-07-29",
+    "offlineDays": 8,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false,
+    "capitalActive": false
+  },
+  {
+    "tag": "#Y2VVRCUL9",
+    "name": "-NeoNiizBackJR-",
+    "role": "admin",
+    "townHallLevel": 13,
+    "expLevel": 126,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000011,
+      "name": "Wizard League 11",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/XazuJHG2wjBq39KEA4g4hh1nKJQwVO0fRoVDPHvWwAY.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 1831,
+    "clanRank": 29,
+    "previousClanRank": 29,
+    "donations": 75,
+    "donationsReceived": 230,
+    "builderBaseLeague": {
+      "id": 44000018,
+      "name": "Copper League II"
+    },
+    "warStars": 190,
+    "warPreference": "out",
+    "daysInClan": 142,
+    "joinedDate": "2026-05-02",
+    "offlineDays": 4,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false,
+    "capitalActive": true
+  },
+  {
+    "tag": "#Y2LP8RV9J",
+    "name": "Liihzinha",
+    "role": "coLeader",
+    "townHallLevel": 10,
+    "expLevel": 97,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000009,
+      "name": "Archer League 9",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
+      }
+    },
+    "trophies": 14,
+    "builderBaseTrophies": 2247,
+    "clanRank": 30,
+    "previousClanRank": 32,
+    "donations": 109,
+    "donationsReceived": 0,
+    "playerHouse": {
+      "elements": [
+        {
+          "type": "ground",
+          "id": 82000007
+        },
+        {
+          "type": "walls",
+          "id": 82000048
+        },
+        {
+          "type": "roof",
+          "id": 82000010
+        },
+        {
+          "type": "decoration",
+          "id": 82000162
+        }
+      ]
+    },
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 91,
+    "warPreference": "out",
+    "daysInClan": 23,
+    "joinedDate": "2026-08-29",
     "offlineDays": 0,
     "idleCount": 0,
     "isIdle": false,
-    "warTotalWars": 12,
-    "warTotalAttacks": 15,
-    "warTotalMissed": 1,
-    "cwlActive": true,
-    "capitalActive": false
+    "warTotalWars": 0,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 0,
+    "cwlActive": false,
+    "capitalActive": true
   },
   {
     "tag": "#GR982GPU",
@@ -1839,17 +1904,17 @@
       }
     },
     "leagueTier": {
-      "id": 105000008,
-      "name": "Archer League 8",
+      "id": 105000009,
+      "name": "Archer League 9",
       "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
       }
     },
-    "trophies": 351,
-    "builderBaseTrophies": 2049,
-    "clanRank": 30,
-    "previousClanRank": 28,
+    "trophies": 0,
+    "builderBaseTrophies": 2192,
+    "clanRank": 31,
+    "previousClanRank": 31,
     "donations": 78,
     "donationsReceived": 516,
     "playerHouse": {
@@ -1876,211 +1941,16 @@
       "id": 44000020,
       "name": "Brass League III"
     },
-    "warStars": 160,
+    "warStars": 161,
     "warPreference": "in",
     "daysInClan": 1,
     "joinedDate": "2026-09-28",
-    "offlineDays": 2,
+    "offlineDays": 0,
     "idleCount": 1,
-    "isIdle": true,
+    "isIdle": false,
     "warTotalWars": 8,
     "warTotalAttacks": 3,
     "warTotalMissed": 5,
-    "cwlActive": false,
-    "capitalActive": true
-  },
-  {
-    "tag": "#Q0VYUYYQ9",
-    "name": "Batosay",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 75,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000008,
-      "name": "Archer League 8",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
-      }
-    },
-    "trophies": 124,
-    "builderBaseTrophies": 1908,
-    "clanRank": 31,
-    "previousClanRank": 0,
-    "donations": 0,
-    "donationsReceived": 67,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000000
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000011
-        },
-        {
-          "type": "decoration",
-          "id": 82000058
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000019,
-      "name": "Copper League I"
-    },
-    "warStars": 43,
-    "warPreference": "in",
-    "daysInClan": 1,
-    "joinedDate": "2026-10-11",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false,
-    "warTotalWars": 0,
-    "warTotalAttacks": 0,
-    "warTotalMissed": 0,
-    "cwlActive": false,
-    "capitalActive": false
-  },
-  {
-    "tag": "#G8QY89CY0",
-    "name": "silva022",
-    "role": "member",
-    "townHallLevel": 13,
-    "expLevel": 115,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000008,
-      "name": "Archer League 8",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
-      }
-    },
-    "trophies": 80,
-    "builderBaseTrophies": 2494,
-    "clanRank": 32,
-    "previousClanRank": 29,
-    "donations": 0,
-    "donationsReceived": 104,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000001
-        },
-        {
-          "type": "walls",
-          "id": 82000049
-        },
-        {
-          "type": "roof",
-          "id": 82000009
-        },
-        {
-          "type": "decoration",
-          "id": 82000061
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000022,
-      "name": "Brass League I"
-    },
-    "warStars": 19,
-    "warPreference": "out",
-    "daysInClan": 1,
-    "joinedDate": "2026-09-28",
-    "offlineDays": 2,
-    "idleCount": 1,
-    "isIdle": true,
-    "warTotalWars": 0,
-    "warTotalAttacks": 0,
-    "warTotalMissed": 0,
-    "cwlActive": false,
-    "capitalActive": false
-  },
-  {
-    "tag": "#Y2LP8RV9J",
-    "name": "Liihzinha",
-    "role": "admin",
-    "townHallLevel": 10,
-    "expLevel": 97,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000008,
-      "name": "Archer League 8",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
-      }
-    },
-    "trophies": 44,
-    "builderBaseTrophies": 2152,
-    "clanRank": 33,
-    "previousClanRank": 30,
-    "donations": 109,
-    "donationsReceived": 0,
-    "playerHouse": {
-      "elements": [
-        {
-          "type": "ground",
-          "id": 82000001
-        },
-        {
-          "type": "walls",
-          "id": 82000048
-        },
-        {
-          "type": "roof",
-          "id": 82000016
-        },
-        {
-          "type": "decoration",
-          "id": 82000162
-        }
-      ]
-    },
-    "builderBaseLeague": {
-      "id": 44000020,
-      "name": "Brass League III"
-    },
-    "warStars": 91,
-    "warPreference": "out",
-    "daysInClan": 23,
-    "joinedDate": "2026-08-29",
-    "offlineDays": 0,
-    "idleCount": 0,
-    "isIdle": false,
-    "warTotalWars": 0,
-    "warTotalAttacks": 0,
-    "warTotalMissed": 0,
     "cwlActive": false,
     "capitalActive": true
   },
@@ -2108,19 +1978,19 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 1213,
-    "clanRank": 34,
-    "previousClanRank": 31,
+    "clanRank": 32,
+    "previousClanRank": 33,
     "donations": 8,
     "donationsReceived": 0,
     "builderBaseLeague": {
       "id": 44000012,
       "name": "Stone League III"
     },
-    "warStars": 24,
+    "warStars": 27,
     "warPreference": "in",
     "daysInClan": 80,
     "joinedDate": "2026-07-03",
-    "offlineDays": 6,
+    "offlineDays": 8,
     "idleCount": 1,
     "isIdle": true,
     "warTotalWars": 3,
@@ -2130,11 +2000,11 @@
     "capitalActive": false
   },
   {
-    "tag": "#QRQCP2Q0P",
-    "name": "jeizyHlima",
+    "tag": "#8GY0Q9JVY",
+    "name": "UrsoTed13",
     "role": "member",
-    "townHallLevel": 11,
-    "expLevel": 109,
+    "townHallLevel": 10,
+    "expLevel": 99,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -2151,55 +2021,10 @@
         "large": "https://api-assets.clashofclans.com/leaguetiers/326/pQHVG1p0IboE8Ggp0U1YR7U8dWhVn4YSS1zSPH61F0I.png"
       }
     },
-    "trophies": 0,
-    "builderBaseTrophies": 2329,
-    "clanRank": 35,
-    "previousClanRank": 32,
-    "donations": 0,
-    "donationsReceived": 369,
-    "builderBaseLeague": {
-      "id": 44000021,
-      "name": "Brass League II"
-    },
-    "warStars": 28,
-    "warPreference": "in",
-    "daysInClan": 49,
-    "joinedDate": "2026-08-03",
-    "offlineDays": 7,
-    "idleCount": 1,
-    "isIdle": true,
-    "warTotalWars": 1,
-    "warTotalAttacks": 0,
-    "warTotalMissed": 1,
-    "cwlActive": false,
-    "capitalActive": false
-  },
-  {
-    "tag": "#8GY0Q9JVY",
-    "name": "UrsoTed13",
-    "role": "member",
-    "townHallLevel": 10,
-    "expLevel": 98,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000005,
-      "name": "Barbarian League 5",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/7Alm6gwA1lYoRn5m8vrXAfbTKIK2fFU7OxfYhYwWJYM.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/7Alm6gwA1lYoRn5m8vrXAfbTKIK2fFU7OxfYhYwWJYM.png"
-      }
-    },
-    "trophies": 363,
-    "builderBaseTrophies": 1907,
-    "clanRank": 36,
-    "previousClanRank": 33,
+    "trophies": 18,
+    "builderBaseTrophies": 1870,
+    "clanRank": 33,
+    "previousClanRank": 34,
     "donations": 12,
     "donationsReceived": 0,
     "playerHouse": {
@@ -2223,16 +2048,16 @@
       ]
     },
     "builderBaseLeague": {
-      "id": 44000019,
-      "name": "Copper League I"
+      "id": 44000018,
+      "name": "Copper League II"
     },
     "warStars": 120,
     "warPreference": "in",
     "daysInClan": 1,
     "joinedDate": "2026-10-05",
-    "offlineDays": 2,
+    "offlineDays": 0,
     "idleCount": 1,
-    "isIdle": true,
+    "isIdle": false,
     "warTotalWars": 0,
     "warTotalAttacks": 0,
     "warTotalMissed": 0,
@@ -2244,7 +2069,7 @@
     "name": "bielx2.0",
     "role": "member",
     "townHallLevel": 12,
-    "expLevel": 109,
+    "expLevel": 110,
     "league": {
       "id": 29000000,
       "name": "Unranked",
@@ -2263,8 +2088,8 @@
     },
     "trophies": 0,
     "builderBaseTrophies": 2057,
-    "clanRank": 37,
-    "previousClanRank": 34,
+    "clanRank": 34,
+    "previousClanRank": 35,
     "donations": 0,
     "donationsReceived": 0,
     "playerHouse": {
@@ -2295,7 +2120,7 @@
     "warPreference": "in",
     "daysInClan": 1,
     "joinedDate": "2026-09-22",
-    "offlineDays": 6,
+    "offlineDays": 8,
     "idleCount": 1,
     "isIdle": true,
     "warTotalWars": 2,
@@ -2303,6 +2128,51 @@
     "warTotalMissed": 2,
     "cwlActive": false,
     "capitalActive": true
+  },
+  {
+    "tag": "#QRQCP2Q0P",
+    "name": "jeizyHlima",
+    "role": "member",
+    "townHallLevel": 11,
+    "expLevel": 109,
+    "league": {
+      "id": 29000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+      }
+    },
+    "leagueTier": {
+      "id": 105000000,
+      "name": "Unranked",
+      "iconUrls": {
+        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+      }
+    },
+    "trophies": 0,
+    "builderBaseTrophies": 2354,
+    "clanRank": 35,
+    "previousClanRank": 36,
+    "donations": 0,
+    "donationsReceived": 439,
+    "builderBaseLeague": {
+      "id": 44000021,
+      "name": "Brass League II"
+    },
+    "warStars": 28,
+    "warPreference": "in",
+    "daysInClan": 49,
+    "joinedDate": "2026-08-03",
+    "offlineDays": 9,
+    "idleCount": 1,
+    "isIdle": true,
+    "warTotalWars": 1,
+    "warTotalAttacks": 0,
+    "warTotalMissed": 1,
+    "cwlActive": false,
+    "capitalActive": false
   },
   {
     "tag": "#Y882VUVGJ",
@@ -2327,9 +2197,9 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 2746,
-    "clanRank": 38,
-    "previousClanRank": 35,
+    "builderBaseTrophies": 2708,
+    "clanRank": 36,
+    "previousClanRank": 37,
     "donations": 76,
     "donationsReceived": 72,
     "builderBaseLeague": {
@@ -2340,7 +2210,7 @@
     "warPreference": "out",
     "daysInClan": 85,
     "joinedDate": "2026-06-28",
-    "offlineDays": 2,
+    "offlineDays": 4,
     "idleCount": 1,
     "isIdle": true,
     "warTotalWars": 0,
@@ -2372,11 +2242,11 @@
       }
     },
     "trophies": 0,
-    "builderBaseTrophies": 1851,
-    "clanRank": 39,
-    "previousClanRank": 36,
+    "builderBaseTrophies": 1834,
+    "clanRank": 37,
+    "previousClanRank": 38,
     "donations": 0,
-    "donationsReceived": 72,
+    "donationsReceived": 144,
     "playerHouse": {
       "elements": [
         {
@@ -2405,56 +2275,11 @@
     "warPreference": "in",
     "daysInClan": 1,
     "joinedDate": "2026-10-02",
-    "offlineDays": 7,
+    "offlineDays": 9,
     "idleCount": 1,
     "isIdle": true,
     "warTotalWars": 7,
     "warTotalAttacks": 5,
-    "warTotalMissed": 2,
-    "cwlActive": true,
-    "capitalActive": false
-  },
-  {
-    "tag": "#GU82Q92JP",
-    "name": "After",
-    "role": "admin",
-    "townHallLevel": 12,
-    "expLevel": 98,
-    "league": {
-      "id": 29000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
-        "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
-      }
-    },
-    "leagueTier": {
-      "id": 105000000,
-      "name": "Unranked",
-      "iconUrls": {
-        "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
-        "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
-      }
-    },
-    "trophies": 0,
-    "builderBaseTrophies": 40,
-    "clanRank": 40,
-    "previousClanRank": 37,
-    "donations": 71,
-    "donationsReceived": 256,
-    "builderBaseLeague": {
-      "id": 44000000,
-      "name": "Wood League V"
-    },
-    "warStars": 128,
-    "warPreference": "in",
-    "daysInClan": 141,
-    "joinedDate": "2026-05-03",
-    "offlineDays": 2,
-    "idleCount": 1,
-    "isIdle": true,
-    "warTotalWars": 12,
-    "warTotalAttacks": 13,
     "warTotalMissed": 2,
     "cwlActive": true,
     "capitalActive": false
